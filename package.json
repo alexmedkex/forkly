@@ -1,0 +1,8 @@
+{
+  "name": "forkly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alexmedkex/forkly.git",
+  "author": "Alex Wormbs <alexmedkex@gmail.com>",
+  "license": "MIT"
+}
