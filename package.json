@@ -1,8 +1,29 @@
 {
-  "name": "forkly",
+  "name": "ipfscomments",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:alexmedkex/forkly.git",
-  "author": "Alex Wormbs <alexmedkex@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": " https://alexmedkex.github.io/move/",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.0.0",
+    "@material-ui/icons": "^4.5.1",
+    "immutability-helper": "^3.0.1",
+    "immutable": "^4.0.0-rc.12",
+    "ipfs": "^0.40.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.3"
+  }
 }

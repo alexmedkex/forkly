@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <meta charset="UTF-8" />
+        <title>Hello React!</title>
+        <style type="text/css" src="./index.css"></style>
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+            * {
+                font-family: 'Quicksand', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
 
-<head>
-    <meta charset="UTF-8" />
-    <title>I'm in a React app!</title>
-</head>
+        <!-- Dependencies -->
+        <script src="./node_modules/react/umd/react.development.js"></script>
+        <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
 
-<body>
-    <div id="react-app"></div>
-
-    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
-    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
-    <script>
-        var rootElement =
-            React.createElement('div', {},
-                React.createElement('h1', {}, "Contacts"),
-                React.createElement('ul', {},
-                    React.createElement('li', {},
-                        React.createElement('h2', {}, "James Nelson"),
-                        React.createElement('a', { href: 'mailto:james@jamesknelson.com' }, 'james@jamesknelson.com')
-                    ),
-                    React.createElement('li', {},
-                        React.createElement('h2', {}, "Joe Citizen"),
-                        React.createElement('a', { href: 'mailto:joe@example.com' }, 'joe@example.com')
-                    )
-                )
-            )
-
-        ReactDOM.render(rootElement, document.getElementById('react-app'))
-    </script>
-</body>
-
+        <!-- Main -->
+        <script src="./src/index.tsx"></script>
+    </body>
 </html>
