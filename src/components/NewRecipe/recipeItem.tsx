@@ -10,14 +10,15 @@ interface InputEvents {
 interface RecipeItemProps {
     enabled: boolean,
     id: number,
+    setValues: (id: number, values: string[]) => void,
     eventHandlers?: InputEvents
 }
 
 export default function RecipeItem(props: RecipeItemProps) {
     const [enabled, setEnabled] = useState(props.enabled)
     const classes = getStyle(enabled)
-    const inputFieldRef1 = useRef()
-    const inputFieldRef2 = useRef()
+    const inputFieldRef1: React.MutableRefObject<TextFieldProps> = useRef()
+    const inputFieldRef2: React.MutableRefObject<TextFieldProps> = useRef()
 
     const textFieldProps = {
         variant: "outlined",
@@ -26,9 +27,12 @@ export default function RecipeItem(props: RecipeItemProps) {
     }
 
     function onChange() {
+        props.setValues(props.id, [inputFieldRef1.current.value as string, inputFieldRef2.current.value as string])
+
         if (!props.eventHandlers) {
             return
         }
+
         if (inputFieldIsEmpty(inputFieldRef1) && inputFieldIsEmpty(inputFieldRef2)) {
             props.eventHandlers.removeItemEvent(props.id)
         } else if (!enabled) {

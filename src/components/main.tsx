@@ -5,8 +5,7 @@ import Menu from './Menu/menu'
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from 'react-router-dom'
 
 function Main() {
