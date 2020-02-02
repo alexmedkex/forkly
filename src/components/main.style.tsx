@@ -5,9 +5,7 @@ export const getStyle = () => {
 
     return makeStyles(theme => ({
         root: {
-            padding: 10,
-            textAlign: 'center'
-
+            padding: 10
         },
         container: {
             justifyContent: "center",

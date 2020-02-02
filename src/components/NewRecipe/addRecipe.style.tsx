@@ -8,9 +8,6 @@ export default function getStyle() {
         container: {
             maxWidth: 500,
             margin: "0 auto"
-        },
-        addButton: {
-            display: "flex"
         }
     }))(props)
 }

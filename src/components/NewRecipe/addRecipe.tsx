@@ -3,6 +3,7 @@ import { Grid, Button, TextField, TextFieldProps } from '@material-ui/core'
 import RecipeItem from './recipeItem'
 import getStyle from './addRecipe.style'
 import { Map } from 'immutable'
+import { MetaInfo } from './metaInfo'
 
 
 export default function AddRecipe() {
@@ -49,18 +50,12 @@ export default function AddRecipe() {
     }
 
     function addRecipe() {
-        let itemsJson: { [key: string]: string } = {}
-
-        itemValues.forEach((item, id) => {
-            itemsJson[item[0]] = item[1]
-        })
-
         fetch("http://localhost:3000/recipes/add",
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    ...itemsJson,
+                    ...itemValues.toJSON(),
                     text: textFieldRef.current.value
                 })
             })
@@ -72,7 +67,8 @@ export default function AddRecipe() {
 
     return (
         <React.Fragment>
-            <Grid className={classes.container} container spacing={2} direction="row">
+            <Grid className={classes.container} container spacing={1} direction="row">
+                <MetaInfo></MetaInfo>
                 {items.toList().toArray()}
                 <Grid item xs={12}>
                     <TextField inputRef={textFieldRef} variant="filled" multiline rowsMax="10" rows="10" fullWidth></TextField>
