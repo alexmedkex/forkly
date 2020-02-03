@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react'
-import { Grid, Button, TextField, TextFieldProps } from '@material-ui/core'
-import RecipeItem from './recipeItem'
+import { Grid, Button, TextFieldProps } from '@material-ui/core'
+import RecipeItem from './RecipeItem/recipeItem'
 import getStyle from './addRecipe.style'
 import { Map } from 'immutable'
-import { MetaInfo } from './metaInfo'
+import { MetaInfo } from './MetaInfo/metaInfo'
+import { DescriptionBox } from './DescriptionBox/descriptionBox'
 
 
 export default function AddRecipe() {
@@ -42,7 +43,6 @@ export default function AddRecipe() {
         })
     }
 
-
     function setValues(id: number, values: string[]) {
         setItemValues(itemValues => {
             return itemValues.set(id, values)
@@ -68,14 +68,18 @@ export default function AddRecipe() {
     return (
         <React.Fragment>
             <Grid className={classes.container} container spacing={1} direction="row">
-                <MetaInfo></MetaInfo>
-                {items.toList().toArray()}
-                <Grid item xs={12}>
-                    <TextField inputRef={textFieldRef} variant="filled" multiline rowsMax="10" rows="10" fullWidth></TextField>
-                </Grid>
                 <Grid item xs={12}>
                     <Button variant="contained" color="primary" onClick={addRecipe}>Save</Button>
                 </Grid>
+                <MetaInfo></MetaInfo>
+                <Grid item xs={12}>
+                    <h3>Ingredients</h3>
+                </Grid>
+                {items.toList().toArray()}
+                <Grid item xs={12}>
+                    <h3>Instructions</h3>
+                </Grid>
+                <DescriptionBox textFieldRef={textFieldRef}></DescriptionBox>
             </Grid>
         </React.Fragment>
     )

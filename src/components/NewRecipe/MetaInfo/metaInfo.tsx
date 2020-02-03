@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextField, Grid } from '@material-ui/core'
+import { TextField, Grid, InputBase } from '@material-ui/core'
 import getStyle from './metaInfo.style'
 
 export function MetaInfo() {
@@ -8,6 +8,9 @@ export function MetaInfo() {
     return (
         <React.Fragment>
             <Grid className={classes.root} item xs={12}>
+                <div>
+                    <InputBase placeholder='Title' className={classes.title}></InputBase>
+                </div>
                 <div>
                     Cooking time: <TextField className={classes.textField}></TextField>
                 </div>

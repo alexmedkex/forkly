@@ -7,7 +7,8 @@ export default function getStyle() {
     return makeStyles((theme: Theme) => ({
         container: {
             maxWidth: 500,
-            margin: "0 auto"
+            margin: "0 auto",
+            fontSize: 12
         }
     }))(props)
 }

@@ -16,5 +16,11 @@ export default function getStyle() {
             },
             display: 'inline'
         },
+        title: {
+            '& input': {
+                fontSize: '20px'
+            },
+            marginBottom: '10px'
+        }
     }))(props)
 }

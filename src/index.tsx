@@ -8,21 +8,18 @@ import { Divider, CssBaseline } from '@material-ui/core'
 const theme = createMuiTheme({
     palette: {
         primary: {
-            light: '#a6ffbf',
-            main: '#6fff8e',
-            dark: '#2fcb5f',
-            contrastText: '#fff',
+            main: '#00e676',
+            contrastText: '#fff'
         },
+        type: 'dark',
+        background: {
+            default: "#303030"
+        }
     },
     typography: {
         fontSize: 10,
-    },
+    }
 })
-
-var divStyle = {
-    marginLeft: "30%",
-    marginRight: "30%"
-};
 
 function App() {
     return (
@@ -30,9 +27,6 @@ function App() {
             <CssBaseline></CssBaseline>
             <Header></Header>
             <Main></Main>
-            <div style={divStyle}>
-                <Divider variant="middle"></Divider>
-            </div>
         </MuiThemeProvider>
     )
 }

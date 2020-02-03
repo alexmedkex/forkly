@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Grid, TextField, TextFieldProps, Select, MenuItem } from '@material-ui/core'
+import { Grid, TextField, TextFieldProps, MenuItem } from '@material-ui/core'
 import getStyle from './recipeItem.style'
 
 interface InputEvents {
