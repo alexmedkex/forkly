@@ -1,15 +1,25 @@
-import React from 'react'
-import { TextField } from '@material-ui/core'
+import React, { useRef } from 'react'
+import { InputBase, TextFieldProps } from '@material-ui/core'
+import { getStyle } from './instructionStep.style'
 
-export function InstructionStep() {
+interface InstructionStepProps {
+    stepNbr: number
+    remove: (nbr: number) => void
+}
+
+export function InstructionStep(props: InstructionStepProps) {
+    const classes = getStyle()
+    const inputRef: React.MutableRefObject<TextFieldProps> = useRef()
+
+    function handleKeyDown(event: React.KeyboardEvent<{ value: unknown }>) {
+        if(event.keyCode === 8 && inputRef.current.value == '') {
+            props.remove(props.stepNbr)
+        }
+     }
 
     return (
-        <React.Fragment>
-            <ol>
-                <li>
-                    <TextField></TextField>
-                </li>
-            </ol>
-        </React.Fragment>
+        <div className={classes.root}>
+            {props.stepNbr}. <InputBase inputRef={inputRef} onKeyDown={handleKeyDown} className={classes.textField} multiline></InputBase>
+        </div>
     )
 }

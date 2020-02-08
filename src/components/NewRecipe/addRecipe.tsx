@@ -1,11 +1,13 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, createRef } from 'react'
 import { Grid, Button, TextFieldProps } from '@material-ui/core'
 import RecipeItem from './RecipeItem/recipeItem'
 import getStyle from './addRecipe.style'
-import { Map } from 'immutable'
+import { Map, List } from 'immutable'
 import { MetaInfo } from './MetaInfo/metaInfo'
 import { DescriptionBox } from './DescriptionBox/descriptionBox'
-
+import { Fragment } from './types'
+import axios from 'axios'
+import pako from 'pako'
 
 export default function AddRecipe() {
     const classes = getStyle()
@@ -21,10 +23,10 @@ export default function AddRecipe() {
     initialState = initialState.set(id, <RecipeItem enabled={false} key={id} id={id} setValues={setValues} eventHandlers={eventHandlers}></RecipeItem>)
     const [items, setItems] = useState(initialState)
 
-    const initialItemValues = Map<number, string[]>()
-    const [itemValues, setItemValues] = useState(initialItemValues)
+    const [itemValues, setItemValues] = useState(Map<number, string[]>())
+    const [descriptionFragments, setDescriptionFragments] = useState(List<Fragment>())
 
-    const textFieldRef: React.MutableRefObject<TextFieldProps> = useRef()
+    const textFieldRef: React.MutableRefObject<TextFieldProps> = createRef()
 
     function addItem() {
         setItems(items => {
@@ -49,20 +51,40 @@ export default function AddRecipe() {
         })
     }
 
+    function addFragment(fragment: Fragment) {
+        setDescriptionFragments(fragments => fragments.push(fragment))
+    }
+
     function addRecipe() {
+        /*
         fetch("http://localhost:3000/recipes/add",
             {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
+                headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'gzip' },
+                body: gzip.zip(JSON.stringify({
                     ...itemValues.toJSON(),
-                    text: textFieldRef.current.value
-                })
+                    description: descriptionFragments.toJSON()
+                }))
             })
             .then(res => res.text())
             .then(res => {
                 console.log(res)
             })
+        */
+        const instance = axios.create({
+            baseURL: 'http://localhost:3000/',
+            timeout: 5000,
+            headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'deflate' }
+        })
+        instance.post(
+            'recipes/add',
+            pako.deflate(JSON.stringify({
+                ...itemValues.toJSON(),
+                description: descriptionFragments.toJSON()
+            }), { level: 9 })
+        ).then(result => {
+            console.log(result)
+        })
     }
 
     return (
@@ -79,7 +101,7 @@ export default function AddRecipe() {
                 <Grid item xs={12}>
                     <h3>Instructions</h3>
                 </Grid>
-                <DescriptionBox textFieldRef={textFieldRef}></DescriptionBox>
+                <DescriptionBox addFragmentInfo={addFragment}></DescriptionBox>
             </Grid>
         </React.Fragment>
     )

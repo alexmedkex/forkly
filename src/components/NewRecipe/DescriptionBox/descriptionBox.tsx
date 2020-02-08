@@ -1,36 +1,63 @@
 import React, { useState } from 'react'
-import { Grid, InputBase, ButtonGroup, IconButton} from '@material-ui/core'
-import DeleteIcon from '@material-ui/icons/Delete'
+import { Grid, InputBase } from '@material-ui/core'
 import { getStyle } from './descriptionBox.style'
 import { List } from 'immutable'
-import { InstructionStep } from './InstructionStep/instructionStep'
+import { UploadImage } from './UploadImage/uploadImage'
+import { Image } from './Image/image'
+import { Fragment, FragmentType } from '../types'
 
-export function DescriptionBox(props: any) {
+interface DescriptionBoxProps {
+    addFragmentInfo: (fragment: Fragment) => void
+}
+
+export function DescriptionBox(props: DescriptionBoxProps) {
     const classes = getStyle()
-    const [items, setItems] = useState(List())
+    const [fragments, setFragments] = useState(List<JSX.Element>())
 
-    function addItem() {
-        setItems(items => items.push(<InstructionStep></InstructionStep>))
+    function addFragment(url: string, fileName: string, data: string) {
+        setFragments(fragments => fragments
+            .push(
+                <Image
+                    key={url}
+                    url={url}
+                />
+            )
+            .push(
+                <InputBase
+                    key={fragments.hashCode()}
+                    style={{ fontSize: '20px' }}
+                    multiline
+                />
+            )
+        )
+
+        props.addFragmentInfo({
+            type: FragmentType.IMAGE,
+            data: {
+                name: fileName,
+                content: data
+            }
+        })
+
+        props.addFragmentInfo({
+            type: FragmentType.TEXT,
+            data: {
+                content: data
+            }
+        })
     }
 
     return (
         <React.Fragment>
-            <ButtonGroup className={classes.buttons} orientation="vertical">
-                <IconButton onClick={addItem}>
-                    <DeleteIcon></DeleteIcon>
-                </IconButton>
-                <IconButton>
-                    <DeleteIcon></DeleteIcon>
-                </IconButton>
-            </ButtonGroup>
+            <UploadImage onUpload={addFragment}></UploadImage>
             <Grid item xs={12}>
-                <InputBase className={classes.textBox}
-                    inputRef={props.textFieldRef}
+                <InputBase
+                    className={classes.textBox}
                     multiline
-                    fullWidth
-                    placeholder="Describe your recipe..."></InputBase>
+                    placeholder="Describe your recipe..."
+                />
             </Grid>
-            {items}
+            {fragments}
         </React.Fragment>
     )
 }
