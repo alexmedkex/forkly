@@ -1,13 +1,13 @@
-import React, { useState, createRef } from 'react'
-import { Grid, Button, TextFieldProps } from '@material-ui/core'
+import React, { useState } from 'react'
+import { Grid, Button } from '@material-ui/core'
 import RecipeItem from './RecipeItem/recipeItem'
 import getStyle from './addRecipe.style'
 import { Map, List } from 'immutable'
 import { MetaInfo } from './MetaInfo/metaInfo'
 import { DescriptionBox } from './DescriptionBox/descriptionBox'
-import { Fragment } from './types'
 import axios from 'axios'
 import pako from 'pako'
+import { Fragment, FragmentInfo, RecipeMetaInfo } from './types'
 
 export default function AddRecipe() {
     const classes = getStyle()
@@ -22,11 +22,12 @@ export default function AddRecipe() {
     id++
     initialState = initialState.set(id, <RecipeItem enabled={false} key={id} id={id} setValues={setValues} eventHandlers={eventHandlers}></RecipeItem>)
     const [items, setItems] = useState(initialState)
-
     const [itemValues, setItemValues] = useState(Map<number, string[]>())
-    const [descriptionFragments, setDescriptionFragments] = useState(List<Fragment>())
-
-    const textFieldRef: React.MutableRefObject<TextFieldProps> = createRef()
+    const [fragments, setFragments] = useState(List<Fragment>())
+    const [metaInfo, setMetaInfo] = useState<RecipeMetaInfo>({
+        cookingTime: '',
+        cuisine: ''
+    })
 
     function addItem() {
         setItems(items => {
@@ -51,26 +52,7 @@ export default function AddRecipe() {
         })
     }
 
-    function addFragment(fragment: Fragment) {
-        setDescriptionFragments(fragments => fragments.push(fragment))
-    }
-
     function addRecipe() {
-        /*
-        fetch("http://localhost:3000/recipes/add",
-            {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'gzip' },
-                body: gzip.zip(JSON.stringify({
-                    ...itemValues.toJSON(),
-                    description: descriptionFragments.toJSON()
-                }))
-            })
-            .then(res => res.text())
-            .then(res => {
-                console.log(res)
-            })
-        */
         const instance = axios.create({
             baseURL: 'http://localhost:3000/',
             timeout: 5000,
@@ -79,8 +61,9 @@ export default function AddRecipe() {
         instance.post(
             'recipes/add',
             pako.deflate(JSON.stringify({
+                ...metaInfo,
                 ...itemValues.toJSON(),
-                description: descriptionFragments.toJSON()
+                description: getFragmentInfo(fragments)
             }), { level: 9 })
         ).then(result => {
             console.log(result)
@@ -93,7 +76,7 @@ export default function AddRecipe() {
                 <Grid item xs={12}>
                     <Button variant="contained" color="primary" onClick={addRecipe}>Save</Button>
                 </Grid>
-                <MetaInfo></MetaInfo>
+                <MetaInfo setMetaInfo={setMetaInfo}></MetaInfo>
                 <Grid item xs={12}>
                     <h3>Ingredients</h3>
                 </Grid>
@@ -101,8 +84,16 @@ export default function AddRecipe() {
                 <Grid item xs={12}>
                     <h3>Instructions</h3>
                 </Grid>
-                <DescriptionBox addFragmentInfo={addFragment}></DescriptionBox>
+                <DescriptionBox setFragments={setFragments} fragments={fragments}></DescriptionBox>
             </Grid>
         </React.Fragment>
     )
+}
+
+function getFragmentInfo(fragments: List<Fragment>): FragmentInfo[] {
+    let info: FragmentInfo[] = []
+    fragments.forEach(fragment => {
+        info.push(fragment.fragmentInfo)
+    })
+    return info
 }

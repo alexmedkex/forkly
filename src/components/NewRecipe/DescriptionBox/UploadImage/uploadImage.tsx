@@ -14,7 +14,6 @@ export function UploadImage(props: UploadImageProps) {
         if (!event.target.files[0]) return
 
         const file = event.target.files[0]
-        console.log(file)
         const reader = new FileReader()
 
         reader.onload = function (e) {

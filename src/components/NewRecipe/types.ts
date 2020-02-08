@@ -15,7 +15,17 @@ export interface FragmentData {
     content: string
 }
 
-export interface Fragment {
+export interface FragmentInfo {
     type: FragmentType,
     data: ImageFragmentData | TextFragmentData
+}
+
+export interface Fragment {
+    element: JSX.Element,
+    fragmentInfo: FragmentInfo
+}
+
+export interface RecipeMetaInfo {
+    cookingTime: string,
+    cuisine: string
 }
