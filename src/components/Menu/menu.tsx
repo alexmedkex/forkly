@@ -12,14 +12,25 @@ export default function Menu() {
             anchor="left">
 
             <List>
-                {['Main', 'Recipe'].map((text, index) => (
-                    <ListItem button key={text} component={Link} to={"/" + text}>
-                        <ListItemIcon>{<InboxIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
+                {['Main', 'New recipe'].map((text, index) => {
+                    let route = ''
+                    switch (text) {
+                        case 'Main':
+                            route = '/main'
+                            break
+                        case 'New recipe':
+                            route = '/recipes/new'
+                            break
+                    }
 
+                    return (
+                        <ListItem button key={text} component={Link} to={route}>
+                            <ListItemIcon>{<InboxIcon />}</ListItemIcon>
+                            <ListItemText primary={text} />
+                        </ListItem>
+                    )
+                })}
+            </List>
         </Drawer>
     )
 }

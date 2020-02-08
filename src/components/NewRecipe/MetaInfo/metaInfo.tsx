@@ -10,23 +10,33 @@ interface MetaInfoProps {
 export function MetaInfo(props: MetaInfoProps) {
     const classes = getStyle()
 
-    function updateCookingTime(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
-        const value = e.target.value
+    function updateInfo(value: {}) {
         props.setMetaInfo(metaInfo => {
             return {
                 ...metaInfo,
-                cookingTime: value
+                ...value
             }
+        })
+    }
+
+    function updateTitle(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
+        const value = e.target.value
+        updateInfo({
+            title: value
+        })
+    }
+
+    function updateCookingTime(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
+        const value = e.target.value
+        updateInfo({
+            cookingTime: value
         })
     }
 
     function updateCuisine(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
         const value = e.target.value
-        props.setMetaInfo(metaInfo => {
-            return {
-                ...metaInfo,
-                cuisine: value
-            }
+        updateInfo({
+            cuisine: value
         })
     }
 
@@ -34,7 +44,7 @@ export function MetaInfo(props: MetaInfoProps) {
         <React.Fragment>
             <Grid className={classes.root} item xs={12}>
                 <div>
-                    <InputBase placeholder='Title' className={classes.title}></InputBase>
+                    <InputBase onChange={updateTitle} placeholder='Title' className={classes.title}></InputBase>
                 </div>
                 <div>
                     Cooking time: <TextField onChange={updateCookingTime} className={classes.textField}></TextField>

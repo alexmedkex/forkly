@@ -25,6 +25,7 @@ export default function AddRecipe() {
     const [itemValues, setItemValues] = useState(Map<number, string[]>())
     const [fragments, setFragments] = useState(List<Fragment>())
     const [metaInfo, setMetaInfo] = useState<RecipeMetaInfo>({
+        title: '',
         cookingTime: '',
         cuisine: ''
     })

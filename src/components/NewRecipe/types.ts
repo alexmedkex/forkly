@@ -26,6 +26,7 @@ export interface Fragment {
 }
 
 export interface RecipeMetaInfo {
+    title: string,
     cookingTime: string,
     cuisine: string
 }

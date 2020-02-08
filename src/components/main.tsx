@@ -7,6 +7,7 @@ import {
     Switch,
     Route
 } from 'react-router-dom'
+import { DisplayRecipe } from './DisplayRecipe/displayRecipe'
 
 function Main() {
     const classes = getStyle()
@@ -16,10 +17,9 @@ function Main() {
             <Router>
                 <Menu></Menu>
                 <Switch>
-                    <Route exact path="/Main" render={() => <div>Home Page</div>} />
-                    <Route path="/Recipe">
-                        <AddRecipe></AddRecipe>
-                    </Route>
+                    <Route exact path="/main" render={() => <div>Home Page</div>} />
+                    <Route path="/recipes/new" component={AddRecipe} />
+                    <Route path="/recipes" component={DisplayRecipe} />
                 </Switch>
             </Router>
         </div>
