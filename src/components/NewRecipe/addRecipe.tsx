@@ -60,10 +60,10 @@ export default function AddRecipe() {
             headers: { 'Content-Type': 'application/json', 'Content-Encoding': 'deflate' }
         })
         instance.post(
-            'recipes/add',
+            'recipes',
             pako.deflate(JSON.stringify({
                 ...metaInfo,
-                ...itemValues.toJSON(),
+                ingredients: getIngredients(itemValues),
                 description: getFragmentInfo(fragments)
             }), { level: 9 })
         ).then(result => {
@@ -97,4 +97,16 @@ function getFragmentInfo(fragments: List<Fragment>): FragmentInfo[] {
         info.push(fragment.fragmentInfo)
     })
     return info
+}
+
+function getIngredients(itemValues: Map<number, string[]>): {}[] {
+    let ingredients: {}[] = []
+    itemValues.forEach(ingredient => {
+        ingredients.push({
+            name: ingredient[0],
+            quantity: ingredient[1],
+            measurement: ingredient[2]
+        })
+    })
+    return ingredients
 }
