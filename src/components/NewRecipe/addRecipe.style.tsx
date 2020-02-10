@@ -8,7 +8,16 @@ export default function getStyle() {
         container: {
             maxWidth: 500,
             margin: "0 auto",
-            fontSize: 12
+            fontSize: 12,
+            border: `1px solid ${theme.palette.primary.light}`,
+            borderRadius: '12px',
+            padding: '20px'
+        },
+        button: {
+            fontSize: '12px'
+        },
+        header: {
+            fontSize: '20px'
         }
     }))(props)
 }

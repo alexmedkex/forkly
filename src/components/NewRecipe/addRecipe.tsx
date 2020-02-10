@@ -75,15 +75,15 @@ export default function AddRecipe() {
         <React.Fragment>
             <Grid className={classes.container} container spacing={1} direction="row">
                 <Grid item xs={12}>
-                    <Button variant="contained" color="primary" onClick={addRecipe}>Save</Button>
+                    <Button className={classes.button} variant="contained" color="primary" onClick={addRecipe}>Save</Button>
                 </Grid>
                 <MetaInfo setMetaInfo={setMetaInfo}></MetaInfo>
                 <Grid item xs={12}>
-                    <h3>Ingredients</h3>
+                    <h3 className={classes.header}>Ingredients</h3>
                 </Grid>
                 {items.toList().toArray()}
                 <Grid item xs={12}>
-                    <h3>Instructions</h3>
+                    <h3 className={classes.header}>Instructions</h3>
                 </Grid>
                 <DescriptionBox setFragments={setFragments} fragments={fragments}></DescriptionBox>
             </Grid>

@@ -62,7 +62,7 @@ export function DescriptionBox(props: DescriptionBoxProps) {
     }
 
     return (
-        <React.Fragment>
+        <div>
             <UploadImage onUpload={addImageFragment}></UploadImage>
             <Grid item xs={12}>
                 <InputBase
@@ -72,7 +72,7 @@ export function DescriptionBox(props: DescriptionBoxProps) {
                 />
             </Grid>
             {fragmentElements}
-        </React.Fragment>
+        </div>
     )
 }
 

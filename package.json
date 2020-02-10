@@ -16,7 +16,6 @@
     "axios": "^0.19.2",
     "immutability-helper": "^3.0.1",
     "immutable": "^4.0.0-rc.12",
-    "ipfs": "^0.40.0",
     "pako": "^1.0.11",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",

@@ -18,7 +18,7 @@ export default function getStyle() {
         },
         title: {
             '& input': {
-                fontSize: '20px'
+                fontSize: '30px'
             },
             marginBottom: '10px'
         }

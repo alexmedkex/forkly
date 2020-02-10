@@ -5,7 +5,7 @@ export const getStyle = () => {
 
     return makeStyles(theme => ({
         root: {
-            padding: 10,
+            //padding: 10,
             marginBottom: '100px'
         },
         container: {

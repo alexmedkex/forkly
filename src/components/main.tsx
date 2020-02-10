@@ -15,7 +15,6 @@ function Main() {
     return (
         <div className={classes.root}>
             <Router>
-                <Menu></Menu>
                 <Switch>
                     <Route exact path="/main" render={() => <div>Home Page</div>} />
                     <Route path="/recipes/new" component={AddRecipe} />

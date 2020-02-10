@@ -3,21 +3,28 @@ import ReactDOM from 'react-dom'
 import Header from "./components/Header/header"
 import Main from './components/main'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
-import { Divider, CssBaseline } from '@material-ui/core'
+import { CssBaseline } from '@material-ui/core'
 
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: '#00e676',
+            main: '#17EF5C',
+            contrastText: '#fff',
+            light: '#73628A'
+
+        },
+        secondary: {
+            main: '#37718E',
             contrastText: '#fff'
         },
         type: 'dark',
         background: {
-            default: "#303030"
+            default: "#494947"
         }
     },
     typography: {
-        fontSize: 10,
+        fontSize: 12,
+        fontFamily: 'Delius, Cursive'
     }
 })
 

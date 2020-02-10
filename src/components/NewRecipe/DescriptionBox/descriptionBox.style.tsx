@@ -6,7 +6,7 @@ export function getStyle() {
     
     return makeStyles((theme: Theme) => ({
         textBox: {
-            fontSize: '20px'
+            fontSize: '20px',
         }
     }))(props)
 }
