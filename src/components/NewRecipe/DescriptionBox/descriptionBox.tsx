@@ -13,6 +13,7 @@ interface DescriptionBoxProps {
 
 export function DescriptionBox(props: DescriptionBoxProps) {
     const classes = getStyle()
+    console.log(props.fragments)
     const fragmentElements = getFragmentElements(props.fragments)
 
     function updateInputField(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
@@ -21,7 +22,7 @@ export function DescriptionBox(props: DescriptionBoxProps) {
 
         props.setFragments(fragments => {
             return fragments.map(fragment => {
-                if(fragment.element.key == id) {
+                if (fragment.element.key == id) {
                     const newFragment = {
                         ...fragment
                     }
@@ -34,9 +35,9 @@ export function DescriptionBox(props: DescriptionBoxProps) {
     }
 
     function addImageFragment(url: string, fileName: string, data: string) {
-        const inputKey = url+'input'
-        const image = <Image key={url} url={url} />
-        const input = <InputBase onChange={updateInputField} key={inputKey} id={inputKey} style={{ fontSize: '20px' }} multiline />
+        const inputKey = url + 'input'
+        const image = <Image key={url} url={url} removeImage={removeImageFragment} />
+        const input = <InputBase onChange={updateInputField} key={inputKey} id={inputKey} style={{ fontSize: '20px' }} multiline fullWidth />
 
         const imageFragment: Fragment = {
             element: image,
@@ -61,18 +62,31 @@ export function DescriptionBox(props: DescriptionBoxProps) {
         props.setFragments(fragments => fragments.push(imageFragment).push(inputFragment))
     }
 
+    function removeImageFragment(url: string) {
+        props.setFragments(fragments => fragments.filter(fragment => {
+            if (
+                fragment.fragmentInfo.type === 'image' &&
+                fragment.element.props.url === url
+            ) {
+                return false
+            }
+            return true
+        }))
+    }
+
     return (
-        <div>
+        <React.Fragment>
             <UploadImage onUpload={addImageFragment}></UploadImage>
             <Grid item xs={12}>
                 <InputBase
                     className={classes.textBox}
                     multiline
+                    fullWidth
                     placeholder="Describe your recipe..."
                 />
             </Grid>
             {fragmentElements}
-        </div>
+        </React.Fragment>
     )
 }
 

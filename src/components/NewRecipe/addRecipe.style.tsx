@@ -9,7 +9,7 @@ export default function getStyle() {
             maxWidth: 500,
             margin: "0 auto",
             fontSize: 12,
-            border: `1px solid ${theme.palette.primary.light}`,
+            border: `1px solid ${theme.palette.secondary.main}`,
             borderRadius: '12px',
             padding: '20px'
         },

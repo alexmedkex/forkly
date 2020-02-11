@@ -6,7 +6,7 @@ export const getStyle = () => {
 
     return makeStyles((theme: Theme) => ({
         header: {
-            backgroundColor: theme.palette.primary.main,
+            //backgroundColor: theme.palette.primary.light,
             height: 70,
             fontSize: '15px',
             margin: '0px',
@@ -14,12 +14,12 @@ export const getStyle = () => {
             padding: '10px',
             color: 'white',
             textAlign: 'left',
-            borderBottom: `3px solid ${theme.palette.primary.light}`
+            //borderBottom: `3px solid ${theme.palette.primary.light}`
         },
         textArea: {
-            fontFamily: 'Delius, cursive',
+            fontFamily: 'Pacifico, cursive',
             fontWeight: 'bold',
-            color: 'white',
+            color: theme.palette.primary.main,
             margin: 0,
             maxWidth: '400px',
         },
