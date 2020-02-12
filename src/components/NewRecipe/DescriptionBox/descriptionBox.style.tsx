@@ -7,6 +7,14 @@ export function getStyle() {
     return makeStyles((theme: Theme) => ({
         textBox: {
             fontSize: '20px',
+        },
+        toolbar: {
+            backgroundColor: theme.palette.background.default,
+            border: '0',
+            '& .rdw-option-wrapper': {
+                background: theme.palette.background.default,
+                border: 'none'
+            }
         }
     }))(props)
 }

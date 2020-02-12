@@ -17,7 +17,6 @@ export function DisplayRecipe(props: DisplayRecipeProps) {
 
     useEffect(() => {
         getRecipe(id).then(result => {
-            console.log(result)
             setRecipe(result.data)
         })
     }, [id])

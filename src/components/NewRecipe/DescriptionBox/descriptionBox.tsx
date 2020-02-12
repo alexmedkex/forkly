@@ -1,10 +1,14 @@
-import React, { Dispatch, SetStateAction } from 'react'
-import { Grid, InputBase } from '@material-ui/core'
+import React, { Dispatch, SetStateAction, useState } from 'react'
+import { Grid, InputBase, Button } from '@material-ui/core'
 import { getStyle } from './descriptionBox.style'
 import { List } from 'immutable'
-import { UploadImage } from './UploadImage/uploadImage'
 import { Image } from './Image/image'
 import { Fragment, FragmentType } from '../types'
+import { Editor } from 'react-draft-wysiwyg'
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
+import { EditorState } from 'draft-js'
+import ImageIcon from '@material-ui/icons/Image'
+import image from '../../../../assets/img.png'
 
 interface DescriptionBoxProps {
     setFragments: Dispatch<SetStateAction<List<Fragment>>>,
@@ -13,8 +17,8 @@ interface DescriptionBoxProps {
 
 export function DescriptionBox(props: DescriptionBoxProps) {
     const classes = getStyle()
-    console.log(props.fragments)
     const fragmentElements = getFragmentElements(props.fragments)
+    const [editorState, setEditorState] = useState(EditorState.createEmpty())
 
     function updateInputField(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
         const id = e.target.id
@@ -30,7 +34,7 @@ export function DescriptionBox(props: DescriptionBoxProps) {
                     return newFragment
                 }
                 return fragment
-            })
+            }).toList()
         })
     }
 
@@ -71,17 +75,24 @@ export function DescriptionBox(props: DescriptionBoxProps) {
                 return false
             }
             return true
-        }))
+        }).toList())
     }
+
+    function onEditorStateChange(editorState: any) {
+        setEditorState(editorState)
+    };
+
 
     return (
         <React.Fragment>
-            <UploadImage onUpload={addImageFragment}></UploadImage>
             <Grid item xs={12}>
-                <InputBase
-                    className={classes.textBox}
-                    multiline
-                    fullWidth
+                <Editor
+                    editorState={editorState}
+                    toolbarClassName={classes.toolbar}
+                    onEditorStateChange={onEditorStateChange}
+                    toolbar={{
+                        options: ['list', 'emoji', 'image'],
+                    }}
                     placeholder="Describe your recipe..."
                 />
             </Grid>
