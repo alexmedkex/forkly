@@ -1,0 +1,727 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PushToMarketContainer renders correctly 1`] = `
+.c8 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #000000;
+  margin: 0;
+}
+
+.c9 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: LotaGrotesque;
+  background-color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0;
+}
+
+.c3 {
+  border-top: 1px solid rgba(192,207,222,0.5);
+  border-bottom: 1px solid rgba(192,207,222,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  padding: 16px 16px 16px 0;
+}
+
+.c4 > p {
+  color: #1c2936;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0 0.35rem 0 0;
+  text-transform: uppercase;
+}
+
+.c4 > span {
+  padding-top: 4px !important;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c0 {
+  background-color: #f2f5f8;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.c7.c7.c7.c7 {
+  padding: 24px;
+  width: 100%;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+}
+
+.c6 {
+  padding: 24px;
+}
+
+.c11.c11.c11 {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 68px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: calc((68px - 32px) / 2);
+  padding-bottom: calc((68px - 32px) / 2);
+  width: calc(100% - 220px);
+  padding-right: 38px;
+  border-top: 1px solid #dbe5ec;
+  background: white;
+  margin-left: 220px;
+}
+
+.c10 {
+  width: calc(100% - 220px);
+  margin-left: 220px;
+  margin-top: 68px;
+}
+
+.c5.c5.c5 {
+  color: white;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    data-test-id="topbar-container"
+  >
+    <div
+      className="c2"
+    >
+      <h1
+        className="ui header"
+        data-test-id="topbar-header-container"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        Submit request for proposal
+      </h1>
+    </div>
+    <div
+      className="row c3"
+      data-test-id="topbar-infos-container"
+    >
+      <div
+        className="c4"
+      >
+        <p>
+          STATUS: 
+        </p>
+        <span
+          className="ui label c5"
+          data-test-id="rd-status-span"
+          onClick={[Function]}
+        >
+          To be financed
+        </span>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          trade Id
+          : 
+        </p>
+        <p
+          data-test-id="topbar-trade-id-value"
+        >
+          1234
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          buyer
+          : 
+        </p>
+        <p
+          data-test-id="topbar-buyer-value"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className="ui card c7"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <span
+          className="c8"
+        >
+          At least one finance provider needs to be selected
+        </span>
+        <table
+          className="ui sortable very basic left aligned table"
+        >
+          <thead
+            className=""
+          >
+            <tr
+              className=""
+            >
+              <th
+                className="left aligned one wide"
+                id="select"
+                style={
+                  Object {
+                    "padding": "14px 14px 5px 14px",
+                  }
+                }
+              >
+                <div
+                  className="ui fitted checkbox"
+                  data-test-id="checkbox-select-all-none"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                >
+                  <input
+                    checked={false}
+                    className="hidden"
+                    onClick={[Function]}
+                    readOnly={true}
+                    tabIndex={0}
+                    type="checkbox"
+                  />
+                  <label />
+                </div>
+              </th>
+              <th
+                className="left aligned"
+                id="provider"
+              >
+                Provider
+              </th>
+              <th
+                className="left aligned"
+                id="location"
+              >
+                Location
+              </th>
+              <th
+                className="left aligned"
+                id="appetite"
+              >
+                Appetite
+              </th>
+              <th
+                className="left aligned"
+                id="availability"
+              >
+                Availability
+              </th>
+              <th
+                className="left aligned"
+                id="creditLimit"
+              >
+                Credit Limit
+              </th>
+              <th
+                className="left aligned"
+                id="riskFee"
+              >
+                Risk Fee
+              </th>
+              <th
+                className="left aligned"
+                id="margin"
+              >
+                Margin
+              </th>
+              <th
+                className="left aligned"
+                id="maxTenor"
+              >
+                Max Tenor (Days)
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            className=""
+          >
+            <tr
+              className=""
+              id="1"
+            >
+              <td
+                className="left aligned"
+                data-test-id="1-checkbox"
+                id="1-checkbox"
+              >
+                <div
+                  className="ui fitted checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                >
+                  <input
+                    checked={false}
+                    className="hidden"
+                    onClick={[Function]}
+                    readOnly={true}
+                    tabIndex={0}
+                    type="checkbox"
+                  />
+                  <label />
+                </div>
+              </td>
+              <td
+                className=""
+                data-test-id="1-source"
+                id="1-source"
+              >
+                <span
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c9"
+                  >
+                    A Company
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-location"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    city
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-appetite"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    No
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-availability"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    Yes
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-creditLimit"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-riskFee"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-margin"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="1-maxTenor"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr
+              className=""
+              id="2"
+            >
+              <td
+                className="left aligned"
+                data-test-id="2-checkbox"
+                id="2-checkbox"
+              >
+                <div
+                  className="ui fitted checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                >
+                  <input
+                    checked={false}
+                    className="hidden"
+                    onClick={[Function]}
+                    readOnly={true}
+                    tabIndex={0}
+                    type="checkbox"
+                  />
+                  <label />
+                </div>
+              </td>
+              <td
+                className=""
+                data-test-id="2-source"
+                id="2-source"
+              >
+                <span
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c9"
+                  >
+                    C Company
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-location"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    city
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-appetite"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    No
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-availability"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    Yes
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-creditLimit"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-riskFee"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-margin"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+              <td
+                className=""
+                data-test-id="2-maxTenor"
+              >
+                <span
+                  style={
+                    Object {
+                      "paddingTop": "8px",
+                    }
+                  }
+                >
+                  <span
+                    className="c8"
+                  >
+                    -
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="c10"
+    />
+    <div
+      className="c11"
+    >
+      <button
+        className="ui right floated button"
+        data-test-id="button-previous"
+        onClick={[Function]}
+        role="button"
+        type="button"
+      >
+        Previous
+      </button>
+      <button
+        className="ui primary disabled right floated button"
+        data-test-id="button-push-to-market"
+        disabled={true}
+        onClick={[Function]}
+        role="button"
+        tabIndex={-1}
+        type="submit"
+      >
+        Push to market
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PushToMarketContainer renders error message correctly if no counterparties exist 1`] = `
+<div
+  className="ui negative message"
+  data-test-id="errorMessage"
+>
+  <div
+    className="header"
+  >
+    Missing counterparties
+  </div>
+  <p>
+    You need at least one financial institution as a counterparty to apply for discounting.
+  </p>
+</div>
+`;

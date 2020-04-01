@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LastUpdatedTimestamp should render correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: LotaGrotesque;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+
+.c0 b {
+  font-size: 13px;
+}
+
+<div
+    class="c0"
+  >
+    <b>
+      Last updated: 
+    </b>
+    13/11/2018 at 01:00 CET
+  </div>
+</DocumentFragment>
+`;

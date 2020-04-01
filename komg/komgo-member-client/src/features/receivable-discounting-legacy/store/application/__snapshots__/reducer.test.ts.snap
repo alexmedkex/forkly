@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Receivable discounting reducer defaults returns the initial state 1`] = `
+Immutable.Map {
+  "byId": Immutable.Map {},
+  "historyById": Immutable.Map {},
+  "error": null,
+  "ids": Immutable.List [],
+}
+`;

@@ -1,0 +1,5065 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApplyForDiscountingData component renders correctly for Discounting Blended 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c8 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.c11 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c10.c10.c10.c10.c10 .field {
+  margin-bottom: 16px;
+}
+
+.c10.c10.c10.c10.c10 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c10.c10.c10.c10.c10 .field.error {
+  margin-bottom: 0;
+}
+
+.c10.c10.c10.c10.c10 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.c12.c12.c12.c12.c12 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c12.c12.c12.c12.c12 .field.error {
+  margin-bottom: 0;
+}
+
+.c12.c12.c12.c12.c12 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c13 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c14.c14.c14.c14 {
+  background-image: none;
+}
+
+.c14.c14.c14.c14 .label {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: inherit;
+}
+
+.c3 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.c3 > div {
+  margin: 5px !important;
+}
+
+.c1 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px 0px 12px 10px;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #c0cfde;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #5700b5;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c5 {
+  padding-bottom: 10px;
+}
+
+.c5 > label {
+  font-weight: bold;
+  text-align: bottom;
+}
+
+.c6 {
+  margin-left: 32px;
+}
+
+.c2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  margin-bottom: 16px;
+}
+
+@media (min-width:68.75em) {
+  .c8 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    bordercolor="#c0cfde"
+    class="accordion ui fluid c0"
+  >
+    <div
+      class="title disabled"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-title"
+    >
+      <div
+        class="ui block header komgo-accordion-header"
+      >
+        <div
+          class="accordion-title-wrapper"
+        >
+          <div
+            class="accordion-title"
+            style="margin-left: 5px;"
+          >
+            Risk cover / receivable discounting data
+          </div>
+        </div>
+        <div
+          class="accordion-status-wrapper"
+        />
+        <div
+          class="accordion-button-wrapper"
+        />
+      </div>
+    </div>
+    <div
+      class="content"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-content"
+    >
+      <div
+        class="lively-divider"
+      />
+      <div
+        class="ui segment komgo-accordion-content"
+      >
+        <div
+          class="ui container c1"
+        >
+          <h3
+            class="c2"
+          >
+            Select request type
+          </h3>
+        </div>
+        <div
+          class="ui container c3"
+        >
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER"
+              >
+                Risk cover only
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              No discounting option
+            </p>
+          </div>
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER_DISCOUNTING"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER_DISCOUNTING"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER_DISCOUNTING"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER_DISCOUNTING"
+              >
+                Risk cover with discount option
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Cover the risk with the option to request discounting
+            </p>
+          </div>
+          <div
+            class="field c7"
+          >
+            <div
+              class="ui checked radio checkbox c5"
+              data-test-id="radioButtongroup-DISCOUNT"
+            >
+              <input
+                checked=""
+                class="hidden"
+                id="radioButtongroup-DISCOUNT"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="DISCOUNT"
+              />
+              <label
+                for="radioButtongroup-DISCOUNT"
+              >
+                Discount
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Discount with or without recourse
+            </p>
+          </div>
+        </div>
+        <ul
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <li
+              class="c10 c11"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      >
+                        Discounting type
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Without recourse
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          With recourse
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Blended
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c12 c11"
+          >
+            <span
+              class="c13"
+              style="width: 240px;"
+            >
+              Invoice amount
+            </span>
+            <div
+              class="ui input"
+              data-test-id="invoiceAmount"
+              style="flex-grow: 1; width: 270px;"
+            >
+              <input
+                name="invoiceAmount"
+                type="text"
+                value="1,000.00"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-expanded="false"
+              class="ui compact search selection dropdown"
+              data-test-id="currency"
+              form="[object Object]"
+              name="currency"
+              role="combobox"
+              style="margin: 0px 0px 0px 5px; width: 80px;"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <div
+                aria-live="polite"
+                class="text"
+                role="alert"
+              >
+                USD
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    AED
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    CHF
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    EUR
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    GBP
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    JPY
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-selected="true"
+                  class="active selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    USD
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <div
+            class="c9"
+          >
+            <li
+              class="c10 c11"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Indicative
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Provisional
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Final
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected advance rate
+              </label>
+              <div
+                class="ui right labeled input"
+                data-test-id="advancedRate"
+                style="width: 50%;"
+              >
+                <input
+                  name="advancedRate"
+                  step="0.01"
+                  type="number"
+                  value="1.5"
+                />
+                <div
+                  class="ui basic label label"
+                  style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+                >
+                  %
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected risk cover date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="riskCoverDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="riskCoverDate"
+                  type="date"
+                  value=""
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of risk cover
+              </label>
+              <div
+                class="ui input"
+                data-test-id="numberOfDaysRiskCover"
+                style="width: 50%;"
+              >
+                <input
+                  name="numberOfDaysRiskCover"
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected discounting date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="discountingDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="discountingDate"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of discounting
+              </label>
+              <span
+                style="width: 50%; display: inline-block;"
+              >
+                <div
+                  class="ui input"
+                  data-test-id="numberOfDaysDiscounting"
+                  style="width: 100%;"
+                >
+                  <input
+                    name="numberOfDaysDiscounting"
+                    type="number"
+                    value="10"
+                  />
+                </div>
+              </span>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Title transfer date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="dateOfPerformance"
+                style="width: 50%;"
+              >
+                <input
+                  name="dateOfPerformance"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Supporting instrument(s)
+              </label>
+              <div
+                aria-expanded="false"
+                aria-multiselectable="true"
+                class="ui compact multiple selection dropdown c14"
+                data-test-id="supportingInstruments"
+                name="supportingInstruments"
+                role="listbox"
+                style="width: 50%;"
+                tabindex="0"
+              >
+                <div
+                  aria-live="polite"
+                  class="default text"
+                  role="alert"
+                >
+                  Select Supporting Instruments
+                </div>
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Credit insurance
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Financial instrument
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment confirmation
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Parent company guarantee
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment undertaking
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Bill of exchange
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Promissory note
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Other information
+              </label>
+              <textarea
+                class=""
+                data-test-id="comment"
+                name="comment"
+                rows="3"
+                style="width: 50%;"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ApplyForDiscountingData component renders correctly for Discounting with recourse 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c8 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.c11 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c10.c10.c10.c10.c10 .field {
+  margin-bottom: 16px;
+}
+
+.c10.c10.c10.c10.c10 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c10.c10.c10.c10.c10 .field.error {
+  margin-bottom: 0;
+}
+
+.c10.c10.c10.c10.c10 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.c12.c12.c12.c12.c12 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c12.c12.c12.c12.c12 .field.error {
+  margin-bottom: 0;
+}
+
+.c12.c12.c12.c12.c12 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c13 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c14.c14.c14.c14 {
+  background-image: none;
+}
+
+.c14.c14.c14.c14 .label {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: inherit;
+}
+
+.c3 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.c3 > div {
+  margin: 5px !important;
+}
+
+.c1 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px 0px 12px 10px;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #c0cfde;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #5700b5;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c5 {
+  padding-bottom: 10px;
+}
+
+.c5 > label {
+  font-weight: bold;
+  text-align: bottom;
+}
+
+.c6 {
+  margin-left: 32px;
+}
+
+.c2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  margin-bottom: 16px;
+}
+
+@media (min-width:68.75em) {
+  .c8 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    bordercolor="#c0cfde"
+    class="accordion ui fluid c0"
+  >
+    <div
+      class="title disabled"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-title"
+    >
+      <div
+        class="ui block header komgo-accordion-header"
+      >
+        <div
+          class="accordion-title-wrapper"
+        >
+          <div
+            class="accordion-title"
+            style="margin-left: 5px;"
+          >
+            Risk cover / receivable discounting data
+          </div>
+        </div>
+        <div
+          class="accordion-status-wrapper"
+        />
+        <div
+          class="accordion-button-wrapper"
+        />
+      </div>
+    </div>
+    <div
+      class="content"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-content"
+    >
+      <div
+        class="lively-divider"
+      />
+      <div
+        class="ui segment komgo-accordion-content"
+      >
+        <div
+          class="ui container c1"
+        >
+          <h3
+            class="c2"
+          >
+            Select request type
+          </h3>
+        </div>
+        <div
+          class="ui container c3"
+        >
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER"
+              >
+                Risk cover only
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              No discounting option
+            </p>
+          </div>
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER_DISCOUNTING"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER_DISCOUNTING"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER_DISCOUNTING"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER_DISCOUNTING"
+              >
+                Risk cover with discount option
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Cover the risk with the option to request discounting
+            </p>
+          </div>
+          <div
+            class="field c7"
+          >
+            <div
+              class="ui checked radio checkbox c5"
+              data-test-id="radioButtongroup-DISCOUNT"
+            >
+              <input
+                checked=""
+                class="hidden"
+                id="radioButtongroup-DISCOUNT"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="DISCOUNT"
+              />
+              <label
+                for="radioButtongroup-DISCOUNT"
+              >
+                Discount
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Discount with or without recourse
+            </p>
+          </div>
+        </div>
+        <ul
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <li
+              class="c10 c11"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      >
+                        Discounting type
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Without recourse
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          With recourse
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Blended
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c12 c11"
+          >
+            <span
+              class="c13"
+              style="width: 240px;"
+            >
+              Invoice amount
+            </span>
+            <div
+              class="ui input"
+              data-test-id="invoiceAmount"
+              style="flex-grow: 1; width: 270px;"
+            >
+              <input
+                name="invoiceAmount"
+                type="text"
+                value="1,000.00"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-expanded="false"
+              class="ui compact search selection dropdown"
+              data-test-id="currency"
+              form="[object Object]"
+              name="currency"
+              role="combobox"
+              style="margin: 0px 0px 0px 5px; width: 80px;"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <div
+                aria-live="polite"
+                class="text"
+                role="alert"
+              >
+                USD
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    AED
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    CHF
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    EUR
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    GBP
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    JPY
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-selected="true"
+                  class="active selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    USD
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <div
+            class="c9"
+          >
+            <li
+              class="c10 c11"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Indicative
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Provisional
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Final
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected advance rate
+              </label>
+              <div
+                class="ui right labeled input"
+                data-test-id="advancedRate"
+                style="width: 50%;"
+              >
+                <input
+                  name="advancedRate"
+                  step="0.01"
+                  type="number"
+                  value="1.5"
+                />
+                <div
+                  class="ui basic label label"
+                  style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+                >
+                  %
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected discounting date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="discountingDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="discountingDate"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of discounting
+              </label>
+              <span
+                style="width: 50%; display: inline-block;"
+              >
+                <div
+                  class="ui input"
+                  data-test-id="numberOfDaysDiscounting"
+                  style="width: 100%;"
+                >
+                  <input
+                    name="numberOfDaysDiscounting"
+                    type="number"
+                    value="10"
+                  />
+                </div>
+              </span>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Title transfer date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="dateOfPerformance"
+                style="width: 50%;"
+              >
+                <input
+                  name="dateOfPerformance"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Supporting instrument(s)
+              </label>
+              <div
+                aria-expanded="false"
+                aria-multiselectable="true"
+                class="ui compact multiple selection dropdown c14"
+                data-test-id="supportingInstruments"
+                name="supportingInstruments"
+                role="listbox"
+                style="width: 50%;"
+                tabindex="0"
+              >
+                <div
+                  aria-live="polite"
+                  class="default text"
+                  role="alert"
+                >
+                  Select Supporting Instruments
+                </div>
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Credit insurance
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Financial instrument
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment confirmation
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Parent company guarantee
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment undertaking
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Bill of exchange
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Promissory note
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Other information
+              </label>
+              <textarea
+                class=""
+                data-test-id="comment"
+                name="comment"
+                rows="3"
+                style="width: 50%;"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ApplyForDiscountingData component renders correctly for Discounting without recourse 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c8 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.c11 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c10.c10.c10.c10.c10 .field {
+  margin-bottom: 16px;
+}
+
+.c10.c10.c10.c10.c10 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c10.c10.c10.c10.c10 .field.error {
+  margin-bottom: 0;
+}
+
+.c10.c10.c10.c10.c10 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.c12.c12.c12.c12.c12 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c12.c12.c12.c12.c12 .field.error {
+  margin-bottom: 0;
+}
+
+.c12.c12.c12.c12.c12 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c13 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c14.c14.c14.c14 {
+  background-image: none;
+}
+
+.c14.c14.c14.c14 .label {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: inherit;
+}
+
+.c3 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.c3 > div {
+  margin: 5px !important;
+}
+
+.c1 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px 0px 12px 10px;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #c0cfde;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #5700b5;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c5 {
+  padding-bottom: 10px;
+}
+
+.c5 > label {
+  font-weight: bold;
+  text-align: bottom;
+}
+
+.c6 {
+  margin-left: 32px;
+}
+
+.c2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  margin-bottom: 16px;
+}
+
+@media (min-width:68.75em) {
+  .c8 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    bordercolor="#c0cfde"
+    class="accordion ui fluid c0"
+  >
+    <div
+      class="title disabled"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-title"
+    >
+      <div
+        class="ui block header komgo-accordion-header"
+      >
+        <div
+          class="accordion-title-wrapper"
+        >
+          <div
+            class="accordion-title"
+            style="margin-left: 5px;"
+          >
+            Risk cover / receivable discounting data
+          </div>
+        </div>
+        <div
+          class="accordion-status-wrapper"
+        />
+        <div
+          class="accordion-button-wrapper"
+        />
+      </div>
+    </div>
+    <div
+      class="content"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-content"
+    >
+      <div
+        class="lively-divider"
+      />
+      <div
+        class="ui segment komgo-accordion-content"
+      >
+        <div
+          class="ui container c1"
+        >
+          <h3
+            class="c2"
+          >
+            Select request type
+          </h3>
+        </div>
+        <div
+          class="ui container c3"
+        >
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER"
+              >
+                Risk cover only
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              No discounting option
+            </p>
+          </div>
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER_DISCOUNTING"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER_DISCOUNTING"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER_DISCOUNTING"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER_DISCOUNTING"
+              >
+                Risk cover with discount option
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Cover the risk with the option to request discounting
+            </p>
+          </div>
+          <div
+            class="field c7"
+          >
+            <div
+              class="ui checked radio checkbox c5"
+              data-test-id="radioButtongroup-DISCOUNT"
+            >
+              <input
+                checked=""
+                class="hidden"
+                id="radioButtongroup-DISCOUNT"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="DISCOUNT"
+              />
+              <label
+                for="radioButtongroup-DISCOUNT"
+              >
+                Discount
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Discount with or without recourse
+            </p>
+          </div>
+        </div>
+        <ul
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <li
+              class="c10 c11"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      >
+                        Discounting type
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Without recourse
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          With recourse
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="discountingType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Blended
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c12 c11"
+          >
+            <span
+              class="c13"
+              style="width: 240px;"
+            >
+              Invoice amount
+            </span>
+            <div
+              class="ui input"
+              data-test-id="invoiceAmount"
+              style="flex-grow: 1; width: 270px;"
+            >
+              <input
+                name="invoiceAmount"
+                type="text"
+                value="1,000.00"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-expanded="false"
+              class="ui compact search selection dropdown"
+              data-test-id="currency"
+              form="[object Object]"
+              name="currency"
+              role="combobox"
+              style="margin: 0px 0px 0px 5px; width: 80px;"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <div
+                aria-live="polite"
+                class="text"
+                role="alert"
+              >
+                USD
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    AED
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    CHF
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    EUR
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    GBP
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    JPY
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-selected="true"
+                  class="active selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    USD
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <div
+            class="c9"
+          >
+            <li
+              class="c10 c11"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Indicative
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Provisional
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Final
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected advance rate
+              </label>
+              <div
+                class="ui right labeled input"
+                data-test-id="advancedRate"
+                style="width: 50%;"
+              >
+                <input
+                  name="advancedRate"
+                  step="0.01"
+                  type="number"
+                  value="1.5"
+                />
+                <div
+                  class="ui basic label label"
+                  style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+                >
+                  %
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected discounting date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="discountingDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="discountingDate"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of discounting
+              </label>
+              <span
+                style="width: 50%; display: inline-block;"
+              >
+                <div
+                  class="ui input"
+                  data-test-id="numberOfDaysDiscounting"
+                  style="width: 100%;"
+                >
+                  <input
+                    name="numberOfDaysDiscounting"
+                    type="number"
+                    value="10"
+                  />
+                </div>
+              </span>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Title transfer date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="dateOfPerformance"
+                style="width: 50%;"
+              >
+                <input
+                  name="dateOfPerformance"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Supporting instrument(s)
+              </label>
+              <div
+                aria-expanded="false"
+                aria-multiselectable="true"
+                class="ui compact multiple selection dropdown c14"
+                data-test-id="supportingInstruments"
+                name="supportingInstruments"
+                role="listbox"
+                style="width: 50%;"
+                tabindex="0"
+              >
+                <div
+                  aria-live="polite"
+                  class="default text"
+                  role="alert"
+                >
+                  Select Supporting Instruments
+                </div>
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Credit insurance
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Financial instrument
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment confirmation
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Parent company guarantee
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment undertaking
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Bill of exchange
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Promissory note
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c10 c11"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Other information
+              </label>
+              <textarea
+                class=""
+                data-test-id="comment"
+                name="comment"
+                rows="3"
+                style="width: 50%;"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ApplyForDiscountingData component renders correctly for Risk Cover only 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c8 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.c10 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c13.c13.c13.c13.c13 .field {
+  margin-bottom: 16px;
+}
+
+.c13.c13.c13.c13.c13 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c13.c13.c13.c13.c13 .field.error {
+  margin-bottom: 0;
+}
+
+.c13.c13.c13.c13.c13 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.c9.c9.c9.c9.c9 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c9.c9.c9.c9.c9 .field.error {
+  margin-bottom: 0;
+}
+
+.c9.c9.c9.c9.c9 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c11 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c14.c14.c14.c14 {
+  background-image: none;
+}
+
+.c14.c14.c14.c14 .label {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: inherit;
+}
+
+.c3 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.c3 > div {
+  margin: 5px !important;
+}
+
+.c1 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px 0px 12px 10px;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #c0cfde;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #5700b5;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c5 {
+  padding-bottom: 10px;
+}
+
+.c5 > label {
+  font-weight: bold;
+  text-align: bottom;
+}
+
+.c6 {
+  margin-left: 32px;
+}
+
+.c2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.c12 {
+  margin-bottom: 16px;
+}
+
+@media (min-width:68.75em) {
+  .c8 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    bordercolor="#c0cfde"
+    class="accordion ui fluid c0"
+  >
+    <div
+      class="title disabled"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-title"
+    >
+      <div
+        class="ui block header komgo-accordion-header"
+      >
+        <div
+          class="accordion-title-wrapper"
+        >
+          <div
+            class="accordion-title"
+            style="margin-left: 5px;"
+          >
+            Risk cover / receivable discounting data
+          </div>
+        </div>
+        <div
+          class="accordion-status-wrapper"
+        />
+        <div
+          class="accordion-button-wrapper"
+        />
+      </div>
+    </div>
+    <div
+      class="content"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-content"
+    >
+      <div
+        class="lively-divider"
+      />
+      <div
+        class="ui segment komgo-accordion-content"
+      >
+        <div
+          class="ui container c1"
+        >
+          <h3
+            class="c2"
+          >
+            Select request type
+          </h3>
+        </div>
+        <div
+          class="ui container c3"
+        >
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui checked radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER"
+            >
+              <input
+                checked=""
+                class="hidden"
+                id="radioButtongroup-RISK_COVER"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER"
+              >
+                Risk cover only
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              No discounting option
+            </p>
+          </div>
+          <div
+            class="field c7"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER_DISCOUNTING"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER_DISCOUNTING"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER_DISCOUNTING"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER_DISCOUNTING"
+              >
+                Risk cover with discount option
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Cover the risk with the option to request discounting
+            </p>
+          </div>
+          <div
+            class="field c7"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-DISCOUNT"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-DISCOUNT"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="DISCOUNT"
+              />
+              <label
+                for="radioButtongroup-DISCOUNT"
+              >
+                Discount
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Discount with or without recourse
+            </p>
+          </div>
+        </div>
+        <ul
+          class="c8"
+        >
+          <li
+            class="c9 c10"
+          >
+            <span
+              class="c11"
+              style="width: 240px;"
+            >
+              Invoice amount
+            </span>
+            <div
+              class="ui input"
+              data-test-id="invoiceAmount"
+              style="flex-grow: 1; width: 270px;"
+            >
+              <input
+                name="invoiceAmount"
+                type="text"
+                value="1,000.00"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-expanded="false"
+              class="ui compact search selection dropdown"
+              data-test-id="currency"
+              form="[object Object]"
+              name="currency"
+              role="combobox"
+              style="margin: 0px 0px 0px 5px; width: 80px;"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <div
+                aria-live="polite"
+                class="text"
+                role="alert"
+              >
+                USD
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    AED
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    CHF
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    EUR
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    GBP
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    JPY
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-selected="true"
+                  class="active selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    USD
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <div
+            class="c12"
+          >
+            <li
+              class="c13 c10"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Indicative
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Provisional
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Final
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected advance rate
+              </label>
+              <div
+                class="ui right labeled input"
+                data-test-id="advancedRate"
+                style="width: 50%;"
+              >
+                <input
+                  name="advancedRate"
+                  step="0.01"
+                  type="number"
+                  value="1.5"
+                />
+                <div
+                  class="ui basic label label"
+                  style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+                >
+                  %
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected risk cover date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="riskCoverDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="riskCoverDate"
+                  type="date"
+                  value=""
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of risk cover
+              </label>
+              <div
+                class="ui input"
+                data-test-id="numberOfDaysRiskCover"
+                style="width: 50%;"
+              >
+                <input
+                  name="numberOfDaysRiskCover"
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Title transfer date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="dateOfPerformance"
+                style="width: 50%;"
+              >
+                <input
+                  name="dateOfPerformance"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Supporting instrument(s)
+              </label>
+              <div
+                aria-expanded="false"
+                aria-multiselectable="true"
+                class="ui compact multiple selection dropdown c14"
+                data-test-id="supportingInstruments"
+                name="supportingInstruments"
+                role="listbox"
+                style="width: 50%;"
+                tabindex="0"
+              >
+                <div
+                  aria-live="polite"
+                  class="default text"
+                  role="alert"
+                >
+                  Select Supporting Instruments
+                </div>
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Credit insurance
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Financial instrument
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment confirmation
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Parent company guarantee
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment undertaking
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Bill of exchange
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Promissory note
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Other information
+              </label>
+              <textarea
+                class=""
+                data-test-id="comment"
+                name="comment"
+                rows="3"
+                style="width: 50%;"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ApplyForDiscountingData component renders correctly for Risk Cover with discounting option 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c8 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.c10 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c13.c13.c13.c13.c13 .field {
+  margin-bottom: 16px;
+}
+
+.c13.c13.c13.c13.c13 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c13.c13.c13.c13.c13 .field.error {
+  margin-bottom: 0;
+}
+
+.c13.c13.c13.c13.c13 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.c9.c9.c9.c9.c9 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c9.c9.c9.c9.c9 .field.error {
+  margin-bottom: 0;
+}
+
+.c9.c9.c9.c9.c9 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c11 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c14.c14.c14.c14 {
+  background-image: none;
+}
+
+.c14.c14.c14.c14 .label {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: inherit;
+}
+
+.c3 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.c3 > div {
+  margin: 5px !important;
+}
+
+.c1 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px 0px 12px 10px;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #c0cfde;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #5700b5;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c5 {
+  padding-bottom: 10px;
+}
+
+.c5 > label {
+  font-weight: bold;
+  text-align: bottom;
+}
+
+.c6 {
+  margin-left: 32px;
+}
+
+.c2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.c12 {
+  margin-bottom: 16px;
+}
+
+@media (min-width:68.75em) {
+  .c8 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    bordercolor="#c0cfde"
+    class="accordion ui fluid c0"
+  >
+    <div
+      class="title disabled"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-title"
+    >
+      <div
+        class="ui block header komgo-accordion-header"
+      >
+        <div
+          class="accordion-title-wrapper"
+        >
+          <div
+            class="accordion-title"
+            style="margin-left: 5px;"
+          >
+            Risk cover / receivable discounting data
+          </div>
+        </div>
+        <div
+          class="accordion-status-wrapper"
+        />
+        <div
+          class="accordion-button-wrapper"
+        />
+      </div>
+    </div>
+    <div
+      class="content"
+      data-test-id="risk-cover-receivable-discounting-data-accordion-content"
+    >
+      <div
+        class="lively-divider"
+      />
+      <div
+        class="ui segment komgo-accordion-content"
+      >
+        <div
+          class="ui container c1"
+        >
+          <h3
+            class="c2"
+          >
+            Select request type
+          </h3>
+        </div>
+        <div
+          class="ui container c3"
+        >
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-RISK_COVER"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER"
+              >
+                Risk cover only
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              No discounting option
+            </p>
+          </div>
+          <div
+            class="field c7"
+          >
+            <div
+              class="ui checked radio checkbox c5"
+              data-test-id="radioButtongroup-RISK_COVER_DISCOUNTING"
+            >
+              <input
+                checked=""
+                class="hidden"
+                id="radioButtongroup-RISK_COVER_DISCOUNTING"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="RISK_COVER_DISCOUNTING"
+              />
+              <label
+                for="radioButtongroup-RISK_COVER_DISCOUNTING"
+              >
+                Risk cover with discount option
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Cover the risk with the option to request discounting
+            </p>
+          </div>
+          <div
+            class="field c4"
+          >
+            <div
+              class="ui radio checkbox c5"
+              data-test-id="radioButtongroup-DISCOUNT"
+            >
+              <input
+                class="hidden"
+                id="radioButtongroup-DISCOUNT"
+                name="radioGroup"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value="DISCOUNT"
+              />
+              <label
+                for="radioButtongroup-DISCOUNT"
+              >
+                Discount
+              </label>
+            </div>
+            <p
+              class="c6"
+            >
+              Discount with or without recourse
+            </p>
+          </div>
+        </div>
+        <ul
+          class="c8"
+        >
+          <li
+            class="c9 c10"
+          >
+            <span
+              class="c11"
+              style="width: 240px;"
+            >
+              Invoice amount
+            </span>
+            <div
+              class="ui input"
+              data-test-id="invoiceAmount"
+              style="flex-grow: 1; width: 270px;"
+            >
+              <input
+                name="invoiceAmount"
+                type="text"
+                value="1,000.00"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-expanded="false"
+              class="ui compact search selection dropdown"
+              data-test-id="currency"
+              form="[object Object]"
+              name="currency"
+              role="combobox"
+              style="margin: 0px 0px 0px 5px; width: 80px;"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <div
+                aria-live="polite"
+                class="text"
+                role="alert"
+              >
+                USD
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    AED
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    CHF
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    EUR
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    GBP
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    JPY
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-selected="true"
+                  class="active selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    USD
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <div
+            class="c12"
+          >
+            <li
+              class="c13 c10"
+            >
+              <div
+                class="ui two column grid"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="column"
+                    style="width: 240px;"
+                  >
+                    <div
+                      class="inline field"
+                      style="display: inherit; justify-content: unset; align-items: center;"
+                    >
+                      <label
+                        class="inputLabel"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="column"
+                  >
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui checked radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          checked=""
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Indicative
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Provisional
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="field"
+                      style="margin: 0px;"
+                    >
+                      <div
+                        class="ui radio checkbox"
+                        data-test-id="invoiceType"
+                      >
+                        <input
+                          class="hidden"
+                          readonly=""
+                          tabindex="0"
+                          type="radio"
+                          value=""
+                        />
+                        <label>
+                          Final
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected advance rate
+              </label>
+              <div
+                class="ui right labeled input"
+                data-test-id="advancedRate"
+                style="width: 50%;"
+              >
+                <input
+                  name="advancedRate"
+                  step="0.01"
+                  type="number"
+                  value="1.5"
+                />
+                <div
+                  class="ui basic label label"
+                  style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+                >
+                  %
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected risk cover date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="riskCoverDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="riskCoverDate"
+                  type="date"
+                  value=""
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of risk cover
+              </label>
+              <div
+                class="ui input"
+                data-test-id="numberOfDaysRiskCover"
+                style="width: 50%;"
+              >
+                <input
+                  name="numberOfDaysRiskCover"
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected discounting date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="discountingDate"
+                style="width: 50%;"
+              >
+                <input
+                  name="discountingDate"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Expected days of discounting
+              </label>
+              <span
+                style="width: 50%; display: inline-block;"
+              >
+                <div
+                  class="ui input"
+                  data-test-id="numberOfDaysDiscounting"
+                  style="width: 100%;"
+                >
+                  <input
+                    name="numberOfDaysDiscounting"
+                    type="number"
+                    value="10"
+                  />
+                </div>
+              </span>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Title transfer date
+              </label>
+              <div
+                class="ui input"
+                data-test-id="dateOfPerformance"
+                style="width: 50%;"
+              >
+                <input
+                  name="dateOfPerformance"
+                  type="date"
+                  value="2019-01-31"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Supporting instrument(s)
+              </label>
+              <div
+                aria-expanded="false"
+                aria-multiselectable="true"
+                class="ui compact multiple selection dropdown c14"
+                data-test-id="supportingInstruments"
+                name="supportingInstruments"
+                role="listbox"
+                style="width: 50%;"
+                tabindex="0"
+              >
+                <div
+                  aria-live="polite"
+                  class="default text"
+                  role="alert"
+                >
+                  Select Supporting Instruments
+                </div>
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Credit insurance
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Financial instrument
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment confirmation
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Parent company guarantee
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Payment undertaking
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Bill of exchange
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Promissory note
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="c13 c10"
+          >
+            <div
+              class="inline field"
+              style="display: inherit; justify-content: unset; align-items: center;"
+            >
+              <label
+                class="inputLabel"
+              >
+                Other information
+              </label>
+              <textarea
+                class=""
+                data-test-id="comment"
+                name="comment"
+                rows="3"
+                style="width: 50%;"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

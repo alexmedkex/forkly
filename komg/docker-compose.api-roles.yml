@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+
+  api-roles:
+    image: ${IMAGE_NAME:-komgo-member-api-roles}
+    build:
+      context: ${BUILD_DIR:-./komgo-member-api-roles}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    container_name: komgo-member-${MEMBER_ID}-api-roles
+    restart: always
+    environment:
+      - NPM_TOKEN
+      - CONTAINER_HOSTNAME=api-roles
+      - DB_MONGO_URL=mongodb://mongo:27017/api-roles${MONGO_CLIENT_OPTIONS}
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - MONGO_CLIENT_PEM_BASE64
+      - MONGO_CA_CERT_BASE64
+      - MONGO_CLIENT_KEY_PASSWORD
+      - MONGO_USE_SSL
+      - IS_KOMGO_NODE
+      - IS_LMS_NODE
+    command: ${COMMAND:-komgo}
+    ports:
+      - ${PORT_1:-3103}:8080
+      - ${PORT_2:-9133}:9229
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-member-api-roles:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}

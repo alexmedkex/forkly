@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LetterOfCreditDashboard renders 1`] = `
+.c0.c0.c0 {
+  background-color: #009ea8;
+  border-color: #009ea8;
+  color: white;
+}
+
+<table
+  className="ui sortable very basic table"
+  data-test-id="letters-of-credit-table"
+>
+  <thead
+    className=""
+  >
+    <tr
+      className=""
+    >
+      <th
+        className="left aligned"
+        id="reference"
+        onClick={[Function]}
+      >
+        Reference
+      </th>
+      <th
+        className=""
+        id="issuingBankReference"
+        onClick={[Function]}
+      >
+        Issuing Bank Reference
+      </th>
+      <th
+        className=""
+        id="expiryDate"
+        onClick={[Function]}
+      >
+        Expiry
+      </th>
+      <th
+        className=""
+        id="latestShipment"
+        onClick={[Function]}
+      >
+        Latest Shipment / Delivery
+      </th>
+      <th
+        className=""
+        id="role"
+        onClick={[Function]}
+      >
+        Role
+      </th>
+      <th
+        className="right aligned"
+        id="amount"
+        onClick={[Function]}
+      >
+        Amount
+      </th>
+      <th
+        className=""
+        id="status"
+        onClick={[Function]}
+      >
+        Status
+      </th>
+      <th
+        className=""
+        id="actionStatus"
+        onClick={[Function]}
+      >
+        Action
+      </th>
+      <th
+        className=""
+      />
+    </tr>
+  </thead>
+  <tbody
+    className=""
+  >
+    <tr
+      className=""
+      id="LC18-MER-1"
+    >
+      <td
+        className="left aligned"
+      >
+        <a
+          href="/financial-instruments/letters-of-credit/08e9f8"
+          onClick={[Function]}
+        >
+          <img
+            className="ui inline right spaced image"
+            src="/images/file.svg"
+          />
+          LC18-MER-1
+        </a>
+      </td>
+      <td
+        className=""
+      >
+        BK18-XX-1
+      </td>
+      <td
+        className=""
+      >
+        2020/12/31
+      </td>
+      <td
+        className=""
+      >
+        2020/12/31
+      </td>
+      <td
+        className=""
+      >
+        <a
+          href="#"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          Applicant
+        </a>
+      </td>
+      <td
+        className="right aligned"
+      >
+        EUR 1,000,000
+      </td>
+      <td
+        className=""
+      >
+        Requested
+      </td>
+      <td
+        className=""
+      >
+        <span
+          className="ui label c0"
+          onClick={[Function]}
+        >
+          DONE
+        </span>
+      </td>
+      <td
+        className=""
+      >
+        <div
+          aria-expanded={false}
+          className="ui inline dropdown"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          role="listbox"
+          tabIndex={0}
+        >
+          <div
+            aria-live="polite"
+            className="text"
+            role="alert"
+          />
+          <i
+            aria-hidden="true"
+            className="ellipsis horizontal icon"
+            onClick={[Function]}
+          />
+          <div
+            className="menu transition left"
+          >
+            <div
+              className="item"
+              onClick={[Function]}
+              role="option"
+            >
+              <a
+                className="link-as-text"
+                href="/financial-instruments/letters-of-credit/08e9f8"
+                onClick={[Function]}
+              >
+                View LC application
+              </a>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

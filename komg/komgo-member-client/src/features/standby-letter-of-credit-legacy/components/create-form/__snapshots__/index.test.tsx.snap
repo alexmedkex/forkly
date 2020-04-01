@@ -1,0 +1,840 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateForm render shows the default values 1`] = `
+.c0 {
+  font-size: small;
+  color: #d45c64;
+  margin-top: -1em;
+  padding-top: 3px;
+  min-height: 21px;
+  margin-bottom: 9px;
+}
+
+<form
+  className="ui form"
+  id="create-standby-letter-of-credit"
+  onSubmit={[Function]}
+>
+  <div
+    className="ui fluid card"
+    data-test-id="requiredFieldPrompt"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#d45c64",
+        "border": "none",
+        "color": "white",
+        "textAlign": "center",
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      className="content"
+    >
+      Please complete all required fields
+    </div>
+  </div>
+  <div
+    className="field"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "inherit",
+        "justifyContent": "unset",
+      }
+    }
+  >
+    <label
+      className="inputLabel"
+    >
+      Contract reference
+    </label>
+    <div
+      className="ui input"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <input
+        id="field_contractReference"
+        name="contractReference"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex="1"
+        type="text"
+        value="CREF-123"
+      />
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="contractReference-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "inherit",
+        "justifyContent": "unset",
+      }
+    }
+  >
+    <label
+      className="inputLabel"
+    >
+      Contract date
+    </label>
+    <div
+      className="ui input"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <input
+        id="field_contractDate"
+        name="contractDate"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex="2"
+        type="date"
+        value="2019-10-20"
+      />
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="contractDate-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      className="inputLabel"
+    >
+      Issuing bank
+    </label>
+    <div
+      aria-expanded={false}
+      className="ui compact search selection dropdown dropdown-input"
+      name="issuingBankId"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseDown={[Function]}
+      role="combobox"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <input
+        aria-autocomplete="list"
+        autoComplete="off"
+        className="search"
+        onChange={[Function]}
+        style={
+          Object {
+            "width": undefined,
+          }
+        }
+        tabIndex="3"
+        type="text"
+        value=""
+      />
+      <div
+        aria-live="polite"
+        className="text"
+        role="alert"
+      />
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+        role="listbox"
+      >
+        <div
+          aria-checked={false}
+          aria-selected={true}
+          className="selected item"
+          onClick={[Function]}
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            bank1
+          </span>
+        </div>
+        <div
+          aria-checked={false}
+          aria-selected={false}
+          className="item"
+          onClick={[Function]}
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            bank2
+          </span>
+        </div>
+        <div
+          aria-checked={false}
+          aria-selected={false}
+          className="item"
+          onClick={[Function]}
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            bank3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="issuingBankId-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      className="inputLabel"
+    >
+      Beneficiary bank
+    </label>
+    <div
+      className="ui disabled input field disabled"
+      search={true}
+      selection={true}
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <input
+        disabled={true}
+        name="beneficiaryBankId"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="No Advising Bank"
+        tabIndex="4"
+        type="text"
+        value="a28b8dc3-8de9-4559-8ca1-272ccef52b47"
+      />
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="beneficiaryBankId-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      className="inputLabel"
+    >
+      Available with
+    </label>
+    <div
+      aria-expanded={false}
+      className="ui compact search selection dropdown dropdown-input"
+      name="availableWith"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseDown={[Function]}
+      role="combobox"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <input
+        aria-autocomplete="list"
+        autoComplete="off"
+        className="search"
+        onChange={[Function]}
+        style={
+          Object {
+            "width": undefined,
+          }
+        }
+        tabIndex="5"
+        type="text"
+        value=""
+      />
+      <div
+        aria-live="polite"
+        className="text"
+        role="alert"
+      >
+        Issuing
+      </div>
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+        role="listbox"
+      >
+        <div
+          aria-checked={false}
+          aria-selected={false}
+          className="item"
+          onClick={[Function]}
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            Advising
+          </span>
+        </div>
+        <div
+          aria-checked={true}
+          aria-selected={true}
+          className="active selected item"
+          onClick={[Function]}
+          role="option"
+          style={
+            Object {
+              "pointerEvents": "all",
+            }
+          }
+        >
+          <span
+            className="text"
+          >
+            Issuing
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      id="field_beneficiaryBankRole"
+    >
+      Beneficiary bank role
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui radio checkbox"
+        data-test-id="beneficiaryBankRole_ADVISING"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onMouseDown={[Function]}
+      >
+        <input
+          checked={false}
+          className="hidden"
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="6"
+          type="radio"
+        />
+        <label>
+          Advising bank
+        </label>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="ui radio checkbox"
+        data-test-id="beneficiaryBankRole_ISSUING"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onMouseDown={[Function]}
+      >
+        <input
+          checked={false}
+          className="hidden"
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="6"
+          type="radio"
+        />
+        <label>
+          Issuing bank
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="field"
+  >
+    <label>
+      Opening amount
+    </label>
+    <div
+      className="ui right labeled input"
+    >
+      <input
+        id="field_amount"
+        name="amount"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex="7"
+        type="text"
+        value="1,000.00"
+      />
+      <div
+        aria-expanded={false}
+        className="ui dropdown label"
+        name="currency"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        style={
+          Object {
+            "border": "1px solid rgb(226, 226, 226)",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          aria-live="polite"
+          className="text"
+          role="alert"
+        >
+          USD
+        </div>
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              AED
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              CHF
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              EUR
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              GBP
+            </span>
+          </div>
+          <div
+            aria-checked={false}
+            aria-selected={false}
+            className="item"
+            onClick={[Function]}
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              JPY
+            </span>
+          </div>
+          <div
+            aria-checked={true}
+            aria-selected={true}
+            className="active selected item"
+            onClick={[Function]}
+            role="option"
+            style={
+              Object {
+                "pointerEvents": "all",
+              }
+            }
+          >
+            <span
+              className="text"
+            >
+              USD
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="amount-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "inherit",
+        "justifyContent": "unset",
+      }
+    }
+  >
+    <label
+      className="inputLabel"
+    >
+      Expiry date
+    </label>
+    <div
+      className="ui input"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <input
+        id="field_expiryDate"
+        min="2017-02-14"
+        name="expiryDate"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        tabIndex="8"
+        type="date"
+        value="2019-10-11"
+      />
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="expiryDate-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      id="field_feesPayableBy"
+    >
+      Fees payable by
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui radio checkbox"
+        data-test-id="feesPayableBy_APPLICANT"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+      >
+        <input
+          checked={false}
+          className="hidden"
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="9"
+          type="radio"
+        />
+        <label>
+          Applicant
+        </label>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="ui radio checkbox"
+        data-test-id="feesPayableBy_BENEFICIARY"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+      >
+        <input
+          checked={false}
+          className="hidden"
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="9"
+          type="radio"
+        />
+        <label>
+          Beneficiary
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="feesPayableBy-error"
+  >
+    
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      id="field_duplicateClause"
+    >
+      Duplicate clause
+    </label>
+    <div
+      className="field"
+    >
+      <div
+        className="ui checked radio checkbox"
+        data-test-id="duplicateClause_YES"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+      >
+        <input
+          checked={true}
+          className="hidden"
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="10"
+          type="radio"
+        />
+        <label>
+          Yes
+        </label>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="ui radio checkbox"
+        data-test-id="duplicateClause_NO"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+      >
+        <input
+          checked={false}
+          className="hidden"
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="10"
+          type="radio"
+        />
+        <label>
+          No
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c0"
+    data-test-id="duplicateClause-error"
+  >
+    
+  </div>
+  <div
+    className="inline field"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "inherit",
+        "justifyContent": "unset",
+      }
+    }
+  >
+    <label
+      className="inputLabel"
+    >
+      Override standard template
+    </label>
+    <textarea
+      className=""
+      id="field_overrideStandardTemplate"
+      name="overrideStandardTemplate"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onInput={[Function]}
+      rows={3}
+      style={
+        Object {
+          "height": "300px",
+          "resize": "",
+          "width": "100%",
+        }
+      }
+      tabIndex="11"
+      value="Default legal template clauses"
+    />
+  </div>
+  <div
+    className="c0"
+    data-test-id="overrideStandardTemplate-error"
+  >
+    
+  </div>
+  <div
+    className="inline field"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "inherit",
+        "justifyContent": "unset",
+      }
+    }
+  >
+    <label
+      className="inputLabel"
+    >
+      Additional information
+    </label>
+    <textarea
+      className=""
+      name="additionalInformation"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onInput={[Function]}
+      rows={3}
+      style={
+        Object {
+          "resize": "",
+          "width": "100%",
+        }
+      }
+      tabIndex="12"
+      value="an additional info"
+    />
+  </div>
+  <p>
+    Additional information will be shared with all participants of the SBLC. It will not be included within the SBLC itself
+  </p>
+</form>
+`;

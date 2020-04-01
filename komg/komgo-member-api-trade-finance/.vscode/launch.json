@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Jest Integration Tests",
+            "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+            "args": [
+                "'((integration)(\\.|/)(test|spec))\\.(jsx?|tsx?)$'",
+                "--detectOpenHandles",
+                "--runInBand",
+                "--forceExit",
+                "--verbose"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": [
+                "${workspaceRoot}/dist/**/*"
+            ],
+            "env": {
+                "USE_QUORUM_NODE": "true",
+                "INTEGRATION_TEST": "true"
+            }
+        }
+    ]
+}

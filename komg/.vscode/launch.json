@@ -1,0 +1,158 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "service-mq on port 9228",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9228,
+      "localRoot": "${workspaceRoot}/komgo-member-service-mq",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-auth on port 9130",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9130,
+      "localRoot": "${workspaceRoot}/komgo-member-api-auth",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-users on port 9131",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9131,
+      "localRoot": "${workspaceRoot}/komgo-member-api-users",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-notif on port 9132",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9132,
+      "localRoot": "${workspaceRoot}/komgo-member-api-notif",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-roles on port 9133",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9133,
+      "localRoot": "${workspaceRoot}/komgo-member-api-roles",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-registry on port 9134",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9134,
+      "localRoot": "${workspaceRoot}/komgo-member-api-registry",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-trade-cargo on port 9135",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9135,
+      "localRoot": "${workspaceRoot}/komgo-member-api-trade-cargo",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-documents on port 9136",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9136,
+      "localRoot": "${workspaceRoot}/komgo-member-api-documents",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-signer on port 9137",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9137,
+      "localRoot": "${workspaceRoot}/komgo-member-api-signer",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-trade-finance on port 9138",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9138,
+      "localRoot": "${workspaceRoot}/komgo-member-api-trade-finance",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-coverage on port 9140",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9140,
+      "localRoot": "${workspaceRoot}/komgo-member-api-coverage",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "event-management on port 9139",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9139,
+      "localRoot": "${workspaceRoot}/komgo-member-event-management",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-timer on port 9144",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9144,
+      "localRoot": "${workspaceRoot}/komgo-member-api-timer",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-receivable-finance on port 9120",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9120,
+      "localRoot": "${workspaceRoot}/komgo-member-api-receivable-finance",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-rfp on port 9121",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9121,
+      "localRoot": "${workspaceRoot}/komgo-member-api-rfp",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-credit-lines on port 9145",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9145,
+      "localRoot": "${workspaceRoot}/komgo-member-api-credit-lines",
+      "remoteRoot": "/opt/app"
+    },
+    {
+      "name": "api-template on port 9146",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "port": 9146,
+      "localRoot": "${workspaceRoot}/komgo-member-api-template",
+      "remoteRoot": "/opt/app"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "x500Name": {
+      "CN": "Member 2 Ltd (komgo node)",
+      "O": "Member 2 Ltd (komgo node)",
+      "C": "GB",
+      "L": "London",
+      "STREET": "Somewhere 2 near Old Street",
+      "PC": "EC1V 9AN"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": true,
+    "isMember": true,
+    "isFMS": true,
+    "staticId": "ff838f28-5bf8-41b6-a07b-000000000002",
+    "komgoMnid": "85391e34-172e-4fdc-8957-000000000002",
+    "rabbitMQCommonUser": "85391e34-172e-4fdc-8957-aade800ccf9d-USER",
+    "rabbitMQCommonPassword": "dTETUpRi8vrsMxMs2qZfU6mLsbei48SK",
+    "komgoProducts": [
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "harborUser": "ggnmbPVD96NO",
+    "harborEmail": "gyohdtfIK5Md@komgo.io",
+    "harborPassword": "W19sYsvYM2o9",
+    "ensAddress": "0x4a6fa0250e074e3765e6a726f8ae11c3c00e42f4"
+  }
+]

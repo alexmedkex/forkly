@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequestOptions should match default snapshot 1`] = `
+.c5.c5.c5.ui.toggle.checkbox {
+  width: 20px;
+  min-height: 10px;
+}
+
+.c5.c5.c5.ui.toggle.checkbox input {
+  width: 20px;
+  height: 10px;
+}
+
+.c5.c5.c5.ui.toggle.checkbox label {
+  min-height: 10px;
+}
+
+.c5.c5.c5.ui.toggle.checkbox label::before {
+  width: 20px;
+  height: 10px;
+}
+
+.c5.c5.c5.ui.toggle.checkbox label::after {
+  width: 10px;
+  height: 10px;
+}
+
+.c5.c5.c5.ui.toggle.checkbox.checked label {
+  color: #5700b5 !important;
+}
+
+.c5.c5.c5.ui.toggle.checkbox.checked label::after {
+  left: 10px;
+}
+
+.c5.c5.c5.ui.toggle.checkbox input:checked ~ .box:before,
+.c5.c5.c5.ui.toggle.checkbox input:checked ~ label:before {
+  background-color: #5700b5 !important;
+}
+
+.c1.c1.c1.c1.c1.c1.c1.c1.c1.c1.c1 {
+  margin: 0px;
+  padding: 16px 30px 30px 30px;
+}
+
+.c0.c0.c0.c0.c0.c0.c0.c0.c0.c0.c0 {
+  height: 325px;
+  width: unset;
+  margin: 30px;
+  padding-left: 0px;
+  padding-rigth: 0px;
+  -webkit-box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.75);
+}
+
+.c2.c2.c2.c2.c2.c2.c2.c2.c2.c2.c2 {
+  font-size: 11px;
+  height: 21px;
+  width: 549px;
+  color: #1c2936;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.c3 {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c6 {
+  margin-left: 16px;
+  font-weight: bold;
+}
+
+.c4 {
+  min-width: 200px;
+  height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="ui card c0"
+  onClick={[Function]}
+  style={
+    Object {
+      "height": "200px",
+    }
+  }
+>
+  <div
+    className="content c1"
+  >
+    <div
+      className="header c2"
+    >
+      SELECT OPTIONS FOR THIS REQUEST
+    </div>
+    <div
+      className="description "
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            circleDiameter="10px"
+            className="ui fitted toggle checkbox c5"
+            color="#5700b5"
+            data-test-id="deadline-toggle"
+            height="10px"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            style={
+              Object {
+                "marginBottom": "3px",
+              }
+            }
+            width="20px"
+          >
+            <input
+              checked={false}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="radio"
+            />
+            <label />
+          </div>
+          <span
+            className="c6"
+          >
+            Add a deadline
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReceivableFinanceDashboardContainer renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  width: 70%;
+}
+
+<div>
+  <h1
+    className="c0"
+  >
+    Risk cover / Discounting
+  </h1>
+  <div
+    className="ReactTable"
+    style={Object {}}
+  >
+    <div
+      className="rt-table"
+      role="grid"
+    >
+      <div
+        className="rt-thead -header"
+        style={
+          Object {
+            "minWidth": "800px",
+          }
+        }
+      >
+        <div
+          className="rt-tr"
+          role="row"
+        >
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="tradeId"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Trade ID
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="tradeDate"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Trade Date
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="counterparty"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Counterparty
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="bank"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Bank
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="commodity"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Commodity
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="invoiceAmount"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Invoice amount
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th rt-resizable-header -cursor-pointer"
+            data-test-id="status"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Status
+              </span>
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+          <div
+            className="rt-th actions-menu rt-resizable-header"
+            data-test-id="actionsMenu"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            role="columnheader"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "width": "100px",
+              }
+            }
+            tabIndex="-1"
+          >
+            <div
+              className="rt-resizable-header-content"
+            >
+              
+            </div>
+            <div
+              className="rt-resizer"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="rt-tbody"
+        style={
+          Object {
+            "minWidth": "800px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="rt-noData"
+    >
+      No rows found
+    </div>
+    <div
+      className="-loading"
+    >
+      <div
+        className="-loading-inner"
+      >
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;

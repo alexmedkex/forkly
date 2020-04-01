@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionMenu should match snapshot with edit,remove and view options 1`] = `
+.c0 {
+  display: block;
+}
+
+<div
+  aria-expanded={false}
+  className="ui inline dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="listbox"
+  tabIndex={0}
+>
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="ellipsis horizontal icon"
+    onClick={[Function]}
+  />
+  <div
+    className="menu transition left"
+  >
+    <div
+      className="item"
+      data-test-id="view-details"
+      onClick={[Function]}
+      role="option"
+    >
+      <a
+        className="link-as-text c0"
+        href="/deposits/1"
+        onClick={[Function]}
+      >
+        View details
+      </a>
+    </div>
+    <div
+      className="item"
+      data-test-id="edit"
+      onClick={[Function]}
+      role="option"
+    >
+      <a
+        className="link-as-text c0"
+        href="/deposits/1/edit"
+        onClick={[Function]}
+      >
+        Edit
+      </a>
+    </div>
+    <div
+      className="item"
+      data-test-id="remove"
+      onClick={[Function]}
+      role="option"
+    >
+      Remove
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ActionMenu should match snapshot with view only 1`] = `
+.c0 {
+  display: block;
+}
+
+<div
+  aria-expanded={false}
+  className="ui inline dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="listbox"
+  tabIndex={0}
+>
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="ellipsis horizontal icon"
+    onClick={[Function]}
+  />
+  <div
+    className="menu transition left"
+  >
+    <div
+      className="item"
+      data-test-id="view-details"
+      onClick={[Function]}
+      role="option"
+    >
+      <a
+        className="link-as-text c0"
+        href="/deposits/1"
+        onClick={[Function]}
+      >
+        View details
+      </a>
+    </div>
+  </div>
+</div>
+`;

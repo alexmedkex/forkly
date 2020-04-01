@@ -1,0 +1,59 @@
+[
+  {
+    "x500Name": {
+      "CN": "Komgo Trading Company",
+      "O": "Komgo Trade SA",
+      "C": "CH",
+      "L": "GENEVA",
+      "STREET": "2 rue du rhone",
+      "PC": "1212"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "isFMS": false,
+    "staticId": "e4d02832-82c7-48bf-bfa9-b6ed0e4c0273",
+    "komgoMnid": "3ade1454-d7e7-42d6-a782-97f278efe49a",
+    "rabbitMQCommonUser": "3ade1454-d7e7-42d6-a782-97f278efe49a-USER",
+    "rabbitMQCommonPassword": "iHXiEVOxILDG2emZzHQEyq2WfihnpdR1",
+    "harborUser": "Ene9DD1iP2Mv",
+    "harborEmail": "8NjgOPT0XcMf@komgo.io",
+    "harborPassword": "TwgV3dRC8GBF",
+    "ensAddress": "0x36507e932690e0e3787a94e28dc7841cbdab812d",
+    "komgoProducts": [
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "key": "0x3cb1b5037cc724a411e21fc989ab518404ad3d3b6d98debdafbe5838c709fb02bebea64ed91656a20d60f08efc5cc1aaca2590216d724ef26411644517a3f9c5",
+      "address": "0x7B0291a04EC24EC6428a6ba2190d766f806EebC1",
+      "validFrom": "2019-01-18T13:05:30Z",
+      "validTo": "2020-01-18T13:05:30Z"
+    },
+    "messagingPublicKey": {
+      "key": {
+        "kty": "RSA",
+        "kid": "4xkdCXqE0LstZD8wmiC0SlO3N3bNXzTRLD1qs3IZtY8",
+        "e": "AQAB",
+        "n": "h5sk48gPEttxBk5USH6ooqOAaR7JHWTAm6SmsnV6W7QNNFL5WhbDjtSKVCE7KzZzIpjJy8vcHzG6SNnf6J3EGLoUZ0zVJn7FGpLwrECU9WO8y-GwMOPkzybFIVlSuwZv89YHwNBgIzZYg_LsSnsili9IQzqp4oRS-nUSbHgQ8dUN8CJqim0BW0KKQ56UIinq0cMG5_eKuHLZGWh9_KJ16dTe_7xmBxoyev4x33FxFIFg3StcE1MPOlFIW7tpzbuGuHnM0kleNjHRF0ALSLNNLnB3hrj15DgH_vrlRYnSNxZ8HC6XvqjVlPV9gGo6gGTwfqYPNYvMMkHNQAOtulGLsw"
+      },
+      "validFrom": "2019-01-18T13:05:30Z",
+      "validTo": "2020-01-18T13:05:30Z"
+    },
+    "nodeKeys": "KV7rCvzJtN+CMYw0NhVmqMNlJq0lLJoiU4uVBty6aGU="
+  }
+]

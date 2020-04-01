@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewCreditLine should match shapshot 1`] = `
+Array [
+  <h1>
+    counterparty
+  </h1>,
+  .c0.c0.c0 {
+  margin-bottom: 25px;
+}
+
+<a
+    className="ui button c0"
+    href="/risk-cover/fa4c145f-ab73-4180-8d33-56a35310bbf5/edit"
+    onClick={[Function]}
+  >
+    Edit information
+  </a>,
+  .c0 {
+  padding: 30px;
+  display: block;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  border: 1px solid #c0cfde;
+}
+
+.c5 {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.c7 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.c3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:last-child {
+  margin-bottom: 0px;
+}
+
+.c4 {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c2 h3 {
+  margin-bottom: 0px;
+}
+
+.c2 p {
+  font-style: italic;
+  width: 80%;
+}
+
+.c8 .c1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+<article
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <h3>
+        Buyer information
+      </h3>
+      <p>
+        Internal information relating to the buyer
+      </p>
+    </div>
+    <div
+      className="c3"
+      label="Appetite"
+      value="Yes"
+    >
+      <div
+        className="c4"
+        data-test-id="appetite-label"
+      >
+        <span
+          className="c5"
+        >
+          Appetite
+           
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="appetite-value"
+      >
+        Yes
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Credit limit"
+      value="$ 10,000,000"
+    >
+      <div
+        className="c4"
+        data-test-id="credit-limit-label"
+      >
+        <span
+          className="c5"
+        >
+          Credit limit
+           
+          <span
+            className="c7"
+          >
+             (optional)
+          </span>
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="credit-limit-value"
+      >
+        $ 10,000,000
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Expiry date"
+    >
+      <div
+        className="c4"
+        data-test-id="expiry-date-label"
+      >
+        <span
+          className="c5"
+        >
+          Expiry date
+           
+          <span
+            className="c7"
+          >
+             (optional)
+          </span>
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="expiry-date-value"
+      >
+        -
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Availability"
+      value="Yes"
+    >
+      <div
+        className="c4"
+        data-test-id="availability-label"
+      >
+        <span
+          className="c5"
+        >
+          Availability
+           
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="availability-value"
+      >
+        Yes
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Amount available"
+    >
+      <div
+        className="c4"
+        data-test-id="amount-available-label"
+      >
+        <span
+          className="c5"
+        >
+          Amount available
+           
+          <span
+            className="c7"
+          >
+             (optional)
+          </span>
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="amount-available-value"
+      >
+        <span>
+          $ 8,000,000
+        </span>
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Availability reserved"
+    >
+      <div
+        className="c4"
+        data-test-id="availability-reserved-label"
+      >
+        <span
+          className="c5"
+        >
+          Availability reserved
+           
+          <span
+            className="c7"
+          >
+             (optional)
+          </span>
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="availability-reserved-value"
+      >
+        <span>
+          $ 6,000,000
+        </span>
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Minimum risk fee"
+      value="0.90 %"
+    >
+      <div
+        className="c4"
+        data-test-id="minimum-risk-fee-label"
+      >
+        <span
+          className="c5"
+        >
+          Minimum risk fee
+           
+          <span
+            className="c7"
+          >
+             (optional)
+          </span>
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="minimum-risk-fee-value"
+      >
+        0.90 %
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Maximum tenor"
+      value="90 days"
+    >
+      <div
+        className="c4"
+        data-test-id="maximum-tenor-label"
+      >
+        <span
+          className="c5"
+        >
+          Maximum tenor
+           
+          <span
+            className="c7"
+          >
+             (optional)
+          </span>
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="maximum-tenor-value"
+      >
+        90 days
+      </div>
+    </div>
+  </article>,
+  .c2 h3 {
+  margin-bottom: 0px;
+}
+
+.c2 p {
+  font-style: italic;
+  width: 80%;
+}
+
+.c0 {
+  margin-top: 40px;
+}
+
+.c0 .c1 {
+  margin-bottom: 20px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <h3>
+        Visibility to sellers
+      </h3>
+      <p>
+        Information shared with your counterparties on a bilateral basis. This information is displayed to counterparties as non-binding and does not represent or warrant any commitment on your part.
+      </p>
+    </div>
+  </div>,
+]
+`;

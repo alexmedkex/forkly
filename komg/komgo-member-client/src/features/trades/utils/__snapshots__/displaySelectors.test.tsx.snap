@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displayValue displays a parcel 1`] = `
+"
+  _id: 123
+  id: 1234
+  laycanPeriod: 
+    startDate: 2019/01/03
+    endDate: 2019/01/03
+  modeOfTransport: VESSEL
+  vesselIMO: 1
+  vesselName: Test
+  loadingPort: Test
+  dischargeArea: Test
+  inspector: Test
+  deemedBLDate: 2019/01/03
+  quantity: 1
+"
+`;

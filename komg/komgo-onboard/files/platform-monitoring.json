@@ -1,0 +1,10 @@
+{
+  "user": {
+    "name": "MONITORING-USER",
+    "password": "random-password",
+    "tag": "management"
+  },
+  "exchangeName": "MONITORING-EXCHANGE",
+  "queueName": "MONITORING-QUEUE",
+  "routingKey": "komgo.monitoring"
+}

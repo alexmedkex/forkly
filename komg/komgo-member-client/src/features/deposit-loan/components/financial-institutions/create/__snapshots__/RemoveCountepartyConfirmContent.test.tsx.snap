@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RemoveCounterpartyConfirmContent should match snapshot when removing already shared info 1`] = `
+<div>
+  Are you sure you want to remove
+   
+  <b>
+    Test name
+  </b>
+   
+  from your list?
+   This counterparty will no longer have access to this currency an tenor's information.
+</div>
+`;
+
+exports[`RemoveCounterpartyConfirmContent should match snapshot when removing not shared info 1`] = `
+<div>
+  Are you sure you want to remove
+   
+  <b>
+    Test name
+  </b>
+   
+  from your list?
+</div>
+`;

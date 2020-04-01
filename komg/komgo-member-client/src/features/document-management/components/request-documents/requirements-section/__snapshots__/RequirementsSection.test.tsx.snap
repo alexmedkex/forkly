@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequirementsSection component renders 1`] = `
+.c1.c1.c1.c1.c1.c1.c1.c1.c1.c1.c1 {
+  margin: 0px;
+  padding: 16px 30px 30px 30px;
+}
+
+.c0.c0.c0.c0.c0.c0.c0.c0.c0.c0.c0 {
+  height: 325px;
+  width: unset;
+  margin: 30px;
+  padding-left: 0px;
+  padding-rigth: 0px;
+  -webkit-box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.75);
+}
+
+.c2.c2.c2.c2.c2.c2.c2.c2.c2.c2.c2 {
+  font-size: 11px;
+  height: 21px;
+  width: 549px;
+  color: #1c2936;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.c8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #c0cfde;
+  text-transform: uppercase;
+  line-height: 21px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #5d768f;
+  margin: 16px 0;
+}
+
+.c6 {
+  margin-left: 4px;
+  font-weight: normal;
+}
+
+.c10 {
+  color: #c0cfde;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.c9 {
+  height: 230px;
+  overflow-y: auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 830px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.c5 {
+  text-align: center;
+  margin-right: 30px;
+  cursor: pointer;
+  color: #5d768f;
+  padding-bottom: 6px;
+  font-weight: bold;
+  color: #5700b5;
+  border-bottom: 2px solid #5700b5;
+}
+
+.c7 {
+  text-align: center;
+  margin-right: 30px;
+  cursor: pointer;
+  color: #5d768f;
+  padding-bottom: 6px;
+}
+
+<div
+  className="ui card c0"
+  onClick={[Function]}
+  style={
+    Object {
+      "height": "405px",
+    }
+  }
+>
+  <div
+    className="content c1"
+  >
+    <div
+      className="header c2"
+    >
+      <span>
+        SELECT REQUIREMENTS AND ATTACH DOCUMENTS
+      </span>
+    </div>
+    <div
+      className="description "
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <span
+            className="c5"
+            data-test-id="request-documents-tab-requested"
+            onClick={[Function]}
+          >
+            Requested 
+            <span
+              className="c6"
+            >
+              (
+              0
+              )
+            </span>
+          </span>
+          <span
+            className="c7"
+            data-test-id="request-documents-tab-dismissed"
+          >
+            Received 
+            <span
+              className="c6"
+            >
+              (0)
+            </span>
+          </span>
+          <span
+            className="c7"
+            data-test-id="request-documents-tab-received"
+          >
+            Dismissed 
+            <span
+              className="c6"
+            >
+              (0)
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="c8"
+        data-test-id="requirements-section-header"
+      >
+        <p>
+          Document Type
+        </p>
+        <p>
+          Requirements
+        </p>
+        <p>
+          Attachment
+        </p>
+      </div>
+      <div
+        className="style-scroll c9"
+      >
+        <div
+          className="c10"
+          data-test-id="requirements-empty-selection"
+        >
+          No document types selected
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`view confirm text matches snapshot on approval 1`] = `
+<p>
+  You are about to approve the credit application 
+  <b>
+    REF-0000-00
+  </b>
+   submitted by
+   
+  BP
+   on 
+  2019/01/01
+  .
+</p>
+`;
+
+exports[`view confirm text matches snapshot on rejection 1`] = `
+<p>
+  You are about to reject the credit application 
+  <b>
+    REF-0000-00
+  </b>
+   submitted by
+   
+  BP
+   on 
+  2019/01/01
+  .
+</p>
+`;

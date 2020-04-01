@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+
+  api-registry:
+    image: ${IMAGE_NAME:-komgo-member-api-registry}
+    container_name: komgo-member-${MEMBER_ID}-api-registry
+    build:
+      context: ${BUILD_DIR:-./komgo-member-api-registry}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    environment:
+      - NODE_ENV=development
+      - NPM_TOKEN
+      - ENS_REGISTRY_CONTRACT_ADDRESS
+      - BLOCKCHAIN_HOST
+      - BLOCKCHAIN_PORT
+      - BLOCKCHAIN_USER
+      - BLOCKCHAIN_PASSWORD
+      - API_SIGNER_BASE_URL
+      - API_BLOCKCHAIN_SIGNER_BASE_URL
+      - COMPANY_STATIC_ID
+      - DB_MONGO_URL=mongodb://mongo/api-registry${MONGO_CLIENT_OPTIONS}
+      - CONTAINER_HOSTNAME=api-registry
+      - PREPOPULATE_AND_START_SERVICE_AT_STARTUP=true
+      - INTERNAL_MQ_HOST
+      - INTERNAL_MQ_USERNAME
+      - INTERNAL_MQ_PASSWORD
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - MONGO_CLIENT_PEM_BASE64
+      - MONGO_CA_CERT_BASE64
+      - MONGO_CLIENT_KEY_PASSWORD
+      - MONGO_USE_SSL
+      - IS_LMS_NODE
+    command: ${COMMAND:-komgo}
+    ports:
+      - ${PORT_1:-3104}:8080
+      - ${PORT_2:-9134}:9229
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-member-api-registry:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}

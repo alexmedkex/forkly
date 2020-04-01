@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteIndexControl should match default snapshot 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  height: 21px;
+  width: 33px;
+  color: #5d768f;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="chevron left small disabled icon"
+    data-test-id="incoming-note-btn-left"
+    onClick={[Function]}
+  />
+  <div
+    className="c1"
+    data-test-id="incoming-note-current-index"
+  >
+    1/1
+  </div>
+  <i
+    aria-hidden="true"
+    className="chevron right small disabled icon"
+    data-test-id="incoming-note-btn-right"
+    onClick={[Function]}
+  />
+</div>
+`;

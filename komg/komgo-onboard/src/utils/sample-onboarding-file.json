@@ -1,0 +1,68 @@
+[
+  {
+    "staticId": "ae48fffb-b9df-4464-8373-afe03ca22274",
+    "x500Name": {
+      "CN": "Equinor ASA",
+      "O": "Equinor ASA",
+      "C": "NO",
+      "L": "Stavanger",
+      "STREET": "Forusbeen 50",
+      "PC": "4035"
+    },
+    "hasSWIFTKey": "false",
+    "isFinancialInstitution": "false",
+    "isMember": "false",
+    "isFMS": "false",
+    "vakt": {
+      "staticId": "63092",
+      "mnid": "EQUINOR_ASA_63092",
+      "messagingPublicKey": {
+        "validFrom": "2018-11-27T04:45:02Z",
+        "validTo": "2018-11-27T04:45:02Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "04eef523-8a50-4d18-ab7d-d6bb209770ca",
+          "n": "gzmNNxWW3OrCB4CvOAYUcFdJErzyO0pwIYLK5KF5uo0rgaSMNCjIY6U562gWUASKi_OopDoz4mHO1wITVizopvdOEe2vBWADVGgkLrpgAQQa2BjbFxE70TFGg_IVxzDYkg8xR_-2pFjFr0U6ig680UBU84Y-Rc6SVFQpr46FkIKJ5yWZM7EM-qcVUEh0Py9LslpUxxtxws32KeZ5MTT9BoguXB-vlxFS76LaSUHACJCjkDPTXVjBXHyTWBg_2ModiBjPJ0Y6-FcGvNbySBVWllzZSsXpiZhc9iwC3Kpbfz-MwZrdUEENrIRpbCrrAxDgXORvDZ5sVjym1mJTWXsOqw",
+          "e": "AQAB"
+        },
+        "current": "true",
+        "revoked": "false"
+      }
+    },
+    "komgoMnid": "63092",
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ"
+      }
+    },
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": "0x74d429B653748a56cB33531b26808b6D153680FD"
+    },
+    "nodeKeys": "1dQcior2UOmoq4zwCzSe2P1wB3I+qYKn0VY1u7+RVmQ=",
+    "komgoProducts": [
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ]
+  }
+]

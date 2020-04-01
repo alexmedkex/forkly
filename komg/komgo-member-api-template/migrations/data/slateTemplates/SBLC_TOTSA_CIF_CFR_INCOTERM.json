@@ -1,0 +1,1783 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "PLEASE OPEN THE FOLLOWING STAND-BY LETTER OF CREDIT IN FAVOUR OF TOTSA TOTAL OIL TRADING SA  TO BE ADVISED TO DIRECTLY TO ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "beneficiary.x500Name.CN",
+              "title": "Beneficiary name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Beneficiary name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": ":\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\ron komgo",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "credit-lc.geneva@totsa.com\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Fax +41 22 710 18 50\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "QUOTE\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "WE, ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.CN",
+              "title": "Issuing bank name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": ", HEREBY OPEN OUR IRREVOCABLE STANDBY LETTER OF CREDIT NO.",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBankReference",
+              "title": "Issuing bank reference"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank reference",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " , AS FOLLOWS:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "BY ORDER AND FOR ACCOUNT OF :\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.CN",
+              "title": "Applicant name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.STREET",
+              "title": "Applicant Street"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant Street",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.PC",
+              "title": "Applicant Postal code"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant Postal code",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.L",
+              "title": "Applicant Locality name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant Locality name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.C",
+              "title": "Applicant Country"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant Country",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\t\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "IN FAVOUR OF:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "TOTSA TOTAL OIL TRADING SA\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "WORLD TRADE CENTER 1\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "10, ROUTE DE L'AEROPORT\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "CASE POSTALE 276\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "CH-1215 GENEVE 15 \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "SWITZERLAND\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\rADVISING BANK : ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "beneficiaryBank.x500Name.CN",
+              "title": "Beneficiary bank name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Beneficiary bank name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "FOR AN AMOUNT OF: ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "currency",
+              "title": "Currency"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Currency",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "amount",
+              "title": "Opening amount"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Opening amount",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "             \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "VALID UNTIL: ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "expiryDate",
+              "title": "Expiry date"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Expiry date",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " AT OUR COUNTERS IN ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.C",
+              "title": "Issuing bank Country"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank Country",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "AVAILABLE BY PAYMENT AT SIGHT, BUT NOT PRIOR TO:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "-\t 3/5 DAYS AFTER COD/NOR DATE BUT IN ANY CASE NO LATER THAN  30 CALENDAR DAYS AFTER B/L DATE (B/L DATE / COD DATE AND NOR DATE TO COUNT AS DAY ZERO),\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "-\t30 CALENDAR DAYS FROM THE BILLS OF LADING DATE (THE BILLS OF LADING DATE SHALL COUNT AS DAY ONE (1)) OR SEVEN (7) CALENDAR DAYS AFTER THE NOTICE OF READINESS (“NOR”) DATE (THE NOR DATE SHALL COUNT AS DAY ZERO (0)), WHICHEVER IS LATER ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "( WITH THESE PAYMENT TERMS, PLEASE ADD ADDITIONAL CONDITION NR.16\r)",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "underline",
+                "data": {}
+              },
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "AGAINST PRESENTATION OF THE FOLLOWING DOCUMENTS:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "1) COPY OF UNPAID COMMERCIAL INVOICE ALSO SHOWING DUE DATE, VESSEL NAME, B/L DATE AND/OR NOR DATE IF AVAILABLE (FAX COPY/E-MAIL IN PDF FORMAT ACCEPTABLE)\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "2) BENEFICIARY’S SIGNED STATEMENT CERTIFYING THAT THE AMOUNT DRAWN UNDER THIS SBLC IS PROPERLY DUE TO THEM AND HAS NOT BEEN PAID BY ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.CN",
+              "title": "Applicant name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " IN ACCORDANCE WITH CONTRACTUAL TERMS.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "COVERING: ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "trade.quantity",
+              "title": "Trade Quantity"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Trade Quantity",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "  ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "trade.priceUnit",
+              "title": "Trade Price unit"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Trade Price unit",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " OF ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "cargo.grade",
+              "title": "Cargo Product/Grade"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Cargo Product/Grade",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "PRICE:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "CONTRACT PRICE CLAUSE TO BE INSERTED IN FULL, INCLUDING PROVISIONAL PRICE CLAUSE IF ANY",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "underline",
+                "data": {}
+              },
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "DELIVERY: \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "COST, INSURANCE AND FREIGHT (CIF) BASIS ONE SAFE ACCESSIBLE PORT/ONE SAFE ACCESSIBLE BERTH ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "trade.deliveryLocation",
+              "title": "Trade Delivery location"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Trade Delivery location",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " DURING ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "(PERIOD)",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "underline",
+                "data": {}
+              },
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " PER VESSEL ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "(VESSEL NAME) ",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              },
+              {
+                "object": "mark",
+                "type": "underline",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "OR SUBSTITUTE. \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "NOR TENDERED DATE AT BUYER’S FIRST DISCHARGE PORT BE CONSIDERED AS DELIVERY DATE.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "SPECIAL CONDITIONS:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "------------------\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "1. BENEFICIARY IS AUTHORISED TO PRESENT PROVISIONAL INVOICE BASED ON PROVISIONAL PRICE BEING B/L DATE OR LOADING DOCUMENT DATE OR PUMPOVER DATE, OR ALL QUOTATIONS KNOWN AT THE TIME OF INVOICING. THIS STANDBY L/C ALSO COVERS BALANCE PAYMENT AS PER BENEFICIARY’S FINAL INVOICE.      \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "2. PHOTOCOPIES INSTEAD OF COPIES OF DOCUMENTS ARE ACCEPTABLE.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "3. TYPOGRAPHICAL OR SPELLING ERRORS SHALL NOT CONSTITUTE A DISCREPANCY, THIS EXCLUDE PRODUCT NAME, DATES, VALUE AND/OR VOLUME.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "4. THE AMOUNT OF THIS STANDBY L/C WILL FLUCTUATE IN ACCORDANCE WITH THE PRICE FORMULA EVEN ABOVE OR BELOW ITS INITIAL LIMITS WITHOUT FURTHER AMENDMENT ON OUR PART.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "5. THE AMOUNT OF THIS STANDBY L/C WILL AUTOMATICALLY BE REDUCED BY ANY PAYMENT EFFECTED THEREUNDER IN PARTIAL OR FULL PAYMENT OF SUBJECT INVOICE WITH REFERENCE TO THE PRESENT STANDBY L/C OR BECOME NULL AND VOID UPON EXPIRY, WHICHEVER IS EARLIER.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "6. ALL ISSUING BANK CHARGES ARE FOR THE ACCOUNT OF THE APPLICANT.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "7. FAX/EMAIL PRESENTATION ACCEPTABLE.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "8. PROVISIONAL AND/OR FINAL INVOICES PRESENTED IN CASE OF DRAWING TO THE BANK FOR PAYMENT CAN BE DIFFERENT THAN THE ONE PRESENTED TO THE APPLICANT (EXCEPT THE AMOUNT) BUT IN ANY CASE HAVE TO BE COMPLYING WITH SBLC TERMS\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "9. ANY DISCREPANCY RESULTING FROM THE INVOICED QUANTITY EXCEEDING OR FALLING BELOW THE QUANTITY RANGE ALLOWED IN THIS STANDBY L/C IS ACCEPTABLE:  \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "-IN CASE INVOICED QUANTITY IS BELOW STAND BY L/C TOLERANCE, THE BANK WILL PAY THE INVOICED AMOUNT\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "-IN CASE INVOICED QUANTITY IS ABOVE, THE BANK WILL PAY THE AMOUNT RELATED TO THE MAX STAND BY L/C QUANTITY OR WILL, FURTHER TO APPLICANT’S ACCEPTANCE OF THE EXTRA INVOICED QUANTITY PAY THE FULL INVOICED AMOUNT\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "10. PARTIAL AND MULTIPLE DRAWINGS ARE PERMITTED.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "11. DOCUMENTS CAN BE PRESENTED IN MORE THAN ONE LOT.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "12. DOCUMENTS MUST BE ISSUED IN ENGLISH LANGUAGE.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "13. THIS STANDBY LETTER OF CREDIT AND ANY DISPUTE OR CLAIM ARISING OUT OF OR IN CONNECTION WITH IT OR ITS SUBJECT MATTER OR FORMATION (INCLUDING NON-CONTRACTUAL DISPUTES OR CLAIMS) SHALL BE GOVERNED BY, AND CONSTRUED IN ACCORDANCE WITH, THE LAWS OF STATE OF NEW YORK AND APPLICABLE U.S. FEDERAL LAW. EACH PARTY IRREVOCABLY AGREES THAT THE COURTS OF THE STATE OF NEW YORK WILL HAVE EXCLUSIVE JURISDICTION OVER ANY DISPUTE OR CLAIM ARISING OUT OF OR IN CONNECTION WITH THIS LETTER OF CREDIT OR ITS SUBJECT MATTER OR FORMATION (INCLUDING NON-CONTRACTUAL DISPUTES OR CLAIMS).\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "14. (IN CASE OF PAYMENT TERMS WITH CALENDAR DAYS)\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "IF PAYMENT DUE DATE FALLS ON A SATURDAY OR A BANK HOLIDAY OTHER THAN A MONDAY IN NEW YORK, PAYMENT SHALL BE MADE ON THE IMMEDIATELY PRECEDING NEW YORK BANKING DAY. IF PAYMENT DUE DATE FALLS ON A SUNDAY OR A MONDAY BANK HOLIDAY IN (ISSUING BANK’S CITY)/NEW YORK, PAYMENT SHALL BE MADE ON THE IMMEDIATELY FOLLOWING (ISSUING BANK’S CITY)/NEW YORK BANKING DAY.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "15. IN CASE OF FREIGHT DIFFERENTIAL ONLY: \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "BUYER HAS THE OPTION TO DISCHARGE AT OTHER DISPORT(S) WITHIN CONTRACTUAL RANGE. ACTUAL DISPORT(S) AND FREIGHT DIFFERENTIAL, IF ANY, TO BE EVIDENCED IN COMMERCIAL INVOICE.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "16. IN THE EVENT THAT THE PAYMENT DUE DATE IS BASED ON THE NOR DATE AT THE DISCHARGE TERMINAL AND IN THE EVENT THAT THE VESSEL, FOR WHATEVER REASON, DOES NOT TENDER NOR AT THE DISCHARGE TERMINAL, THEN FOR PAYMENT PURPOSES THE NOR DATE SHALL BE DEEMED TO BE THE LAST DAY OF THE ESTIMATED ARRIVAL DATES.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "17. IN CASE OF CARGO RE-ALLOCATION:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "WHERE THE FINAL OUTTURN QUANTITY IS NOT AVAILABLE TO SELLER TO ADJUST B/L QUANTITY FOR THE PARCEL, SELLER MAY ISSUE AND THE BUYER SHALL MAKE PAYMENT AGAINST A PROVISIONAL INVOICE BASED ON NINETY EIGHT (98) PERCENT OF THE NOMINATED QUANTITY.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "PAYMENT OF ANY BALANCE DUE BY BUYER SHALL BE MADE IMMEDIATELY UPON RECEIPT OF THE SELLER'S FINAL INVOICE WHICH SHALL BE SENT AS SOON AS POSSIBLE AFTER THE RELEVANT QUANTITY BECOMES AVAILABLE TO THE SELLER.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "18. IN CASE OF CIF OUTTURN TERMS :\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "WHERE THE FINAL OUTTURN QUANTITY IS NOT AVAILABLE TO SELLER, SELLER MAY ISSUE AND THE BUYER SHALL MAKE PAYMENT AGAINST A PROVISIONAL INVOICE BASED ON NINETY EIGHT (98) PERCENT OF THE BILL OF LADING QUANTITY.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "PAYMENT OF ANY BALANCE DUE BY BUYER SHALL BE MADE IMMEDIATELY UPON RECEIPT OF THE SELLER'S FINAL INVOICE WHICH SHALL BE SENT AS SOON AS POSSIBLE AFTER THE RELEVANT QUANTITY BECOMES AVAILABLE TO THE SELLER.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " PAYMENT CLAUSE:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "--------------\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "UPON RECEIPT AT OUR COUNTERS IN ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.C",
+              "title": "Issuing bank Country"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank Country",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " OF A COMPLYING PRESENTATION WE WILL HONOUR BY PAYING AT SIGHT.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "THIS STANDBY LETTER OF CREDIT IS SUBJECT TO THE UNIFORM CUSTOMS AND PRACTICE FOR DOCUMENTARY CREDITS (2007 REVISION - I.C.C. PUBLICATION NO. 600) .\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "THIS MESSAGE IS THE OPERATIVE INSTRUMENT AND NO MAIL CONFIRMATION WILL FOLLOW.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "UNQUOTE",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+
+  mongo:
+    image: mongo:${MONGO_VERSION}
+    container_name: komgo-member-${MEMBER_ID}-mongo
+    restart: always
+    volumes:
+      - "./.db/mongodata_${MEMBER_ID}/db:/data/db"
+      - "./.db/mongodata_${MEMBER_ID}/configdb:/data/configdb"
+      - "./mongossl:/etc/ssl"
+      - ~/.bash_history:/root/.bash_history
+    command: ${MONGO_SERVER_OPTIONS}
+    ports:
+      - ${PORT_1:-27018}:27017
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}

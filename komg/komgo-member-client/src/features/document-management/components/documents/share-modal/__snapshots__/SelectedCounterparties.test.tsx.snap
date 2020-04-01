@@ -1,0 +1,962 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmShareStep component should match default snapshot 1`] = `
+Array [
+  <div
+    className="header"
+  >
+    <h2
+      className="description"
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      Select a counterparty
+    </h2>
+    <p
+      className="description"
+      style={
+        Object {
+          "fontSize": "1rem",
+          "marginBlockStart": 0,
+        }
+      }
+    >
+      Select the counterparties you wish to share documents with
+    </p>
+  </div>,
+  .c3.c3.c3 {
+  display: block;
+  margin-left: 6px;
+}
+
+.c2.c2.c2 {
+  display: block;
+  margin: 0;
+}
+
+.c1.c1.c1 {
+  width: 100%;
+}
+
+.c1.c1.c1 input {
+  padding-right: 32px !important;
+}
+
+.c1.c1.c1 svg {
+  top: 8px;
+  right: 10px;
+}
+
+.c1.c1.c1 svg:hover {
+  cursor: pointer;
+}
+
+.c0.c0.c0 .ReactTable {
+  overflow-x: auto;
+}
+
+.c0.c0.c0 .ReactTable .rt-thead.-header {
+  border-top: unset;
+}
+
+.c0.c0.c0 .ReactTable .rt-tbody {
+  max-height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c0.c0.c0 .ReactTable .rt-tbody::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
+  background-color: #c0cfde;
+}
+
+.c0.c0.c0 .ReactTable .rt-tbody::-webkit-scrollbar {
+  width: 2px;
+  background-color: #c0cfde;
+}
+
+.c0.c0.c0 .ReactTable .rt-tbody::-webkit-scrollbar-thumb {
+  background-color: #5d768f;
+  border: 2px solid #5d768f;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+<div
+    className="content"
+    style={
+      Object {
+        "height": "348px",
+        "paddingBottom": "16px",
+        "paddingTop": "16px",
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="ui left icon input c1"
+        data-test-id="search"
+        open={false}
+      >
+        <i
+          aria-hidden="true"
+          className="search icon"
+        />
+        <input
+          onChange={[Function]}
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="ReactTable"
+        style={Object {}}
+      >
+        <div
+          className="rt-table"
+          role="grid"
+        >
+          <div
+            className="rt-thead -header"
+            style={
+              Object {
+                "minWidth": "602px",
+              }
+            }
+          >
+            <div
+              className="rt-tr"
+              role="row"
+            >
+              <div
+                className="rt-th"
+                data-test-id="id"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="columnheader"
+                style={
+                  Object {
+                    "flex": "60 0 auto",
+                    "maxWidth": "60px",
+                    "width": "60px",
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div
+                  className=""
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    <div
+                      className="ui fitted checkbox c2"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        onClick={[Function]}
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                      />
+                      <label />
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                className="rt-th rt-resizable-header -cursor-pointer"
+                data-test-id="name"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="columnheader"
+                style={
+                  Object {
+                    "flex": "200 0 auto",
+                    "maxWidth": "200px",
+                    "width": "200px",
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div
+                  className="rt-resizable-header-content"
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Counterparty
+                  </span>
+                </div>
+                <div
+                  className="rt-resizer"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                />
+              </div>
+              <div
+                className="rt-th rt-resizable-header -cursor-pointer"
+                data-test-id="country"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="columnheader"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div
+                  className="rt-resizable-header-content"
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Country
+                  </span>
+                </div>
+                <div
+                  className="rt-resizer"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                />
+              </div>
+              <div
+                className="rt-th rt-resizable-header -cursor-pointer"
+                data-test-id="location"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="columnheader"
+                style={
+                  Object {
+                    "flex": "100 0 auto",
+                    "maxWidth": null,
+                    "width": "100px",
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div
+                  className="rt-resizable-header-content"
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Location
+                  </span>
+                </div>
+                <div
+                  className="rt-resizer"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                />
+              </div>
+              <div
+                className="rt-th rt-resizable-header -cursor-pointer"
+                data-test-id="sharedDocuments"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="columnheader"
+                style={
+                  Object {
+                    "flex": "142 0 auto",
+                    "maxWidth": "142px",
+                    "width": "142px",
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div
+                  className="rt-resizable-header-content"
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Documents shared
+                  </span>
+                </div>
+                <div
+                  className="rt-resizer"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="rt-tbody"
+            style={
+              Object {
+                "minWidth": "602px",
+              }
+            }
+          >
+            <div
+              className="rt-tr-group"
+              role="rowgroup"
+            >
+              <div
+                className="rt-tr -odd"
+                data-test-id="A Company"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="row"
+                style={
+                  Object {
+                    "background": undefined,
+                    "color": undefined,
+                    "cursor": "inherit",
+                  }
+                }
+              >
+                <div
+                  className="rt-td"
+                  data-test-id="A Company-id"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "60 0 auto",
+                      "maxWidth": "60px",
+                      "overflow": "hidden",
+                      "width": "60px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <div
+                      className="ui fitted checkbox c3"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        onClick={[Function]}
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                      />
+                      <label />
+                    </div>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="A Company-name"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "200 0 auto",
+                      "maxWidth": "200px",
+                      "overflow": "hidden",
+                      "width": "200px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        className=""
+                      >
+                        A Company
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="A Company-country"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "100 0 auto",
+                      "maxWidth": null,
+                      "overflow": "hidden",
+                      "width": "100px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <i
+                        className="country flag"
+                      />
+                       
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="A Company-location"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "100 0 auto",
+                      "maxWidth": null,
+                      "overflow": "hidden",
+                      "width": "100px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    city
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="A Company-sharedDocuments"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "142 0 auto",
+                      "maxWidth": "142px",
+                      "overflow": "hidden",
+                      "width": "142px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "right",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        className="c4"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                      >
+                        3
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="rt-tr-group"
+              role="rowgroup"
+            >
+              <div
+                className="rt-tr -even"
+                data-test-id="C Company"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="row"
+                style={
+                  Object {
+                    "background": undefined,
+                    "color": undefined,
+                    "cursor": "inherit",
+                  }
+                }
+              >
+                <div
+                  className="rt-td"
+                  data-test-id="C Company-id"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "60 0 auto",
+                      "maxWidth": "60px",
+                      "overflow": "hidden",
+                      "width": "60px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <div
+                      className="ui fitted checkbox c3"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        onClick={[Function]}
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                      />
+                      <label />
+                    </div>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="C Company-name"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "200 0 auto",
+                      "maxWidth": "200px",
+                      "overflow": "hidden",
+                      "width": "200px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        className=""
+                      >
+                        C Company
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="C Company-country"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "100 0 auto",
+                      "maxWidth": null,
+                      "overflow": "hidden",
+                      "width": "100px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <i
+                        className="country flag"
+                      />
+                       
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="C Company-location"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "100 0 auto",
+                      "maxWidth": null,
+                      "overflow": "hidden",
+                      "width": "100px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    city
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="C Company-sharedDocuments"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "142 0 auto",
+                      "maxWidth": "142px",
+                      "overflow": "hidden",
+                      "width": "142px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "right",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        className="c4"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                      >
+                        3
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="rt-tr-group"
+              role="rowgroup"
+            >
+              <div
+                className="rt-tr -odd"
+                data-test-id="N Company"
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                role="row"
+                style={
+                  Object {
+                    "background": undefined,
+                    "color": undefined,
+                    "cursor": "inherit",
+                  }
+                }
+              >
+                <div
+                  className="rt-td"
+                  data-test-id="N Company-id"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "60 0 auto",
+                      "maxWidth": "60px",
+                      "overflow": "hidden",
+                      "width": "60px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <div
+                      className="ui fitted checkbox c3"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        onClick={[Function]}
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                      />
+                      <label />
+                    </div>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="N Company-name"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "200 0 auto",
+                      "maxWidth": "200px",
+                      "overflow": "hidden",
+                      "width": "200px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        className=""
+                      >
+                        N Company
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="N Company-country"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "100 0 auto",
+                      "maxWidth": null,
+                      "overflow": "hidden",
+                      "width": "100px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <i
+                        className="country flag"
+                      />
+                       
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="N Company-location"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "100 0 auto",
+                      "maxWidth": null,
+                      "overflow": "hidden",
+                      "width": "100px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "left",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    city
+                  </span>
+                </div>
+                <div
+                  className="rt-td"
+                  data-test-id="N Company-sharedDocuments"
+                  onClick={[Function]}
+                  role="gridcell"
+                  style={
+                    Object {
+                      "flex": "142 0 auto",
+                      "maxWidth": "142px",
+                      "overflow": "hidden",
+                      "width": "142px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                        "overflow": "hidden",
+                        "textAlign": "right",
+                        "textOverflow": "ellipsis",
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        className="c4"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                      >
+                        3
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="-loading"
+        >
+          <div
+            className="-loading-inner"
+          >
+            Loading...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<div
+    className="actions"
+  >
+    <div
+      className="c0"
+    >
+      <button
+        className="ui button"
+        data-test-id="cancel-button"
+        onClick={[Function]}
+        role="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="ui primary disabled button"
+        data-test-id="next-button"
+        disabled={true}
+        onClick={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        Next
+      </button>
+    </div>
+  </div>,
+]
+`;

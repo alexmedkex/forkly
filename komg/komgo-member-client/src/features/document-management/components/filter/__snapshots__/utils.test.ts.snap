@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDocumentTypeFilterOptions should match snapshot 1`] = `
+Array [
+  Object {
+    "display": Object {
+      "color": "rgba(187,134,252)",
+    },
+    "items": Array [],
+    "name": "Banking documents",
+    "value": "banking-documents",
+  },
+  Object {
+    "display": Object {
+      "color": "rgba(132,63,255)",
+    },
+    "items": Array [],
+    "name": "Business description",
+    "value": "business-description",
+  },
+  Object {
+    "display": Object {
+      "color": "rgba(63,81,181)",
+    },
+    "items": Array [
+      Object {
+        "name": "Certificate of Incorporation",
+        "value": "certificate-of-incorporation",
+      },
+    ],
+    "name": "Company Details",
+    "value": "company-details",
+  },
+  Object {
+    "display": Object {
+      "color": "rgba(0,179,188)",
+    },
+    "items": Array [
+      Object {
+        "name": "List of Directors",
+        "value": "list-of-directors",
+      },
+    ],
+    "name": "Management and directors",
+    "value": "management-and-directors",
+  },
+  Object {
+    "display": Object {
+      "color": undefined,
+    },
+    "items": Array [],
+    "name": "Miscellaneous",
+    "value": "miscellaneous",
+  },
+  Object {
+    "display": Object {
+      "color": "rgba(0,134,124)",
+    },
+    "items": Array [],
+    "name": "Regulation/Compliance",
+    "value": "regulation-and-compliance",
+  },
+  Object {
+    "display": Object {
+      "color": "rgba(68,33,133)",
+    },
+    "items": Array [
+      Object {
+        "name": "Passports of UBOs",
+        "value": "passports-of-ubos",
+      },
+    ],
+    "name": "Shareholders - Ultimate Beneficiary Owners (UBOs)",
+    "value": "shareholders",
+  },
+]
+`;

@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RFPSummary /> should match snapshot 1`] = `
+.c8 {
+  display: block;
+}
+
+.c9 {
+  color: #5d768f;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.c10 {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.c10 li a:hover {
+  cursor: pointer;
+  color: #1c2936;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 56px;
+}
+
+.c1 > * {
+  margin: auto 0px;
+}
+
+.c2 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: auto;
+  min-width: 300px;
+}
+
+.c5 {
+  padding: 12px 0px;
+}
+
+.c6 {
+  border-top: 1px solid #d2dbe4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0px 0px 20px 0px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c7 > * {
+  padding: 12px 0px 0px 0px;
+  min-width: 200px;
+}
+
+.c0 {
+  padding: 0px 20px;
+  margin: 10px 0px;
+  border-radius: 1px;
+  display: block;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  border: 1px solid #d2dbe4;
+  background-color: white;
+}
+
+.c3 {
+  font-size: 19px;
+  color: #1c2936;
+  display: inline-block;
+  vertical-align: bottom;
+  font-family: LotaGrotesque;
+  margin-right: 30px;
+}
+
+.c4.c4.c4 {
+  background-color: #5700b5;
+  border-color: #5700b5;
+  color: white;
+}
+
+<article
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        Mercuria
+      </span>
+      <span
+        className="ui label c4"
+        data-test-id="rfp-summary-status-span"
+        onClick={[Function]}
+      >
+        Quote submitted
+      </span>
+    </div>
+    <div
+      className="c5"
+    >
+      <button
+        className="ui primary button"
+        data-test-id="accept-quote"
+        onClick={[Function]}
+        role="button"
+      >
+        Select bank
+      </button>
+    </div>
+  </section>
+  <section
+    className="c6"
+    data-test-id="quote-terms"
+  >
+    <div
+      className="c7"
+    >
+      <div
+        className="c8"
+      >
+        <span
+          className="c9"
+          data-test-id="column-test header"
+        >
+          test header
+        </span>
+        <ul
+          className="c10"
+        >
+          <li>
+            row 1
+          </li>
+          <li>
+            row 2
+          </li>
+        </ul>
+      </div>
+      <div
+        className="c8"
+      >
+        <span
+          className="c9"
+          data-test-id="column-test header 2"
+        >
+          test header 2
+        </span>
+        <ul
+          className="c10"
+        >
+          <li>
+            row 1 col 2
+          </li>
+          <li>
+            row 2 col 2
+          </li>
+        </ul>
+      </div>
+      <div
+        className="c8"
+      >
+        <span
+          className="c9"
+          data-test-id="column-comment"
+        >
+          comment
+        </span>
+        <ul
+          className="c10"
+        >
+          <li
+            data-test-id="prompt"
+            onClick={[Function]}
+          >
+            <a>
+              View comment
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</article>
+`;

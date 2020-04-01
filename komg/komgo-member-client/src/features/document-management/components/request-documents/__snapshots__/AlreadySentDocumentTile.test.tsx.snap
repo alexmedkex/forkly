@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlreadySentDocumentTile should match default snapshot 1`] = `
+.c4 {
+  text-align: center;
+  cursor: pointer;
+  color: #5700b5;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  height: 21px;
+  width: 5px;
+  color: #5d768f;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.c3 {
+  margin: 5px;
+}
+
+.c5 {
+  margin: 5px;
+  text-align: right;
+}
+
+.c0 {
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 5px [index] auto [panel-item];
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: auto [panel-item] auto [panel-item] auto [panel-item];
+  border: 1px solid #e8eef3;
+  border-radius: 4px;
+  margin: 5px 5px 5px 15px;
+  padding-left: 12px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    data-test-id="already-sent-doc-index-1"
+  >
+    20
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4"
+        data-test-id="already-sent-doc-link-1"
+        onClick={[Function]}
+      >
+        AML Letter - test
+      </span>
+    </div>
+    <div
+      className="c5"
+    />
+    <div
+      className="c5"
+      data-test-id="already-sent-doc-date-1"
+    >
+      17 Dec 95 - 3:24 AM
+    </div>
+  </div>
+</div>
+`;

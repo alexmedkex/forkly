@@ -1,0 +1,578 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditTemplate selection renders 1`] = `
+<DocumentFragment>
+  .c8 {
+  background: rgba(148,109,192,0.4);
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.c5 {
+  width: 100%;
+  padding: 8px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+}
+
+.c6 {
+  margin-left: auto;
+}
+
+.c7 {
+  margin-top: 2px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #c0cfde;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+  height: 100%;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f5f8;
+}
+
+.c2 {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+  border-top: 1px solid #c0cfde;
+  background-color: #f2f5f8;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width:68.75em) {
+  .c3 {
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    height: calc(100vh - 104px);
+  }
+}
+
+@media (min-width:68.75em) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    overflow: none;
+  }
+}
+
+<form
+    class="ui form"
+  >
+    <div
+      class="c0"
+    >
+      <div
+        style="display: flex; justify-content: space-between; align-items: flex-start;"
+      >
+        <h1
+          class="ui header"
+          style="margin: 0px;"
+        >
+          Templates
+        </h1>
+        <button
+          class="ui button"
+          data-test-id="select-template"
+          role="button"
+          type="button"
+        >
+          Select
+        </button>
+      </div>
+    </div>
+    <div
+      class="c1"
+    >
+      <p>
+        Choose 
+        <strong>
+          FakeTemplate
+        </strong>
+         template to begin your application
+      </p>
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        height="104px"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              style="padding-left: 16px; color: rgb(212, 92, 100);"
+            >
+              <i
+                aria-hidden="true"
+                class="red warning sign icon"
+              />
+              <span
+                style="padding-left: 16px;"
+              >
+                The template is missing 8 mandatory fields. 
+              </span>
+            </div>
+            <div
+              class="c6"
+            >
+              <div
+                style="display: flex; align-items: center;"
+              >
+                <div
+                  class="ui disabled fitted toggle checkbox"
+                  data-test-id="button-mode"
+                >
+                  <input
+                    class="hidden"
+                    disabled=""
+                    readonly=""
+                    tabindex="-1"
+                    type="checkbox"
+                    value=""
+                  />
+                  <label />
+                </div>
+                <label
+                  style="padding-right: 16px; padding-left: 16px;"
+                >
+                  Edit mode
+                </label>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7"
+          >
+            <div
+              autocorrect="on"
+              data-gramm="false"
+              data-key="124"
+              data-slate-editor="true"
+              spellcheck="true"
+              style="outline: none; white-space: pre-wrap; word-wrap: break-word; width: 100%; height: 100%; flex-grow: 1;"
+            >
+              <div
+                data-key="125"
+                data-slate-object="block"
+                style="position: relative;"
+              >
+                <span
+                  data-key="126"
+                  data-slate-object="text"
+                >
+                  <span
+                    data-offset-key="126:0"
+                    data-slate-leaf="true"
+                  >
+                    <span
+                      data-slate-string="true"
+                    >
+                      some text 
+                    </span>
+                  </span>
+                </span>
+                <span
+                  data-key="127"
+                  data-slate-void="true"
+                >
+                  <span>
+                    <var
+                      class="c8"
+                      data-key="127"
+                      data-slate-object="inline"
+                      data-test-id="var-trade.quantity"
+                    >
+                      600000
+                    </var>
+                  </span>
+                </span>
+                <span
+                  data-key="129"
+                  data-slate-object="text"
+                >
+                  <span
+                    data-offset-key="129:0"
+                    data-slate-leaf="true"
+                  >
+                    <span
+                      data-slate-string="true"
+                    >
+                       
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`EditTemplate view renders 1`] = `
+<DocumentFragment>
+  .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #c0cfde;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+  height: 100%;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f5f8;
+}
+
+.c2 {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+  border-top: 1px solid #c0cfde;
+  background-color: #f2f5f8;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width:68.75em) {
+  .c3 {
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    height: calc(100vh - 104px);
+  }
+}
+
+@media (min-width:68.75em) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    overflow: none;
+  }
+}
+
+<form
+    class="ui form"
+  >
+    <div
+      class="c0"
+    >
+      <div
+        style="display: flex; justify-content: space-between; align-items: flex-start;"
+      >
+        <h1
+          class="ui header"
+          style="margin: 0px;"
+        >
+          <div
+            class="inline field"
+            style="font-size: 14px;"
+          >
+            <label
+              for="field_name"
+            >
+              SBLC:
+            </label>
+            <div
+              class="ui input"
+              style="width: 300px;"
+            >
+              <input
+                id="field_name"
+                name="name"
+                type="text"
+                value="FakeTemplate"
+              />
+            </div>
+          </div>
+        </h1>
+        <button
+          class="ui primary disabled button"
+          data-test-id="save-template"
+          disabled=""
+          role="button"
+          tabindex="-1"
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+    <div
+      class="c1"
+    />
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        height="104px"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            autocorrect="on"
+            contenteditable="true"
+            data-gramm="false"
+            data-key="0"
+            data-slate-editor="true"
+            role="textbox"
+            spellcheck="true"
+            style="outline: none; white-space: pre-wrap; word-wrap: break-word; width: 100%; height: 100%; flex-grow: 1;"
+          >
+            <div
+              data-key="1"
+              data-slate-object="block"
+              style="position: relative;"
+            >
+              <span
+                data-key="2"
+                data-slate-object="text"
+              >
+                <span
+                  data-offset-key="2:0"
+                  data-slate-leaf="true"
+                >
+                  <span
+                    data-slate-string="true"
+                  >
+                    some text 
+                  </span>
+                </span>
+              </span>
+              <span
+                contenteditable="false"
+                data-key="3"
+                data-slate-void="true"
+              >
+                <span
+                  data-slate-spacer="true"
+                  style="height: 0px; color: transparent; outline: none; position: absolute;"
+                >
+                  <span
+                    data-key="4"
+                    data-slate-object="text"
+                  >
+                    <span
+                      data-offset-key="4:0"
+                      data-slate-leaf="true"
+                    >
+                      <span
+                        data-slate-length="14"
+                        data-slate-zero-width="z"
+                      >
+                        ﻿
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  contenteditable="false"
+                >
+                  <span
+                    data-key="3"
+                    data-slate-object="inline"
+                    style="position: relative;"
+                  >
+                    <span
+                      data-key="4"
+                      data-slate-object="text"
+                    >
+                      <span
+                        data-offset-key="4:0"
+                        data-slate-leaf="true"
+                      >
+                        <span
+                          data-slate-length="14"
+                          data-slate-zero-width="z"
+                        >
+                          ﻿
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+              <span
+                data-key="5"
+                data-slate-object="text"
+              >
+                <span
+                  data-offset-key="5:0"
+                  data-slate-leaf="true"
+                >
+                  <span
+                    data-slate-string="true"
+                  >
+                     
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;

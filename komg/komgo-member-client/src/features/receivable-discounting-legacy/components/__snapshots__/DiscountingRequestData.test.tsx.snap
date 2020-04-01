@@ -1,0 +1,1150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiscountingRequestData renders correctly for Discounting 1`] = `
+.c2.c2.c2 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c1 {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c4 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c6 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c3.c3.c3 {
+  text-transform: uppercase;
+}
+
+.c8.c8.c8 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+@media (min-width:68.75em) {
+  .c1 {
+    padding-left: 40px;
+  }
+}
+
+<div
+  bordercolor="#c0cfde"
+  className="accordion ui fluid c0"
+>
+  <div
+    className="active title"
+    data-test-id="receivable-discounting-data-accordion-title"
+    onClick={[Function]}
+  >
+    <div
+      className="ui block header komgo-accordion-header"
+    >
+      <div
+        className="accordion-title-wrapper"
+      >
+        <i
+          aria-hidden="true"
+          className="chevron right icon accordion-icon"
+        />
+        <div
+          className="accordion-title"
+          style={
+            Object {
+              "marginLeft": "0px",
+            }
+          }
+        >
+          Receivable discounting data
+        </div>
+      </div>
+      <div
+        className="accordion-status-wrapper"
+      />
+      <div
+        className="accordion-button-wrapper"
+      >
+        <button
+          className="ui button"
+          data-test-id="edit-discounting-request"
+          onClick={[Function]}
+          role="button"
+        >
+          Edit
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="content active"
+    data-test-id="receivable-discounting-data-accordion-content"
+  >
+    <div
+      className="lively-divider"
+    />
+    <div
+      className="ui segment komgo-accordion-content"
+    >
+      <ul
+        className="c1"
+      >
+        <p
+          className="c2"
+          data-test-id="view-request-info-rd-data-general-information"
+          width="220px"
+        >
+          <span
+            className="c3"
+          >
+            General information
+          </span>
+        </p>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-requestType"
+        >
+          <p
+            className="c6"
+          >
+            Request type
+          </p>
+          <p
+            className="c7"
+          >
+            Discount without recourse
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-invoiceAmount"
+        >
+          <p
+            className="c6"
+          >
+            Invoice amount
+          </p>
+          <p
+            className="c7"
+          >
+            1,000 USD
+            <span
+              className="c8"
+            >
+              Final
+            </span>
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-advancedRate"
+        >
+          <p
+            className="c6"
+          >
+            Expected advance rate
+          </p>
+          <p
+            className="c7"
+          >
+            2 %
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-dateOfPerformance"
+        >
+          <p
+            className="c6"
+          >
+            Title transfer date
+          </p>
+          <p
+            className="c7"
+          >
+            2019/01/31
+          </p>
+        </li>
+        <p
+          className="c2"
+          data-test-id="view-request-info-rd-data-discounting-information"
+          width="220px"
+        >
+          <span
+            className="c3"
+          >
+            Discounting information
+          </span>
+        </p>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-discountingDate"
+        >
+          <p
+            className="c6"
+          >
+            Expected discounting date
+          </p>
+          <p
+            className="c7"
+          >
+            2019/01/31
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+        >
+          <p
+            className="c6"
+          >
+            Expected days of discounting
+          </p>
+          <p
+            className="c7"
+          >
+            10
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiscountingRequestData renders correctly for Risk Cover 1`] = `
+.c2.c2.c2 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c1 {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c4 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c6 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c3.c3.c3 {
+  text-transform: uppercase;
+}
+
+.c8.c8.c8 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+@media (min-width:68.75em) {
+  .c1 {
+    padding-left: 40px;
+  }
+}
+
+<div
+  bordercolor="#c0cfde"
+  className="accordion ui fluid c0"
+>
+  <div
+    className="active title"
+    data-test-id="risk-cover-data-accordion-title"
+    onClick={[Function]}
+  >
+    <div
+      className="ui block header komgo-accordion-header"
+    >
+      <div
+        className="accordion-title-wrapper"
+      >
+        <i
+          aria-hidden="true"
+          className="chevron right icon accordion-icon"
+        />
+        <div
+          className="accordion-title"
+          style={
+            Object {
+              "marginLeft": "0px",
+            }
+          }
+        >
+          Risk cover data
+        </div>
+      </div>
+      <div
+        className="accordion-status-wrapper"
+      />
+      <div
+        className="accordion-button-wrapper"
+      >
+        <button
+          className="ui button"
+          data-test-id="edit-discounting-request"
+          onClick={[Function]}
+          role="button"
+        >
+          Edit
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="content active"
+    data-test-id="risk-cover-data-accordion-content"
+  >
+    <div
+      className="lively-divider"
+    />
+    <div
+      className="ui segment komgo-accordion-content"
+    >
+      <ul
+        className="c1"
+      >
+        <p
+          className="c2"
+          data-test-id="view-request-info-rd-data-general-information"
+          width="220px"
+        >
+          <span
+            className="c3"
+          >
+            General information
+          </span>
+        </p>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-requestType"
+        >
+          <p
+            className="c6"
+          >
+            Request type
+          </p>
+          <p
+            className="c7"
+          >
+            Risk cover only
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-invoiceAmount"
+        >
+          <p
+            className="c6"
+          >
+            Invoice amount
+          </p>
+          <p
+            className="c7"
+          >
+            1,000 USD
+            <span
+              className="c8"
+            >
+              Final
+            </span>
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-advancedRate"
+        >
+          <p
+            className="c6"
+          >
+            Expected advance rate
+          </p>
+          <p
+            className="c7"
+          >
+            2 %
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-dateOfPerformance"
+        >
+          <p
+            className="c6"
+          >
+            Title transfer date
+          </p>
+          <p
+            className="c7"
+          >
+            2019/01/31
+          </p>
+        </li>
+        <p
+          className="c2"
+          data-test-id="view-request-info-rd-data-discounting-information"
+          width="220px"
+        >
+          <span
+            className="c3"
+          >
+            Discounting information
+          </span>
+        </p>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-discountingDate"
+        >
+          <p
+            className="c6"
+          >
+            Expected discounting date
+          </p>
+          <p
+            className="c7"
+          >
+            2019/01/31
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+        >
+          <p
+            className="c6"
+          >
+            Expected days of discounting
+          </p>
+          <p
+            className="c7"
+          >
+            10
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiscountingRequestData renders correctly for Risk Cover with discounting option 1`] = `
+.c2.c2.c2 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c0.c0.c0 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.c0.c0 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c0.c0.c0 .accordion-title {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0.c0.c0 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c0.c0.c0 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c0.c0.c0 .disabled {
+  pointer-events: none;
+}
+
+.c0.c0.c0 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c0.c0.c0 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c0.c0.c0 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c0.c0.c0 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c0.c0.c0 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c0.c0.c0 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c1 {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c4 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c6 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c3.c3.c3 {
+  text-transform: uppercase;
+}
+
+.c8.c8.c8 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+@media (min-width:68.75em) {
+  .c1 {
+    padding-left: 40px;
+  }
+}
+
+<div
+  bordercolor="#c0cfde"
+  className="accordion ui fluid c0"
+>
+  <div
+    className="active title"
+    data-test-id="risk-cover-with-discount-option-data-accordion-title"
+    onClick={[Function]}
+  >
+    <div
+      className="ui block header komgo-accordion-header"
+    >
+      <div
+        className="accordion-title-wrapper"
+      >
+        <i
+          aria-hidden="true"
+          className="chevron right icon accordion-icon"
+        />
+        <div
+          className="accordion-title"
+          style={
+            Object {
+              "marginLeft": "0px",
+            }
+          }
+        >
+          Risk cover with discount option data
+        </div>
+      </div>
+      <div
+        className="accordion-status-wrapper"
+      />
+      <div
+        className="accordion-button-wrapper"
+      >
+        <button
+          className="ui button"
+          data-test-id="edit-discounting-request"
+          onClick={[Function]}
+          role="button"
+        >
+          Edit
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="content active"
+    data-test-id="risk-cover-with-discount-option-data-accordion-content"
+  >
+    <div
+      className="lively-divider"
+    />
+    <div
+      className="ui segment komgo-accordion-content"
+    >
+      <ul
+        className="c1"
+      >
+        <p
+          className="c2"
+          data-test-id="view-request-info-rd-data-general-information"
+          width="220px"
+        >
+          <span
+            className="c3"
+          >
+            General information
+          </span>
+        </p>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-requestType"
+        >
+          <p
+            className="c6"
+          >
+            Request type
+          </p>
+          <p
+            className="c7"
+          >
+            Risk cover with discount option
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-invoiceAmount"
+        >
+          <p
+            className="c6"
+          >
+            Invoice amount
+          </p>
+          <p
+            className="c7"
+          >
+            1,000 USD
+            <span
+              className="c8"
+            >
+              Final
+            </span>
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-advancedRate"
+        >
+          <p
+            className="c6"
+          >
+            Expected advance rate
+          </p>
+          <p
+            className="c7"
+          >
+            2 %
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-dateOfPerformance"
+        >
+          <p
+            className="c6"
+          >
+            Title transfer date
+          </p>
+          <p
+            className="c7"
+          >
+            2019/01/31
+          </p>
+        </li>
+        <p
+          className="c2"
+          data-test-id="view-request-info-rd-data-discounting-information"
+          width="220px"
+        >
+          <span
+            className="c3"
+          >
+            Discounting information
+          </span>
+        </p>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-discountingDate"
+        >
+          <p
+            className="c6"
+          >
+            Expected discounting date
+          </p>
+          <p
+            className="c7"
+          >
+            2019/01/31
+          </p>
+        </li>
+        <li
+          className="c4 c5"
+          data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+        >
+          <p
+            className="c6"
+          >
+            Expected days of discounting
+          </p>
+          <p
+            className="c7"
+          >
+            10
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

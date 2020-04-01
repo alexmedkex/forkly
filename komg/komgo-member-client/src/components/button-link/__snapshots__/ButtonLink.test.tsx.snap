@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLink should match snapshot 1`] = `
+<DocumentFragment>
+  .c0.c0.c0.c0 {
+  border: 0;
+  padding: 0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0.c0.c0.c0:hover,
+.c0.c0.c0.c0:active,
+.c0.c0.c0.c0:visited,
+.c0.c0.c0.c0:focus {
+  box-shadow: none !important;
+}
+
+<a
+    class="c0"
+    href="nowhere"
+  />
+</DocumentFragment>
+`;

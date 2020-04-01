@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TradeViewContentBar should render proper LC buttons should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  height: 50px;
+}
+
+.c1 {
+  display: inline-block;
+}
+
+<header
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    Trade details
+  </h1>
+  <div>
+    <button
+      className="ui primary button"
+      data-test-id="action-VIEW_LC"
+      onClick={[Function]}
+      role="button"
+    >
+      View LC
+    </button>
+    <button
+      className="ui primary button"
+      data-test-id="action-VIEW_SBLC"
+      onClick={[Function]}
+      role="button"
+    >
+      View SBLC
+    </button>
+    <div
+      aria-expanded={false}
+      className="ui button floating dropdown primary"
+      data-test-id="apply-for-financing"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      tabIndex={0}
+    >
+      <div
+        aria-live="polite"
+        className="text"
+        role="alert"
+      >
+        Apply for financing
+      </div>
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition left"
+      >
+        <div
+          aria-disabled={true}
+          className="disabled item"
+          data-test-id="action-EDIT_TRADE"
+          onClick={[Function]}
+          role="option"
+        >
+          <span
+            className="text"
+          >
+            Edit trade
+          </span>
+        </div>
+        <div
+          aria-disabled={false}
+          className="item"
+          data-test-id="action-APPLY_FOR_LC"
+          onClick={[Function]}
+          role="option"
+        >
+          <span
+            className="text"
+          >
+            Apply for LC
+          </span>
+        </div>
+        <div
+          aria-disabled={false}
+          className="item"
+          data-test-id="action-REAPPLY_FOR_LC"
+          onClick={[Function]}
+          role="option"
+        >
+          <span
+            className="text"
+          >
+            Reapply for LC
+          </span>
+        </div>
+        <div
+          aria-disabled={false}
+          className="item"
+          data-test-id="action-APPLY_FOR_SBLC"
+          onClick={[Function]}
+          role="option"
+        >
+          <span
+            className="text"
+          >
+            Apply for SBLC
+          </span>
+        </div>
+        <div
+          aria-disabled={false}
+          className="item"
+          data-test-id="action-REAPPLY_FOR_SBLC"
+          onClick={[Function]}
+          role="option"
+        >
+          <span
+            className="text"
+          >
+            Reapply for SBLC
+          </span>
+        </div>
+        <div
+          aria-disabled={false}
+          className="item"
+          data-test-id="action-VIEW_LEGACY_SBLC"
+          onClick={[Function]}
+          role="option"
+        >
+          <span
+            className="text"
+          >
+            View legacy SBLC
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tranformToRdBankDashboardData should return formatted RD data 1`] = `
+Array [
+  Object {
+    "buyer": "BP-id not found",
+    "currency": "EUR",
+    "discountingDate": "2019/01/31",
+    "discountingDateType": "Expected",
+    "invoiceAmount": "1,000.00",
+    "invoiceType": "Final",
+    "paymentTerms": "-",
+    "rd": Object {
+      "staticId": "cc24a24b-ada5-4332-9ee7-394da255df67",
+      "status": "REQUESTED",
+    },
+    "requestDate": "2019/01/31",
+    "seller": "Mercuria-d not found",
+    "status": "Requested",
+    "tradeId": "",
+  },
+  Object {
+    "buyer": "BP-id not found",
+    "currency": "EUR",
+    "discountingDate": "2019/01/31",
+    "discountingDateType": "Expected",
+    "invoiceAmount": "1,000.00",
+    "invoiceType": "Final",
+    "paymentTerms": "-",
+    "rd": Object {
+      "staticId": "cc24a24b-ada5-4332-9ee7-394da255df67",
+      "status": "REQUESTED",
+    },
+    "requestDate": "2019/01/31",
+    "seller": "Mercuria-d not found",
+    "status": "Requested",
+    "tradeId": "",
+  },
+]
+`;

@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InterestTypeField should render correctly for InterestType = COF 1`] = `
+<DocumentFragment>
+  <label>
+    Indicative Cost of Funds as of 2019/08/08
+  </label>
+  <div
+    class="field"
+    style="display: inherit; justify-content: unset; align-items: center;"
+  >
+    <div
+      class="ui right labeled input"
+      data-test-id="indicativeCof"
+      style="width: 50%;"
+    >
+      <input
+        name="indicativeCof"
+        step="0.01"
+        type="number"
+        value=""
+      />
+      <div
+        class="ui basic label label"
+        style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+      >
+        %
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InterestTypeField should render correctly for PricingType = AddOnLibor 1`] = `
+<DocumentFragment>
+  <label>
+    Add on value
+  </label>
+  <div
+    class="field"
+    style="display: inherit; justify-content: unset; align-items: center;"
+  >
+    <div
+      class="ui right labeled input"
+      data-test-id="addOnValue"
+      style="width: 50%;"
+    >
+      <input
+        name="addOnValue"
+        step="0.01"
+        type="number"
+        value=""
+      />
+      <div
+        class="ui basic label label"
+        style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+      >
+        %
+      </div>
+    </div>
+  </div>
+  .c0 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c0 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c0 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c0 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="field"
+    >
+      <label
+        id="field_liborType"
+      >
+        Libor value
+      </label>
+      <div
+        class="field"
+      >
+        <div
+          class="ui radio checkbox"
+          data-test-id="liborType_PUBLISHED"
+        >
+          <input
+            class="hidden"
+            readonly=""
+            tabindex="0"
+            type="radio"
+            value=""
+          />
+          <label>
+            Published
+          </label>
+        </div>
+      </div>
+      <div
+        class="field"
+      >
+        <div
+          class="ui radio checkbox"
+          data-test-id="liborType_INTERPOLATED"
+        >
+          <input
+            class="hidden"
+            readonly=""
+            tabindex="0"
+            type="radio"
+            value=""
+          />
+          <label>
+            Interpolated
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InterestTypeField should render correctly for PricingType = Libor 1`] = `
+<DocumentFragment>
+  .c0 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c0 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c0 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c0 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="field"
+    >
+      <label
+        id="field_liborType"
+      >
+        Libor value
+      </label>
+      <div
+        class="field"
+      >
+        <div
+          class="ui radio checkbox"
+          data-test-id="liborType_PUBLISHED"
+        >
+          <input
+            class="hidden"
+            readonly=""
+            tabindex="0"
+            type="radio"
+            value=""
+          />
+          <label>
+            Published
+          </label>
+        </div>
+      </div>
+      <div
+        class="field"
+      >
+        <div
+          class="ui radio checkbox"
+          data-test-id="liborType_INTERPOLATED"
+        >
+          <input
+            class="hidden"
+            readonly=""
+            tabindex="0"
+            type="radio"
+            value=""
+          />
+          <label>
+            Interpolated
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,768 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "TO : ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "beneficiary.x500Name.CN",
+              "title": "Beneficiary name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Beneficiary name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": ", London  Fax No. + 44 207 546 2100 ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "ATTN : LETTER OF CREDIT DEPARTMENT - STF/411",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "  lccorrespondence@shell.com\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "With reference to the Sale/Purchase contract No: ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "trade.contractReference",
+              "title": "Trade Contract reference"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Trade Contract reference",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " dated ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "trade.contractDate",
+              "title": "Trade Contract date"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Trade Contract date",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " between Shell International Trading and Shipping Company Limited (STASCO) for and on behalf of Shell Trading International Limited and ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "applicant.x500Name.CN",
+              "title": "Applicant name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Applicant name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " (buyer) we, ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.CN",
+              "title": "Issuing bank name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " hereby open our Irrevocable Standby Letter of Credit No: ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBankReference",
+              "title": "Issuing bank reference"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank reference",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " in favour of Shell International Trading and Shipping Company Limited, London for an amount of ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "currency",
+              "title": "Currency"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Currency",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "amount",
+              "title": "Opening amount"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Opening amount",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " .\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Available with  ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.CN",
+              "title": "Issuing bank name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.C",
+              "title": "Issuing bank Country"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank Country",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " by SIGHT PAYMENT ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Advising Bank : ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "beneficiaryBank.x500Name.CN",
+              "title": "Beneficiary bank name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Beneficiary bank name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Valid up to ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "expiryDate",
+              "title": "Expiry date"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Expiry date",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "(minimum validity to be 30 days after final payment date) ",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "for payment at sight against presentation of the following documents:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "1)\tA statement for and on behalf of Shell International Trading and Shipping Company Limited reading as follows:\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\"We certify that the amount of US Dollars [INVOICE VALUE] (invoice amount or such part as remains unpaid to be inserted ) has remained unpaid and is now overdue to us under the terms of our contract with [BUYER'S NAME] for the sale of [QUANTITY] BBLS/MT (which ever is applicable) of [PRODUCT].\"",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "italic",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "2)\tCopy of Seller's commercial invoice ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "(provisional and/or final invoice acceptable)",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": ". \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "All Charges in connection with the operation of this Irrevocable Standby Letter of Credit for the Buyer's account.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "The amount of the credit will automatically fluctuate in accordance with the loaded/discharged quantity and the contractual price formula even above and below the stated limits and without any further amendment.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Documents presented after 21 days from the date of Bill of Lading but within the credit validity are acceptable.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "The amount of this standby letter of credit will automatically be reduced (by provisional invoice) or cancelled (by final invoice) upon payment of invoice(s) in favour of the beneficiary relating to this contract and quoting this LC number.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "The construction, performance and validity of the Stand-by Letter of Credit shall be governed by and construed in accordance with English Law. Any claim or dispute arising out of or in connection with this Stand-by Letter of Credit shall be subject to the exclusive jurisdiction of the English Courts.\r",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "This Standby Letter of Credit is subject to the Uniform Customs and Practice for Documentary Credits (2007 Revision - I.C.C. Publication No. 600).\r",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "\r",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "This message is the operative instrument and no mail confirmation will follow.\r",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": " \r",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "bold",
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "For: ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "variable",
+            "data": {
+              "path": "issuingBank.x500Name.CN",
+              "title": "Issuing bank name"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Issuing bank name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

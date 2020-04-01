@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LCDocumentErrorOrLoading renders correctly 1`] = `
+<iframe
+  height="700px"
+  src="data:application/pdf;base64, test document"
+  width="100%"
+/>
+`;

@@ -1,0 +1,49 @@
+{
+  "name": "integration-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build; node ./dist/index.js",
+    "test:integration": "jest '.*\\.ts$' --runInBand --detectOpenHandles --forceExit --verbose",
+    "prettier": "prettier --write 'src/**/*.{ts,js,json}'"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "belConfig": false,
+        "diagnostics": true
+      }
+    },
+    "clearMocks": true,
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@komgo/integration-test-utilities": "^1.2.2",
+    "@types/jest": "^23.3.10",
+    "axios": "^0.18.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.2.2"
+  }
+}

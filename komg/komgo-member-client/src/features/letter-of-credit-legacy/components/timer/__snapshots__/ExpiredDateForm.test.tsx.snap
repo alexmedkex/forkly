@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpiredDateForm component should match snapshot when default props is presented (1 day) 1`] = `
+.c0 {
+  margin-left: 20px;
+}
+
+.c1 {
+  line-height: 21px;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="green clock outline large icon"
+  />
+  <span
+    className="grey c1"
+    data-test-id="due-date-calculated"
+  >
+    2017/02/15, Wednesday, 1:51 PM CET
+  </span>
+</div>
+`;
+
+exports[`ExpiredDateForm component should match snapshot when props are 1 week 1`] = `
+.c0 {
+  margin-left: 20px;
+}
+
+.c1 {
+  line-height: 21px;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="green clock outline large icon"
+  />
+  <span
+    className="grey c1"
+    data-test-id="due-date-calculated"
+  >
+    2017/02/21, Tuesday, 1:51 PM CET
+  </span>
+</div>
+`;
+
+exports[`ExpiredDateForm component should match snapshot when props are 5 days 1`] = `
+.c0 {
+  margin-left: 20px;
+}
+
+.c1 {
+  line-height: 21px;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="green clock outline large icon"
+  />
+  <span
+    className="grey c1"
+    data-test-id="due-date-calculated"
+  >
+    2017/02/19, Sunday, 1:51 PM CET
+  </span>
+</div>
+`;
+
+exports[`ExpiredDateForm component should match snapshot when props are 5 hours 1`] = `
+.c0 {
+  margin-left: 20px;
+}
+
+.c1 {
+  line-height: 21px;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="green clock outline large icon"
+  />
+  <span
+    className="grey c1"
+    data-test-id="due-date-calculated"
+  >
+    2017/02/14, Tuesday, 6:51 PM CET
+  </span>
+</div>
+`;

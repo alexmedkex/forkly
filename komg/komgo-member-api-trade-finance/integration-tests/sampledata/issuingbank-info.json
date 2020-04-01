@@ -1,0 +1,64 @@
+[
+  {
+    "staticId": "08e9f8e3-94e5-459e-8458-ab512bee6e2c",
+    "komgoMnid": "00a3bd3a-d7ef-41bc-a7ba-3e381945f5e6",
+    "x500Name": {
+      "CN": "Mercuria Energy Trading SA",
+      "O": "Mercuria Energy Trading SA",
+      "C": "CH",
+      "L": "Geneva",
+      "STREET": "50 Rue du Rhône",
+      "PC": "1204"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+        "e": "AQAB",
+        "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ"
+      }
+    },
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0x88f4E7D08bd9216d682196dcBd8F087854da16d1",
+      "key": "0x15a89fe8841035bdf3610974709a408bcaa2f58005ba80e9077f0dceab5c8b7a8e86ebc2d5e2a00439213843edf10cf8f74d8598c016b435d892daacb16573f4"
+    },
+    "vakt": {
+      "staticId": "11763",
+      "mnid": "MERCURIA_11763",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "16e79408-feac-4dcb-9ea2-09c743a9a4ee",
+          "n": "lZNdfx2BAn372QajnUkgjeNl2e8kHEg3L45IYUHHZDYyAmGs8Pg4ADuBiMdDSzWoSMivDyFIeopTXwfWvk2xiZC34PSXkJaEgzJJtsnzIkM9P6qYzZyQTRz5EEGHehBq63JYO_3H6ybPwr8MlOAKvusjYWVold3icUcn-eP6NgPd8QSWBNqUxtF4YZmi0s6-ejug2bfQhtwUlFRd-73E83Z6uOLEEE94k0MYzdaI36fx1mYvCBvnltiA1g8tSwpEHI50Dj1ejDE3uCR9HGbUjWAb9IVCQM8X9HiyuP71v7jD3EIRPznOk2MMEzhT9PSBly_-Uto1ZyO57uG5Yx42xQ",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+        "e": "AQAB",
+        "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ",
+        "d": "WhhIE7Cqw7ZpIKdF_w1SkKEtUhTNqkJ5HLqQYReQj8mFwBv4PORrvmu3JV8V3bn4x4uUORSzbDaES1qNh2Zkw3IAKjfOmQpmEiPMVUoNmo2U4S0fcYPlwcp8lwthC9bdwJU4P0Y-eymSNuGJm5_tcIp-EUIwdSTaRSuAfUUZa6yuuMZywKIYGvCfrK9LYuI3BzngWnTvbcJef8nV4eRamTK0EzJ8CwtnG7-8-dol2LBbXMT5JhdfoOJwNOcAnHA61eFG974lC6xlxybxDkP0utxeLAfEGRanmGBJWcVWwmVPTeShG7kJneMT5Co5Yn2mXzerw3LceZWzO_jN94th4Q",
+        "p": "7e8-u9-i1cjB7UGIrIgD7buzmhCYCiMiPUAqOErI4cAUl_uOycGv_p4xuAxxAnvOXH7PVSIG9p44ffkomAM4RtUzTs_8s9DcUTfbzUZTvzRLqJxsukegDnBs3qRFYDpyrI9k2a2pxtJ8T8F2lyJY7wawo_XUzSPVpxnciqqSB5U",
+        "q": "rOxcJCZo0QjULjTXcJQhK8EBvTidMnFumiPIPZGVZDru-yE0uk9idEGJDm4OxKlhAiPISp5tI9RnYNXKTlQ3UkAV_HrrX2Zo7LTGdTaoZ6Gk3v1FgsHsP29SoaNf11t9BeORrJLQHrcDvJq19noGlJEFM5iWp4XVWo2oFhlbio0",
+        "dp": "c9JIOXANdf-51uJVw5aaQvlh3hdBy316x1Iauzg8PRghbjI4OaIdJ9ad4Te9MzZNJ91a09gyh45RdZD537WBiYly5mR8YJPFC4wjZPNdBPBR_AvZKXyAP0ce1-ojE0qgU7uhngzZXj1L4g8MyVkg7YnWJpoeMpXFBQijwKRzXVk",
+        "dq": "POEl-3AuXNGv6eiepLryBrZ3x0eESHsZBllsqQh1QQlik7V4G9PRBL8B4ruqpWBAkAFLBcJLCF9CWhxKklMh-uonE3GvJjIm5Jcse53XokyNgBhI_aUKaLbnr5KWLnq-RHF_GvPBI98pCKCrSXBimrGH1Ed3WtlKaQwQTl91FA0",
+        "qi": "m_uFmvLGOgkF2PJ2iVUtHMVXnPSiyX62g1sC2B5vXelZUwt0J51h8x1cwtVM9d1TGs9DRDurjwv831olUpj-VCczJZ5aurybdX9TUobF-uQIxnt11cyAW51JV69-_Jqd4DX4Ay-jHP9qtlazjfSiVyIe6rktESeos_gWvbFj-PA"
+      },
+      "QAEthereumPrivateKey": "0x7c89b4435aff63098bf00c41376c98146b36f1858f2de969b2cb1463dcd7db84"
+    }
+  }
+]

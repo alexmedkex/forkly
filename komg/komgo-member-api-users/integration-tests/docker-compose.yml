@@ -1,0 +1,34 @@
+version: '2.4'
+
+services:
+  keycloak:
+    image: $KEYCLOAK_IMAGE
+    container_name: komgo-keycloak
+    restart: always
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=keycloakadmin
+      - KEYCLOAK_REALM_NAME=KOMGO
+      - KEYCLOAK_CLIENT_ID=web-app
+      - KEYCLOAK_ALLOWED_CORS_ORIGIN=http://localhost:3010
+      - POSTGRES_DB=keycloak
+      - DB_VENDOR=postgres
+      - DB_ADDR=keycloak_db
+      - DB_USER=keycloak
+      - DB_PASSWORD=password
+      - SET_TEMP_PASSWORDS=false
+      - SMTP_HOST=something
+      - SMTP_PORT=25
+      - MAIL_FROM=info@komgo.com
+    ports:
+      - 8080:8080
+    depends_on:
+      - keycloak_db
+
+  keycloak_db:
+    image: postgres:10.4
+    restart: always
+    environment:
+      - POSTGRES_DB=keycloak
+      - POSTGRES_USER=keycloak
+      - POSTGRES_PASSWORD=password

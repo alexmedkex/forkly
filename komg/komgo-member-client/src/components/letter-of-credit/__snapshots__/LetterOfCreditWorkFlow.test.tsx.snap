@@ -1,0 +1,1105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LetterOfCreditWorflow renders ADVISED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders AMENDMENT_ACCEPTED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders AMENDMENT_REQUESTED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders AMENDMENT_UNDER_NEGOTIATION status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders EXPIRED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders PAID status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders RECEIVED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders REFUSED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders SUBMITTED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c1"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`LetterOfCreditWorflow renders TO_BE_FINANCED status 1`] = `
+.c0 {
+  list-style: none;
+  margin: 7px;
+  padding: 0;
+  border-left: 7px solid lightgray;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c1:first-child {
+  padding-top: 0;
+}
+
+.c1:last-child {
+  padding-bottom: 0;
+}
+
+.c1 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c1:before {
+  content: '';
+  display: inline-block;
+  background-color: green;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.c2:first-child {
+  padding-top: 0;
+}
+
+.c2:last-child {
+  padding-bottom: 0;
+}
+
+.c2 span {
+  padding: 0 0 0 10px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  height: 21px;
+  border-radius: 50%;
+  min-width: 21px;
+  margin-left: -14px;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <span>
+      to be financed
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      in progress
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      issued
+    </span>
+  </li>
+  <li
+    className="c2"
+  >
+    <span>
+      closed
+    </span>
+  </li>
+</ul>
+`;

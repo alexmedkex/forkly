@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxStyledComponents CheckboxColumn should match snapshot 1`] = `
+.c0 {
+  -webkit-flex: 1 1 33.33%;
+  -ms-flex: 1 1 33.33%;
+  flex: 1 1 33.33%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@media (max-width:1200px) {
+  .c0 {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    margin-bottom: 10px;
+  }
+
+  .c0 label {
+    min-width: 140px;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`CheckboxStyledComponents CheckboxGrid should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`CheckboxStyledComponents CheckboxWrapper should match snapshot 1`] = `
+.c0.c0.c0 {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.c0.c0.c0 .inline.field {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+
+  mq-router:
+    image: ${IMAGE_NAME:-komgo-common-mq-router}
+    build:
+      context: ${BUILD_DIR:-./komgo-common-mq-router}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    container_name: komgo-common-mq-router
+    restart: always
+    environment:
+      - NPM_TOKEN
+      - CONTAINER_HOSTNAME=common-mq-router
+      - COMMON_BROKER_AMQP_URI=amqp://${COMMON_MQ_USERNAME}:${COMMON_MQ_PASSWORD}@${COMMON_MQ_HOST}:$COMMON_MQ_PORT/
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - SMTP_HOST
+      - SMTP_PORT
+      - MAIL_FROM=info@komgo.io
+      - SMTP_AUTH
+      - SMTP_SSL
+      - SMTP_TLS
+      - SMTP_AUTH_USER
+      - SMTP_AUTH_PASS
+    command: ${COMMAND:-komgo}
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-common-mq-router:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo

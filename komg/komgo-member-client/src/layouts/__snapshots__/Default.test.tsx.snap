@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultLayout Component should render a DefaultLayout match to snapshot 1`] = `
+<styled.div>
+  <Styled(SidebarPushable)
+    as={[Function]}
+  >
+    <Connect(NotificationMenu) />
+    <div
+      data-test-id="trigger-error-500"
+    />
+    <Styled(SidebarPusher)
+      dimmed={false}
+    >
+      <Connect(WithPermissions(Connect(WithLicenseCheck(Connect(NavigationMenu)))))
+        location=""
+      />
+      <Styled(Segment)
+        basic={true}
+        padded="very"
+      >
+        test
+        <Connect(withRouter(BottomSheet)) />
+      </Styled(Segment)>
+      <Connect(GlobalTaskModal) />
+    </Styled(SidebarPusher)>
+  </Styled(SidebarPushable)>
+</styled.div>
+`;

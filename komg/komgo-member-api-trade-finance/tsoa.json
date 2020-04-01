@@ -1,0 +1,433 @@
+{
+  "swagger": {
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "securityDefinitions": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "access_token",
+        "in": "header"
+      }
+    },
+    "outputDirectory": "./dist",
+    "entryFile": "./src/run-server.ts",
+    "host": "localhost:3108",
+    "basePath": "/v0",
+    "yaml": false,
+    "specMerging": "recursive",
+    "spec": {
+      "definitions": {
+        "ITemplateBinding": {
+          "type": "string"
+        },
+        "IDataLetterOfCreditBase": {
+          "properties": {
+            "version": {
+              "type": "number",
+              "format": "double"
+            },
+            "applicant": {
+              "type": "object",
+              "properties": {
+                "staticId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "staticId"
+              ]
+            },
+            "issuingBank": {
+              "type": "object",
+              "properties": {
+                "staticId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "staticId"
+              ]
+            },
+            "beneficiary": {
+              "type": "object",
+              "properties": {
+                "staticId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "staticId"
+              ]
+            },
+            "beneficiaryBank": {
+              "type": "object",
+              "properties": {
+                "staticId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "staticId"
+              ]
+            },
+            "trade": {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "$ref": "#/definitions/TradeSource"
+                },
+                "sourceId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source",
+                "sourceId"
+              ]
+            },
+            "cargo": {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "$ref": "#/definitions/TradeSource"
+                },
+                "cargoId": {
+                  "type": "string"
+                },
+                "sourceId": {
+                  "type": "string"
+                },
+                "required": [
+                  "source",
+                  "cargoId",
+                  "sourceId"
+                ]
+              }
+            },
+            "amount": {
+              "type": "number"
+            },
+            "expireDate": {
+              "type": "string"
+            },
+            "currency": {
+              "$ref": "#/definitions/Currency"
+            },
+            "issuingBankReference": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "version",
+            "applicant",
+            "issuingBank",
+            "beneficiary",
+            "trade",
+            "cargo",
+            "amount",
+            "expireDate",
+            "currency"
+          ]
+        },
+        "ITemplateInstanceIDataLetterOfCreditBase": {
+          "properties": {
+            "version": {
+              "type": "number",
+              "format": "double"
+            },
+            "templateStaticId": {
+              "type": "string"
+            },
+            "template": {
+              "type": "object"
+            },
+            "templateSchemaId": {
+              "type": "string"
+            },
+            "data": {
+              "$ref": "#/definitions/IDataLetterOfCreditBase"
+            },
+            "dataSchemaId": {
+              "type": "string"
+            },
+            "bindings": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/definitions/ITemplateBinding"
+              }
+            }
+          },
+          "required": [
+            "version",
+            "templateStaticId",
+            "template",
+            "templateSchemaId",
+            "data",
+            "dataSchemaId",
+            "bindings"
+          ],
+          "type": "object"
+        },
+        "ILetterOfCreditBaseIDataLetterOfCreditBase": {
+          "properties": {
+            "version": {
+              "type": "number",
+              "format": "double",
+              "x-nullable": true
+            },
+            "templateInstance": {
+              "$ref": "#/definitions/ITemplateInstanceIDataLetterOfCreditBase",
+              "x-nullable": true
+            },
+            "type": {
+              "$ref": "#/definitions/LetterOfCreditType"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "type": "object"
+        },
+        "ILetterOfCreditIDataLetterOfCredit": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/ILetterOfCreditIDataLetterOfCreditBase"
+            }
+          ],
+          "properties": {
+            "createdAt": {
+              "type": "string"
+            },
+            "updatedAt": {
+              "type": "string"
+            },
+            "reference": {
+              "type": "string"
+            },
+            "stateHistory": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/IState"
+              },
+              "x-nullable": true
+            },
+            "staticId": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "transactionHash": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "contractAddress": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "deletedAt": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "status": {
+              "$ref": "#/definitions/LetterOfCreditStatus"
+            },
+            "nonce": {
+              "type": "number",
+              "format": "double",
+              "x-nullable": true
+            },
+            "hashedData": {
+              "type": "string",
+              "x-nullable": true
+            },
+            "issuingDocumentHash": {
+              "type": "string",
+              "x-nullable": true
+            }
+          },
+          "required": [
+            "type",
+            "createdAt",
+            "updatedAt",
+            "reference",
+            "status"
+          ],
+          "type": "object"
+        },
+        "IIssueLCRequest": {
+          "properties": {
+            "issuedLCReference": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "issuedLCReference"
+          ],
+          "type": "object",
+          "example": "{ issuedLCReference: 1213 }"
+        }
+      },
+      "paths": {
+        "/lc/{id}/task/issue": {
+          "post": {
+            "consumes": [
+              "multipart/form-data"
+            ],
+            "parameters": [
+              {
+                "in": "path",
+                "name": "id",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "in": "header",
+                "name": "Authorization",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "in": "formData",
+                "name": "fileData",
+                "required": true,
+                "type": "file"
+              },
+              {
+                "in": "formData",
+                "name": "extraData",
+                "required": true,
+                "schema": {
+                  "$ref": "#/definitions/IIssueLCRequest"
+                }
+              }
+            ]
+          }
+        },
+        "/lc/documents/{documentId}/content": {
+          "get": {
+            "responses": {
+              "200": {
+                "description": "Ok",
+                "schema": {
+                  "type": "file",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        },
+        "/letterofcredit": {
+          "post": {
+            "operationId": "Create",
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "201": {
+                "description": "Created",
+                "schema": {
+                  "$ref": "#/definitions/ILetterOfCreditIDataLetterOfCredit"
+                }
+              },
+              "400": {
+                "description": "",
+                "schema": {
+                  "$ref": "#/definitions/HttpException"
+                }
+              },
+              "500": {
+                "description": "",
+                "schema": {
+                  "$ref": "#/definitions/HttpException"
+                }
+              }
+            },
+            "tags": [
+              "LetterOfCredit"
+            ],
+            "security": [
+              {
+                "withPermission": [
+                  "tradeFinance",
+                  "manageLCRequest"
+                ]
+              },
+              {
+                "withPermission": [
+                  "tradeFinance",
+                  "manageLCRequest"
+                ]
+              }
+            ],
+            "parameters": [
+              {
+                "in": "body",
+                "name": "letterOfCredit",
+                "required": true,
+                "schema": {
+                  "$ref": "#/definitions/ILetterOfCreditBaseIDataLetterOfCreditBase"
+                }
+              }
+            ]
+          },
+          "get": {
+            "operationId": "Find",
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "200": {
+                "description": "Ok",
+                "schema": {
+                  "$ref": "#/definitions/IPaginateArray"
+                }
+              }
+            },
+            "tags": [
+              "LetterOfCredit"
+            ],
+            "security": [
+              {
+                "withPermission": [
+                  "tradeFinance",
+                  "manageLCRequest"
+                ]
+              },
+              {
+                "withPermission": [
+                  "tradeFinance",
+                  "reviewLCApplication",
+                  "read"
+                ]
+              },
+              {
+                "withPermission": [
+                  "tradeFinance",
+                  "reviewIssuedLC",
+                  "read"
+                ]
+              }
+            ],
+            "parameters": [
+              {
+                "default": {},
+                "in": "query",
+                "name": "filter",
+                "required": false,
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "routes": {
+    "basePath": "/v0",
+    "entryFile": "./src/run-server.ts",
+    "routesDir": "./src/middleware/server-config",
+    "authenticationModule": "./src/middleware/authentication.ts",
+    "iocModule": "./src/inversify/ioc"
+  }
+}

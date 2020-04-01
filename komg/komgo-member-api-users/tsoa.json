@@ -1,0 +1,44 @@
+{
+    "swagger": {
+        "info": {
+            "description": "Komgo users module",
+            "version": "1.0.0",
+            "title": "Komgo users module"
+        },
+        "tags":[
+            {
+                "name":"Profile",
+                "description":"Get user's profile info"
+            },
+            {
+                "name":"Users",
+                "description":"CRUD operations on users"
+            },
+            {
+                "name":"Roles",
+                "description":"CRUD operations on roles"
+            },
+            {
+                "name":"Health",
+                "description":"Healh and readiness endpoints"
+            },
+            {
+                "name":"Misc",
+                "description":"Miscellaneous endpoints"
+            }
+        ],
+        "schemes": [ "http", "https" ],
+        "outputDirectory": "./dist",
+        "entryFile": "./src/run-server.ts",
+        "host": "localhost:3101",
+        "basePath": "/v0"
+    },
+    "routes": {
+        "basePath": "/v0",
+        "middlewareTemplate": "./node_modules/@komgo/microservice-config/src/request-context/tsoa-templates/express.hbs",
+        "entryFile": "./src/run-server.ts",
+        "routesDir": "./src/middleware/server-config",
+        "authenticationModule": "./src/middleware/common/authentication",
+        "iocModule" : "./src/inversify/ioc"
+    }
+}

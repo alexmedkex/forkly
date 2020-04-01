@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimationBar should render AnimationBar 1`] = `
+.c0.c0.c0 {
+  width: 500px;
+  height: 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  color: #1c2936;
+  margin-bottom: 0;
+}
+
+<div
+  className="ui teal tiny progress c0"
+  data-percent={0}
+  id={0}
+>
+  <div
+    className="bar"
+    style={
+      Object {
+        "width": "0%",
+      }
+    }
+  />
+</div>
+`;

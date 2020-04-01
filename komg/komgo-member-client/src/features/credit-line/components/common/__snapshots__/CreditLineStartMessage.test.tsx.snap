@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreditLineStartMessage should match snapshot 1`] = `
+.c0 {
+  margin: 200px auto 0 auto;
+  width: 480px;
+}
+
+.c1 {
+  margin-bottom: 30px;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c3.c3.c3.c3.c3 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    width: 580px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <p
+      data-test-id="rc-intro-paragraph-1"
+    >
+      The 
+      <b>
+        Risk Cover
+      </b>
+       feature allows you to set, update and monitor your credit related information on counterparts in the context of risk cover and receivables discounting. By clicking "Add buyer" you can add as many counterparties as you wish and optionally fill information related to your risk appetite and pricing. To start using it, click on “Add buyer” and fill in the relevant information. You can then customise the information you would like to disclose to sellers.
+    </p>
+    <p
+      data-test-id="rc-intro-paragraph-2"
+    >
+      The disclosed information will be available to the sellers when selecting the finance providers within the risk cover and receivable discounting functionality.
+    </p>
+  </div>
+  <div
+    className="c2"
+  >
+    <button
+      className="ui primary button c3"
+      data-test-id="rc-intro-add-buyer-btn"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="button"
+    >
+      Add buyer
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CreditLineStartMessage should match snapshot for bank lines 1`] = `
+.c0 {
+  margin: 200px auto 0 auto;
+  width: 480px;
+}
+
+.c1 {
+  margin-bottom: 30px;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c3.c3.c3.c3.c3 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    width: 580px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <p
+      data-test-id="bl-intro-paragraph-1"
+    >
+      The 
+      <b>
+        Bank Lines
+      </b>
+       feature allows you to set, update and monitor your credit related information on issuing banks in the context of bank confirmation. To start using it, click on "Add issuing bank" button and fill in the relevant information. You can then customize the information you would like to disclose to beneficiaries.
+    </p>
+  </div>
+  <div
+    className="c2"
+  >
+    <button
+      className="ui primary button c3"
+      data-test-id="bl-intro-add-issuing-bank-btn"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="button"
+    >
+      Add issuing bank
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CreditLineStartMessage should match snapshot for bank lines and corporate 1`] = `
+.c0 {
+  margin: 200px auto 0 auto;
+  width: 480px;
+}
+
+.c1 {
+  margin-bottom: 30px;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c3.c3.c3.c3.c3 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    width: 580px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <p
+      data-test-id="bl-intro-paragraph-1"
+    >
+      The 
+      <b>
+        Bank lines
+      </b>
+       feature allows you to view credit related information shared by banks on your issuing banks. To start using it click on "Request information on an Issuing Bank"
+    </p>
+  </div>
+  <div
+    className="c2"
+  >
+    <button
+      className="ui primary button c3"
+      data-test-id="bl-intro-request-information"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="button"
+    >
+      Request information on a New Issuing bank
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CreditLineStartMessage should match snapshot when user is coporate 1`] = `
+.c0 {
+  margin: 200px auto 0 auto;
+  width: 480px;
+}
+
+.c1 {
+  margin-bottom: 30px;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c3.c3.c3.c3.c3 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    width: 580px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <p
+      data-test-id="rc-intro-paragraph-1"
+    >
+      The 
+      <b>
+        Risk Cover
+      </b>
+       feature allows you to view credit related information shared by banks on your buyers. To start using it click on "Request information on a New Buyer".
+    </p>
+  </div>
+  <div
+    className="c2"
+  >
+    <button
+      className="ui primary button c3"
+      data-test-id="rc-intro-request-information"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="button"
+    >
+      Request information on a New Buyer
+    </button>
+  </div>
+</div>
+`;

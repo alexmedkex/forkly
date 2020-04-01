@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RDInvoiceAmountAndCurrency matches snapshot  1`] = `
+<DocumentFragment>
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0.c0.c0.c0.c0 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c0.c0.c0.c0.c0 .field.error {
+  margin-bottom: 0;
+}
+
+.c0.c0.c0.c0.c0 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c2 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+<li
+    class="c0 c1"
+  >
+    <span
+      class="c2"
+      style="width: 240px;"
+    >
+      Invoice amount
+    </span>
+    <div
+      class="ui input"
+      data-test-id="invoiceAmount"
+      style="flex-grow: 1; width: 270px;"
+    >
+      <input
+        name="invoiceAmount"
+        type="text"
+        value="0.00"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-expanded="false"
+      class="ui compact search selection dropdown"
+      data-test-id="currency"
+      form="[object Object]"
+      name="currency"
+      role="combobox"
+      style="margin: 0px 0px 0px 5px; width: 80px;"
+    >
+      <input
+        aria-autocomplete="list"
+        autocomplete="off"
+        class="search"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+      <div
+        aria-live="polite"
+        class="text"
+        role="alert"
+      >
+        USD
+      </div>
+      <i
+        aria-hidden="true"
+        class="dropdown icon"
+      />
+      <div
+        class="menu transition"
+        role="listbox"
+      >
+        <div
+          aria-checked="false"
+          aria-selected="false"
+          class="item"
+          role="option"
+          style="pointer-events: all;"
+        >
+          <span
+            class="text"
+          >
+            AED
+          </span>
+        </div>
+        <div
+          aria-checked="false"
+          aria-selected="false"
+          class="item"
+          role="option"
+          style="pointer-events: all;"
+        >
+          <span
+            class="text"
+          >
+            CHF
+          </span>
+        </div>
+        <div
+          aria-checked="false"
+          aria-selected="false"
+          class="item"
+          role="option"
+          style="pointer-events: all;"
+        >
+          <span
+            class="text"
+          >
+            EUR
+          </span>
+        </div>
+        <div
+          aria-checked="false"
+          aria-selected="false"
+          class="item"
+          role="option"
+          style="pointer-events: all;"
+        >
+          <span
+            class="text"
+          >
+            GBP
+          </span>
+        </div>
+        <div
+          aria-checked="false"
+          aria-selected="false"
+          class="item"
+          role="option"
+          style="pointer-events: all;"
+        >
+          <span
+            class="text"
+          >
+            JPY
+          </span>
+        </div>
+        <div
+          aria-checked="true"
+          aria-selected="true"
+          class="active selected item"
+          role="option"
+          style="pointer-events: all;"
+        >
+          <span
+            class="text"
+          >
+            USD
+          </span>
+        </div>
+      </div>
+    </div>
+  </li>
+</DocumentFragment>
+`;

@@ -1,0 +1,37 @@
+{
+  "name": "VAKT",
+  "guestUser": {
+    "username": "VAKT-USER",
+    "password": "IuhjduyO45KHD",
+    "permission": {
+      "read": "",
+      "write": "^VAKT-INBOUND-EXCHANGE",
+      "tag": ""
+    }
+  },
+  "shovels": [
+    {
+      "src": {
+        "protocol": "amqp",
+        "host": "127.0.0.1",
+        "port": "5672",
+        "queue": "VAKT-OUTBOUND-QUEUE"
+      },
+      "dest": {
+        "protocol": "amqps",
+        "host": "rabbitmq-komgo-int.komgo.vtest.info",
+        "port": "5672",
+        "username": "KOMGO-USER",
+        "password": "KOMGO-USER",
+        "exchange": "KOMGO-INBOUND-EXCHANGE",
+        "key": "external.members.message"
+      },
+      "sslOptions": {
+        "cacertfile": "/etc/rabbitmq/vakt/cacert.pem",
+        "verify": "verify_peer",
+        "depth": 4,
+        "serverNameIndication": "disable"
+      }
+    }
+  ]
+}

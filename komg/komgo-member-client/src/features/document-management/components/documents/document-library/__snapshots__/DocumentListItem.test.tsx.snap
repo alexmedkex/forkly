@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterpartyDocumentListItem renders 1`] = `
+.c2 {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(4.2em,max-content));
+}
+
+.c3 {
+  margin: 0 8px;
+  color: #7f95aa;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.c4 {
+  color: #1c2936;
+  font-size: 14px;
+  line-height: 21px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c0 {
+  height: 72px;
+  max-height: 100%;
+  border: 1px solid #e8eef3;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: auto [fields] 70px [view-button] 40px [ellipsis];
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: minmax(14em,1fr) minmax(14em,1fr) minmax(14em,1fr);
+  grid-template-rows: 28px;
+  grid-column-gap: 2rem;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    data-test-id="field-grid"
+  >
+    <div
+      className="c2"
+      data-test-id="field-type"
+    >
+      <label
+        className="c3"
+      >
+        Type
+      </label>
+      <span
+        className="c4"
+      >
+        Passports of UBOs
+      </span>
+    </div>
+    <div
+      className="c2"
+      data-test-id="field-format"
+    >
+      <label
+        className="c3"
+      >
+        Format
+      </label>
+      <span
+        className="c4"
+      >
+        EXT
+      </span>
+    </div>
+    <div
+      className="c2"
+      data-test-id="field-uploaded"
+    >
+      <label
+        className="c3"
+      >
+        Uploaded on
+      </label>
+      <span
+        className="c4"
+      >
+        31 Dec 2000
+      </span>
+    </div>
+    <div
+      className="c2"
+      data-test-id="field-name"
+    >
+      <label
+        className="c3"
+      >
+        Name
+      </label>
+      <span
+        className="c4"
+      >
+        anon
+      </span>
+    </div>
+    <div
+      className="c2"
+      data-test-id="field-size"
+    >
+      <label
+        className="c3"
+      >
+        Size
+      </label>
+      <span
+        className="c4"
+      >
+        Unknown
+      </span>
+    </div>
+    <div
+      className="c2"
+      data-test-id="field-uploader"
+    >
+      <label
+        className="c3"
+      >
+        Uploader
+      </label>
+      <span
+        className="c4"
+      >
+        Anon User
+      </span>
+    </div>
+  </div>
+  
+</div>
+`;

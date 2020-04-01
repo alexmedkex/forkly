@@ -1,0 +1,60 @@
+[
+  {
+    "staticId": "0b5ad248-6159-47ca-9ac7-610c22877186",
+    "komgoMnid": "3a47e1d9-0aa6-4cf3-8579-7f6fb083013b",
+    "x500Name": {
+      "CN": "Display name",
+      "O": "Gunvor SA",
+      "C": "CH",
+      "L": "Geneva",
+      "STREET": "80-84 Rue du Rh\u00f4ne",
+      "PC": "1204"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "x1o8-AnWqmx64X8WojVJB_m88WapECebsfw95JZbqA8",
+        "e": "AQAB",
+        "n": ""
+      }
+    },
+    "ethereumPublicKey": {
+      "address": "0xaaa",
+      "key": "0xaaa"
+    },
+    "vakt": {
+      "mnid": "SHELL_INTERNATIONAL_49779",
+      "messagingPublicKey": {
+        "validFroms": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "9de2033b-8173-40e4-bd79-f8f4eedf42ff",
+          "n": "",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "7YGHO_ay4Xjf040ONaHj6L9Z1xOsDljw10FHPjliHLk",
+        "e": "AQAB",
+        "n": "",
+        "d": "",
+        "p": "",
+        "q": "",
+        "dp": "",
+        "dq": "",
+        "qi": ""
+      },
+      "QAEthereumPrivateKey": "0xaaa"
+    }
+  }
+]

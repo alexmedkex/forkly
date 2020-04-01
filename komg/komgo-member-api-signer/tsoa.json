@@ -1,0 +1,30 @@
+{
+    "swagger": {
+        "info": {
+            "description": "Endpoint to sign, verify, encrypt and decrypt messages",
+            "version": "0.0.1",
+            "title": "Endpoint to sign, verify, encrypt and decrypt messages"
+        },
+        "tags":[
+        ],
+        "schemes": [ "http", "https" ],
+        "securityDefinitions": {
+            "api_key": {
+                "type": "apiKey",
+                "name": "access_token",
+                "in": "header"
+            }
+        },
+        "outputDirectory": "./dist",
+        "entryFile": "./src/run-server.ts",
+        "host": "localhost:3107",
+        "basePath": "/v0"
+    },
+    "routes": {
+        "basePath": "/v0",
+        "entryFile": "./src/run-server.ts",
+        "routesDir": "./src/middleware/server-config",
+        "authenticationModule": "./src/middleware/common/authentication/authentication.ts",
+        "iocModule" : "./src/inversify/ioc"
+    }
+}

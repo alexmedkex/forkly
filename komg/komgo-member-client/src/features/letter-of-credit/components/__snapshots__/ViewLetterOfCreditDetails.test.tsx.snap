@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewLetterOfCreditDetails marks not member counterpaty 1`] = `
+<DocumentFragment>
+  <div
+    style="display: flex; justify-content: space-between; padding-top: 24px;"
+  >
+    <div
+      class="ui header"
+    >
+      Application summary
+    </div>
+  </div>
+  <br />
+  .c0.c0.c0.c0 {
+  border: 0;
+  padding: 0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0.c0.c0.c0:hover,
+.c0.c0.c0.c0:active,
+.c0.c0.c0.c0:visited,
+.c0.c0.c0.c0:focus {
+  box-shadow: none !important;
+}
+
+<a
+    class="c0"
+    href="/letters-of-credit/1cf0b888-e5ff-47ca-bcf2-b2dc9478b81c/trade"
+    target="_blank"
+  >
+    View trade details
+  </a>
+  .c2 {
+  padding: 0;
+  margin: 8px;
+}
+
+.c1 {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.c0 {
+  padding: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 8px;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Status
+    </span>
+    <span
+      data-test-id="status"
+    >
+      Requested
+    </span>
+    <span
+      class="c1"
+    >
+      Reference
+    </span>
+    <span
+      data-test-id="reference"
+    >
+      LC-ING-1234
+    </span>
+    <span
+      class="c1"
+    >
+      Expiry date
+    </span>
+    <span
+      data-test-id="expire-date"
+    >
+      -
+    </span>
+    <span
+      class="c1"
+    >
+      Amount
+    </span>
+    <span
+      data-test-id="amount"
+    >
+      -
+    </span>
+    <span
+      class="c1"
+    />
+    <div
+      class="c2"
+    />
+    <span
+      class="c1"
+    >
+      Applicant
+    </span>
+    <span
+      data-test-id="applicant"
+    >
+      Applicant Name
+    </span>
+    <span
+      class="c1"
+    >
+      Beneficiary
+    </span>
+    <span
+      data-test-id="beneficiary"
+    >
+      Beneficiary Name
+    </span>
+    <span
+      class="c1"
+    >
+      Issuing bank
+    </span>
+    <span
+      data-test-id="issuingbank"
+    >
+      Issuing Name
+      <span
+        data-test-id="is-not-member"
+      >
+         * 
+      </span>
+    </span>
+    <span
+      class="c1"
+    >
+      Issuing bank ref.
+    </span>
+    <span
+      data-test-id="issuing-bank-reference"
+    >
+      REF-0001
+    </span>
+  </div>
+  .c0 {
+  font-style: italic;
+  color: #8e9ba6;
+  margin-top: auto;
+}
+
+<p
+    class="c0"
+    data-test-id="off-platform"
+  >
+    * Please note that these counterparties are currently not registered as Komgo members and will need to be reached via other media
+  </p>
+</DocumentFragment>
+`;
+
+exports[`ViewLetterOfCreditDetails matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    style="display: flex; justify-content: space-between; padding-top: 24px;"
+  >
+    <div
+      class="ui header"
+    >
+      Application summary
+    </div>
+  </div>
+  <br />
+  .c0.c0.c0.c0 {
+  border: 0;
+  padding: 0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0.c0.c0.c0:hover,
+.c0.c0.c0.c0:active,
+.c0.c0.c0.c0:visited,
+.c0.c0.c0.c0:focus {
+  box-shadow: none !important;
+}
+
+<a
+    class="c0"
+    href="/letters-of-credit/1cf0b888-e5ff-47ca-bcf2-b2dc9478b81c/trade"
+    target="_blank"
+  >
+    View trade details
+  </a>
+  .c2 {
+  padding: 0;
+  margin: 8px;
+}
+
+.c1 {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.c0 {
+  padding: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 8px;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Status
+    </span>
+    <span
+      data-test-id="status"
+    >
+      Requested
+    </span>
+    <span
+      class="c1"
+    >
+      Reference
+    </span>
+    <span
+      data-test-id="reference"
+    >
+      LC-ING-1234
+    </span>
+    <span
+      class="c1"
+    >
+      Expiry date
+    </span>
+    <span
+      data-test-id="expire-date"
+    >
+      2019-11-29
+    </span>
+    <span
+      class="c1"
+    >
+      Amount
+    </span>
+    <span
+      data-test-id="amount"
+    >
+      <span
+        data-test-id="amount-currency"
+      >
+        USD
+      </span>
+       
+      <span
+        data-test-id="amount-price"
+      >
+        10,000.00
+      </span>
+    </span>
+    <span
+      class="c1"
+    />
+    <div
+      class="c2"
+    />
+    <span
+      class="c1"
+    >
+      Applicant
+    </span>
+    <span
+      data-test-id="applicant"
+    >
+      Applicant Name
+    </span>
+    <span
+      class="c1"
+    >
+      Beneficiary
+    </span>
+    <span
+      data-test-id="beneficiary"
+    >
+      Beneficiary Name
+    </span>
+    <span
+      class="c1"
+    >
+      Issuing bank
+    </span>
+    <span
+      data-test-id="issuingbank"
+    >
+      Issuing Name
+    </span>
+    <span
+      class="c1"
+    >
+      Issuing bank ref.
+    </span>
+    <span
+      data-test-id="issuing-bank-reference"
+    >
+      REF-0001
+    </span>
+  </div>
+</DocumentFragment>
+`;

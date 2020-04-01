@@ -1,0 +1,1316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LetterOfCreditDetailsStep template type is FREE_TEXT matches snapshot with LOI fields hidden 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    class="ui block header c0"
+  >
+    LC details
+  </div>
+  .c0 {
+  font-weight: bold;
+}
+
+<div
+    class="ui centered two column grid"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+        style="display: flex; justify-content: space-between; align-items: center;"
+      >
+        <label
+          class="c0"
+        >
+          Opening amount
+        </label>
+        <span
+          style="width: 50%; display: flex;"
+        >
+          <div
+            aria-expanded="false"
+            class="ui compact search selection dropdown"
+            form="[object Object]"
+            name="currency"
+            role="combobox"
+            style="margin: 0px;"
+          >
+            <input
+              aria-autocomplete="list"
+              autocomplete="off"
+              class="search"
+              tabindex="0"
+              type="text"
+              value=""
+            />
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              USD
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  AED
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  CHF
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  EUR
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  GBP
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  JPY
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  USD
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui input"
+            style="flex-grow: 1;"
+          >
+            <input
+              name="amount"
+              type="text"
+              value="0.00"
+            />
+          </div>
+        </span>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    />
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Date of expiry
+          </label>
+          <div
+            class="ui input"
+            style="width: 50%;"
+          >
+            <input
+              name="expiryDate"
+              type="date"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Available with
+          </label>
+          <div
+            aria-disabled="false"
+            aria-expanded="false"
+            class="ui compact selection dropdown dropdown-input"
+            name="availableWith"
+            role="listbox"
+            style="width: 50%;"
+            tabindex="0"
+          >
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Issuing bank
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Advising bank
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Issuing bank
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Place of expiry
+          </label>
+          <div
+            aria-disabled="false"
+            aria-expanded="false"
+            class="ui compact selection dropdown dropdown-input"
+            name="expiryPlace"
+            role="listbox"
+            style="width: 50%;"
+            tabindex="0"
+          >
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Issuing bank
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Advising bank
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Issuing bank
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    />
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Available by
+          </label>
+          <div
+            aria-disabled="false"
+            aria-expanded="false"
+            class="ui compact selection dropdown dropdown-input"
+            name="availableBy"
+            role="listbox"
+            style="width: 50%;"
+            tabindex="0"
+          >
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Deferred payment
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Sight payment
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Deferred payment
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Acceptance
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Negotiation
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="ui divider"
+    />
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui checked checkbox"
+          >
+            <input
+              checked=""
+              class="hidden"
+              id="partialShipmentAllowed"
+              readonly=""
+              tabindex="0"
+              type="checkbox"
+              value=""
+            />
+            <label
+              for="partialShipmentAllowed"
+            >
+              Partial shipment allowed
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui checkbox"
+          >
+            <input
+              class="hidden"
+              id="transhipmentAllowed"
+              readonly=""
+              tabindex="0"
+              type="checkbox"
+              value=""
+            />
+            <label
+              for="transhipmentAllowed"
+            >
+              Transhipment allowed
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="fourteen wide column"
+      >
+        Documents presented later than 
+        <div
+          class="ui input"
+          style="width: 90px;"
+        >
+          <input
+            form="[object Object]"
+            name="documentPresentationDeadlineDays"
+            type="number"
+            value="21"
+          />
+        </div>
+         days
+        <br />
+        after the B/L date or deemed B/L or date of completion of pumpover but within the LC validity are acceptable.
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    class="ui block header c0"
+  >
+    Additional comments
+  </div>
+  <textarea
+    name="comments"
+    rows="3"
+    style="resize: none; max-height: 200px; overflow: auto; height: auto;"
+  />
+  <p>
+    Used 0 / 500 character limit
+  </p>
+</DocumentFragment>
+`;
+
+exports[`LetterOfCreditDetailsStep template type is KOMGO_BFOET matches snapshot with LOI fields shown 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    class="ui block header c0"
+  >
+    LC details
+  </div>
+  .c0 {
+  font-weight: bold;
+}
+
+<div
+    class="ui centered two column grid"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+        style="display: flex; justify-content: space-between; align-items: center;"
+      >
+        <label
+          class="c0"
+        >
+          Opening amount
+        </label>
+        <span
+          style="width: 50%; display: flex;"
+        >
+          <div
+            aria-expanded="false"
+            class="ui compact search selection dropdown"
+            form="[object Object]"
+            name="currency"
+            role="combobox"
+            style="margin: 0px;"
+          >
+            <input
+              aria-autocomplete="list"
+              autocomplete="off"
+              class="search"
+              tabindex="0"
+              type="text"
+              value=""
+            />
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              USD
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  AED
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  CHF
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  EUR
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  GBP
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  JPY
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  USD
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui input"
+            style="flex-grow: 1;"
+          >
+            <input
+              name="amount"
+              type="text"
+              value="0.00"
+            />
+          </div>
+        </span>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    />
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Date of expiry
+          </label>
+          <div
+            class="ui input"
+            style="width: 50%;"
+          >
+            <input
+              name="expiryDate"
+              type="date"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Available with
+          </label>
+          <div
+            aria-disabled="true"
+            aria-expanded="false"
+            class="ui disabled compact selection dropdown field disabled dropdown-input"
+            name="availableWith"
+            role="listbox"
+            style="width: 50%;"
+            tabindex="-1"
+          >
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Issuing bank
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Advising bank
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Issuing bank
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Place of expiry
+          </label>
+          <div
+            aria-disabled="true"
+            aria-expanded="false"
+            class="ui disabled compact selection dropdown field disabled dropdown-input"
+            name="expiryPlace"
+            role="listbox"
+            style="width: 50%;"
+            tabindex="-1"
+          >
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Issuing bank
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Advising bank
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Issuing bank
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    />
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="field"
+          style="display: flex; justify-content: space-between; align-items: center;"
+        >
+          <label
+            class="inputLabel"
+          >
+            Available by
+          </label>
+          <div
+            aria-disabled="true"
+            aria-expanded="false"
+            class="ui disabled compact selection dropdown field disabled dropdown-input"
+            name="availableBy"
+            role="listbox"
+            style="width: 50%;"
+            tabindex="-1"
+          >
+            <div
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Deferred payment
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Sight payment
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-selected="true"
+                class="active selected item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Deferred payment
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Acceptance
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-selected="false"
+                class="item"
+                role="option"
+                style="pointer-events: all;"
+              >
+                <span
+                  class="text"
+                >
+                  Negotiation
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="ui divider"
+    />
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui checked checkbox"
+          >
+            <input
+              checked=""
+              class="hidden"
+              id="partialShipmentAllowed"
+              readonly=""
+              tabindex="0"
+              type="checkbox"
+              value=""
+            />
+            <label
+              for="partialShipmentAllowed"
+            >
+              Partial shipment allowed
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui checkbox"
+          >
+            <input
+              class="hidden"
+              id="transhipmentAllowed"
+              readonly=""
+              tabindex="0"
+              type="checkbox"
+              value=""
+            />
+            <label
+              for="transhipmentAllowed"
+            >
+              Transhipment allowed
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="fourteen wide column"
+      >
+        Documents presented later than 
+        <div
+          class="ui input"
+          style="width: 90px;"
+        >
+          <input
+            form="[object Object]"
+            name="documentPresentationDeadlineDays"
+            type="number"
+            value="21"
+          />
+        </div>
+         days
+        <br />
+        after the B/L date or deemed B/L or date of completion of pumpover but within the LC validity are acceptable.
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    class="ui block header c0"
+  >
+    Letter of indemnity
+  </div>
+  .c0 {
+  font-weight: bold;
+}
+
+<div
+    class="ui centered two column grid"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui checked disabled checkbox"
+          >
+            <input
+              checked=""
+              class="hidden"
+              disabled=""
+              id="LOIAllowed"
+              readonly=""
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+            <label
+              for="LOIAllowed"
+            >
+              Allow LOI to be presented in lieu of documents
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <label
+          class="c0"
+        >
+          LOI can be presented in lieu of:
+        </label>
+        <p />
+        <p
+          style="padding-left: 5px;"
+        >
+          - Certificate of Quality
+        </p>
+        <p
+          style="padding-left: 5px;"
+        >
+          - Certificate of Quantity
+        </p>
+        <p
+          style="padding-left: 5px;"
+        >
+          - Bill of Lading
+        </p>
+        <p
+          style="padding-left: 5px;"
+        >
+          - Certificate of Origin
+        </p>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="seven wide column"
+      >
+        <div
+          class="ui two column grid"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="inline field"
+              >
+                <label
+                  class="inputLabel"
+                >
+                  LOI template
+                </label>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="field"
+              >
+                <div
+                  class="ui checked radio checkbox"
+                >
+                  <input
+                    checked=""
+                    class="hidden"
+                    readonly=""
+                    tabindex="0"
+                    type="radio"
+                    value=""
+                  />
+                  <label>
+                    komgo LOI
+                  </label>
+                </div>
+              </div>
+              <div
+                class="field"
+              >
+                <div
+                  class="ui radio checkbox"
+                >
+                  <input
+                    class="hidden"
+                    readonly=""
+                    tabindex="0"
+                    type="radio"
+                    value=""
+                  />
+                  <label>
+                    Free text
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="seven wide column"
+      />
+    </div>
+  </div>
+  <br />
+  <textarea
+    disabled=""
+    name="LOI"
+    rows="3"
+    style="resize: none; max-height: 410px; overflow: auto; height: auto;"
+  >
+    QUOTE
+
+LETTER OF INDEMNITY
+
+TO : APPLICANT
+
+FROM: BENEFICIARY
+
+DATE : XX
+
+WE REFER TO OUR AGREEMENT DATED XXXXX IN RESPECT OF YOUR PURCHASE FROM US OF A CARGO OF XXXXXXX BARRELS OF XXXXXX (THE AGREEMENT) SHIPPED ON BOARD M/T XXXXXX AT XXXXXXX PURSUANT TO BILL OF LADING DATED XXXXXXXXX.
+
+ALTHOUGH WE HAVE SOLD AND TRANSFERRED TITLE OF THE SAID CARGO TO YOURSELVES, WE HAVE BEEN UNABLE TO PROVIDE YOU WITH THE FULL SET OF ORIGINAL BILL OF LADING ISSUED OR ENDORSED TO THE ORDER OF XXXXX AND THE OTHER SHIPPING DOCUMENTS COVERING THE SAID SALE PURSUANT TO THE AGREEMENT (THE DOCUMENTS).
+
+IN CONSIDERATION OF YOUR PAYING US DOLLARS XXXXXXX IN ACCORDANCE WITH THE AGREEMENT, WE HEREBY EXPRESSLY WARRANT THAT WE HAVE SOLD SUCH XXXXXXX TO YOU HAVING GOOD TITLE TO IT AND FULL RIGHT AND AUTHORITY TO TRANSFER SUCH TITLE TO YOU AND TO DELIVERY OF SUCH PRODUCT.
+
+WE FURTHER UNDERTAKE TO MAKE ALL REASONABLE EFFORTS TO LOCATE AND SURRENDER TO YOU AS SOON AS POSSIBLE THE DOCUMENTS AND TO PROTECT, INDEMNIFY AND KEEP YOU HARMLESS FROM AND AGAINST ANY AND ALL DAMAGES, COST AND EXPENSES (INCLUDING REASONABLE ATTORNEY FEES), WHICH YOU MAY SUFFER BY REASON OF THE DOCUMENTS REMAINING OUTSTANDING, INCLUDING, BUT NOT LIMITED TO, ANY CLAIMS AND DEMANDS WHICH MAY BE MADE BY A HOLDER OR TRANSFEREE OF THE DOCUMENTS, OR BY ANY OTHER THIRD PARTY CLAIMING AN INTEREST IN OR LIEN ON THE CARGO OR PROCEEDS THEREOF ARISING OUT OF OR IN CONNECTION WITH THE DOCUMENTS OR A BREACH BY US OF ANY OF OUR WARRANTIES HEREIN.
+
+OUR OBLIGATION TO INDEMNIFY YOU IS, OF COURSE, SUBJECT TO THE CONDITION THAT YOU GIVE US PROMPT NOTICE OF THE ASSERTION OF ANY CLAIM, FULL OPPORTUNITY TO CONDUCT THE DEFENCE THEREOF AND THAT YOU WILL NOT SETTLE ANY SUCH CLAIM WITHOUT OUR WRITTEN APPROVAL.
+
+THIS LETTER OF INDEMNITY SHALL EXPIRE UPON OUR PRESENTING THE DOCUMENTS MENTIONED ABOVE TO THE ISSUING BANK.
+
+THIS LETTER OF INDEMNITY SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF ENGLAND AND IN THE EVENT OF ANY DISPUTES HEREUNDER IT SHALL BE SUBJECT TO THE EXCLUSIVE JURISDICTION OF THE ENGLISH HIGH COURT IN LONDON.
+
+SIGNED
+
+AUTHORISED SIGNATURE FOR AND ON BEHALF OF
+
+BENEFICIARY
+
+UNQUOTE
+  </textarea>
+  <p>
+    Used 2164 / 5000 character limit
+  </p>
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    class="ui block header c0"
+  >
+    Additional comments
+  </div>
+  <textarea
+    name="comments"
+    rows="3"
+    style="resize: none; max-height: 200px; overflow: auto; height: auto;"
+  />
+  <p>
+    Used 0 / 500 character limit
+  </p>
+</DocumentFragment>
+`;

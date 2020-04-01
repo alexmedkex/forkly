@@ -1,0 +1,527 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewLetterOfCreditContainer matches snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="ui header"
+    style="padding: 24px; margin: 0px;"
+  >
+    LC-ING-1234
+  </h1>
+  .c12 {
+  background: rgba(148,109,192,0.4);
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.c9 {
+  width: 100%;
+  padding: 8px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+}
+
+.c10 {
+  margin-left: auto;
+}
+
+.c11 {
+  margin-top: 2px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #c0cfde;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+  height: 100%;
+  width: 100%;
+}
+
+.c0 {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+  border-top: 1px solid #c0cfde;
+  background-color: #f2f5f8;
+}
+
+.c1 {
+  width: 100%;
+  background-color: #f2f5f8;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+}
+
+.c2 {
+  padding: 16px;
+  overflow: auto;
+  height: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #c0cfde;
+  box-shadow: 0 4px 2px -2px rgba(192,207,222,0.51);
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f5f8;
+}
+
+.c3.c3.c3.c3 {
+  border: 0;
+  padding: 0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3.c3.c3.c3:hover,
+.c3.c3.c3.c3:active,
+.c3.c3.c3.c3:visited,
+.c3.c3.c3.c3:focus {
+  box-shadow: none !important;
+}
+
+.c6 {
+  padding: 0;
+  margin: 8px;
+}
+
+.c5 {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.c4 {
+  padding: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 8px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    overflow: none;
+  }
+}
+
+@media (min-width:68.75em) {
+  .c1 {
+    padding: 16px 0 16px 16px;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    height: calc(100vh - 80px);
+    margin: 0;
+    box-shadow: none;
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+  }
+}
+
+@media (min-width:68.75em) {
+  .c7 {
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    height: calc(100vh - 80px);
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          style="display: flex; justify-content: space-between; padding-top: 24px;"
+        >
+          <div
+            class="ui header"
+          >
+            Application summary
+          </div>
+        </div>
+        <br />
+        <a
+          class="c3"
+          href="/letters-of-credit/myStaticId/trade"
+          target="_blank"
+        >
+          View trade details
+        </a>
+        <div
+          class="c4"
+        >
+          <span
+            class="c5"
+          >
+            Status
+          </span>
+          <span
+            data-test-id="status"
+          >
+            Requested
+          </span>
+          <span
+            class="c5"
+          >
+            Reference
+          </span>
+          <span
+            data-test-id="reference"
+          >
+            LC-ING-1234
+          </span>
+          <span
+            class="c5"
+          >
+            Expiry date
+          </span>
+          <span
+            data-test-id="expire-date"
+          >
+            2019-11-29
+          </span>
+          <span
+            class="c5"
+          >
+            Amount
+          </span>
+          <span
+            data-test-id="amount"
+          >
+            <span
+              data-test-id="amount-currency"
+            >
+              USD
+            </span>
+             
+            <span
+              data-test-id="amount-price"
+            >
+              10,000.00
+            </span>
+          </span>
+          <span
+            class="c5"
+          />
+          <div
+            class="c6"
+          />
+          <span
+            class="c5"
+          >
+            Applicant
+          </span>
+          <span
+            data-test-id="applicant"
+          >
+            Applicant Name
+          </span>
+          <span
+            class="c5"
+          >
+            Beneficiary
+          </span>
+          <span
+            data-test-id="beneficiary"
+          >
+            Beneficiary Name
+          </span>
+          <span
+            class="c5"
+          >
+            Issuing bank
+          </span>
+          <span
+            data-test-id="issuingbank"
+          >
+            Issuing Name
+          </span>
+          <span
+            class="c5"
+          >
+            Issuing bank ref.
+          </span>
+          <span
+            data-test-id="issuing-bank-reference"
+          >
+            REF-0001
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7"
+      height="80px"
+    >
+      <div
+        class="c8"
+      >
+        <div
+          class="c9"
+        >
+          <div
+            style="padding-left: 16px; color: rgb(212, 92, 100);"
+          >
+            <i
+              aria-hidden="true"
+              class="red warning sign icon"
+            />
+            <span
+              style="padding-left: 16px;"
+            >
+              The template is missing 8 mandatory fields. 
+            </span>
+          </div>
+          <div
+            class="c10"
+          >
+            <div
+              style="display: flex; align-items: center;"
+            >
+              <div
+                class="ui disabled fitted toggle checkbox"
+                data-test-id="button-mode"
+              >
+                <input
+                  class="hidden"
+                  disabled=""
+                  readonly=""
+                  tabindex="-1"
+                  type="checkbox"
+                  value=""
+                />
+                <label />
+              </div>
+              <label
+                style="padding-right: 16px; padding-left: 16px;"
+              >
+                Edit mode
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            autocorrect="on"
+            data-gramm="false"
+            data-key="0"
+            data-slate-editor="true"
+            spellcheck="true"
+            style="outline: none; white-space: pre-wrap; word-wrap: break-word; width: 100%; height: 100%; flex-grow: 1;"
+          >
+            <div
+              data-key="1"
+              data-slate-object="block"
+              style="position: relative;"
+            >
+              <span
+                data-key="2"
+                data-slate-object="text"
+              >
+                <span
+                  data-offset-key="2:0"
+                  data-slate-leaf="true"
+                >
+                  <span
+                    data-slate-string="true"
+                  >
+                    some text 
+                  </span>
+                </span>
+              </span>
+              <span
+                data-key="3"
+                data-slate-void="true"
+              >
+                <span>
+                  <var
+                    class="c12"
+                    data-key="3"
+                    data-slate-object="inline"
+                    data-test-id="var-trade.quantity"
+                  >
+                    600000
+                  </var>
+                </span>
+              </span>
+              <span
+                data-key="5"
+                data-slate-object="text"
+              >
+                <span
+                  data-offset-key="5:0"
+                  data-slate-leaf="true"
+                >
+                  <span
+                    data-slate-string="true"
+                  >
+                     
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ViewLetterOfCreditContainer shows a loader if we have an lc with an issuing document hash but we dont have the documents yet 1`] = `
+<DocumentFragment>
+  .c1 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #142435;
+  margin: 0;
+}
+
+.c0 {
+  margin-top: 200px;
+  position: relative;
+  background-color: rgba(255,255,255,0.85);
+}
+
+<div
+    class="c0"
+    data-test-id="loadingTransition"
+  >
+    <img
+      class="ui mini centered image"
+      src="/images/bars.svg"
+    />
+    <div
+      class="ui header centered"
+    >
+      <span
+        class="c1"
+        color="#142435"
+      >
+        Loading Letter of Credit document
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ViewLetterOfCreditContainer shows an error if there is a document related error 1`] = `
+<DocumentFragment>
+  .c0 {
+  padding: 24px;
+  margin: 0;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="ui negative message"
+      data-test-id="errorMessage"
+    >
+      <div
+        class="header"
+      >
+        View Letter of Credit error
+      </div>
+      <p>
+        error
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

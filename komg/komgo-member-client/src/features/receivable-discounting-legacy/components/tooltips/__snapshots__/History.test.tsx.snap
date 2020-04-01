@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History renders dateOfPerformance correctly correct markup for tooltip contents 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 p.popup-heading {
+  margin: 3px 0 0 0;
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(2) {
+  padding-left: 15px;
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="popup-heading"
+    >
+      History
+    </p>
+    <hr />
+    <table
+      data-test-id="tooltipHistory"
+    >
+      <tbody>
+        <tr>
+          <td>
+            2019-05-19T13:00:00Z
+          </td>
+          <td>
+            2019-01-21
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2019-05-20T14:00:00Z
+          </td>
+          <td>
+            2019-01-22
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`History renders discountingDate correctly correct markup for tooltip contents 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 p.popup-heading {
+  margin: 3px 0 0 0;
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(2) {
+  padding-left: 15px;
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="popup-heading"
+    >
+      History
+    </p>
+    <hr />
+    <table
+      data-test-id="tooltipHistory"
+    >
+      <tbody>
+        <tr>
+          <td>
+            2019-05-19T13:00:00Z
+          </td>
+          <td>
+            2019-01-21
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2019-05-20T14:00:00Z
+          </td>
+          <td>
+            2019-01-22
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`History renders invoiceAmount correctly correct markup for tooltip contents 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 p.popup-heading {
+  margin: 3px 0 0 0;
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(2) {
+  padding-left: 15px;
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="popup-heading"
+    >
+      History
+    </p>
+    <hr />
+    <table
+      data-test-id="tooltipHistory"
+    >
+      <tbody>
+        <tr>
+          <td>
+            2019-05-19T13:00:00Z
+          </td>
+          <td>
+            1000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2019-05-20T14:00:00Z
+          </td>
+          <td>
+            1100
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`History renders invoiceType correctly correct markup for tooltip contents 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 p.popup-heading {
+  margin: 3px 0 0 0;
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(2) {
+  padding-left: 15px;
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="popup-heading"
+    >
+      History
+    </p>
+    <hr />
+    <table
+      data-test-id="tooltipHistory"
+    >
+      <tbody>
+        <tr>
+          <td>
+            2019-05-19T13:00:00Z
+          </td>
+          <td>
+            FINAL
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2019-05-20T14:00:00Z
+          </td>
+          <td>
+            INDICATIVE
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`History renders titleTransfer correctly correct markup for tooltip contents 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 p.popup-heading {
+  margin: 3px 0 0 0;
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c0.c0.c0 tbody > tr > td:nth-child(2) {
+  padding-left: 15px;
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="popup-heading"
+    >
+      History
+    </p>
+    <hr />
+    <table
+      data-test-id="tooltipHistory"
+    >
+      <tbody>
+        <tr>
+          <td>
+            2019-05-19T13:00:00Z
+          </td>
+          <td>
+            true
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2019-05-20T14:00:00Z
+          </td>
+          <td>
+            false
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

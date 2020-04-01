@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topbar matches snapshot WITH InfoSection 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: LotaGrotesque;
+  background-color: #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  data-test-id="topbar-container"
+>
+  <div
+    className="c1"
+  >
+    <h1
+      className="ui header"
+      data-test-id="topbar-header-container"
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      The Title of the page
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Topbar matches snapshot without InfoSection 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: LotaGrotesque;
+  background-color: #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  data-test-id="topbar-container"
+>
+  <div
+    className="c1"
+  >
+    <h1
+      className="ui header"
+      data-test-id="topbar-header-container"
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      The Title of the page
+    </h1>
+  </div>
+</div>
+`;

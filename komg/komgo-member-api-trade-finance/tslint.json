@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "object-literal-sort-keys": false,
+    "trailing-comma": false,
+    "class-name": true,
+    "semicolon": false,
+    "no-submodule-imports": [
+      true,
+      "web3/types",
+      "@trade-finance",
+      "@komgo/messaging-library"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "eofline": true,
+    "jsdoc-format": true,
+    "member-access": false,
+    "whitespace": [
+      true,
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "curly": false,
+    "no-reference": false,
+    "no-var-requires": false,
+    "only-arrow-functions": false,
+    "no-empty-interface": false,
+    "ordered-imports": false,
+    "no-implicit-dependencies": [
+      true,
+      [
+        "@trade-finance"
+      ]
+    ],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+  },
+  "overrides": [
+    {
+      "files": [
+        "integration-tests/**/*"
+      ],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ],
+  "rulesDirectory": []
+}

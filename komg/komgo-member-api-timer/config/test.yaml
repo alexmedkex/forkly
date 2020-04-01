@@ -1,0 +1,4 @@
+mongo:
+    url: 'mongodb://localhost:27017/api-timer-test'
+
+loglevel: info

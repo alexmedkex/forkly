@@ -1,0 +1,12 @@
+Dockerfile
+./dist
+node_modules
+npm-debug.log
+mongo-data
+.idea
+.DS_Store
+contracts/*
+coverage
+test-report.xml
+report-lint.json
+.git

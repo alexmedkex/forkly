@@ -1,0 +1,45 @@
+{
+    "swagger": {
+        "info": {
+            "description": "A Login authorization and registration using jwt for adding movies",
+            "version": "1.0.0",
+            "title": "User Login Auth and Registration for adding movies"
+        },
+        "tags":[
+            {
+                "name":"auth",
+                "description":"Access to updating a secured data"
+            },
+            {
+                "name":"user",
+                "description":"Operations about user"
+            },
+            {
+                "name":"role",
+                "description":"Operations about roles"
+            }
+        ],
+        "schemes": [ "http", "https" ],
+        "securityDefinitions": {
+            "api_key": {
+                "type": "apiKey",
+                "name": "access_token",
+                "in": "header"
+            }
+        },
+        "outputDirectory": "./dist",
+        "entryFile": "./src/run-server.ts",
+        "host": "localhost:3104",
+        "basePath": "/v0"
+    },
+    "routes": {
+        "basePath": "/v0",
+        "entryFile": "./src/run-server.ts",
+        "routesDir": "./src/middleware/server-config",
+        "iocModule" : "./src/inversify/ioc",
+        "authenticationModule": "./src/middleware/authentication/authentication.ts"
+    }
+}
+
+
+

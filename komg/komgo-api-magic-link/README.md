@@ -1,0 +1,2 @@
+# komgo-api-magic-link
+

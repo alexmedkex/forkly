@@ -1,0 +1,5 @@
+export const STATUSES = {
+  PENDING: 'PENDING',
+  WAITING: 'WAITING',
+  COMPLETED: 'COMPLETED'
+}

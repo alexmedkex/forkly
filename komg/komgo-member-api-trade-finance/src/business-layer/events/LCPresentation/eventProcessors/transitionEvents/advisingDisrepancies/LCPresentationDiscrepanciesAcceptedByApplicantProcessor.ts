@@ -1,0 +1,69 @@
+import { ILCPresentationTransitionStateProcessor } from '../../ILCPresentationTransitionStateProcessor'
+import { ILCPresentationActionPerformer } from '../../ILCPresentationActionPerformer'
+import { LCPresentationRole } from '../../../LCPresentationRole'
+import { ILC } from '../../../../../../data-layer/models/ILC'
+import { ILCPresentation } from '../../../../../../data-layer/models/ILCPresentation'
+import { LCPresentationContractStatus } from '../../../LCPresentationContractStatus'
+import { injectable, inject } from 'inversify'
+import { TYPES } from '../../../../../../inversify/types'
+import { ILCPresentationTransactionManager } from '../../../../../blockchain/LCPresentationTransactionManager'
+import { LCPresentationProcessorBase } from '../../LCPresentationProcessorBase'
+import { IDocumentServiceClient } from '../../../../../documents/DocumentServiceClient'
+import { IDocumentRequestBuilder } from '../../../../../documents/DocumentRequestBuilder'
+import { ILCPresentationTaskFactory } from '../../../../../tasks/LCPresentationTaskFactory'
+import { TaskManager } from '@komgo/notification-publisher'
+import { ILCPresentationNotificationProcessor } from '../../../../../tasks/LCPresentationNotificationProcessor'
+import { LCPresentationTaskType } from '../../../../../tasks/LCPresentationTaskType'
+import { LCPresentationStatus } from '@komgo/types'
+import { TRADE_FINANCE_ACTION } from '../../../../../../business-layer/tasks/permissions'
+
+@injectable()
+export class LCPresentationDiscrepanciesAcceptedByApplicantProcessor extends LCPresentationProcessorBase
+  implements ILCPresentationTransitionStateProcessor {
+  public state = LCPresentationContractStatus.DocumentsAcceptedByApplicant
+
+  private presentationStatus = LCPresentationStatus.DocumentsAcceptedByApplicant
+
+  constructor(
+    @inject(TYPES.DocumentServiceClient) docServiceClient: IDocumentServiceClient,
+    @inject(TYPES.DocumentRequestBuilder) docRequestBuilder: IDocumentRequestBuilder,
+    @inject(TYPES.LCPresentationTaskFactory) presentationTaskFactory: ILCPresentationTaskFactory,
+    @inject(TYPES.TaskManagerClient) taskManager: TaskManager,
+    @inject(TYPES.LCPresentationNotificationProcessor)
+    presentationNotificationProcessor: ILCPresentationNotificationProcessor,
+    @inject(TYPES.LCPresentationTransactionManager) private transactionManager: ILCPresentationTransactionManager
+  ) {
+    super(docServiceClient, docRequestBuilder, presentationTaskFactory, taskManager, presentationNotificationProcessor)
+    this.handlers.set(LCPresentationRole.IssuingBank, this.notifyStateChange.bind(this))
+    this.handlers.set(LCPresentationRole.Applicant, this.processAsApplicant.bind(this))
+
+    this.handlers.set(LCPresentationRole.NominatedBank, this.notifyStateChange.bind(this))
+    this.handlers.set(LCPresentationRole.Beneficiary, this.processAsBeneficiary.bind(this))
+  }
+
+  async processAsApplicant(presentation: ILCPresentation, lc: ILC, role: LCPresentationRole) {
+    await this.resolveTask(presentation, lc, LCPresentationTaskType.ReviewPresentationDiscrepancies, true)
+    await this.createTask(
+      LCPresentationTaskType.ViewPresentedDocuments,
+      presentation,
+      lc,
+      TRADE_FINANCE_ACTION.ManagePresentation
+    )
+  }
+
+  async notifyStateChange(presentation: ILCPresentation, lc: ILC, role: LCPresentationRole) {
+    await this.sendNotif(presentation, lc, this.presentationStatus, role)
+  }
+
+  async processAsBeneficiary(presentation: ILCPresentation, lc: ILC, role: LCPresentationRole) {
+    const recepients = [presentation.applicantId]
+
+    if (presentation.nominatedBankId) {
+      // nominated bank exists, initially docs were shared with it
+      // not add issuing bank
+      recepients.push(presentation.issuingBankId)
+    }
+
+    await this.sendPresentationDocuments(presentation, recepients)
+  }
+}

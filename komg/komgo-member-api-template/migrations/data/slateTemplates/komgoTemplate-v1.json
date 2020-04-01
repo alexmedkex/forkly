@@ -1,0 +1,2291 @@
+{
+    "object": "value",
+    "document": {
+      "object": "document",
+      "data": {},
+      "nodes": [
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "TO:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.CN",
+                "title": "Beneficiary name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.STREET",
+                "title": "Beneficiary Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.L",
+                "title": "Beneficiary Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.PC",
+                "title": "Beneficiary Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.C",
+                "title": "Beneficiary Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "WITH REFERENCE TO THE SALE/PURCHASE CONTRACT REF ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "standbyLetterOfCredit.contractReference",
+                "title": "Standby letter of credit Contract Reference"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Standby letter of credit Contract Reference",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "standbyLetterOfCredit.contractDate",
+                "title": "Standby letter of credit Contract Date"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Standby letter of credit Contract Date",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "BETWEEN:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.CN",
+                "title": "Beneficiary name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.STREET",
+                "title": "Beneficiary Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.L",
+                "title": "Beneficiary Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.PC",
+                "title": "Beneficiary Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.C",
+                "title": "Beneficiary Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "AND",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.CN",
+                "title": "Applicant name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.STREET",
+                "title": "Applicant Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.L",
+                "title": "Applicant Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.PC",
+                "title": "Applicant Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.C",
+                "title": "Applicant Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "WE, ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.CN",
+                "title": "Issuing bank name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " HEREBY OPEN OUR IRREVOCABLE STAND-BY LETTER OF CREDIT NO. ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "extendedStandbyLetterOfCredit.reference",
+                "title": "Issuing bank reference"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank reference",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "BY ORDER OF:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.CN",
+                "title": "Applicant name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.STREET",
+                "title": "Applicant Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.L",
+                "title": "Applicant Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.PC",
+                "title": "Applicant Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "applicant.x500Name.C",
+                "title": "Applicant Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Applicant Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "(APPLICANT)",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "IN FAVOUR OF:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.CN",
+                "title": "Beneficiary name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.STREET",
+                "title": "Beneficiary Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.L",
+                "title": "Beneficiary Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.PC",
+                "title": "Beneficiary Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiary.x500Name.C",
+                "title": "Beneficiary Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "(BENEFICIARY)",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "ADVISING BANK:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiaryBank.x500Name.CN",
+                "title": "Beneficiary bank name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary bank name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiaryBank.x500Name.STREET",
+                "title": "Beneficiary bank Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary bank Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiaryBank.x500Name.L",
+                "title": "Beneficiary bank Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary bank Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiaryBank.x500Name.PC",
+                "title": "Beneficiary bank Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary bank Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "beneficiaryBank.x500Name.C",
+                "title": "Beneficiary bank Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Beneficiary bank Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "FOR AMOUNT OF:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "standbyLetterOfCredit.currency",
+                "title": "Currency"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Currency",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "standbyLetterOfCredit.amount",
+                "title": "Opening amount"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Opening amount",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "COVERING:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "trade.quantity",
+                "title": "Trade Quantity"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Trade Quantity",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " PLUS ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "trade.maxTolerance",
+                "title": "Trade Max tolerance"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Trade Max tolerance",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " OR MINUS ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "trade.minTolerance",
+                "title": "Trade Min tolerance"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Trade Min tolerance",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " PCT ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "trade.priceUnit",
+                "title": "Trade Price unit"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Trade Price unit",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " OF ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "cargo.grade",
+                "title": "Cargo Product/Grade"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Cargo Product/Grade",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "DATE OF EXPIRY:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "standbyLetterOfCredit.expiryDate",
+                "title": "Expiry date"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Expiry date",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "FOR PAYMENT AT SIGHT BUT NOT BEFORE THE 31ST DAY AFTER B/L DATE OR DELIVERY DATE (SUCH DATE TO COUNT AS DAY ZERO) AGAINST PRESENTATION OF THE FOLLOWING DOCUMENTS:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "1) A STATEMENT FOR AND ON BEHALF OF (BENEFICIARY) READING AS FOLLOWS:",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "'WE CERTIFY THAT THE AMOUNT OF US DOLLARS ....................  (INVOICE AMOUNT OR SUCH PART AS REMAINS UNPAID TO BE INSERTED) HAS REMAINED UNPAID AND IS NOW OVERDUE TO US UNDER THE TERMS OF OUR CONTRACT WITH (APPLICANT) FOR THE SALE OF ........................ BBLS/MT (WHICH EVER IS APPLICABLE) OF (GRADE) CRUDE OIL'",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "2) COPY OF SELLER'S COMMERCIAL INVOICE IN RESPECT OF SHIPMENT OR DELIVERY OF ..................... BBL/MT (WHICH EVER IS APPLICABLE) OF (GRADE) CRUDE OIL LOADED ON THE VESSEL TBN/SUB AND/OR DELIVERED AS PER CONTRACT",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "3) A STATEMENT FOR AND ON BEHALF OF (BENEFICIARY) READING AS FOLLOWS:",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "'WE CERTIFY THAT ALL THE SHIPPING DOCUMENTS, INCLUDING – WHERE APPLICABLE - FULL SET OF ORIGINAL B/L DULY ISSUED/ENDORSED TO THE ORDER OF (ISSUING BANK / APPLICANT), CALLED FOR IN THE CONTRACT REFERRED TO ABOVE HAVE BEEN FORWARDED TO (ISSUING BANK NAME AND ADDRESS) OR, IN THEIR ABSENCE, SELLER'S LETTER OF INDEMNITY AND / OR WARRANTY OF TITLE WHERE APPLICABLE SENT DIRECTLY TO THE BUYER'",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "DOCUMENTS PRESENTED VIA EMAIL (AS PDF), SWIFT, TELEX, FAX FORM OR ANY SECURE ELECTRONIC MEANS ARE ACCEPTABLE.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "THE VALUE OF THIS STAND-BY LETTER OF CREDIT WILL AUTOMATICALLY BE REDUCED (BY PROVISIONAL INVOICE) OR CANCELLED (BY FINAL INVOICE) UPON PAYMENT OF INVOICE(S) IN FAVOUR OF THE BENEFICIARY BEARING REFERENCE TO THIS STAND-BY LETTER OF CREDIT, WHETHER SUCH PAYMENT(S):",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "1) ARE MADE PURSUANT TO THE PRESENTATION OF THE DOCUMENTS REQUESTED IN THIS STAND-BY LETTER OF CREDIT",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "2) OR ARE MADE BY THE APPLICANT TO THE BENEFICIARY THROUGH THE ISSUING BANK OR THROUGH ANOTHER APPLICANT’S BANK.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "TYPOGRAPHICAL AND SPELLING ERRORS NOT TO BE CONSIDERED AS DISCREPANCIES, EXCEPT IN FIGURES.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "REIMBURSEMENT CLAUSE:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "UPON RECEIPT AT OUR COUNTERS OF DOCUMENTS AND PROVIDED WE RECOGNISE THEM ISSUED IN STRICT CONFORMITY WITH THE TERMS AND CONDITIONS OF THIS STAND-BY LETTER OF CREDIT, WE UNDERTAKE TO COVER YOU AS PER YOUR INSTRUCTIONS BY PAYING VALUE 2 (TWO) (ISSUING BANK CITY) / NEW YORK BANK WORKING DAYS AFTER OUR RECEIPT OF SUCH CONFORM DOCUMENTS.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "OTHERWISE PAYMENT WILL BE EFFECTED VALUE TWO (ISSUING BANK CITY) / NEW YORK BANK WORKING DAYS AFTER RECEIPT OF SUCH COMPLIANT DOCUMENTS.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "FOR PAYMENT(S) DUE ON A SUNDAY, OR ON A MONDAY WHICH IS A NEW YORK BANK HOLIDAY, THE PAYMENT(S) SHALL BE MADE ON THE NEXT NEW YORK BANKING DAY AFTER SUCH PAYMENT(S) DUE DATE.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "FOR PAYMENT(S) DUE ON A SATURDAY, OR ON A NEW YORK BANK HOLIDAY OTHER THAN A MONDAY, THE PAYMENT(S) SHALL BE MADE ON THE LAST NEW YORK BANKING DAY PRIOR TO SUCH PAYMENT DUE DATE.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "THE AMOUNT OF THIS STAND-BY LETTER OF CREDIT WILL AUTOMATICALLY FLUCTUATE IN ACCORDANCE WITH THE LOADED AND / OR DELIVERED QUANTITY AND THE CONTRACTUAL PRICE FORMULA EVEN ABOVE AND BELOW THE STATED LIMITS AND WITHOUT ANY FURTHER AMENDMENT.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "          ",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "ADDITIONAL CONDITIONS:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "DOCUMENTS PRESENTED AFTER 21 DAYS AFTER THE DATE OF BILL OF LADING OR DELIVERY BUT WITHIN VALIDITY OF THIS STAND-BY LETTER OF CREDIT ARE ACCEPTABLE.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "THE CONSTRUCTION, PERFORMANCE AND VALIDITY OF THIS STAND-BY LETTER OF CREDIT SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH ENGLISH LAW.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "ANY CLAIM OR DISPUTE ARISING OUT OF OR IN CONNECTION WITH THIS STAND-BY LETTER OF CREDIT SHALL BE SUBJECT TO THE EXCLUSIVE JURISDICTION OF THE ENGLISH COURTS.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "THIS STAND-BY LETTER OF CREDIT IS SUBJECT TO THE UNIFORM CUSTOMS AND PRACTICE FOR DOCUMENTARY CREDITS (2007 REVISION - I.C.C. PUBLICATION NO. 600).",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "THIS MESSAGE IS THE OPERATIVE INSTRUMENT AND NO MAIL CONFIRMATION WILL FOLLOW.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "DOCUMENTS TO BE SENT IN ONE LOT BY SPECIAL COURIER TO ISSUING BANK'S ADDRESS:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.CN",
+                "title": "Issuing bank name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.STREET",
+                "title": "Issuing bank Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.L",
+                "title": "Issuing bank Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.PC",
+                "title": "Issuing bank Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.C",
+                "title": "Issuing bank Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "FEES PAYABLE BY:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "ALL CHARGES IN CONNECTION WITH THE OPERATION OF THIS IRREVOCABLE STAND-BY LETTER OF CREDIT ARE FOR THE APPLICANT ACCOUNT.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "DUPLICATE CLAUSE:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "SHOULD THIS STAND-BY LETTER OF CREDIT ALSO BE ISSUED AND TRANSMITTED TO THE BENEFICIARY THROUGH MEANS OF COMMUNICATION OTHER THAN THROUGH THE KOMGO PLATFORM (SUCH AS E.G. BY SWIFT MESSAGE, FAX OR OTHERWISE), IT IS CLEARLY UNDERSTOOD THAT SUCH MULTIPLE ISSUANCES AND/OR TRANSMITTALS SHALL NOT RESULT IN A DOUBLE COMMITMENT OF THE ISSUING BANK AND THAT SAID ISSUING BANK SHALL THEREFORE HONOUR THE SAID STAND-BY LETTER OF CREDIT ONLY ONCE AND BE THEREBY RELEASED FROM ANY AND ALL OBLIGATIONS INCURRED UNDER ANY SUCH ADDITIONAL ISSUANCE AND/OR TRANSMITTAL. SUCH STAND-BY LETTER OF CREDIT SHALL BE DEEMED THE SAME ONE, IF IT COVERS THE SAME UNDERLYING TRANSACTION AND BEARS THE SAME REFERENCE NUMBER AS THE ONE INDICATED HEREIN.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "FOR:",
+              "marks": [
+                {
+                  "object": "mark",
+                  "type": "bold",
+                  "data": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.CN",
+                "title": "Issuing bank name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.STREET",
+                "title": "Issuing bank Street"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Street",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.L",
+                "title": "Issuing bank Locality name"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Locality name",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.PC",
+                "title": "Issuing bank Postal code"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Postal code",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "object": "inline",
+              "type": "variable",
+              "data": {
+                "path": "issuingBank.x500Name.C",
+                "title": "Issuing bank Country"
+              },
+              "nodes": [
+                {
+                  "object": "text",
+                  "text": "Issuing bank Country",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "object": "text",
+              "text": "",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "text": "(ISSUING BANK)",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    }
+  }

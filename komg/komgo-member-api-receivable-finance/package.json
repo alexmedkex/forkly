@@ -1,0 +1,203 @@
+{
+  "name": "komgo-api-receivable-finance",
+  "version": "0.0.1",
+  "description": "KomGo API with Express, node 8, mongo, and JWT",
+  "author": "KomGo team",
+  "main": "dist/run-server.js",
+  "scripts": {
+    "check": "npm-check --skip-unused",
+    "start": "npm-run-all -s clean build start:simple",
+    "start:simple": "node ./dist/run-server.js",
+    "start:dev": "npm-run-all -s clean build -p watch:*",
+    "start:mock": "npm-run-all -s clean build:swagger-yaml",
+    "clean": "npm-run-all -p clean:*",
+    "clean:dist": "rimraf dist",
+    "clean:cov": "rimraf coverage",
+    "build": "npm-run-all -s build:swagger",
+    "build:swagger": "npm-run-all -s swagger-gen routes-gen tsc",
+    "watch:tsoa": "onchange './src/**/*.*' -d 3103 -- npm run swagger-gen && npm run routes-gen",
+    "watch:node": "nodemon --inspect=0.0.0.0:9229 --watch src --delay 2.5 ./dist/run-server.js -e ts",
+    "watch:ts": "tsc --watch",
+    "tslint": "tslint -p . -c tslint.json",
+    "tslint:ci": "npm run tslint -- -t json -o report-lint.json",
+    "tslint:fix": "npm run tslint -- --fix",
+    "swagger-gen": "tsoa swagger",
+    "routes-gen": "tsoa routes",
+    "copy-swagger-ui": "ncp ./src/presentation-layer/documentation/swagger-ui ./dist/swagger-ui",
+    "copy-swagger-config": "ncp ./config-default ./config",
+    "copy-swagger-mock-config": "ncp ./config-mock ./config",
+    "swagger-mock": "swagger_swagger_fileName=dist/swagger.yaml swagger project edit --host 0.0.0.0 -p 81 -s & swagger_swagger_fileName=dist/swagger.yaml swagger project start -m",
+    "prettier": "prettier --write 'src/**/*.{ts,js,json}'",
+    "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
+    "tsoa": "tsoa",
+    "pretest": "npm run routes-gen",
+    "pretest:coverage": "npm run routes-gen",
+    "test:ci": "npm run copy-swagger-config && jest src",
+    "test:jest": "npm run copy-swagger-config && jest",
+    "test:coverage": "npm run test:ci -- --coverage",
+    "test:all": "CI=true npm-run-all check-formatting tslint test:coverage",
+    "pretest:integration": "npm run routes-gen",
+    "test:integration": "INTEGRATION_TEST=true jest integration-tests --runInBand --detectOpenHandles --forceExit",
+    "test:integration:jest": "INTEGRATION_TEST=true jest --runInBand --detectOpenHandles --forceExit",
+    "tsc": "tsc",
+    "wait-for-database": "cross-env-shell \"./config/wait-for-it.sh $MONGO_URL\"",
+    "migration:up": "migrate-mongo -f config/db-migrations.js up",
+    "migration:down": "migrate-mongo -f config/db-migrations.js down",
+    "migration:create": "migrate-mongo -f config/db-migrations.js create"
+  },
+  "jestSonar": {
+    "reportFile": "test-report.xml",
+    "indent": 4
+  },
+  "jest": {
+    "testResultsProcessor": "jest-sonar-reporter",
+    "coverageThreshold": {
+      "global": {
+        "statements": 85,
+        "branches": 85,
+        "functions": 85,
+        "lines": 85
+      }
+    },
+    "globals": {
+      "ts-jest": {
+        "babelConfig": false,
+        "diagnostics": false
+      }
+    },
+    "preset": "ts-jest",
+    "testMatch": null,
+    "testEnvironment": "node",
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "src/*/**/*.{ts,js}",
+      "!src/**/{routes,index,faker}.{ts,js}"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "globalSetup": "./integration-tests/utils/global-setup.ts",
+    "setupFilesAfterEnv": [
+      "./integration-tests/utils/setup.ts"
+    ],
+    "globalTeardown": "./integration-tests/utils/global-teardown.ts"
+  },
+  "keywords": [
+    "typescript",
+    "swagger",
+    "docker",
+    "express"
+  ],
+  "engines": {
+    "node": "~8.11.3"
+  },
+  "engineStrict": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "tslint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@komgo/data-access": "^4.0.0",
+    "@komgo/error-utilities": "^5.3.1",
+    "@komgo/health-check": "^2.0.2",
+    "@komgo/logging": "^3.2.1",
+    "@komgo/messaging-library": "^6.2.9",
+    "@komgo/messaging-types": "^2.3.0",
+    "@komgo/microservice-config": "^7.12.0",
+    "@komgo/notification-publisher": "^8.0.3",
+    "@komgo/permissions": "^11.1.1",
+    "@komgo/retry": "^3.0.1",
+    "@komgo/types": "^24.7.0",
+    "ajv": "^6.10.0",
+    "axios": "0.18.1",
+    "axios-error": "^0.7.11",
+    "axios-retry": "^3.1.2",
+    "class-validator": "^0.9.1",
+    "config": "^1.21.0",
+    "deep-object-diff": "^1.1.0",
+    "eth-ens-namehash": "^2.0.8",
+    "express": "^4.14.0",
+    "express-ping": "^1.1.0",
+    "express-winston": "^2.6.0",
+    "inversify": "^4.13.0",
+    "inversify-binding-decorators": "^3.2.0",
+    "js-yaml": "^3.13.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.14",
+    "lz-string": "^1.4.4",
+    "migrate-mongo": "^6.0.2",
+    "mongodb": "^3.2.3",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "^5.7.1",
+    "ncp": "^2.0.0",
+    "qs": "^6.7.0",
+    "reflect-metadata": "^0.1.3",
+    "tsoa": "2.4.2",
+    "typescript": "^3.4.3",
+    "uuid": "^3.3.2",
+    "winston": "^2.4.4"
+  },
+  "devDependencies": {
+    "@komgo/integration-test-utilities": "^5.1.0",
+    "@types/body-parser": "^1.17.0",
+    "@types/config": "0.0.29",
+    "@types/express": "^4.16.1",
+    "@types/jest": "^24.0.11",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/lodash": "^4.14.136",
+    "@types/lz-string": "^1.3.33",
+    "@types/mongodb": "^3.1.23",
+    "@types/mongoose": "^5.3.26",
+    "@types/node": "^11.13.4",
+    "@types/qs": "^6.5.3",
+    "@types/swagger-express-mw": "0.7.6",
+    "@types/uuid": "^3.4.4",
+    "@types/winston": "^2.2.0",
+    "axios-mock-adapter": "^1.16.0",
+    "husky": "^2.2.0",
+    "jest": "^24.7.1",
+    "jest-create-mock-instance": "^1.1.0",
+    "jest-mock": "^24.7.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "lint-staged": "^9.2.0",
+    "mock-http-server": "^1.2.0",
+    "moment": "^2.24.0",
+    "npm-check": "^5.7.1",
+    "npm-run-all": "^3.0.0",
+    "onchange": "^6.0.0",
+    "prettier": "^1.17.0",
+    "rimraf": "^2.5.2",
+    "source-map-support": "^0.4.1",
+    "ts-helpers": "^1.1.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^6.0.5",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.14.0",
+    "validator": "^10.11.0",
+    "wait-for-expect": "^1.1.1",
+    "web3": "^1.0.0-beta.52"
+  }
+}

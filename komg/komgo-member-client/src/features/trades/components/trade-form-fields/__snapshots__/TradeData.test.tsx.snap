@@ -1,0 +1,993 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TradeData component should match snapshot as buyer trade 1`] = `
+Array [
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    className="active title"
+    onClick={[Function]}
+  >
+    <div
+      className="ui block header c0"
+    >
+      Trade data
+    </div>
+  </div>,
+  .c0 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  margin: 0;
+  display: inline-block;
+  line-height: 2;
+  height: 32px;
+  white-space: nowrap;
+}
+
+.c2.c2.c2.c2.c2 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c2.c2.c2.c2.c2 .field.error {
+  margin-bottom: 0;
+}
+
+.c2.c2.c2.c2.c2 label.inputLabel {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c1 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    className="content active"
+  >
+    <ul
+      className="c0"
+    >
+      <div
+        style={
+          Object {
+            "display": "-webkit-box",
+            "paddingBottom": "8px",
+          }
+        }
+      >
+        <span
+          className="c1"
+        >
+          Your role *
+        </span>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "50px",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <div
+            className="ui checked radio checkbox"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={true}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="radio"
+            />
+            <label>
+              Buyer
+            </label>
+          </div>
+          <div
+            className="ui radio checkbox"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={false}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="radio"
+            />
+            <label>
+              Seller
+            </label>
+          </div>
+        </div>
+      </div>
+      <li
+        className="c2 c3"
+      >
+        <span
+          className="c1"
+        >
+          Trade source
+           *
+        </span>
+        <p
+          className="c4"
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Komgo
+        </p>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Buyer
+          </label>
+          <div
+            className="ui disabled input field disabled"
+            options={Array []}
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              disabled={true}
+              name="trade.buyer"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              tabIndex={-1}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Buyer's reference *
+          </label>
+          <div
+            className="ui input"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              disabled={false}
+              name="trade.buyerEtrmId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              value="MY_BUYER_REF"
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Seller *
+          </label>
+          <div
+            aria-disabled={false}
+            aria-expanded={false}
+            className="ui compact search selection dropdown dropdown-input"
+            name="trade.seller"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+            type="text"
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-live="polite"
+              className="text"
+              role="alert"
+            />
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                className="message"
+              >
+                No results found.
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Seller's reference
+          </label>
+          <div
+            className="ui input"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              disabled={false}
+              name="trade.sellerEtrmId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              value="MY_SELLER_REF"
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Credit requirement *
+          </label>
+          <div
+            aria-disabled={false}
+            aria-expanded={false}
+            className="ui compact search selection dropdown dropdown-input"
+            name="trade.creditRequirement"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              Standby letter of credit
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Documentary letter of credit
+                </span>
+              </div>
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Standby letter of credit
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Reference date *
+          </label>
+          <div
+            className="ui input"
+            style={
+              Object {
+                "width": "175px",
+              }
+            }
+          >
+            <input
+              disabled={false}
+              name="trade.dealDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="date"
+              value="2019-06-19"
+            />
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+]
+`;
+
+exports[`TradeData component should match snapshot with seller trade 1`] = `
+Array [
+  .c0.c0.c0 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+<div
+    className="active title"
+    onClick={[Function]}
+  >
+    <div
+      className="ui block header c0"
+    >
+      Trade data
+    </div>
+  </div>,
+  .c0 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  margin: 0;
+  display: inline-block;
+  line-height: 2;
+  height: 32px;
+  white-space: nowrap;
+}
+
+.c2.c2.c2.c2.c2 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c2.c2.c2.c2.c2 .field.error {
+  margin-bottom: 0;
+}
+
+.c2.c2.c2.c2.c2 label.inputLabel {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c1 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+@media (min-width:68.75em) {
+  .c0 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    className="content active"
+  >
+    <ul
+      className="c0"
+    >
+      <div
+        style={
+          Object {
+            "display": "-webkit-box",
+            "paddingBottom": "8px",
+          }
+        }
+      >
+        <span
+          className="c1"
+        >
+          Your role *
+        </span>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "50px",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <div
+            className="ui radio checkbox"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={false}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="radio"
+            />
+            <label>
+              Buyer
+            </label>
+          </div>
+          <div
+            className="ui checked radio checkbox"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={true}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="radio"
+            />
+            <label>
+              Seller
+            </label>
+          </div>
+        </div>
+      </div>
+      <li
+        className="c2 c3"
+      >
+        <span
+          className="c1"
+        >
+          Trade source
+           *
+        </span>
+        <p
+          className="c4"
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Komgo
+        </p>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Buyer *
+          </label>
+          <div
+            aria-disabled={false}
+            aria-expanded={false}
+            className="ui compact search selection dropdown dropdown-input"
+            name="trade.buyer"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+            type="text"
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-live="polite"
+              className="text"
+              role="alert"
+            />
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                className="message"
+              >
+                No results found.
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Buyer's reference
+          </label>
+          <div
+            className="ui input"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              disabled={false}
+              name="trade.buyerEtrmId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              value="MY_BUYER_REF"
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Seller
+          </label>
+          <div
+            className="ui disabled input field disabled"
+            options={Array []}
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              disabled={true}
+              name="trade.seller"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              tabIndex={-1}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Seller's reference *
+          </label>
+          <div
+            className="ui input"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              disabled={false}
+              name="trade.sellerEtrmId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              value="MY_SELLER_REF"
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Credit requirement *
+          </label>
+          <div
+            aria-disabled={false}
+            aria-expanded={false}
+            className="ui compact search selection dropdown dropdown-input"
+            name="trade.creditRequirement"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="combobox"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+            <div
+              aria-live="polite"
+              className="text"
+              role="alert"
+            >
+              Open credit
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <div
+                aria-checked={true}
+                aria-selected={true}
+                className="active selected item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Open credit
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <div
+          className="field"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "inherit",
+              "justifyContent": "unset",
+            }
+          }
+        >
+          <label
+            className="inputLabel"
+          >
+            Reference date *
+          </label>
+          <div
+            className="ui input"
+            style={
+              Object {
+                "width": "175px",
+              }
+            }
+          >
+            <input
+              disabled={false}
+              name="trade.dealDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="date"
+              value="2019-06-19"
+            />
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+]
+`;

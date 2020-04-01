@@ -1,0 +1,34 @@
+swagger:
+  defaultPipe: swagger_controllers
+  swaggerControllerPipe: swagger_controllers
+  bagpipes:
+    _router:
+      name: swagger_router
+      mockMode: true
+      mockControllersDirs: [ ]
+      controllersDirs: [  ]
+    _swagger_validate:
+      name: swagger_validator
+      validateResponse: true
+    swagger_controllers:
+      - onError: json_error_handler
+      - cors
+      - swagger_params_parser
+      - _swagger_validate
+      - express_compatibility
+      - _router
+    swagger_raw:
+      name: swagger_raw
+
+express:
+    port: 8080
+    debug: 9229
+    host: komgo-member-api-documents
+
+auth:
+    jwt_secret: 'UR4swimlane$'
+
+mongo:
+    url: ''
+
+loglevel: info

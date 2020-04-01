@@ -1,0 +1,28 @@
+{
+    "swagger": {
+        "info": {
+            "description": "Harbor API Mock",
+            "version": "1.0.0",
+            "title": "Harbor API Mock"
+        },
+        "schemes": [ "http", "https" ],
+        "securityDefinitions": {
+            "api_key": {
+                "type": "apiKey",
+                "name": "access_token",
+                "in": "header"
+            }
+        },
+        "outputDirectory": "./dist",
+        "entryFile": "./src/run-server.ts",
+        "host": "localhost:3117",
+        "basePath": "/api"
+    },
+    "routes": {
+        "basePath": "/api",
+        "authenticationModule": "./src/middleware/common/authentication/authentication.ts",
+        "entryFile": "./src/run-server.ts",
+        "routesDir": "./src/middleware/server-config",
+        "iocModule" : "./src/inversify/ioc"
+    }
+}

@@ -1,0 +1,73 @@
+{
+  "companyId": "a3d82ae6-908c-49da-95b3-ba1ebe7e5f85",
+  "id": "f049c0e0-5550-4744-bd1d-a09ec50f1b9f",
+  "product": {
+    "id": "kyc",
+    "name": "KYC"
+  },
+  "types": [
+    {
+      "category": {
+        "id": "banking-documents",
+        "name": "Banking documents",
+        "product": {
+          "id": "kyc",
+          "name": "KYC"
+        }
+      },
+      "fields": [
+        {
+          "isArray": false,
+          "name": "Company name",
+          "type": "string"
+        },
+        {
+          "isArray": false,
+          "name": "Issuance date",
+          "type": "date"
+        }
+      ],
+      "id": "board-resolution",
+      "name": "Board resolution",
+      "predefined": true,
+      "product": {
+        "id": "kyc",
+        "name": "KYC"
+      }
+    },
+    {
+      "category": {
+        "id": "banking-documents",
+        "name": "Banking documents",
+        "product": {
+          "id": "kyc",
+          "name": "KYC"
+        }
+      },
+      "fields": [
+        {
+          "isArray": true,
+          "name": "Account numbers",
+          "type": "string"
+        },
+        {
+          "isArray": false,
+          "name": "Bank",
+          "type": "string"
+        },
+        {
+          "isArray": false,
+          "name": "Company name",
+          "type": "string"
+        }
+      ],
+      "id": "pledge",
+      "name": "Pledge",
+      "predefined": true,
+      "product": {
+        "id": "kyc",
+        "name": "KYC"
+      }
+    }
+  ]
+}

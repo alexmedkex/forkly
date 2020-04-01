@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+  api-credit-lines:
+    image: ${IMAGE_NAME:-komgo-member-api-credit-lines}
+    container_name: komgo-member-${MEMBER_ID}-api-credit-lines
+    build:
+      context: ${BUILD_DIR:-./komgo-member-api-credit-lines}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    restart: always
+    environment:
+      - NPM_TOKEN
+      - CONTAINER_HOSTNAME=api-credit-lines
+      - DB_MONGO_URL=mongodb://mongo:27017/api-credit-lines${MONGO_CLIENT_OPTIONS}
+      - API_NOTIF_BASE_URL=http://api-notif:8080
+      - API_REGISTRY_BASE_URL=http://api-registry:8080
+      - API_COVERAGE_BASE_URL=http://api-coverage:8080
+      - COMPANY_STATIC_ID
+      - INTERNAL_MQ_HOST
+      - INTERNAL_MQ_USERNAME
+      - INTERNAL_MQ_PASSWORD
+      - INTERNAL_MQ_TO_PUBLISHER_ID
+      - INTERNAL_MQ_FROM_PUBLISHER_ID            
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - MONGO_CLIENT_PEM_BASE64
+      - MONGO_CA_CERT_BASE64
+      - MONGO_CLIENT_KEY_PASSWORD
+      - MONGO_USE_SSL
+    command: ${COMMAND:-komgo}
+    ports:
+      - ${PORT_1:-3115}:8080
+      - ${PORT_2:-9145}:9229
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-member-api-credit-lines:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}
+

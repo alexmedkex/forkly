@@ -1,0 +1,1 @@
+export { IProductResponse } from './IProductResponse'

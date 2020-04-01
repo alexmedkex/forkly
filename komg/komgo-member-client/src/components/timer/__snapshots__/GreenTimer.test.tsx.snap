@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GreenTimer component should match snapshot 1`] = `
+Array [
+  <i
+    aria-hidden="true"
+    className="green clock outline icon"
+  />,
+  <span
+    className="grey"
+    data-test-id="timer-more-than-24h"
+  >
+    2019/03/24, Sunday, 1:39 PM CET
+  </span>,
+]
+`;

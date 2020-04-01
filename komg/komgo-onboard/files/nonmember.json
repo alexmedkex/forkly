@@ -1,0 +1,33 @@
+[
+  {
+    "staticId": "eebeb867-24b4-46e1-a96c-31c0406efd92",
+    "x500Name": {
+      "CN": "BP Oil International Limited",
+      "O": "BP Oil International Limited",
+      "C": "GB",
+      "L": "London",
+      "STREET": "20 Canada Square",
+      "PC": "E14 5NJ"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "isMember": false,
+    "isFMS": false,
+    "vakt": {
+      "staticId": "89849",
+      "mnid": "BP_OIL_89849",
+      "messagingPublicKey": {
+        "validFrom": "2018-11-27T04:44:29Z",
+        "validTo": "2018-11-27T04:44:29Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "8f445a86-ded7-4f5b-9d62-5dd382efabf6",
+          "n": "o-OxI843PIDhOg8p0QT7VtdCiBcWWKsn7hzWXh6hI4pnWA7zqs-Nn4xeGU9bX2oRFzstwRNVl0pn-hAlBle5JIPNj4P0OLrPeT0-S-DWS8ritF8ZJH_igirggymG6RagA7F4ikNJNJq8Vf0qkSDNp7r-m0lanqc7lPNnkj2A83EhgPq1hcMlaCsCwaYVPjhgdVDSmO3JaRvQo7drE2t7pT73bKBqQWplULKDYIGakl_Gz8Eww2r2D2nDZ-WAqGiDi62VpvZjtjpnQyHHU4talw7aFu9ij27DV7M7AisnzmPcfbmOb3rrJWrkOVCNGZFUxQ_uYchBRQCBjUW4MP2t6w",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    }
+  }
+]

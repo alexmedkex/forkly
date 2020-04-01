@@ -1,0 +1,119 @@
+{
+  "name": "@komgo/onboard",
+  "version": "2.9.2",
+  "description": "Onboarding tool for KOMGO.",
+  "scripts": {
+    "prettier": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
+    "lint": "tslint -p . -c tslint.json",
+    "lint:fix": "tslint --fix -p . -c tslint.json",
+    "build": "rimraf dist && rimraf config.json && tsc -p .",
+    "start:dev": "ts-node ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "lint:ci": "npm run lint -- -t json -o report-lint.json",
+    "tslint": "tslint -p . -c tslint.json",
+    "tslint:ci": "npm run tslint -- -t json -o report-lint.json",
+    "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
+    "test": "jest",
+    "test:dev": "jest --watchAll",
+    "test:coverage": "npm run test -- --coverage",
+    "test:all": "npm run check-formatting && npm run lint && npm run test:coverage"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "abi"
+  ],
+  "bin": {
+    "onboard": "./bin/onboard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-onboard.git"
+  },
+  "author": "KOMGO",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/amqplib": "^0.5.8",
+    "@types/bip39": "^2.4.0",
+    "@types/jest": "^24.0.6",
+    "@types/lodash": "^4.14.116",
+    "@types/meow": "^4.0.1",
+    "@types/node": "^10.11.6",
+    "@types/node-fetch": "^2.1.2",
+    "@types/uuid": "^3.4.4",
+    "jest": "^24.8.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "prettier": "^1.14.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@komgo/blockchain-access": "^1.2.1",
+    "@komgo/products": "^3.3.0",
+    "@komgo/smart-contracts": "2.8.0",
+    "@komgo/sol-ts-generator": "^1.3.0",
+    "amqplib": "^0.5.2",
+    "aws-sdk": "^2.328.0",
+    "axios": "^0.18.0",
+    "bip39": "^2.5.0",
+    "class-transformer": "^0.1.9",
+    "class-validator": "^0.9.1",
+    "eth-ens-namehash": "^2.0.8",
+    "ethers": "^4.0.28",
+    "jest-create-mock-instance": "^1.1.0",
+    "lodash": "^4.17.11",
+    "meow": "^5.0.0",
+    "node-fetch": "^2.2.0",
+    "pako": "^1.0.6",
+    "reflect-metadata": "^0.1.3",
+    "rimraf": "^2.6.2",
+    "ts-essentials": "^1.0.0",
+    "uuid": "^3.3.2",
+    "web3": "1.0.0-beta.37",
+    "web3-utils": "^1.2.0",
+    "winston": "^2.4.4"
+  },
+  "jest": {
+    "testResultsProcessor": "jest-sonar-reporter",
+    "coverageThreshold": {
+      "global": {
+        "statements": 0,
+        "branches": 0,
+        "functions": 0,
+        "lines": 0
+      }
+    },
+    "globals": {
+      "ts-jest": {
+        "babelConfig": false,
+        "diagnostics": false
+      }
+    },
+    "preset": "ts-jest",
+    "testMatch": null,
+    "testEnvironment": "node",
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "src/*/**/*.{ts,js}",
+      "!src/**/{routes,index}.{ts,js}",
+      "!src/presentation-layer/documentation/**/*"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ]
+  }
+}

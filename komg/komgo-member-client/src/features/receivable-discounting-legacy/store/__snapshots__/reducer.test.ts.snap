@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Receivable discounting reducer defaults returns the initial state 1`] = `
+Immutable.Map {
+  "rfpSummariesByRdId": Immutable.Map {},
+  "rfpSummariesByRdIdByParticipantStaticId": Immutable.Map {},
+  "tradeSnapshotHistoryById": Immutable.Map {},
+  "error": null,
+}
+`;

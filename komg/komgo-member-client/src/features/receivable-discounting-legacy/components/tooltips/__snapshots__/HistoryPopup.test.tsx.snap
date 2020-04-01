@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryPopup should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+}
+
+<span
+    class="c0"
+  >
+    value
+  </span>
+</DocumentFragment>
+`;

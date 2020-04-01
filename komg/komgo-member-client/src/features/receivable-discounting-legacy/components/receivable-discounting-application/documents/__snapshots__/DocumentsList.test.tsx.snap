@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentsList component should match snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.c4 {
+  padding-right: 0.5em;
+}
+
+.c3.c3.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline;
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  text-align: left;
+  line-height: 1.9rem !important;
+}
+
+.c0 {
+  padding-top: 4px;
+}
+
+<div>
+  <div
+    className="ui divided middle aligned list"
+    role="list"
+  >
+    <div
+      className="c0"
+    />
+    <div
+      className="item"
+      data-test-id="documentName"
+      onClick={[Function]}
+      role="listitem"
+    >
+      <img
+        className="ui inline right spaced image"
+        src="/images/file.svg"
+        style={
+          Object {
+            "paddingRight": "0.4em",
+          }
+        }
+      />
+      <div
+        className="content"
+      >
+        <span
+          className="c1"
+        >
+          documentName
+        </span>
+      </div>
+      <div
+        className="content c2"
+      >
+        Commercial Contract
+      </div>
+      <div
+        className="right floated content c3"
+      >
+        <div
+          aria-expanded={false}
+          className="ui inline dropdown c4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          role="listbox"
+          style={
+            Object {
+              "paddingRight": 0,
+            }
+          }
+          tabIndex={0}
+        >
+          <div
+            aria-live="polite"
+            className="text"
+            role="alert"
+          />
+          <i
+            aria-hidden="true"
+            className="ellipsis horizontal icon"
+            onClick={[Function]}
+          />
+          <div
+            className="left menu transition"
+          >
+            <div
+              aria-checked={false}
+              aria-selected={false}
+              className="item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                View
+              </span>
+            </div>
+            <div
+              aria-checked={false}
+              aria-selected={false}
+              className="item"
+              onClick={[Function]}
+              role="option"
+              style={
+                Object {
+                  "pointerEvents": "all",
+                }
+              }
+            >
+              <span
+                className="text"
+              >
+                Download
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

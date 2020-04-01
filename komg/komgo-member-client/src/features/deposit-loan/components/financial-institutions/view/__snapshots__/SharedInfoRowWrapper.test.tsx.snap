@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SharedInfoRowWrapper should match snapshot 1`] = `
+.c0 {
+  border-top: 1px solid #c0cfde;
+  padding: 20px 0;
+}
+
+.c0:last-child {
+  border-bottom: 1px solid #c0cfde;
+}
+
+.c0.c0 .column:not(.grid) {
+  padding-bottom: 10px;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    ok
+  </div>
+</div>
+`;

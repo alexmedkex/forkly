@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "clean": "rm -rf rabbitmqdata",
+    "start": "docker-compose -f docker-compose.komgo.yml up || exit 0"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "npm": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

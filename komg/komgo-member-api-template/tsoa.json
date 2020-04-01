@@ -1,0 +1,31 @@
+{
+    "swagger": {
+        "info": {
+            "description": "API Template",
+            "version": "1.0.0",
+            "title": "Template API"
+        },
+        "schemes": [
+            "http",
+            "https"
+        ],
+        "securityDefinitions": {
+            "api_key": {
+                "type": "apiKey",
+                "name": "access_token",
+                "in": "header"
+            }
+        },
+        "outputDirectory": "./dist",
+        "entryFile": "./src/run-server.ts",
+        "host": "localhost:3116",
+        "basePath": "/v0"
+    },
+    "routes": {
+        "basePath": "/v0",
+        "authenticationModule": "./src/middleware/common/authentication/authentication.ts",
+        "entryFile": "./src/run-server.ts",
+        "routesDir": "./src/middleware/server-config",
+        "iocModule": "./src/inversify/ioc"
+    }
+}

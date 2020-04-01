@@ -1,0 +1,2 @@
+mongo:
+    url: 'DB_MONGO_URL'

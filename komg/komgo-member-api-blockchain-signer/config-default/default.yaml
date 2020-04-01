@@ -1,0 +1,12 @@
+express:
+    port: 8080
+    debug: 9229
+    host: komgo-member-api-blockchain-signer
+
+auth:
+    jwt_secret: 'UR4swimlane$'
+
+mongo:
+    url: ''
+
+loglevel: info

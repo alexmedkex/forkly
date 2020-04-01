@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionMenu should match default snapshot 1`] = `
+<div
+  aria-expanded={false}
+  className="ui inline dropdown"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="listbox"
+  tabIndex={0}
+>
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  />
+  <i
+    aria-hidden="true"
+    className="ellipsis horizontal icon"
+    onClick={[Function]}
+  />
+  <div
+    className="menu transition left"
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+      role="option"
+    >
+      <a
+        className="link-as-text"
+        href="/financial-instruments/standby-letters-of-credit/123"
+        onClick={[Function]}
+      >
+        View SBLC details
+      </a>
+    </div>
+  </div>
+</div>
+`;

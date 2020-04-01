@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryModal should render correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  margin-left: 240px;
+}
+
+<div
+    class="c0"
+  >
+    <button
+      class="ui button"
+      data-test-id="open-other-information-history"
+      role="button"
+    >
+      my button text
+    </button>
+  </div>
+</DocumentFragment>
+`;

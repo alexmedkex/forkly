@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopupTriggerText should match snapshot 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:after {
+  content: '';
+  border-bottom: dotted 2px #c0cfde;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+}
+
+<span
+  className="c0"
+>
+  Ok
+</span>
+`;

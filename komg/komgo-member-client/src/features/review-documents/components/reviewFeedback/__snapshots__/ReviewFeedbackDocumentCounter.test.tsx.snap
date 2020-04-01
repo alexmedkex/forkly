@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewFeedbackDocumentCounter component should match snapshot 1`] = `
+<p>
+  Total documents - 
+  2
+   
+  <br />
+  Number of discrepant documents - 
+  1
+</p>
+`;

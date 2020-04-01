@@ -1,0 +1,20 @@
+FROM node:8
+
+WORKDIR /opt/app
+
+# default to port 8080 for node, and 5858 or 9229 for debug
+ARG PORT=8080
+ENV PORT $PORT
+EXPOSE $PORT 5858 9229
+
+# install app dependencies first, in a different location for easier app bind mounting for local development
+WORKDIR /opt
+COPY .npmrc package.json package-lock.json* ./
+RUN npm install --ignore-scripts
+ENV PATH /opt/node_modules/.bin:$PATH
+
+# copy in our source code last, as it changes the most
+WORKDIR /opt/app
+COPY . /opt/app
+
+CMD [ "npm", "run", "start" ]

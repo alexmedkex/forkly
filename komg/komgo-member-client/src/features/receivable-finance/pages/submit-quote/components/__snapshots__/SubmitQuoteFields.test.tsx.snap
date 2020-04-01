@@ -1,0 +1,7823 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmitQuoteFields Common tests DISCOUNT BLENDED should display flat fee and currency if pricing type flat fee is selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -45,11 +45,11 @@
+          </label>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui checked radio checkbox\\"
++             class=\\"ui radio checkbox\\"
+              data-test-id=\\"pricingType_SPLIT\\"
+            >
+              <input
+                checked=\\"\\"
+                class=\\"hidden\\"
+@@ -65,11 +65,11 @@
+          </div>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui radio checkbox\\"
++             class=\\"ui checked radio checkbox\\"
+              data-test-id=\\"pricingType_FLAT_FEE\\"
+            >
+              <input
+                class=\\"hidden\\"
+                readonly=\\"\\"
+@@ -88,70 +88,131 @@
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <label
+          style=\\"font-weight: bold; display: block;\\"
+        >
+-         Risk fee
++         Flat fee
+        </label>
+        <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++         class=\\"ui input\\"
++         data-test-id=\\"pricingFlatFeeAmount.amount\\"
+        >
++         <input
++           name=\\"pricingFlatFeeAmount.amount\\"
++           type=\\"text\\"
++           value=\\"0.00\\"
++         />
++       </div>
+        <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"riskFee\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"SPLIT\\"
+-           style=\\"width: 50%;\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown\\"
++         data-test-id=\\"pricingFlatFeeAmount.currency\\"
++         form=\\"[object Object]\\"
++         name=\\"pricingFlatFeeAmount.currency\\"
++         role=\\"combobox\\"
++         style=\\"margin: 0px 0px 0px 5px; width: 80px;\\"
+        >
+          <input
+-             name=\\"pricingRiskFee\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
+          >
+-             %
++           CHF
+          </div>
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               AED
++             </span>
+            </div>
+-       </div>
++           <div
++             aria-checked=\\"true\\"
++             aria-selected=\\"true\\"
++             class=\\"active selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               CHF
++             </span>
+            </div>
+            <div
+-       style=\\"margin-bottom: 10px;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
+            >
+-       <label
+-         style=\\"font-weight: bold; display: block;\\"
++             <span
++               class=\\"text\\"
+              >
+-         Margin
+-       </label>
++               EUR
++             </span>
++           </div>
+            <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
+              >
++               GBP
++             </span>
++           </div>
+            <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"margin\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"SPLIT\\"
+-           style=\\"width: 50%;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
+            >
+-           <input
+-             name=\\"pricingMargin\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
+-             value=\\"\\"
+-           />
++             <span
++               class=\\"text\\"
++             >
++               JPY
++             </span>
++           </div>
+            <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
+            >
+-             %
++             <span
++               class=\\"text\\"
++             >
++               USD
++             </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`SubmitQuoteFields Common tests DISCOUNT BLENDED should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Risk fee
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="riskFee"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingRiskFee"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Margin
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="margin"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingMargin"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of risk cover
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui input"
+        data-test-id="numberOfDaysRiskCover"
+        style="width: 50%;"
+      >
+        <input
+          name="numberOfDaysRiskCover"
+          step="1"
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Common tests DISCOUNT RECOURSE should display flat fee and currency if pricing type flat fee is selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -45,11 +45,11 @@
+          </label>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui checked radio checkbox\\"
++             class=\\"ui radio checkbox\\"
+              data-test-id=\\"pricingType_MARGIN\\"
+            >
+              <input
+                checked=\\"\\"
+                class=\\"hidden\\"
+@@ -65,11 +65,11 @@
+          </div>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui radio checkbox\\"
++             class=\\"ui checked radio checkbox\\"
+              data-test-id=\\"pricingType_FLAT_FEE\\"
+            >
+              <input
+                class=\\"hidden\\"
+                readonly=\\"\\"
+@@ -88,35 +88,131 @@
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <label
+          style=\\"font-weight: bold; display: block;\\"
+        >
+-         Margin
++         Flat fee
+        </label>
+        <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++         class=\\"ui input\\"
++         data-test-id=\\"pricingFlatFeeAmount.amount\\"
+        >
++         <input
++           name=\\"pricingFlatFeeAmount.amount\\"
++           type=\\"text\\"
++           value=\\"0.00\\"
++         />
++       </div>
+        <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"margin\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"MARGIN\\"
+-           style=\\"width: 50%;\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown\\"
++         data-test-id=\\"pricingFlatFeeAmount.currency\\"
++         form=\\"[object Object]\\"
++         name=\\"pricingFlatFeeAmount.currency\\"
++         role=\\"combobox\\"
++         style=\\"margin: 0px 0px 0px 5px; width: 80px;\\"
+        >
+          <input
+-             name=\\"pricingMargin\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
+          >
+-             %
++           CHF
++         </div>
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               AED
++             </span>
++           </div>
++           <div
++             aria-checked=\\"true\\"
++             aria-selected=\\"true\\"
++             class=\\"active selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               CHF
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               EUR
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               GBP
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               JPY
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               USD
++             </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`SubmitQuoteFields Common tests DISCOUNT RECOURSE should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_MARGIN"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Margin
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Margin
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="margin"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="MARGIN"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingMargin"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Common tests DISCOUNT WITHOUT_RECOURSE should display flat fee and currency if pricing type flat fee is selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -45,11 +45,11 @@
+          </label>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui checked radio checkbox\\"
++             class=\\"ui radio checkbox\\"
+              data-test-id=\\"pricingType_ALL_IN\\"
+            >
+              <input
+                checked=\\"\\"
+                class=\\"hidden\\"
+@@ -84,11 +84,11 @@
+          </div>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui radio checkbox\\"
++             class=\\"ui checked radio checkbox\\"
+              data-test-id=\\"pricingType_FLAT_FEE\\"
+            >
+              <input
+                class=\\"hidden\\"
+                readonly=\\"\\"
+@@ -107,35 +107,131 @@
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <label
+          style=\\"font-weight: bold; display: block;\\"
+        >
+-         All in
++         Flat fee
+        </label>
+        <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++         class=\\"ui input\\"
++         data-test-id=\\"pricingFlatFeeAmount.amount\\"
+        >
++         <input
++           name=\\"pricingFlatFeeAmount.amount\\"
++           type=\\"text\\"
++           value=\\"0.00\\"
++         />
++       </div>
+        <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"pricingAllIn\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"ALL_IN\\"
+-           style=\\"width: 50%;\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown\\"
++         data-test-id=\\"pricingFlatFeeAmount.currency\\"
++         form=\\"[object Object]\\"
++         name=\\"pricingFlatFeeAmount.currency\\"
++         role=\\"combobox\\"
++         style=\\"margin: 0px 0px 0px 5px; width: 80px;\\"
+        >
+          <input
+-             name=\\"pricingAllIn\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
+          >
+-             %
++           CHF
++         </div>
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               AED
++             </span>
++           </div>
++           <div
++             aria-checked=\\"true\\"
++             aria-selected=\\"true\\"
++             class=\\"active selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               CHF
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               EUR
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               GBP
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               JPY
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               USD
++             </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`SubmitQuoteFields Common tests DISCOUNT WITHOUT_RECOURSE should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_ALL_IN"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              All in pricing
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        All in
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="pricingAllIn"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="ALL_IN"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingAllIn"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Common tests RISK_COVER undefined should display flat fee and currency if pricing type flat fee is selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -45,11 +45,11 @@
+          </label>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui checked radio checkbox\\"
++             class=\\"ui radio checkbox\\"
+              data-test-id=\\"pricingType_RISK_FEE\\"
+            >
+              <input
+                checked=\\"\\"
+                class=\\"hidden\\"
+@@ -65,11 +65,11 @@
+          </div>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui radio checkbox\\"
++             class=\\"ui checked radio checkbox\\"
+              data-test-id=\\"pricingType_FLAT_FEE\\"
+            >
+              <input
+                class=\\"hidden\\"
+                readonly=\\"\\"
+@@ -88,35 +88,131 @@
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <label
+          style=\\"font-weight: bold; display: block;\\"
+        >
+-         Risk fee
++         Flat fee
+        </label>
+        <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++         class=\\"ui input\\"
++         data-test-id=\\"pricingFlatFeeAmount.amount\\"
+        >
++         <input
++           name=\\"pricingFlatFeeAmount.amount\\"
++           type=\\"text\\"
++           value=\\"0.00\\"
++         />
++       </div>
+        <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"riskFee\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"RISK_FEE\\"
+-           style=\\"width: 50%;\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown\\"
++         data-test-id=\\"pricingFlatFeeAmount.currency\\"
++         form=\\"[object Object]\\"
++         name=\\"pricingFlatFeeAmount.currency\\"
++         role=\\"combobox\\"
++         style=\\"margin: 0px 0px 0px 5px; width: 80px;\\"
+        >
+          <input
+-             name=\\"pricingRiskFee\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
+          >
+-             %
++           CHF
++         </div>
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               AED
++             </span>
++           </div>
++           <div
++             aria-checked=\\"true\\"
++             aria-selected=\\"true\\"
++             class=\\"active selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               CHF
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               EUR
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               GBP
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               JPY
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               USD
++             </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`SubmitQuoteFields Common tests RISK_COVER undefined should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_RISK_FEE"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Risk fee
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Risk fee
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="riskFee"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="RISK_FEE"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingRiskFee"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of risk cover
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui input"
+        data-test-id="numberOfDaysRiskCover"
+        style="width: 50%;"
+      >
+        <input
+          name="numberOfDaysRiskCover"
+          step="1"
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Common tests RISK_COVER_DISCOUNTING undefined should display flat fee and currency if pricing type flat fee is selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -45,11 +45,11 @@
+          </label>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui checked radio checkbox\\"
++             class=\\"ui radio checkbox\\"
+              data-test-id=\\"pricingType_SPLIT\\"
+            >
+              <input
+                checked=\\"\\"
+                class=\\"hidden\\"
+@@ -65,11 +65,11 @@
+          </div>
+          <div
+            class=\\"field\\"
+          >
+            <div
+-             class=\\"ui radio checkbox\\"
++             class=\\"ui checked radio checkbox\\"
+              data-test-id=\\"pricingType_FLAT_FEE\\"
+            >
+              <input
+                class=\\"hidden\\"
+                readonly=\\"\\"
+@@ -88,70 +88,131 @@
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <label
+          style=\\"font-weight: bold; display: block;\\"
+        >
+-         Risk fee
++         Flat fee
+        </label>
+        <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++         class=\\"ui input\\"
++         data-test-id=\\"pricingFlatFeeAmount.amount\\"
+        >
++         <input
++           name=\\"pricingFlatFeeAmount.amount\\"
++           type=\\"text\\"
++           value=\\"0.00\\"
++         />
++       </div>
+        <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"riskFee\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"SPLIT\\"
+-           style=\\"width: 50%;\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown\\"
++         data-test-id=\\"pricingFlatFeeAmount.currency\\"
++         form=\\"[object Object]\\"
++         name=\\"pricingFlatFeeAmount.currency\\"
++         role=\\"combobox\\"
++         style=\\"margin: 0px 0px 0px 5px; width: 80px;\\"
+        >
+          <input
+-             name=\\"pricingRiskFee\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
+          >
+-             %
++           CHF
+          </div>
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               AED
++             </span>
+            </div>
+-       </div>
++           <div
++             aria-checked=\\"true\\"
++             aria-selected=\\"true\\"
++             class=\\"active selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               CHF
++             </span>
+            </div>
+            <div
+-       style=\\"margin-bottom: 10px;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
+            >
+-       <label
+-         style=\\"font-weight: bold; display: block;\\"
++             <span
++               class=\\"text\\"
+              >
+-         Margin
+-       </label>
++               EUR
++             </span>
++           </div>
+            <div
+-         class=\\"field\\"
+-         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
+              >
++               GBP
++             </span>
++           </div>
+            <div
+-           class=\\"ui right labeled input\\"
+-           data-test-id=\\"margin\\"
+-           defaultcurrency=\\"USD\\"
+-           inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"SPLIT\\"
+-           style=\\"width: 50%;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
+            >
+-           <input
+-             name=\\"pricingMargin\\"
+-             step=\\"0.01\\"
+-             type=\\"number\\"
+-             value=\\"\\"
+-           />
++             <span
++               class=\\"text\\"
++             >
++               JPY
++             </span>
++           </div>
+            <div
+-             class=\\"ui basic label label\\"
+-             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
+            >
+-             %
++             <span
++               class=\\"text\\"
++             >
++               USD
++             </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>"
+`;
+
+exports[`SubmitQuoteFields Common tests RISK_COVER_DISCOUNTING undefined should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Risk fee
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="riskFee"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingRiskFee"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Margin
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="margin"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingMargin"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of risk cover
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui input"
+        data-test-id="numberOfDaysRiskCover"
+        style="width: 50%;"
+      >
+        <input
+          name="numberOfDaysRiskCover"
+          step="1"
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Discounting without recourse should display pricing AllIn if pricing type AllIn is selected 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Indicative COF if Cost of funds is selected 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Indicative COF if Cost of funds is selected 2`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Indicative COF if Cost of funds is selected 3`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Indicative COF if Cost of funds is selected 4`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Libor value if interest type is Libor 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -279,33 +279,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Libor value if interest type is Libor 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -244,33 +244,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Libor value if interest type is Libor 3`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -243,33 +243,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display Libor value if interest type is Libor 4`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -279,33 +279,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display add on value if interest type is AddOnLibor 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -280,32 +280,218 @@
+            </div>
+          </div>
+        </div>
+      </div>
+      <label>
+-       Indicative Cost of Funds as of 2020/07/31
++       Add on value
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
+        <div
+          class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         data-test-id=\\"addOnValue\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
++           name=\\"addOnValue\\"
+            step=\\"0.01\\"
+            type=\\"number\\"
+            value=\\"\\"
+          />
+          <div
+            class=\\"ui basic label label\\"
+            style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+          >
+            %
++         </div>
++       </div>
++     </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
++     </label>
++     <div
++       class=\\"field\\"
++       style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++     >
++       <label
++         class=\\"inputLabel\\"
++       />
++       <div
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
++         style=\\"width: 50%;\\"
++       >
++         <input
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
++           value=\\"\\"
++         />
++         <div
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display add on value if interest type is AddOnLibor 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -245,32 +245,218 @@
+            </div>
+          </div>
+        </div>
+      </div>
+      <label>
+-       Indicative Cost of Funds as of 2020/07/31
++       Add on value
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
+        <div
+          class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         data-test-id=\\"addOnValue\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
++           name=\\"addOnValue\\"
+            step=\\"0.01\\"
+            type=\\"number\\"
+            value=\\"\\"
+          />
+          <div
+            class=\\"ui basic label label\\"
+            style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+          >
+            %
++         </div>
++       </div>
++     </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
++     </label>
++     <div
++       class=\\"field\\"
++       style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++     >
++       <label
++         class=\\"inputLabel\\"
++       />
++       <div
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
++         style=\\"width: 50%;\\"
++       >
++         <input
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
++           value=\\"\\"
++         />
++         <div
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display add on value if interest type is AddOnLibor 3`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -244,32 +244,218 @@
+            </div>
+          </div>
+        </div>
+      </div>
+      <label>
+-       Indicative Cost of Funds as of 2020/07/31
++       Add on value
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
+        <div
+          class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         data-test-id=\\"addOnValue\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
++           name=\\"addOnValue\\"
+            step=\\"0.01\\"
+            type=\\"number\\"
+            value=\\"\\"
+          />
+          <div
+            class=\\"ui basic label label\\"
+            style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+          >
+            %
++         </div>
++       </div>
++     </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
++     </label>
++     <div
++       class=\\"field\\"
++       style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++     >
++       <label
++         class=\\"inputLabel\\"
++       />
++       <div
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
++         style=\\"width: 50%;\\"
++       >
++         <input
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
++           value=\\"\\"
++         />
++         <div
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display add on value if interest type is AddOnLibor 4`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -280,32 +280,218 @@
+            </div>
+          </div>
+        </div>
+      </div>
+      <label>
+-       Indicative Cost of Funds as of 2020/07/31
++       Add on value
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
+        <div
+          class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         data-test-id=\\"addOnValue\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
++           name=\\"addOnValue\\"
+            step=\\"0.01\\"
+            type=\\"number\\"
+            value=\\"\\"
+          />
+          <div
+            class=\\"ui basic label label\\"
+            style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+          >
+            %
++         </div>
++       </div>
++     </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
++     </label>
++     <div
++       class=\\"field\\"
++       style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++     >
++       <label
++         class=\\"inputLabel\\"
++       />
++       <div
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
++         style=\\"width: 50%;\\"
++       >
++         <input
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
++           value=\\"\\"
++         />
++         <div
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
++         >
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display days until maturity if libor type is Published 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -279,33 +279,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display days until maturity if libor type is Published 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -244,33 +244,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display days until maturity if libor type is Published 3`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -243,33 +243,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should display days until maturity if libor type is Published 4`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -279,33 +279,193 @@
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
++     <div
++       class=\\"sc-bYSBpT kbUTsK\\"
++     >
++       <div
++         class=\\"field\\"
++       >
++         <label
++           id=\\"field_liborType\\"
++         >
++           Libor value
++         </label>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui checked radio checkbox\\"
++             data-test-id=\\"liborType_PUBLISHED\\"
++           >
++             <input
++               checked=\\"\\"
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
+              <label>
+-       Indicative Cost of Funds as of 2020/07/31
++               Published
++             </label>
++           </div>
++         </div>
++         <div
++           class=\\"field\\"
++         >
++           <div
++             class=\\"ui radio checkbox\\"
++             data-test-id=\\"liborType_INTERPOLATED\\"
++           >
++             <input
++               class=\\"hidden\\"
++               readonly=\\"\\"
++               tabindex=\\"0\\"
++               type=\\"radio\\"
++               value=\\"\\"
++             />
++             <label>
++               Interpolated
++             </label>
++           </div>
++         </div>
++       </div>
++     </div>
++     <label>
++       Maturity
+      </label>
+      <div
+        class=\\"field\\"
+        style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+      >
++       <label
++         class=\\"inputLabel\\"
++       />
+        <div
+-         class=\\"ui right labeled input\\"
+-         data-test-id=\\"indicativeCof\\"
++         aria-expanded=\\"false\\"
++         class=\\"ui compact search selection dropdown dropdown-input\\"
++         data-test-id=\\"daysUntilMaturity\\"
++         name=\\"daysUntilMaturity\\"
++         role=\\"combobox\\"
+          style=\\"width: 50%;\\"
+        >
+          <input
+-           name=\\"indicativeCof\\"
+-           step=\\"0.01\\"
+-           type=\\"number\\"
++           aria-autocomplete=\\"list\\"
++           autocomplete=\\"off\\"
++           class=\\"search\\"
++           id=\\"field_daysUntilMaturity\\"
++           tabindex=\\"0\\"
++           type=\\"text\\"
+            value=\\"\\"
+          />
+          <div
+-           class=\\"ui basic label label\\"
+-           style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           aria-live=\\"polite\\"
++           class=\\"text\\"
++           role=\\"alert\\"
++         />
++         <i
++           aria-hidden=\\"true\\"
++           class=\\"dropdown icon\\"
++         />
++         <div
++           class=\\"menu transition\\"
++           role=\\"listbox\\"
+          >
+-           %
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"true\\"
++             class=\\"selected item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               Overnight
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 week
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               1 month
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               2 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               3 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               6 months
++             </span>
++           </div>
++           <div
++             aria-checked=\\"false\\"
++             aria-selected=\\"false\\"
++             class=\\"item\\"
++             role=\\"option\\"
++             style=\\"pointer-events: all;\\"
++           >
++             <span
++               class=\\"text\\"
++             >
++               12 months
++             </span>
++           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div"
+`;
+
+exports[`SubmitQuoteFields Interest type fields should render correctly 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_ALL_IN"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              All in pricing
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Risk fee
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="riskFee"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingRiskFee"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Margin
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="margin"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingMargin"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Interest type fields should render correctly 2`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_ALL_IN"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              All in pricing
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        All in
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="pricingAllIn"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="ALL_IN"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingAllIn"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Interest type fields should render correctly 3`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_ALL_IN"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              All in pricing
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Margin
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="margin"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="MARGIN"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingMargin"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Interest type fields should render correctly 4`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Advance rate
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="advanceRate"
+        style="width: 50%;"
+      >
+        <input
+          name="advanceRate"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_pricingType"
+        >
+          Pricing type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_ALL_IN"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              All in pricing
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="pricingType_SPLIT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Split
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="pricingType_FLAT_FEE"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Flat fee
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Risk fee
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="riskFee"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingRiskFee"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="margin-bottom: 10px;"
+    >
+      <label
+        style="font-weight: bold; display: block;"
+      >
+        Margin
+      </label>
+      <div
+        class="field"
+        style="display: inherit; justify-content: unset; align-items: center;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="margin"
+          defaultcurrency="USD"
+          inputstyle="[object Object]"
+          pricingtype="SPLIT"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingMargin"
+            step="0.01"
+            type="number"
+            value=""
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  margin: -10px 0 10px 0;
+}
+
+<div
+    class="c0"
+  >
+    <label>
+      Days of discounting
+    </label>
+    <div
+      class="inline field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <span
+        style="width: 50%; display: inline-block;"
+      >
+        <div
+          class="ui input"
+          data-test-id="numberOfDaysDiscounting"
+          style="width: 100%;"
+        >
+          <input
+            name="numberOfDaysDiscounting"
+            step="1"
+            type="number"
+            value=""
+          />
+        </div>
+      </span>
+    </div>
+    <p
+      class="c1"
+    >
+      Ms. Seller proposes: 10 days
+    </p>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_interestType"
+        >
+          Interest type
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="interestType_COST_OF_FUNDS"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Cost of funds
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Libor
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="interestType_ADD_ON_LIBOR"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Add on + Libor
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label>
+      Indicative Cost of Funds as of 2020/07/31
+    </label>
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <div
+        class="ui right labeled input"
+        data-test-id="indicativeCof"
+        style="width: 50%;"
+      >
+        <input
+          name="indicativeCof"
+          step="0.01"
+          type="number"
+          value=""
+        />
+        <div
+          class="ui basic label label"
+          style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+        >
+          %
+        </div>
+      </div>
+    </div>
+  </div>
+  .c1 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c1 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c1 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="field"
+      >
+        <label
+          id="field_feeCalculationType"
+        >
+          Fee calculation based on
+        </label>
+        <div
+          class="field"
+        >
+          <div
+            class="ui checked radio checkbox"
+            data-test-id="feeCalculationType_STRAIGHT"
+          >
+            <input
+              checked=""
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Straight discount
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_YIELD"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Discount to yield
+            </label>
+          </div>
+        </div>
+        <div
+          class="field"
+        >
+          <div
+            class="ui radio checkbox"
+            data-test-id="feeCalculationType_OTHER"
+          >
+            <input
+              class="hidden"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value=""
+            />
+            <label>
+              Other formula
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    style="font-weight: bold; display: block;"
+  >
+    Comment (optional)
+  </label>
+  <textarea
+    data-test-id="comment"
+    name="comment"
+    rows="3"
+    style="width: 50%;"
+  />
+</DocumentFragment>
+`;
+
+exports[`SubmitQuoteFields Pricing type: split should display risk fee and margin if pricing type split is selected 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;
+
+exports[`SubmitQuoteFields Pricing type: split should display risk fee and margin if pricing type split is selected 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -107,26 +107,61 @@
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <label
+          style=\\"font-weight: bold; display: block;\\"
+        >
+-         All in
++         Risk fee
++       </label>
++       <div
++         class=\\"field\\"
++         style=\\"display: inherit; justify-content: unset; align-items: center;\\"
++       >
++         <div
++           class=\\"ui right labeled input\\"
++           data-test-id=\\"riskFee\\"
++           defaultcurrency=\\"USD\\"
++           inputstyle=\\"[object Object]\\"
++           pricingtype=\\"SPLIT\\"
++           style=\\"width: 50%;\\"
++         >
++           <input
++             name=\\"pricingRiskFee\\"
++             step=\\"0.01\\"
++             type=\\"number\\"
++             value=\\"\\"
++           />
++           <div
++             class=\\"ui basic label label\\"
++             style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
++           >
++             %
++           </div>
++         </div>
++       </div>
++     </div>
++     <div
++       style=\\"margin-bottom: 10px;\\"
++     >
++       <label
++         style=\\"font-weight: bold; display: block;\\"
++       >
++         Margin
+        </label>
+        <div
+          class=\\"field\\"
+          style=\\"display: inherit; justify-content: unset; align-items: center;\\"
+        >
+          <div
+            class=\\"ui right labeled input\\"
+-           data-test-id=\\"pricingAllIn\\"
++           data-test-id=\\"margin\\"
+            defaultcurrency=\\"USD\\"
+            inputstyle=\\"[object Object]\\"
+-           pricingtype=\\"ALL_IN\\"
++           pricingtype=\\"SPLIT\\"
+            style=\\"width: 50%;\\"
+          >
+            <input
+-             name=\\"pricingAllIn\\"
++             name=\\"pricingMargin\\"
+              step=\\"0.01\\"
+              type=\\"number\\"
+              value=\\"\\"
+            />
+            <div"
+`;
+
+exports[`SubmitQuoteFields Pricing type: split should display risk fee and margin if pricing type split is selected 3`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;

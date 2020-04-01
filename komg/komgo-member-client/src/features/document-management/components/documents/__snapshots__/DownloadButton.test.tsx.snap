@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DownloadButton component renders 1`] = `
+.c0.c0.c0.c0.c0.c0.c0.c0.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="ui primary button"
+    data-test-id="requirements-add-button-Certificate of Incorporation"
+    default={true}
+    onClick={[Function]}
+    role="button"
+    style={
+      Object {
+        "fontSize": "14px",
+        "height": "28px",
+        "margin": "0 10px 0 0",
+        "padding": "0",
+        "textRendering": "geometricPrecision",
+        "width": "153px",
+      }
+    }
+  >
+    Download attachment
+  </button>
+  <svg
+    name="comment alternate"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    size="large"
+    style={
+      Object {
+        "alignSelf": "center",
+        "fontSize": "1.2em",
+        "marginLeft": "0px",
+      }
+    }
+  >
+    information-outline.svg
+  </svg>
+</div>
+`;

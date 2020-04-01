@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationsForm should match snapshot 1`] = `
+.c0.c0.c0 {
+  margin-top: 36px;
+}
+
+.c1.c1.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  font-weight: normal;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 .inline.field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100px;
+}
+
+.c5.c5.c5 {
+  padding-right: 0;
+}
+
+<div
+  className="ui grid c0"
+>
+  <div
+    className="eleven wide column"
+  >
+    <h3
+      className="ui header"
+    >
+      Notifications
+    </h3>
+    <div
+      className="ui divider"
+    />
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="field c1"
+      >
+        <label
+          className="c2"
+        >
+          <strong>
+            Task Notifications
+          </strong>
+          <p
+            className="c3"
+          >
+            Receive information when a new task is received and also when a task is assigned to you
+          </p>
+        </label>
+        <div
+          className="c4"
+        >
+          <div
+            className="inline field"
+          >
+            <div
+              className="ui checked disabled checkbox"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onMouseDown={[Function]}
+            >
+              <input
+                checked={true}
+                className="hidden"
+                disabled={true}
+                onClick={[Function]}
+                readOnly={true}
+                tabIndex={-1}
+                type="checkbox"
+              />
+              <label>
+                In-app
+              </label>
+            </div>
+          </div>
+          <div
+            className="inline field"
+          >
+            <div
+              className="ui checked checkbox"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              title=""
+            >
+              <input
+                checked={true}
+                className="hidden"
+                disabled={false}
+                id="sendTaskNotificationsByEmail"
+                onClick={[Function]}
+                readOnly={true}
+                tabIndex={0}
+                type="checkbox"
+              />
+              <label
+                htmlFor="sendTaskNotificationsByEmail"
+              >
+                Email
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui divider"
+      />
+      <div
+        className="ui basic right aligned segment c5"
+      >
+        <button
+          className="ui button"
+          onClick={[Function]}
+          role="button"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="ui primary disabled button"
+          disabled={true}
+          onClick={[Function]}
+          role="button"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+          tabIndex={-1}
+          type="submit"
+        >
+          Save changes
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

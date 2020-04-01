@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Terms should render Terms 1`] = `
+Array [
+  .c0.c0.c0 {
+  opacity: 0.8;
+  color: white;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin: auto;
+  max-width: 1175px;
+}
+
+<div
+    className="disabled c0"
+  >
+    As per the komgo Terms & Conditions, komgo's role is to maintain and operate the platform, and this role is purely administrative in nature. While komgo have made its best efforts to ensure the authenticity of the platform users during the on-boarding process, in no event komgo, its related partnerships or corporations, managers or employees thereof be liable to you or anyone else, makes representation of warranty of any kind (whether express or implied by law) (including, but not limited to warranties of performance, merchantability and fitness for a particular purpose) in respect of the attached document or for any decision made or action taken in reliance of the information in the attached document.
+  </div>,
+  .c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto 70px auto;
+}
+
+.c1 {
+  color: #FFFF76;
+  font-family: 'Lota Grotesque',Roboto,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c1:hover {
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="more-information c1"
+      href="https://komgo.io/info/verification"
+      target="_blank"
+    >
+      More information
+    </a>
+  </div>,
+]
+`;

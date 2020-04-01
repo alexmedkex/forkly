@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Deposit Loan Reducer should match snapshot when FETCH_DEPOSITS_LOANS_SUCCESS is dispatched and state is initial 1`] = `
+Immutable.Map {
+  "loan": Immutable.Map {
+    "byId": Immutable.Map {},
+    "summaries": Immutable.List [],
+    "disclosedById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+  "deposit": Immutable.Map {
+    "byId": Immutable.Map {
+      "123": Immutable.Map {
+        "period": "MONTHS",
+        "pricing": 0.9,
+        "pricingUpdatedAt": "2019-01-01T00:00:00.000Z",
+        "staticId": "123",
+        "appetite": true,
+        "updatedAt": "2019-01-01T00:00:00.000Z",
+        "currency": "USD",
+        "periodDuration": 3,
+        "type": "LOAN",
+        "createdAt": "2019-01-01T00:00:00.000Z",
+      },
+      "1234": Immutable.Map {
+        "period": "MONTHS",
+        "pricing": 0.9,
+        "pricingUpdatedAt": "2019-01-01T00:00:00.000Z",
+        "staticId": "1234",
+        "appetite": true,
+        "sharedWith": Immutable.List [
+          Immutable.Map {
+            "staticId": "bc86b161-580e-4098-a01b-ba945b4d5137",
+            "sharedWithStaticId": "cc24a24b-ada5-4332-9ee7-394da255df67",
+            "depositLoanStaticId": "f0a5d813-dafe-45ca-ab83-c264246eef3f",
+            "appetite": Immutable.Map {
+              "shared": true,
+            },
+            "pricing": Immutable.Map {
+              "shared": true,
+              "pricing": 0.9,
+            },
+            "createdAt": "2019-01-01T00:00:00.000Z",
+            "updatedAt": "2019-01-01T00:00:00.000Z",
+          },
+        ],
+        "updatedAt": "2019-01-01T00:00:00.000Z",
+        "currency": "USD",
+        "periodDuration": 3,
+        "type": "LOAN",
+        "createdAt": "2019-01-01T00:00:00.000Z",
+      },
+    },
+    "summaries": Immutable.List [],
+    "disclosedById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+}
+`;
+
+exports[`Deposit Loan Reducer should set state when GET_DEPOSIT_LOAN_SUCCESS is dispatched and state is initial 1`] = `
+Immutable.Map {
+  "loan": Immutable.Map {
+    "byId": Immutable.Map {},
+    "summaries": Immutable.List [],
+    "disclosedById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+  "deposit": Immutable.Map {
+    "byId": Immutable.Map {
+      "123": Immutable.Map {
+        "period": "MONTHS",
+        "pricing": 0.9,
+        "pricingUpdatedAt": "2019-01-01T00:00:00.000Z",
+        "staticId": "123",
+        "appetite": true,
+        "updatedAt": "2019-01-01T00:00:00.000Z",
+        "currency": "USD",
+        "periodDuration": 3,
+        "type": "LOAN",
+        "createdAt": "2019-01-01T00:00:00.000Z",
+      },
+    },
+    "summaries": Immutable.List [],
+    "disclosedById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+}
+`;

@@ -1,0 +1,5 @@
+express:
+    port: 'SERVER_PORT'
+
+mongo:
+    url: 'DB_MONGO_URL'

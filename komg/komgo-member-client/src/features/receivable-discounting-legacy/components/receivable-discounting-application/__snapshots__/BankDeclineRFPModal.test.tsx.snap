@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReceivableDiscountingDeclineRequestModal /> should render as expected 1`] = `
+.c0 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.c2 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #142435;
+  margin: 0;
+}
+
+.c1 {
+  margin-top: 0;
+  position: relative;
+  background-color: rgba(255,255,255,0.85);
+}
+
+<div
+  className="ui page modals dimmer transition visible active"
+>
+  <div
+    className="ui modal transition visible active"
+    data-test-id="bank-decline-rfp-modal"
+    style={
+      Object {
+        "marginTop": undefined,
+        "top": "unset",
+        "width": "680px",
+      }
+    }
+  >
+    <div
+      className="content"
+    >
+      <h1
+        className="ui header"
+      >
+        Decline discounting request
+      </h1>
+      <p>
+        You are declining a
+         
+        receivable discounting request
+         
+        for 
+        <span
+          className="c0"
+        >
+          Trade ID 
+          sadfsdf
+        </span>
+         from 
+         for a quote on
+         
+        <span
+          className="c0"
+        />
+        .
+      </p>
+      <form
+        className="ui form"
+        id="bank-decline-rfp-form"
+        onSubmit={[Function]}
+      >
+        <label
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Comment (optional)
+        </label>
+        <textarea
+          data-test-id="comment"
+          name="comment"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onInput={[Function]}
+          rows={3}
+          style={
+            Object {
+              "background": undefined,
+              "border": undefined,
+              "resize": "",
+            }
+          }
+          value=""
+        />
+      </form>
+    </div>
+    <div
+      className="actions"
+    >
+      <button
+        className="ui button ui button"
+        data-test-id="bank-decline-rfp-cancel-btn"
+        onClick={[Function]}
+        role="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="ui primary button"
+        data-test-id="bank-decline-rfp-submit-btn"
+        form="bank-decline-rfp-form"
+        onClick={[Function]}
+        role="button"
+        type="submit"
+      >
+        Decline request
+      </button>
+    </div>
+    <div
+      className="ui page modals dimmer transition visible active"
+    >
+      <div
+        className="ui tiny modal transition visible active"
+        style={
+          Object {
+            "marginTop": undefined,
+          }
+        }
+      >
+        <div
+          className="header"
+        >
+          Declining request
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="c1"
+            data-test-id="loadingTransition"
+          >
+            <img
+              className="ui mini centered image"
+              src="/images/bars.svg"
+            />
+            <div
+              className="ui header centered"
+            >
+              <span
+                className="c2"
+                color="#142435"
+              >
+                Declining request
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="actions"
+        >
+          <button
+            className="ui button"
+            data-test-id="cancel-button"
+            onClick={[Function]}
+            role="button"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

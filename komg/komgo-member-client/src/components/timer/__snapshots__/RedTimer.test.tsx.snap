@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedTimer component should match snapshot when there are less than 60 minutes 1`] = `
+.c0 {
+  color: #d45c64;
+}
+
+<div
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <i
+    aria-hidden="true"
+    className="red clock outline icon"
+  />
+  <span
+    className="c0"
+    data-test-id="timer-less-than-24h"
+  >
+    Remaining time: 
+    50 minute(s)
+  </span>
+</div>
+`;
+
+exports[`RedTimer component should match snapshot when there are more thant 60 minutes 1`] = `
+.c0 {
+  color: #d45c64;
+}
+
+<div
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <i
+    aria-hidden="true"
+    className="red clock outline icon"
+  />
+  <span
+    className="c0"
+    data-test-id="timer-less-than-24h"
+  >
+    Remaining time: 
+    17 hour(s)
+  </span>
+</div>
+`;

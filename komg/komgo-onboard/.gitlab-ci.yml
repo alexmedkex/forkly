@@ -1,0 +1,115 @@
+stages:
+  - setup
+  - audit
+  - test
+  - analysis
+  - publish
+
+install deps:
+  cache:
+    key: node_modules_cache
+    paths:
+    - node_modules/
+  stage: setup
+  script:
+    - npm install
+  only:
+    - /^KOMGO-.*$/
+    - develop
+  artifacts:
+    paths:
+      - node_modules/
+  tags:
+    - node8
+
+run audit:
+  stage: audit
+  script:
+    - npm audit --registry=https://registry.npmjs.org
+  only:
+    - /^KOMGO-.*$/
+    - /^cherry-pick-.*$/
+    - develop
+  dependencies:
+    - install deps
+  tags:
+    - node8
+  allow_failure: true
+
+run lint and formatting checks:
+  stage: test
+  script:
+    - npm run tslint:ci
+    - npm run check-formatting
+  artifacts:
+    paths:
+      - report-lint.json
+  only:
+    - /^KOMGO-.*$/
+    - develop
+  tags:
+    - node8
+
+run tests:
+  stage: test
+  script:
+    - npm run test:coverage
+  artifacts:
+    paths:
+      - test-report.xml
+      - coverage
+  only:
+    - /^KOMGO-.*$/
+    - develop
+  tags:
+    - node8
+
+test that the library builds correctly:
+  stage: test
+  script:
+    - npm run build
+  only:
+    - /^KOMGO-.*$/
+    - develop
+  tags:
+    - node8
+
+sonarqube:
+  stage: analysis
+  dependencies:
+    - run tests
+    - install deps
+    - run lint and formatting checks
+  script:
+    - |
+      if [[ $CI_COMMIT_REF_NAME = "develop" || $CI_COMMIT_REF_NAME = "release" ]]; then
+        sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dproject.settings=sonar/sonar.properties \
+            -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA \
+            -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME \
+            -Dsonar.gitlab.project_id=$CI_PROJECT_ID \
+            -Dsonar.gitlab.user_token=$GITLAB_TOKEN
+      else
+        sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dproject.settings=sonar/sonar-preview.properties \
+            -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA \
+            -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME \
+            -Dsonar.gitlab.project_id=$CI_PROJECT_ID \
+            -Dsonar.gitlab.user_token=$GITLAB_TOKEN
+      fi
+  only:
+    - /^KOMGO-.*$/
+    - develop
+  tags:
+    - sonar
+
+publish:
+  stage: publish
+  only:
+    refs:
+      - develop
+  script:
+    - npm cache clean --force
+    - npm config list
+    - npm run build
+    - npm publish
+  tags:
+    - node8

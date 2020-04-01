@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PresentationDetails should return button for review when document status is pending 1`] = `
+<button
+  className="ui small right floated button"
+  onClick={[Function]}
+  role="button"
+  style={
+    Object {
+      "marginRight": "2px",
+      "marginTop": "-5px",
+    }
+  }
+>
+  Review
+</button>
+`;
+
+exports[`PresentationDetails should return label with accepted text for review when document status is accepted 1`] = `
+<div
+  className="ui green label"
+  onClick={[Function]}
+>
+  Compliant
+</div>
+`;
+
+exports[`PresentationDetails should return label with accepted text for review when document status is accepted 2`] = `
+<div
+  className="ui red label"
+  onClick={[Function]}
+>
+  Discrepant
+</div>
+`;

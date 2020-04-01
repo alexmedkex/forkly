@@ -1,0 +1,9 @@
+node_modules
+dist
+npm-debug.log
+mongo-data
+.idea
+.DS_Store
+coverage
+test-report.xml
+report-lint.json

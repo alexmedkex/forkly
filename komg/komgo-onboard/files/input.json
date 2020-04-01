@@ -1,0 +1,83 @@
+[
+  {
+    "staticId": "cf63c1f8-1165-4c94-a8f8-9252eb4f0016",
+    "komgoMnid": "64400bd1-9621-44fe-977d-69922c4b9183",
+    "x500Name": {
+      "CN": "Shell International Trading and Shipping Company Limited",
+      "O": "Shell International Trading and Shipping Company Limited",
+      "C": "GB",
+      "L": "London",
+      "STREET": "80 Strand",
+      "PC": "WC2R 0ZA"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ"
+      }
+    },
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0xc7b41635D91f77d120Cf786c751b8738b97BE9ab",
+      "key": "0x2f346a843bf143041ea3eb6f21ba974f8e8df75a6988dd192aacb76f29f161374139bef25de6791e002fab877a19461c1867c05bc91c98c71f7855635055f8de"
+    },
+    "nodeKeys": "1dQcior2UOmoq4zwCzSe2P1wB3I+qYKn0VY1u7+RVmQ=",
+    "vakt": {
+      "staticId": "49779",
+      "mnid": "SHELL_INTERNATIONAL_49779",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "9de2033b-8173-40e4-bd79-f8f4eedf42ff",
+          "n": "lsq-W3ixBiBaZb-ducBnkCMMJ5qp4dSwvD8L1si7mit9YQ0aYLDzWth43LwJeXx96UKgujUAu7kWZPJfr3aNscGSL5QtSU21lx5hZCToJ3QyDbgvrr16A4FeXjCQgkfqWols2vAKhhk3MzPnKNy65oH6nmKSGYQzxbd1Hw_FwiCI06yK7-rtY_M1c28T26KGvC2x9wAhZ8RqDeIpXx8eCBX7fkh8RZyZ93a56LCPylZGYkUHuJDapTRHfQN8KLONc4GB83Qto9pLzjFs0vlKD3aH5gn_wEhpqpaJpKBOon-nOLulHHZLLEc4viFj88o4x3rpFjdu0wH4iCsCXYqzHQ",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ",
+        "d": "XZmqNi5aBlbZm6BD3iO8rriU9ynvboroNk0yLTDKtJwAsqYg0ugO65bSc1xwld5-D32oQRJirOrWWrxM80KuZKJjauHBnhrZslzKto5KiLsB92JAQe0DLFZ6T1HsEHcFasRsGA8hM2p7mSz_gMJ3DLOl9jNYiOOqKfvMQ8jQ2PFP0BSD7Kt1oVjdTT1RqApkEosdnu89AYgVVGSyqZH0eW28S-XQi5dua0gdzOc_houQFlHfwYAXglHzfp9GxVwy_4VOVi5cOs8MsKIoe9qzRbpQKJ4NrrWgvLCYgnk4pquGFo8jU35I8oF0rzcmI4btIaMPtJmXotmIsBMFS1QOrQ",
+        "p": "2kQKwptTbceCfh9_S9M3lPbF14vv2v2mC-U5TwDIX4qoIx7STWOoDr6WaKGuui8dl_0g39vLZxm0GYakHmNH0Zv3FFPNgqg3Qww8TS4Ci_q0HiXex-tHUicoVPUwHv5ooWPTIzV3FU4GAet91VcMSlH7FNXMfCvkSRDO7VnHIg8",
+        "q": "u44A-8IDUhXL7Vc_IGsc5vxQaqC0puBNvD5NDJRVa8EbQqHgele8hGIXtc0-LJa32tows-HsDJcTFp7M4bpFP5ZTmXAoZykMHvnLefc2Fkn6dqr2aPTomJ9cyr4my5VGuXMfhNZzP7qNaAo1-izWQyolBiYcLzVA753cCHGgzAs",
+        "dp": "OLC_krhBPRw6uoN3zrv3jctiq49_JwQGosRQ1EJByP78mNKikNM3jUzXSCnmdhlSuG1Yoow2EntMmeysp-_lcX3u-OqjUDJc2B9PckRnCPB-4-22JXrotV_SS-67JvGxP2nsJxL18SSozsrZjhXj7VHJwymcyQulaYziEiflXuU",
+        "dq": "GMB33sHPAGFCBXOTMCsSqGU6E6hbzv4hJCuwrW1SDKNyfouwfVTg2zO631JT1zyYzPgon0S8izjQ2xZgAZY8l1S2ebR0kJC5OclLkjAO4kgnFswfMuDHZYT6kQMhSZLMv6Ky0SwgD5QGH2nhj7-lEz4XnsUeyRglFrpllHOyfds",
+        "qi": "vFdwwZPCJAn7pYcJmbp1iqg2Z572bM_uao9S2HdaJHCV8JKaxisl3PPxMxNDIzXtrLYBMGSmbXv_IYTXIBRNBkiyb2KL-6ZOCcouq9ZlgBYZMTOJjrla68AYw-jxqKMRkywKrFa9Ssr4VKcUlw9Sg1e_rO3xs-cpGKmi_sIZbXc"
+      },
+      "QAEthereumPrivateKey": "0xe5a899ddbfa1028b3e2c3b150570c7573314fce5a3346a25cc1ef76f7e6806d4"
+    },
+    "komgoProducts": [
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ]
+  }
+]

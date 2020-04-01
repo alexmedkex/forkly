@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoFoundMessage should match default snapshot 1`] = `
+.c0 {
+  text-align: center;
+  color: #5d768f;
+  margin-top: 32px;
+}
+
+.c0.c0.c0.c0 p {
+  margin-bottom: 0;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="search icon"
+  />
+  <p>
+    Test
+  </p>
+  <small>
+    Please try with different search query
+  </small>
+</div>
+`;
+
+exports[`NoFoundMessage should match snapshot with default message 1`] = `
+.c0 {
+  text-align: center;
+  color: #5d768f;
+  margin-top: 32px;
+}
+
+.c0.c0.c0.c0 p {
+  margin-bottom: 0;
+}
+
+<div
+  className="c0"
+>
+  <i
+    aria-hidden="true"
+    className="search icon"
+  />
+  <p>
+    Sorry, no items found
+  </p>
+  <small>
+    Please try with different search query
+  </small>
+</div>
+`;

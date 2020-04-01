@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionList renders 1`] = `
+.c0.c0 {
+  padding: 0;
+}
+
+<div
+  className="accordion ui fluid"
+  data-test-id="accordionlist-accordion"
+>
+  <div
+    className="title"
+    name="bar-2"
+    onClick={[Function]}
+  >
+    <div>
+      bar-2 has 2 foobars: 
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="ui list c0"
+      role="list"
+    >
+      <div
+        onClick={[Function]}
+      >
+        foo-1
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        foo-3
+      </div>
+    </div>
+    <div
+      className="ui divider"
+    />
+  </div>
+  <div
+    className="title"
+    name="bar-1"
+    onClick={[Function]}
+  >
+    <div>
+      bar-1 has 2 foobars: 
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="ui list c0"
+      role="list"
+    >
+      <div
+        onClick={[Function]}
+      >
+        foo-2
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        foo-4
+      </div>
+    </div>
+    <div
+      className="ui divider"
+    />
+  </div>
+</div>
+`;

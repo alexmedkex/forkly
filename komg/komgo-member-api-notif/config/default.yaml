@@ -1,0 +1,12 @@
+express:
+    port: 8080
+    debug: 9229
+    host: api-notif
+
+mongo:
+    url: ''
+
+loglevel: info
+
+axios:
+    timeout: 20000

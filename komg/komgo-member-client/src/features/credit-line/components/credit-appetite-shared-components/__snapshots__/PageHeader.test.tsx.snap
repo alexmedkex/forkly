@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader should match snapshot with button 1`] = `
+.c0 {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c1.c1.c1 {
+  height: 32px;
+  margin-bottom: 1rem;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="ui header"
+  >
+    Deposits
+  </h1>
+  <a
+    className="ui primary button c1"
+    data-test-id="test-id"
+    href="/deposits/new"
+    onClick={[Function]}
+  >
+    Add
+  </a>
+</div>
+`;
+
+exports[`PageHeader should match snapshot without button 1`] = `
+.c0 {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="ui header"
+  >
+    Deposits
+  </h1>
+</div>
+`;
+
+exports[`PageHeader should match snapshot without button when user do not have permission 1`] = `
+.c0 {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="ui header"
+  >
+    Deposits
+  </h1>
+</div>
+`;

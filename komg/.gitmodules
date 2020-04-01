@@ -1,0 +1,96 @@
+[submodule "komgo-member-client"]
+	path = komgo-member-client
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-client
+[submodule "komgo-member-blockchain"]
+	path = komgo-member-blockchain
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-blockchain
+[submodule "komgo-member-api-notif"]
+	path = komgo-member-api-notif
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-notif
+[submodule "komgo-member-api-roles"]
+	path = komgo-member-api-roles
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-roles
+[submodule "komgo-member-api-users"]
+	path = komgo-member-api-users
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-users
+[submodule "komgo-member-api-registry"]
+	path = komgo-member-api-registry
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-registry
+[submodule "komgo-member-api-auth"]
+	path = komgo-member-api-auth
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-auth
+[submodule "komgo-member-mq"]
+	path = komgo-member-mq
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-mq
+[submodule "komgo-member-keycloak"]
+	path = komgo-member-keycloak
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-keycloak
+[submodule "komgo-member-api-gateway"]
+	path = komgo-member-api-gateway
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-gateway
+[submodule "komgo-member-api-signer"]
+	path = komgo-member-api-signer
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-signer
+[submodule "komgo-member-event-management"]
+	path = komgo-member-event-management
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-event-management
+[submodule "komgo-api-documents"]
+	path = komgo-api-documents
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-api-documents
+[submodule "komgo-member-api-trade-cargo"]
+	path = komgo-member-api-trade-cargo
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-trade-cargo
+[submodule "komgo-member-api-trade-finance"]
+	path = komgo-member-api-trade-finance
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-trade-finance
+[submodule "komgo-member-api-coverage"]
+	path = komgo-member-api-coverage
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-coverage
+[submodule "komgo-common-mq-router"]
+	path = komgo-common-mq-router
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-common-mq-router
+[submodule "komgo-onboard"]
+	path = komgo-onboard
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-onboard
+[submodule "komgo-member-ws-server"]
+	path = komgo-member-ws-server
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-ws-server
+[submodule "komgo-member-blockchain-event-management"]
+	path = komgo-member-blockchain-event-management
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-blockchain-event-management
+[submodule "komgo-member-api-blockchain-signer"]
+	path = komgo-member-api-blockchain-signer
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-blockchain-signer
+[submodule "komgo-api-products"]
+	path = komgo-api-products
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-api-products
+[submodule "komgo-api-magic-link"]
+	path = komgo-api-magic-link
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-api-magic-link
+[submodule "komgo-member-api-receivable-finance"]
+	path = komgo-member-api-receivable-finance
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-receivable-finance
+[submodule "komgo-member-api-timer"]
+	path = komgo-member-api-timer
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-timer
+[submodule "komgo-member-api-rfp"]
+	path = komgo-member-api-rfp
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-rfp
+[submodule "komgo-member-api-credit-lines"]
+	path = komgo-member-api-credit-lines
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-credit-lines
+[submodule "komgo-member-vault"]
+	path = komgo-member-vault
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-vault
+[submodule "komgo-api-onboarding"]
+	path = komgo-api-onboarding
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-api-onboarding
+[submodule "harbor-mock"]
+	path = harbor-mock
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/harbor-mock
+[submodule "komgo-member-api-template"]
+	path = komgo-member-api-template
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-member-api-template
+[submodule "komgo-lms-router"]
+	path = komgo-lms-router
+	url = git@gitlab.com:ConsenSys/client/uk/KomGo/komgo-lms-router

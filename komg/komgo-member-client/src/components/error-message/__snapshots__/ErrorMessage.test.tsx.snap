@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage matches the snapshot 1`] = `
+<div
+  className="ui negative message"
+  data-test-id="errorMessage"
+>
+  <div
+    className="header"
+  >
+    error title
+  </div>
+  <p>
+    error message
+  </p>
+</div>
+`;

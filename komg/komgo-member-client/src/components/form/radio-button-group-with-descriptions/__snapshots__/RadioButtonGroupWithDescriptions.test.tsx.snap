@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtonGroupWithDescriptions matches snapshot  1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px 0px 12px 10px;
+}
+
+.c1 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+<div
+    class="ui container c0"
+  >
+    <h3
+      class="c1"
+    >
+      Select an option
+    </h3>
+  </div>
+  .c0 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.c0 > div {
+  margin: 5px !important;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px;
+  width: 200px;
+  border: 1px solid #c0cfde;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c2 {
+  padding-bottom: 10px;
+}
+
+.c2 > label {
+  font-weight: bold;
+  text-align: bottom;
+}
+
+.c3 {
+  margin-left: 32px;
+}
+
+<div
+    class="ui container c0"
+  >
+    <div
+      class="field c1"
+    >
+      <div
+        class="ui radio checkbox c2"
+        data-test-id="radioButtongroup-RISK_COVER_DISCOUNTING"
+      >
+        <input
+          class="hidden"
+          id="radioButtongroup-RISK_COVER_DISCOUNTING"
+          name="radioGroup"
+          readonly=""
+          tabindex="0"
+          type="radio"
+          value="RISK_COVER_DISCOUNTING"
+        />
+        <label
+          for="radioButtongroup-RISK_COVER_DISCOUNTING"
+        >
+          Risk cover with discount option
+        </label>
+      </div>
+      <p
+        class="c3"
+      >
+        Cover the risk with the option to request discounting
+      </p>
+    </div>
+    <div
+      class="field c1"
+    >
+      <div
+        class="ui radio checkbox c2"
+        data-test-id="radioButtongroup-DISCOUNT"
+      >
+        <input
+          class="hidden"
+          id="radioButtongroup-DISCOUNT"
+          name="radioGroup"
+          readonly=""
+          tabindex="0"
+          type="radio"
+          value="DISCOUNT"
+        />
+        <label
+          for="radioButtongroup-DISCOUNT"
+        >
+          Discount
+        </label>
+      </div>
+      <p
+        class="c3"
+      >
+        Discount with or without recourse
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

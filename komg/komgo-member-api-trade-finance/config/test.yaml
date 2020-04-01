@@ -1,0 +1,4 @@
+mongo:
+    url: 'mongodb://localhost:27017/trade-finance-test'
+
+loglevel: info

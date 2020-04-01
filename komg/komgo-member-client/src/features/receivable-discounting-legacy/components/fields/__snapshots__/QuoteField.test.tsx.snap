@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuoteField renders correctly 1`] = `
+<DocumentFragment>
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3.c3.c3 {
+  border-bottom: 1px dashed #c0cfde;
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    class="c0 c1"
+    data-test-id="agreedTerms-field-component-advanceRate"
+  >
+    <p
+      class="c2"
+    >
+      Advance rate
+    </p>
+    <p
+      class="c3"
+    >
+      100000
+    </p>
+  </li>
+</DocumentFragment>
+`;

@@ -1,0 +1,3 @@
+interface IHasStaticId {
+  staticId: string
+}

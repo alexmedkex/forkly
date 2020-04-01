@@ -1,0 +1,5 @@
+.git
+.gitignore
+dist
+test-report.xml
+node_modules

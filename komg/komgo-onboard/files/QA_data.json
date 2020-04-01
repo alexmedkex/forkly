@@ -1,0 +1,594 @@
+[
+  {
+    "staticId": "ecc3b179-00bc-499c-a2f9-f8d1cc58e9db",
+    "komgoMnid": "87edeb0e-3783-4379-a1d2-6cf916ab6d04",
+    "x500Name": {
+      "CN": "ING Bank N.V.",
+      "O": "ING Bank N.V.",
+      "C": "NL",
+      "L": "Amsterdam",
+      "STREET": "Amsterdamse Poort,Bijlmerplein 888",
+      "PC": "1102 MG"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": true,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "6PYNpJ-N4Dujxsz4vLJ0meEy9OTsJHQxiCDZForQORk",
+        "e": "AQAB",
+        "n": "yZ0-tpLvu5FmRgfw8nQOKUX_djITjNdOQRm48pBhm7T91_x95t2C_eXKjNDb46IqJBjYuen0-9KIqb7tqvxUFwQTm_DJtic3Z4jmy27t_AIq-EWoyDZoMBJUWk2Q_-lSZRf80piW7FdM6YKSQ4BpPApEG6Bm-GlN6NeAYVHgMQCS2SmYcZHVqOzme3XmUMjTy9PsCOdxzBwUz0_K7oAb4KhI_J5eSiTkn_5MDv1qJYh6NlgYItFt-8qOHd1AsezLfjZxcPuGg6asZO3yZ2eCKv7TeSmX0EAT2RsFzsOqzIH1kav0dWhpCwsjI0Ew1sQIIeCEApmNv6ENxFSM_Zquiw"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0xE3891bA45eedD6597E43A0AD89EE54Eb7a48Eca4",
+      "key": "0x26e8a2fe0e9ba73862938253eb584d2f2f950049665ba4591eb7fda22e5b1f91886c983111611c20cbbce0ac70cb6f428fe79d5d69dd1c8d1e34510235649e11"
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "6PYNpJ-N4Dujxsz4vLJ0meEy9OTsJHQxiCDZForQORk",
+        "e": "AQAB",
+        "n": "yZ0-tpLvu5FmRgfw8nQOKUX_djITjNdOQRm48pBhm7T91_x95t2C_eXKjNDb46IqJBjYuen0-9KIqb7tqvxUFwQTm_DJtic3Z4jmy27t_AIq-EWoyDZoMBJUWk2Q_-lSZRf80piW7FdM6YKSQ4BpPApEG6Bm-GlN6NeAYVHgMQCS2SmYcZHVqOzme3XmUMjTy9PsCOdxzBwUz0_K7oAb4KhI_J5eSiTkn_5MDv1qJYh6NlgYItFt-8qOHd1AsezLfjZxcPuGg6asZO3yZ2eCKv7TeSmX0EAT2RsFzsOqzIH1kav0dWhpCwsjI0Ew1sQIIeCEApmNv6ENxFSM_Zquiw",
+        "d": "M3rBLqEqMXyY3rzcWywjCYrkBewXbdj0FE9bGCShp755KpNAGpjo_6eTJo2V9_PKStlFTYNdmIdTefRUf1papl3WG_VJrAcrcHZWaA91GOn8ytQOmsC5rbygaUZxBccv0LxlQ-jOcJ6B9wXuDupU9I2yglNct4U77X5JO5BKbHhCrBMqVD8tbwzRHBYD-vY_V9NWQ5BVcnV7GkHvTjUS5qyUtCh7WoXp81_CnPcT9eoWmtkfrc63T41T-uy6qXsF8hMQHqVosPndCdYTQwnEt3qn0hn4ZX-b0eqHAsFt9oTUC6d0-bvKiAw-0oJ7m6WG31K2Z2v8NnvcBWppQCAxQQ",
+        "p": "9R6jXYamuU_n9VkKe99NhoE0PVPADFJsdq5bWzFXH54sElo-JsULIntD6Usl8rFOfRCcODRQkpN3kmpuhY34eZo8yBiMeNOS9-GQaEaURZfq8QrA_G9CSYv44HPTfLaMNtwJUP7vimm5oKyQS-S_MmrS7IOqqfn_jDRb9ZFWwLs",
+        "q": "0pA-G7fkI7-iwXOTGSoQ8bcjhVuuT54NCQGENzHRfkxYXSynROfggVnotXyOio_DNKpfloREQlRlaM3D4xiboTXOHq_ir_cVLGzMfvGJt5029WuJJ2VlrOfK9m5r3sfdqC7le2TWPuthYDb4JsluQxWKhWF2f59yCxqwQF4zFHE",
+        "dp": "QQAd7Dg_0BZreXliOVUO9uMeWkDyRZI55wL3gOhFpUHJiBhcMOXBvSQY7y2ZY5E3Mh0MgC8HSsdGRxJoOoxaXszS33D7FzNr3sX3CF_nA8l0aPUkFgze9CflGIg-hezWo9mXst3X4cmFiyEXpriDJziCtGt5_1cnOCPOWwFuku8",
+        "dq": "FtwYEhRNzV_BwLTWdHXvrv5N-e1xKC2lhqPGgeODte197meppT5zTje_nuxt4TcoXzBb_lBPxM-6zr0AFkiWpNLdlNFNkAMIJnGNZf69D9UeoVhSZJeKiVIE4-orBd22_8pPmazh4aTWRobRPAzETr4o8sAZCFP8Ip58IhDYBNE",
+        "qi": "F_if-bMVrWozyk_tgMENrrMFcPFyE85Sk6FdBLqC4z172h9QJunJ4zIwvQ3El1Pee-dClfw2Kh_9pKN3mYQUD6_JDvtq9e7BJnh8jil7w6HRK2WjADHgC8-n9if5SUl8P4-mFTOJVq-BRnk1u3RQoYLqck_FfVkJgoumu5BxDyA"
+      },
+      "QAEthereumPrivateKey": "0xf849030a81b7d09e4ed3d9e6050c033adf5d640aa808671a05203c9bbae59c2b"
+    }
+  },
+  {
+    "staticId": "a28b8dc3-8de9-4559-8ca1-272ccef52b47",
+    "komgoMnid": "14626ca1-e6be-4638-9307-62e870f847b1",
+    "x500Name": {
+      "CN": "ABN AMRO Bank",
+      "O": "ABN AMRO Bank",
+      "C": "NL",
+      "L": "Amsterdam",
+      "STREET": "Gustav Mahlerlaan 10",
+      "PC": "1082 PP"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": true,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "7YGHO_ay4Xjf040ONaHj6L9Z1xOsDljw10FHPjliHLk",
+        "e": "AQAB",
+        "n": "kv3AzbmndvkXnxc63Tvf9VzTypXXrs_aBEaqOvNm7bbaLgJyzkGIwH8fV98DfYRm_rYqeAkuXzG8G8K0DhLPYPraSb8bIuSSQuBvumZhw0OOe-ZCGJIG3g-Tg8yltNaWGKZeyBtaXtesXo-qlfKkF_3yBEw0rO1HGkpTy1RKfRzbvRtqwZU8WU_Q-g-GnGZT4_wlD1i3TWdNqtIiYYCB5LZqrS4BoJqlHepl9ezXQ7UcnMlm8CERXpWnsl8kBkyJu4pK0Yyytm24UVjdXmAX8QCuy9skbgb8UqSvbB6im0Jmt28mI_FG8jbw_Q7exjky8ldk1YuAtEXHjki9iOMcXw"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0x90F7034B6F870C60ac97FE5efBD77CAef44abd54",
+      "key": "0x4be839aa7aca2d66ec4b29010134b5e45a9002a5996e40cd2b1dd6bb19758b51f1f00be04d566d4fc409ca0100401072bffae8f6f66e323d69d1653f8ba63a5b"
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "7YGHO_ay4Xjf040ONaHj6L9Z1xOsDljw10FHPjliHLk",
+        "e": "AQAB",
+        "n": "kv3AzbmndvkXnxc63Tvf9VzTypXXrs_aBEaqOvNm7bbaLgJyzkGIwH8fV98DfYRm_rYqeAkuXzG8G8K0DhLPYPraSb8bIuSSQuBvumZhw0OOe-ZCGJIG3g-Tg8yltNaWGKZeyBtaXtesXo-qlfKkF_3yBEw0rO1HGkpTy1RKfRzbvRtqwZU8WU_Q-g-GnGZT4_wlD1i3TWdNqtIiYYCB5LZqrS4BoJqlHepl9ezXQ7UcnMlm8CERXpWnsl8kBkyJu4pK0Yyytm24UVjdXmAX8QCuy9skbgb8UqSvbB6im0Jmt28mI_FG8jbw_Q7exjky8ldk1YuAtEXHjki9iOMcXw",
+        "d": "PRf41cjPQNTBK591GNS0_f8qC-6Bqae8PsC8KipWYoD4Z90eqHl2hEOR3GzVv4qTYFSIjEGMo4ZBX-xp99t7lBxPNA2ZEsSbwe4Uog3Bnm3qv7ZxTFMNRaiFsGcTjHkQA4jKpjMwOXE8tETUKuShrVMgDwc5cZJhVh0EfOM43ozJaKEDIS21Sbnky95EkH-i5qmju-q3vEXh76pNs0xUraO79pIfXh8KMPobg-EsxjaByauOOyUwOS7j8-cCrW344hOMXYUFL0zIpvWENX0aF-GcWicrK8Ar1GF59c_gH4QnuHrYd34QKA2JtX_ot-urYReyx2SFDMjXudORO6GjAQ",
+        "p": "z90afi6NQ2iKy9X-KzUxqSNFKYUXgHGP9kYaHEDJOXhcr-a2P110pkHeCACKxJfpzEtc1WVzzDLAEsICA_TOUNrIv9LDnN7sQRAo_ucpfPhs_bwM8EgQNeTShMdHJo7E1AGthtb4k-CpAXlzvwigXNABwaPww-K6BaHG_sXZ9YE",
+        "q": "tQfqCDtRhOB_3NCoShzMLrYbwbdv_isZvQMRgGmleS6NiWTPM3svxE7dSU-D_p7xr9wCDwL9YxxV4GZU2W05QS0aimSj-WizP8AxomHiusP8o-DPI_cXa1hQltMtRdONleZBbhtaWdviOMEtgBMeKGPjCTOyjHYjoQrXfDXwwd8",
+        "dp": "bXSSVMuSm2JbZAalNn9mTRhDfR-WRo6GLjqv2RzMWTTmKcIlSayelkWs8y3F5MvR00AD_GLV3TsEJVx_zzGDytPKTihf1SUV5xTpYYC8OhBe5CW38ncgAiEiMcT11Hntb24KwCxG7SeqFxqrNncGapkls5_uUlf7eKe9r77jjQE",
+        "dq": "oUn503e2O6MhiIVHSzC5Im0R8dgTqeqQtfxD3ZtC2OMHK4Brszxv5IE3WxfDTFokj0B_fQx24ZTfVl0V_9n2hwE-gksEZTRJb-U206xOq4PuVbv4Ed0WOoem1Zo03d-MaB-L8CPirejgdxx2A4QE_ItyPkKXM9oWCGd2ca5FYRU",
+        "qi": "bNCrRd9LVm5FeHO1eK8kIuKMpVnHoHEoY31weHevwFE5d4EWp89Z_JTEQkBwhb92sMB-GPbTa3fBRCot5nmiIFmuFXkdqJz1qb3wBOD0YXkn_jVug3Iql1vS-xDj3AEGhVOcOm2SNvnogFaqTKYirfd4Lie2NqT6r1zk9ZGZVXM"
+      },
+      "QAEthereumPrivateKey": "0xb17b2b9073c5e74044cad708a843c9c4d8fae3d755182781d60e8fb86757be38"
+    }
+  },
+  {
+    "staticId": "08e9f8e3-94e5-459e-8458-ab512bee6e2c",
+    "komgoMnid": "00a3bd3a-d7ef-41bc-a7ba-3e381945f5e6",
+    "x500Name": {
+      "CN": "Mercuria Energy Trading SA",
+      "O": "Mercuria Energy Trading SA",
+      "C": "CH",
+      "L": "Geneva",
+      "STREET": "50 Rue du Rhône",
+      "PC": "1204"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+        "e": "AQAB",
+        "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0x6DD0C696F5596fc5fFC502756FD11fa0165A98f5",
+      "key": "0x7f86929bebd76a0bc46204c8d06e2e33366714661aa17fd55ca840ffd72bca99acbd3301f36ac580506718d9ea727fdad7f11c48d88050c80e4e060455e1a241"
+    },
+    "vakt": {
+      "staticId": "11763",
+      "mnid": "MERCURIA_11763",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "16e79408-feac-4dcb-9ea2-09c743a9a4ee",
+          "n": "lZNdfx2BAn372QajnUkgjeNl2e8kHEg3L45IYUHHZDYyAmGs8Pg4ADuBiMdDSzWoSMivDyFIeopTXwfWvk2xiZC34PSXkJaEgzJJtsnzIkM9P6qYzZyQTRz5EEGHehBq63JYO_3H6ybPwr8MlOAKvusjYWVold3icUcn-eP6NgPd8QSWBNqUxtF4YZmi0s6-ejug2bfQhtwUlFRd-73E83Z6uOLEEE94k0MYzdaI36fx1mYvCBvnltiA1g8tSwpEHI50Dj1ejDE3uCR9HGbUjWAb9IVCQM8X9HiyuP71v7jD3EIRPznOk2MMEzhT9PSBly_-Uto1ZyO57uG5Yx42xQ",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+        "e": "AQAB",
+        "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ",
+        "d": "WhhIE7Cqw7ZpIKdF_w1SkKEtUhTNqkJ5HLqQYReQj8mFwBv4PORrvmu3JV8V3bn4x4uUORSzbDaES1qNh2Zkw3IAKjfOmQpmEiPMVUoNmo2U4S0fcYPlwcp8lwthC9bdwJU4P0Y-eymSNuGJm5_tcIp-EUIwdSTaRSuAfUUZa6yuuMZywKIYGvCfrK9LYuI3BzngWnTvbcJef8nV4eRamTK0EzJ8CwtnG7-8-dol2LBbXMT5JhdfoOJwNOcAnHA61eFG974lC6xlxybxDkP0utxeLAfEGRanmGBJWcVWwmVPTeShG7kJneMT5Co5Yn2mXzerw3LceZWzO_jN94th4Q",
+        "p": "7e8-u9-i1cjB7UGIrIgD7buzmhCYCiMiPUAqOErI4cAUl_uOycGv_p4xuAxxAnvOXH7PVSIG9p44ffkomAM4RtUzTs_8s9DcUTfbzUZTvzRLqJxsukegDnBs3qRFYDpyrI9k2a2pxtJ8T8F2lyJY7wawo_XUzSPVpxnciqqSB5U",
+        "q": "rOxcJCZo0QjULjTXcJQhK8EBvTidMnFumiPIPZGVZDru-yE0uk9idEGJDm4OxKlhAiPISp5tI9RnYNXKTlQ3UkAV_HrrX2Zo7LTGdTaoZ6Gk3v1FgsHsP29SoaNf11t9BeORrJLQHrcDvJq19noGlJEFM5iWp4XVWo2oFhlbio0",
+        "dp": "c9JIOXANdf-51uJVw5aaQvlh3hdBy316x1Iauzg8PRghbjI4OaIdJ9ad4Te9MzZNJ91a09gyh45RdZD537WBiYly5mR8YJPFC4wjZPNdBPBR_AvZKXyAP0ce1-ojE0qgU7uhngzZXj1L4g8MyVkg7YnWJpoeMpXFBQijwKRzXVk",
+        "dq": "POEl-3AuXNGv6eiepLryBrZ3x0eESHsZBllsqQh1QQlik7V4G9PRBL8B4ruqpWBAkAFLBcJLCF9CWhxKklMh-uonE3GvJjIm5Jcse53XokyNgBhI_aUKaLbnr5KWLnq-RHF_GvPBI98pCKCrSXBimrGH1Ed3WtlKaQwQTl91FA0",
+        "qi": "m_uFmvLGOgkF2PJ2iVUtHMVXnPSiyX62g1sC2B5vXelZUwt0J51h8x1cwtVM9d1TGs9DRDurjwv831olUpj-VCczJZ5aurybdX9TUobF-uQIxnt11cyAW51JV69-_Jqd4DX4Ay-jHP9qtlazjfSiVyIe6rktESeos_gWvbFj-PA"
+      },
+      "QAEthereumPrivateKey": "0x18bbb281da502685b22949f80acba17757c66bdeb2acd1bf402a000f751a5ad4"
+    }
+  },
+  {
+    "staticId": "cf63c1f8-1165-4c94-a8f8-9252eb4f0016",
+    "komgoMnid": "64400bd1-9621-44fe-977d-69922c4b9183",
+    "x500Name": {
+      "CN": "Shell International Trading and Shipping Company Limited",
+      "O": "Shell International Trading and Shipping Company Limited",
+      "C": "GB",
+      "L": "London",
+      "STREET": "80 Strand",
+      "PC": "WC2R 0ZA"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0xc7b41635D91f77d120Cf786c751b8738b97BE9ab",
+      "key": "0x2f346a843bf143041ea3eb6f21ba974f8e8df75a6988dd192aacb76f29f161374139bef25de6791e002fab877a19461c1867c05bc91c98c71f7855635055f8de"
+    },
+    "vakt": {
+      "staticId": "49779",
+      "mnid": "SHELL_INTERNATIONAL_49779",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "9de2033b-8173-40e4-bd79-f8f4eedf42ff",
+          "n": "lsq-W3ixBiBaZb-ducBnkCMMJ5qp4dSwvD8L1si7mit9YQ0aYLDzWth43LwJeXx96UKgujUAu7kWZPJfr3aNscGSL5QtSU21lx5hZCToJ3QyDbgvrr16A4FeXjCQgkfqWols2vAKhhk3MzPnKNy65oH6nmKSGYQzxbd1Hw_FwiCI06yK7-rtY_M1c28T26KGvC2x9wAhZ8RqDeIpXx8eCBX7fkh8RZyZ93a56LCPylZGYkUHuJDapTRHfQN8KLONc4GB83Qto9pLzjFs0vlKD3aH5gn_wEhpqpaJpKBOon-nOLulHHZLLEc4viFj88o4x3rpFjdu0wH4iCsCXYqzHQ",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ",
+        "d": "XZmqNi5aBlbZm6BD3iO8rriU9ynvboroNk0yLTDKtJwAsqYg0ugO65bSc1xwld5-D32oQRJirOrWWrxM80KuZKJjauHBnhrZslzKto5KiLsB92JAQe0DLFZ6T1HsEHcFasRsGA8hM2p7mSz_gMJ3DLOl9jNYiOOqKfvMQ8jQ2PFP0BSD7Kt1oVjdTT1RqApkEosdnu89AYgVVGSyqZH0eW28S-XQi5dua0gdzOc_houQFlHfwYAXglHzfp9GxVwy_4VOVi5cOs8MsKIoe9qzRbpQKJ4NrrWgvLCYgnk4pquGFo8jU35I8oF0rzcmI4btIaMPtJmXotmIsBMFS1QOrQ",
+        "p": "2kQKwptTbceCfh9_S9M3lPbF14vv2v2mC-U5TwDIX4qoIx7STWOoDr6WaKGuui8dl_0g39vLZxm0GYakHmNH0Zv3FFPNgqg3Qww8TS4Ci_q0HiXex-tHUicoVPUwHv5ooWPTIzV3FU4GAet91VcMSlH7FNXMfCvkSRDO7VnHIg8",
+        "q": "u44A-8IDUhXL7Vc_IGsc5vxQaqC0puBNvD5NDJRVa8EbQqHgele8hGIXtc0-LJa32tows-HsDJcTFp7M4bpFP5ZTmXAoZykMHvnLefc2Fkn6dqr2aPTomJ9cyr4my5VGuXMfhNZzP7qNaAo1-izWQyolBiYcLzVA753cCHGgzAs",
+        "dp": "OLC_krhBPRw6uoN3zrv3jctiq49_JwQGosRQ1EJByP78mNKikNM3jUzXSCnmdhlSuG1Yoow2EntMmeysp-_lcX3u-OqjUDJc2B9PckRnCPB-4-22JXrotV_SS-67JvGxP2nsJxL18SSozsrZjhXj7VHJwymcyQulaYziEiflXuU",
+        "dq": "GMB33sHPAGFCBXOTMCsSqGU6E6hbzv4hJCuwrW1SDKNyfouwfVTg2zO631JT1zyYzPgon0S8izjQ2xZgAZY8l1S2ebR0kJC5OclLkjAO4kgnFswfMuDHZYT6kQMhSZLMv6Ky0SwgD5QGH2nhj7-lEz4XnsUeyRglFrpllHOyfds",
+        "qi": "vFdwwZPCJAn7pYcJmbp1iqg2Z572bM_uao9S2HdaJHCV8JKaxisl3PPxMxNDIzXtrLYBMGSmbXv_IYTXIBRNBkiyb2KL-6ZOCcouq9ZlgBYZMTOJjrla68AYw-jxqKMRkywKrFa9Ssr4VKcUlw9Sg1e_rO3xs-cpGKmi_sIZbXc"
+      },
+      "QAEthereumPrivateKey": "0xe5a899ddbfa1028b3e2c3b150570c7573314fce5a3346a25cc1ef76f7e6806d4"
+    }
+  },
+  {
+    "staticId": "1bc05a66-1eba-44f7-8f85-38204e4d3516",
+    "komgoMnid": "9a2908a4-ec69-478d-a3f7-e02e8a6bb193",
+    "x500Name": {
+      "CN": "Societe Generale",
+      "O": "Societe Generale",
+      "C": "FR ",
+      "L": "Paris",
+      "STREET": "29, boulevard Haussmann",
+      "PC": "75009"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": true,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "l2hxV07C4ZVELOZK1Vq6hkTFlSLV9kiyXnXpJ1Kb6kc",
+        "e": "AQAB",
+        "n": "kuA6MA1BJLAgjauSZMIZ3iqqg2ubiQnoK1FDMHuRntNKeoLISENuSOx1VcOQBVHZpBFnbB50FYg6K1VCPS5QHSaarDLmUEs1nD4fIQ8bcOGLvjsoHBB9cn9nwSW2Vz4h57mQIU54PlVBSqbdspKXqoixJrO4tiFIfM0YnKPgbT2muX2ubb_NqErj_nn_pRZdyNJ0Z0E_CVshAfD_U90dXJ-uoSOLyPEbr0rQlA9HGVQTWd2z08Ib2HPpoz4vQJkTv2rSao_v3-bbttLcB3yEZ1JfC6ZkHpOrB4x2IqsU11FWj623pJLleKh-IlBp4crCAiGT4HzxlKGcbOOlMTs2cw"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0xE72486F6DAbBf844907F08dAB1Ae940a8CF90100",
+      "key": "0x7cacd52d6751762740e8b87a452329a338fd5efadb7301b92b1c3448cc5d81358bf54a52a2a1848fab0bfbf1146db19d300350e68691bc0ee70b4e22107eabab"
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "l2hxV07C4ZVELOZK1Vq6hkTFlSLV9kiyXnXpJ1Kb6kc",
+        "e": "AQAB",
+        "n": "kuA6MA1BJLAgjauSZMIZ3iqqg2ubiQnoK1FDMHuRntNKeoLISENuSOx1VcOQBVHZpBFnbB50FYg6K1VCPS5QHSaarDLmUEs1nD4fIQ8bcOGLvjsoHBB9cn9nwSW2Vz4h57mQIU54PlVBSqbdspKXqoixJrO4tiFIfM0YnKPgbT2muX2ubb_NqErj_nn_pRZdyNJ0Z0E_CVshAfD_U90dXJ-uoSOLyPEbr0rQlA9HGVQTWd2z08Ib2HPpoz4vQJkTv2rSao_v3-bbttLcB3yEZ1JfC6ZkHpOrB4x2IqsU11FWj623pJLleKh-IlBp4crCAiGT4HzxlKGcbOOlMTs2cw",
+        "d": "WRK1FykipZ5Oz7wKdyKjz3FuoW7kD5K7g3Gv3rpB0OFw3KVt0y1Zt833RsDoGeHOrMqFPzOk0N4h8N-u4S2yFkuwJ9hihrVl2NBvznu795RBTGfR5ls1yPdtM9ysHXKn20FVIG3XTG4lv6E8-Cwg4KIvVTpPPd0nedBkKbLUy0pY9PCIhqLjANwGNtCFiHwszu-rTMTqkZ1IyBGfApgNyGhx25tm8iAjW1Lo6BNvfHvjvJ9fPkTJ_V2jiYLdl0ugJXtXnRC0KQ_AwZWcVUymJ5-cCRRYECUhbyfX-CpPN3YDDcDt1_Nu3uJYYPIxNCtuhqPAqunhME6FU9ynzTycqQ",
+        "p": "1iEM_1lZVVEF1usmHpERbE5rD8a-jRNcjKololWgNY49m_jtjzRT0a9jiQVR12_ssmcVDeJ8oEko00-ymrE_yedgeQItqlxZnh-_ebW9Jk0S9jiAUiHPaXX9OR4XyxOtIfAViko4xwx_drW1W_WFUm1-r31QVxr43xG4megN598",
+        "q": "r5iXcxzAbaMyYMJBdkQajRfuCr05MAWfFOxwST_38e9cIEXs0Afex1b3LldGF7JZGPJnLtSJokT_gIGb7vqB4I7AOZLKLwk8jFLRQrn7vJqh6IvvE1fhcXtXrvKDR5awErgb9sC5d47tf79yarDzjx2XPqXtBeXnLoKeqCiaE-0",
+        "dp": "cl5cztYuPL912wDl71WUdMC9tkN062z39bm7OCV72J8MkQ439FECo_CFvV22BNenGPKt8CiUYBgzUgozXyRk6bZHdNqRAXkp9KcIYj2LtbVc913eS__7BF0czzEfjDwKMSJGnwJdqRMn0YPkRiWw_AG3tIu-KYgifSK98pZbNwk",
+        "dq": "n3w0cjT3AZ1sMD2_Py9z_hpx9gcPXfJ9Hn_xLFaRWIhSYG2iPQAo81ylfM1_uB4glmv0E7CuoVeRyKHvgwq7071UEfak9DurZrgBoF1Tq2W3EIOoTSVQecXRSfCyE99lZFsb6u34hgKm65Ry0zyMurvhluEVennpk3DHsWvPJbE",
+        "qi": "08UivP9fF8iTI24CrDh56nP9IHk-QUWAPExyDZs5sMrasbAXP1RspxlhKSEXyX1hMXJNrLa4T1Z-3t8jBIGdCklgr54GNjTuwd5y7DugfGfhwrwMSQ4gwVNhC-gG9JatgQfpfvLVzH7k0GPUiScYQtB-0k1_xm49lB2QP1nwsDM"
+      },
+      "QAEthereumPrivateKey": "0xef19e38a9c7c0c92d4ae41aa95104fb9e049d2113f0831da6af0864b09f5686d"
+    }
+  },
+  {
+    "staticId": "a3d82ae6-908c-49da-95b3-ba1ebe7e5f85",
+    "komgoMnid": "2af88f94-4be3-4224-b956-4f2a1e5c5d91",
+    "x500Name": {
+      "CN": "BP",
+      "O": "BP",
+      "C": "GB",
+      "L": "London",
+      "STREET": "80 Strand",
+      "PC": "WC2R 0ZA"
+    },
+    "hasSWIFTKey": true,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0xc7b41635D91f77d120Cf786c751b8738b97BE9ab",
+      "key": "0x2f346a843bf143041ea3eb6f21ba974f8e8df75a6988dd192aacb76f29f161374139bef25de6791e002fab877a19461c1867c05bc91c98c71f7855635055f8de"
+    },
+    "vakt": {
+      "staticId": "49000",
+      "mnid": "BP_49000",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+          "e": "AQAB",
+          "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "X4JaP_eaui4WU1mP9PjcXJAXWD9Mo6xoZH8khRX3ohY",
+        "e": "AQAB",
+        "n": "n-jGcMWJCzXmq7hgkUPQeYuSr_HXyfzGbEQZWSucOl7kSh7r1UTm88QPNA1Ytk_18x5NarS6gTioy5WfigLTxUCQ4CfNwuoW-mQRnRDzfn34-24duYYHtc1klmTwO7U3cr-xmoS3bhAhO0HrCzRaFgAVomFba8wnhI3rS9L_njbwEyQOFIOd9kuFauVclwikKBhqRM5jsd_w0sGeSQzG8opsqESC26wS9lWEH5XLvL7BpaJ1syGqoQuQHTz7y5giVrKHq4bvzEevFhzEROvbUoo5P7vGFe_qQc604RIiSvITBvppA25KA6WX-JIjhma7Nw55-LiP6h51R_6zcxJqpQ",
+        "d": "XZmqNi5aBlbZm6BD3iO8rriU9ynvboroNk0yLTDKtJwAsqYg0ugO65bSc1xwld5-D32oQRJirOrWWrxM80KuZKJjauHBnhrZslzKto5KiLsB92JAQe0DLFZ6T1HsEHcFasRsGA8hM2p7mSz_gMJ3DLOl9jNYiOOqKfvMQ8jQ2PFP0BSD7Kt1oVjdTT1RqApkEosdnu89AYgVVGSyqZH0eW28S-XQi5dua0gdzOc_houQFlHfwYAXglHzfp9GxVwy_4VOVi5cOs8MsKIoe9qzRbpQKJ4NrrWgvLCYgnk4pquGFo8jU35I8oF0rzcmI4btIaMPtJmXotmIsBMFS1QOrQ",
+        "p": "2kQKwptTbceCfh9_S9M3lPbF14vv2v2mC-U5TwDIX4qoIx7STWOoDr6WaKGuui8dl_0g39vLZxm0GYakHmNH0Zv3FFPNgqg3Qww8TS4Ci_q0HiXex-tHUicoVPUwHv5ooWPTIzV3FU4GAet91VcMSlH7FNXMfCvkSRDO7VnHIg8",
+        "q": "u44A-8IDUhXL7Vc_IGsc5vxQaqC0puBNvD5NDJRVa8EbQqHgele8hGIXtc0-LJa32tows-HsDJcTFp7M4bpFP5ZTmXAoZykMHvnLefc2Fkn6dqr2aPTomJ9cyr4my5VGuXMfhNZzP7qNaAo1-izWQyolBiYcLzVA753cCHGgzAs",
+        "dp": "OLC_krhBPRw6uoN3zrv3jctiq49_JwQGosRQ1EJByP78mNKikNM3jUzXSCnmdhlSuG1Yoow2EntMmeysp-_lcX3u-OqjUDJc2B9PckRnCPB-4-22JXrotV_SS-67JvGxP2nsJxL18SSozsrZjhXj7VHJwymcyQulaYziEiflXuU",
+        "dq": "GMB33sHPAGFCBXOTMCsSqGU6E6hbzv4hJCuwrW1SDKNyfouwfVTg2zO631JT1zyYzPgon0S8izjQ2xZgAZY8l1S2ebR0kJC5OclLkjAO4kgnFswfMuDHZYT6kQMhSZLMv6Ky0SwgD5QGH2nhj7-lEz4XnsUeyRglFrpllHOyfds",
+        "qi": "vFdwwZPCJAn7pYcJmbp1iqg2Z572bM_uao9S2HdaJHCV8JKaxisl3PPxMxNDIzXtrLYBMGSmbXv_IYTXIBRNBkiyb2KL-6ZOCcouq9ZlgBYZMTOJjrla68AYw-jxqKMRkywKrFa9Ssr4VKcUlw9Sg1e_rO3xs-cpGKmi_sIZbXc"
+      },
+      "QAEthereumPrivateKey": "0xe5a899ddbfa1028b3e2c3b150570c7573314fce5a3346a25cc1ef76f7e6806d4"
+    }
+  },
+  {
+    "staticId": "0b5ad248-6159-47ca-9ac7-610c22877186",
+    "komgoMnid": "3a47e1d9-0aa6-4cf3-8579-7f6fb083013b",
+    "x500Name": {
+      "CN": "Gunvor SA",
+      "O": "Gunvor SA",
+      "C": "CH",
+      "L": "Geneva",
+      "STREET": "80-84 Rue du Rhône",
+      "PC": "1204"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "isMember": true,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "aCub51pujc5LHOHyIe4pDA0AgoSWpV3AxprJ_Hqzwr0",
+        "e": "AQAB",
+        "n": "moTV8CnWDGBvTiJ7IfXfmAf46I6c_hfqA8zmCWmrZjDdaGdZdzMu46o68uA9-jScv3I6a7enL9cNeZtaP1n4GmqbVJlNBGMAuyw0N-osGnGsLdmfm-XQDYTiGN8kWA6XzW4CqTgvNuOmniFaiOBnJZuW6ldPBu7dfz_HkXg_5xHrOz885aqX74nSc1sfmXjdnVTdrACI0KLkNZAZufXzmDSeWOv-JFvgVcVxGMmO5jT0F5JSjIhH0Tkc-r06KTF60eG9v7DSG6-I4JSxe4MJ7whwpEiAQvZHdZL8exrDIrbtd5AGYjmTuVyLjeFBlI4Gf1OUmjn8dgQu5c9kdZB-DQ"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0x7447FCB38b13a8A833B6e2eD4CCE6a7fd26E2E26",
+      "key": "0x2854a26bce5ce2485078857627232379d5a1c99757705716a3cdfde6ab7bda350ffbdfbb06c959bff8193f36c42d9f101dbc25922ade0368212d73ef7f816072"
+    },
+    "vakt": {
+      "staticId": "95267",
+      "mnid": "GUNVOR_SA_95267",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "1a30daea-63b0-479d-b43b-f9b04ea329a9",
+          "n": "yVPbAY_OjJryDkhwQoRFu8bkj41EHzWyeekdb_NKDNbIgleSx4oSkxa1DQNRQujrYPaKkRTppYTgoLXElmqTP743XIU_yKAtNQGWApCcFXBez1ZCJ2PgkXRBJ2YemxvO83APlwMEO9fAuwYSlL-2FjR004l4lwZGE8BKw9wgMRU1dew8gX0wy6H98ZH-aTtC1oLwdm0xGvxXuLbvFNCmhWdaI1HrCnU2dPzIKK4mrutyxif8p-Y6qRW_3r3a---pft_1t6OMkjRr1uEUZ8Q4nC9Aokc75tDrvT1U2_SheTBBUwDR9l3nI0c1NZyoS3sLBo9dfe_0eZ2Aw_ckCzG8KQ",
+          "e": "AQAB"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "aCub51pujc5LHOHyIe4pDA0AgoSWpV3AxprJ_Hqzwr0",
+        "e": "AQAB",
+        "n": "moTV8CnWDGBvTiJ7IfXfmAf46I6c_hfqA8zmCWmrZjDdaGdZdzMu46o68uA9-jScv3I6a7enL9cNeZtaP1n4GmqbVJlNBGMAuyw0N-osGnGsLdmfm-XQDYTiGN8kWA6XzW4CqTgvNuOmniFaiOBnJZuW6ldPBu7dfz_HkXg_5xHrOz885aqX74nSc1sfmXjdnVTdrACI0KLkNZAZufXzmDSeWOv-JFvgVcVxGMmO5jT0F5JSjIhH0Tkc-r06KTF60eG9v7DSG6-I4JSxe4MJ7whwpEiAQvZHdZL8exrDIrbtd5AGYjmTuVyLjeFBlI4Gf1OUmjn8dgQu5c9kdZB-DQ",
+        "d": "f9ki7nifG1R7I8oR2XKHk1IdV8YQDYkZ3hUdzHH7GC2cNDM26hKWXFbQOX7iqO_5Nco8nj2xfjrQcmrgzAQT7T-B0AibmeKUi0my1wTRgvvEu5cRobsPXvAw5uVSO-2vGpFIcF0Fa8QGa1Yrg48wqQRIZRLiV1kyOYQ7CpjVPsjeiem2L_p-nzK5cTgJ2op1rvVUXe_gkLhP5pZA8FdOdVepFcyM4ANGe5n0BGZ9f7KDSTmoDMJ4eZ56m7kUAvJpQfrjzeCYAfYE2t3fQi14FDRr1MgkUY5BNxTZWfo2pFUKUHY_TrYjNEJgU8fmNCEqsCRDT8LrDRLRl2kXoa5FwQ",
+        "p": "6LFllFdc6LQZ8DQAbD7EcXWEJwhF9mBp4TY9OpTv_uVhv9SRdkIvpFp2i4DJ6ARAoEOnDPTQPXKcYyVm-mHzvnb8v_lKUotoodcJ85rcKnD9_HoXCpYgG1c0s_8othsKr2dmE6zW94YW6qQvx3rubwj5L7FBgYnerUHoYZEIo70",
+        "q": "qf7vsPEj-v9ScK6yzgtk4EmCbo1jNgLcFX63YXi-3LoCNJIL5LroLYCzMDaa9OgoZ9isZTUrOVujXgzSBc2tvzRpkI8SgZwi26VX4FYeOaSIuSv2twVZZ62U5i7QkiSGV-Yw3skrSf_3I1ToXnBv-c4ywjeW6lljUPSbGKc2wJE",
+        "dp": "XX5Jbhzb-7PBaD28ncFqdJvfCT_NvHxojlCYsVz-QNAxQj5KY9WcBtFCKDMK7OoofTwxdoc21DmklEGG6rtIkBKG4ytqrVfOJpicKwDhzTuxESyM7Xf8Vn_ncRroZKLg3DETVnxvsuxxcL2fZOsDuiFE3eC-jSm0CrEciXcYnZE",
+        "dq": "iSzjFhFAS4ZEbBFMz99541LuIW-OI0NjfSTnrYvV2B9xMCK53jTErhMwhTNLD11XXZUGaBTjcEF2LqqBv5UdIzGUDcal1Fi9-CgQJULY2QLgISxMxZtXbcYwZR5Zx9QZZEyoGt6SRAB82NHnQG3Sre2qH_bjnO_MqML5dIdaM0E",
+        "qi": "VYoh_O7246gdNMFE_1fdhESk1bCCpSdNedNH9dFL4CR_RD38PQuz37v4zrCtsPV-P8U1e9tPFFfkwat06VRvE6IWFLBYtvSwIBZEPRxxPXy7BXWR8lw3_WSnd7ZpfCxKEbbozI0arsIn-1hsELUpIpjBBdpGuxPPCtci_9lnafg"
+      },
+      "QAEthereumPrivateKey": "0x9550a3b9544c575f3cc7a65ac50453aaf1e80e3fe9e18a1cd1ff75ef5a3bb6d5"
+    }
+  },
+  {
+    "staticId": "1d0d6806-6fe7-47b2-aef2-efd458d66f26",
+    "komgoMnid": "8b056afe-57e6-415e-b368-027a62bc36ef",
+    "x500Name": {
+      "CN": "Mercuria Energy Trading SA2",
+      "O": "Mercuria Energy Trading SA2",
+      "C": "CH",
+      "L": "Geneva",
+      "STREET": "50 Rue du Rhône",
+      "PC": "1204"
+    },
+    "hasSWIFTKey": false,
+    "isFinancialInstitution": false,
+    "isMember": false,
+    "messagingPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "key": {
+        "kty": "RSA",
+        "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+        "e": "AQAB",
+        "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ"
+      }
+    },
+    "komgoProducts":[
+      {
+        "productName": "KYC",
+        "productId": "KYC"
+      },
+      {
+        "productName": "LC / SBLC",
+        "productId": "LC"
+      },
+      {
+        "productName": "Receivables discounting",
+        "productId": "RD"
+      },
+      {
+        "productName": "Credit Appetite",
+        "productId": "CA"
+      }
+    ],
+    "ethereumPublicKey": {
+      "validFrom": "2018-09-28T22:23:10Z",
+      "validTo": "2019-09-28T22:23:10Z",
+      "address": "0x6DD0C696F5596fc5fFC502756FD11fa0165A98f5",
+      "key": "0x7f86929bebd76a0bc46204c8d06e2e33366714661aa17fd55ca840ffd72bca99acbd3301f36ac580506718d9ea727fdad7f11c48d88050c80e4e060455e1a241"
+    },
+    "vakt": {
+      "staticId": "12001",
+      "mnid": "MERCURIA_12001",
+      "messagingPublicKey": {
+        "validFrom": "2018-09-28T22:23:10Z",
+        "validTo": "2019-09-28T22:23:10Z",
+        "key": {
+          "kty": "RSA",
+          "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+          "e": "AQAB",
+          "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ"
+        },
+        "current": true,
+        "revoked": false
+      }
+    },
+    "QAOnly": {
+      "QAPrivateMessagingKey": {
+        "kty": "RSA",
+        "kid": "aTWk7882ei_vhSYYId1AFECsL1X55qbt3_ZkwoHkOMA",
+        "e": "AQAB",
+        "n": "oLhsV6NW11PVg9QQCw-UD7DThfyR4YklG36X2ZcuVZzWokLQaavbD2VmLR04Ni8fdx4y5pmjxkK0KBLK5snNT85MtUk9-0vg0FYPszn0TCveQ9Q-XtHLnEWdl0ffDHHYOKijQYFNJgFY9cFC3JHzYHRG0tyEAInpaLeqxQSMUX5sVXzvp2wjq1XvEdupVynPOr054dmIlL7cj90JpE2i9j4oovnyV9Z-r6sdnui-5pHU4WSBGU1xAmFUsV65J8r19PfiAl_rtF_wwTLd1UenHPe9-DMKaW_EV3ZDRCNfzf1Pmw7SoF_YO_LCHWsuRquydAh6fvuAymf2q4vG6Xt_EQ",
+        "d": "WhhIE7Cqw7ZpIKdF_w1SkKEtUhTNqkJ5HLqQYReQj8mFwBv4PORrvmu3JV8V3bn4x4uUORSzbDaES1qNh2Zkw3IAKjfOmQpmEiPMVUoNmo2U4S0fcYPlwcp8lwthC9bdwJU4P0Y-eymSNuGJm5_tcIp-EUIwdSTaRSuAfUUZa6yuuMZywKIYGvCfrK9LYuI3BzngWnTvbcJef8nV4eRamTK0EzJ8CwtnG7-8-dol2LBbXMT5JhdfoOJwNOcAnHA61eFG974lC6xlxybxDkP0utxeLAfEGRanmGBJWcVWwmVPTeShG7kJneMT5Co5Yn2mXzerw3LceZWzO_jN94th4Q",
+        "p": "7e8-u9-i1cjB7UGIrIgD7buzmhCYCiMiPUAqOErI4cAUl_uOycGv_p4xuAxxAnvOXH7PVSIG9p44ffkomAM4RtUzTs_8s9DcUTfbzUZTvzRLqJxsukegDnBs3qRFYDpyrI9k2a2pxtJ8T8F2lyJY7wawo_XUzSPVpxnciqqSB5U",
+        "q": "rOxcJCZo0QjULjTXcJQhK8EBvTidMnFumiPIPZGVZDru-yE0uk9idEGJDm4OxKlhAiPISp5tI9RnYNXKTlQ3UkAV_HrrX2Zo7LTGdTaoZ6Gk3v1FgsHsP29SoaNf11t9BeORrJLQHrcDvJq19noGlJEFM5iWp4XVWo2oFhlbio0",
+        "dp": "c9JIOXANdf-51uJVw5aaQvlh3hdBy316x1Iauzg8PRghbjI4OaIdJ9ad4Te9MzZNJ91a09gyh45RdZD537WBiYly5mR8YJPFC4wjZPNdBPBR_AvZKXyAP0ce1-ojE0qgU7uhngzZXj1L4g8MyVkg7YnWJpoeMpXFBQijwKRzXVk",
+        "dq": "POEl-3AuXNGv6eiepLryBrZ3x0eESHsZBllsqQh1QQlik7V4G9PRBL8B4ruqpWBAkAFLBcJLCF9CWhxKklMh-uonE3GvJjIm5Jcse53XokyNgBhI_aUKaLbnr5KWLnq-RHF_GvPBI98pCKCrSXBimrGH1Ed3WtlKaQwQTl91FA0",
+        "qi": "m_uFmvLGOgkF2PJ2iVUtHMVXnPSiyX62g1sC2B5vXelZUwt0J51h8x1cwtVM9d1TGs9DRDurjwv831olUpj-VCczJZ5aurybdX9TUobF-uQIxnt11cyAW51JV69-_Jqd4DX4Ay-jHP9qtlazjfSiVyIe6rktESeos_gWvbFj-PA"
+      },
+      "QAEthereumPrivateKey": "0x18bbb281da502685b22949f80acba17757c66bdeb2acd1bf402a000f751a5ad4"
+    }
+  }
+]

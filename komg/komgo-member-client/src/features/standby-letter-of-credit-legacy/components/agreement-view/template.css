@@ -1,0 +1,45 @@
+/*
+ We shouldn't use CSS give we are using styled components.
+ However, this could help to generate a PDF via an HTML engine like webkit
+*/
+
+.template_anchor {
+  color: black;
+  cursor: default;
+}
+
+.template_anchor:hover {
+  cursor: default;
+  color: black;
+  text-decoration: none;
+}
+
+.template_link {
+  padding: 4px;
+  cursor: pointer;
+  background: rgba(148, 109, 192, 0.4);
+  color: #1C2936;
+  font-weight: normal;
+}
+
+.template_disabled {
+  padding: 4px;
+  background: rgba(156, 128, 135, 0.2);
+  color: rgba(150, 150, 150, 1);;
+  font-weight: normal;
+}
+
+.template_link:hover {
+  background: rgba(148, 109, 192, 0.6);
+  color: #1C2936;
+  text-decoration: none;
+}
+
+.template_section {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.template_section p {
+  line-height: 1.8;
+}

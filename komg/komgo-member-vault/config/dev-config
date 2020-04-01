@@ -1,0 +1,177 @@
+#!/usr/bin/env bash
+# VAULT_ADDR should be available as environment variable
+VAULT_TOKEN="$VAULT_DEV_ROOT_TOKEN_ID"
+
+function header() {
+    echo "===== $1 ====="
+}
+
+function http_post() {
+    curl \
+        --header "X-Vault-Token: $VAULT_TOKEN" \
+        --request POST \
+        --data "${@:2}" \
+        $VAULT_ADDR/$1
+}
+
+function http_put() {
+    curl \
+        --header "X-Vault-Token: $VAULT_TOKEN" \
+        --request PUT \
+        --data "${@:2}" \
+        $VAULT_ADDR/$1
+}
+
+function http_get() {
+      curl \
+        --header "X-Vault-Token: $VAULT_TOKEN" \
+        --request GET \
+        $VAULT_ADDR/$1
+}
+
+function http_list() {
+      curl \
+        --header "X-Vault-Token: $VAULT_TOKEN" \
+        --request LIS \
+        $VAULT_ADDR/$1
+}
+
+# ==========================================================
+header "Configuring vault audit"
+audit_payload='{
+  "type": "file",
+  "options": {
+    "file_path": "/vault/audit/vault_audit.log"
+  }
+}'
+
+http_put /sys/audit/syslog "$audit_payload"
+
+# ==========================================================
+header "List Vault audit devices"
+http_get /sys/audit 
+
+# ==========================================================
+header "Configuring vault K/V (version 1)"
+kv_payload='{
+  "type": "kv",
+  "description": "trolorololo",
+  "options": {
+    "version": "1"
+  }
+}'
+
+http_post v1/sys/mounts/kv "$kv_payload"
+
+# ==========================================================
+header "Enable App role"
+
+app_role_payload='{
+  "type": "approle"
+}'
+
+http_post v1/sys/auth/approle "$app_role_payload"
+
+# ==========================================================
+header "Create App role with basic read policy"
+
+app_read_role_payload='{
+  "policies": "read-policy"
+}'
+
+http_post v1/auth/approle/role/api-read "$app_read_role_payload"
+
+# ==========================================================
+header "Generate new secret id"
+new_id_payload='{
+  "metadata": "{ \"tag1\": \"development\" }"
+}'
+http_post v1/auth/approle/role/api-read/secret-id "$new_id_payload"
+
+
+# ==========================================================
+header "List Secret Id accessors"
+http_list v1/auth/approle/role/api-read/secret-id
+
+# ==========================================================
+header "Enabling Database secrets"
+db_mount_payload='{
+  "type": "database"
+}'
+http_post v1/sys/mounts/database "$db_mount_payload"
+
+# ==========================================================
+header "Listing available plugins"
+http_get v1/sys/plugins/catalog
+
+# ==========================================================
+header "Enabling RabbitMQ plugin"
+rabbitmq_mount_payload='{
+  "type": "rabbitmq"
+}'
+http_post v1/sys/mounts/rabbitmq "$rabbitmq_mount_payload"
+
+# ==========================================================
+header "Configuring Internal RabbitMQ"
+rabbitmq_connection_payload='{
+  "connection_uri":"http://komgo-member-1-internal-mq-node-1:15672",
+  "username": "KomgoInternalUser",
+  "password": "Tostoresomewhere"
+}'
+
+http_post v1/rabbitmq/config/connection "$rabbitmq_connection_payload"
+
+# ==========================================================
+header "Creating RabbitMQ writer role"
+http_get v1/rabbitmq/roles/writer
+
+# ==========================================================
+header "Read RabbitMQ writer role"
+rabbitmq_roles_payload='{
+  "tags": "api-docs,api-signer",
+  "vhost": "{ {\"configure\": \".*\",\"write\": \".*\",\"read\": \".*\"}}"
+}'
+http_post v1/rabbitmq/roles/writer "$rabbitmq_roles_payload"
+
+# ==========================================================
+header "Generating new RabbitMQ credentials"
+http_get v1/rabbitmq/creds/writer
+
+# ==========================================================
+header "Enabling Active Directory plugin"
+ad_mount_payload='{
+  "type": "ad"
+}'
+http_post v1/sys/mounts/ad "$ad_mount_payload"
+
+# ==========================================================
+header "Enabling Transit plugin"
+transit_mount_payload='{
+  "type": "transit"
+}'
+http_post v1/sys/mounts/transit "$transit_mount_payload"
+
+# ===========================================================
+header "Creating RSA Key"
+rsa_create_payload='{
+  "type": "rsa-4096"
+}'
+
+http_post v1/transit/keys/one-rsa "$rsa_create_payload"
+
+# ===========================================================
+header "Encrypting with RSA one-rsa key"
+encrypt_payload='{
+  "plaintext": "VGVzdCA="
+}'
+
+http_post v1/transit/encrypt/one-rsa "$encrypt_payload"
+
+# ==========================================================
+header "Enabling MongoDB plugin"
+mongodb_mount_payload='{
+  "plugin_name": "mongodb-database-plugin",
+  "connection_url": "mongodb://mongo:27017"
+}'
+
+http_post v1/database/config/mongodb "$mongodb_mount_payload"

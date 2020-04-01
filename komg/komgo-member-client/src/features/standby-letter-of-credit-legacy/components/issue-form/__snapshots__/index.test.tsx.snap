@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssueForm matches snapshot 1`] = `
+Array [
+  <div
+    className="ui divider"
+  />,
+  <form
+    className="ui form"
+    id="create-standby-letter-of-credit"
+    onSubmit={[Function]}
+  >
+    <div
+      className="ui hidden divider"
+    />
+    <div
+      className="field"
+    >
+      <label
+        id="field_reviewDecision"
+      >
+        Application decision
+      </label>
+      <div
+        className="field"
+      >
+        <div
+          className="ui checked radio checkbox"
+          data-test-id="reviewDecision_ApproveApplication"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onMouseDown={[Function]}
+        >
+          <input
+            checked={true}
+            className="hidden"
+            onClick={[Function]}
+            readOnly={true}
+            tabIndex={0}
+            type="radio"
+          />
+          <label>
+            Approve application
+          </label>
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <div
+          className="ui radio checkbox"
+          data-test-id="reviewDecision_RejectApplication"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onMouseDown={[Function]}
+        >
+          <input
+            checked={false}
+            className="hidden"
+            onClick={[Function]}
+            readOnly={true}
+            tabIndex={0}
+            type="radio"
+          />
+          <label>
+            Reject application
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "inherit",
+          "justifyContent": "unset",
+        }
+      }
+    >
+      <label
+        className="inputLabel"
+      >
+        Internal reference
+      </label>
+      <div
+        className="ui input"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+      >
+        <input
+          name="standbyLetterOfCredit.issuingBankReference"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "fontSize": "small",
+          "lineHeight": "0px",
+          "paddingBottom": "20px",
+        }
+      }
+    >
+      The reference from your internal banking system
+    </div>
+    <div
+      className="inline field"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "inherit",
+          "justifyContent": "unset",
+        }
+      }
+    >
+      <label
+        className="inputLabel"
+      >
+        Postal address
+      </label>
+      <textarea
+        className=""
+        name="standbyLetterOfCredit.issuingBankPostalAddress"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onInput={[Function]}
+        rows={3}
+        style={
+          Object {
+            "resize": "",
+            "width": "100%",
+          }
+        }
+        value="address"
+      />
+    </div>
+  </form>,
+]
+`;

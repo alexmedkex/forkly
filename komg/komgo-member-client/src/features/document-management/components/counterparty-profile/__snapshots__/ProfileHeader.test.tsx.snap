@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileHeader renders in view mode 1`] = `
+.c0 {
+  min-height: 41px;
+  border-bottom: 1px solid #e8eef3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c1 {
+  text-transform: uppercase;
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  -webkit-flex-basis: 85%;
+  -ms-flex-preferred-size: 85%;
+  flex-basis: 85%;
+  text-align: center;
+}
+
+.c2 {
+  -webkit-flex-basis: 15%;
+  -ms-flex-preferred-size: 15%;
+  flex-basis: 15%;
+}
+
+.c3.c3.c3 {
+  font-size: 1.2em;
+}
+
+<div
+  className="c0"
+  data-test-id="cp-profile-header"
+>
+  <div
+    className="c1"
+    data-test-id="cp-profile-header-title"
+  >
+    Profile Summary
+  </div>
+  <div
+    className="c2"
+    data-test-id="cp-profile-header-buttongroup"
+  >
+    <i
+      aria-hidden="true"
+      className="edit icon c3"
+      data-test-id="cp-profile-button-edit"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

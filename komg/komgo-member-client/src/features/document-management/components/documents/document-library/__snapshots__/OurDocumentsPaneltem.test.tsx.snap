@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterpartyDocumentListItem renders 1`] = `
+.c2 {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: rgba(68,33,133);
+  border-radius: 2px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c3 {
+  margin: 0 8px;
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-rows: 40px;
+  grid-template-columns: 40px [cbox] auto [panel-item] 40px [chevron];
+}
+
+.c1 {
+  min-width: calc(100% - 30px);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c4 {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #5d768f;
+}
+
+<div
+  className="c0"
+  onClick={[MockFunction]}
+>
+  <div
+    className="ui fitted checkbox"
+    data-test-id="checkbox-Shareholders - Ultimate Beneficiary Owners (UBOs)"
+    onChange={[Function]}
+    onClick={[Function]}
+    onMouseDown={[Function]}
+  >
+    <input
+      checked={false}
+      className="hidden"
+      onClick={[Function]}
+      readOnly={true}
+      tabIndex={0}
+      type="checkbox"
+    />
+    <label />
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    />
+    <div
+      className="c3"
+    >
+      Shareholders - Ultimate Beneficiary Owners (UBOs)
+    </div>
+    <p
+      className="c4"
+      data-test-id="document-count-Shareholders - Ultimate Beneficiary Owners (UBOs)"
+    >
+      1 document
+    </p>
+  </div>
+  <i
+    aria-hidden="true"
+    className="chevron right large icon"
+    data-test-id="row-chevron-Shareholders - Ultimate Beneficiary Owners (UBOs)"
+  />
+</div>
+`;

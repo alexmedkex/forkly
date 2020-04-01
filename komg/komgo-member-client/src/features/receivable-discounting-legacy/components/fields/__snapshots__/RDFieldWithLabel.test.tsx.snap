@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RDFieldWithLabel matches snapshot  1`] = `
+<DocumentFragment>
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0.c0.c0.c0.c0 .field {
+  margin-bottom: 16px;
+}
+
+.c0.c0.c0.c0.c0 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c0.c0.c0.c0.c0 .field.error {
+  margin-bottom: 0;
+}
+
+.c0.c0.c0.c0.c0 label.inputLabel {
+  width: 240px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+<li
+    class="c0 c1"
+  >
+    <div
+      class="field"
+      style="display: inherit; justify-content: unset; align-items: center;"
+    >
+      <label
+        class="inputLabel"
+      >
+        Type
+      </label>
+      <div
+        class="ui input"
+        customstyling=""
+        data-test-id="invoiceType"
+        style="width: 50%;"
+      >
+        <input
+          name="invoiceType"
+          type="text"
+          value="INDICATIVE"
+        />
+      </div>
+    </div>
+  </li>
+</DocumentFragment>
+`;

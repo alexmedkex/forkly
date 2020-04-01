@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataLetterOfCreditBaseFromDataLetterOfCredit works when cargo is undefined 1`] = `
+Object {
+  "amount": 10000,
+  "applicant": Object {
+    "staticId": "cf63c1f8-1165-4c94-a8f8-9252eb4f0016",
+  },
+  "beneficiary": Object {
+    "staticId": "ecc3b179-00bc-499c-a2f9-f8d1cc58e9db",
+  },
+  "beneficiaryBank": Object {
+    "staticId": "08e9f8e3-94e5-459e-8458-ab512bee6e2c",
+  },
+  "cargo": undefined,
+  "currency": "USD",
+  "expiryDate": "2019-11-29",
+  "issuingBank": Object {
+    "staticId": "08e9f8e3-94e5-459e-8458-ab512bee6e2c",
+  },
+  "issuingBankReference": "REF-0001",
+  "trade": Object {
+    "source": "KOMGO",
+    "sourceId": "E2389423",
+  },
+  "version": 1,
+}
+`;

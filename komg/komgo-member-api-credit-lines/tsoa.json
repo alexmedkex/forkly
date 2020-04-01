@@ -1,0 +1,28 @@
+{
+    "swagger": {
+        "info": {
+            "description": "Credit Lines",
+            "version": "1.0.0",
+            "title": "Credit Lines API"
+        },
+        "schemes": [ "http", "https" ],
+        "securityDefinitions": {
+            "api_key": {
+                "type": "apiKey",
+                "name": "access_token",
+                "in": "header"
+            }
+        },
+        "outputDirectory": "./dist",
+        "entryFile": "./src/run-server.ts",
+        "host": "localhost:3115",
+        "basePath": "/v0"
+    },
+    "routes": {
+        "basePath": "/v0",
+        "authenticationModule": "./src/middleware/common/authentication/authentication.ts",
+        "entryFile": "./src/run-server.ts",
+        "routesDir": "./src/middleware/server-config",
+        "iocModule" : "./src/inversify/ioc"
+    }
+}

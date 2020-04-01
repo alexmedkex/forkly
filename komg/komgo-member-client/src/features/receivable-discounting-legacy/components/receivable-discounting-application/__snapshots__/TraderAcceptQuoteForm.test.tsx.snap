@@ -1,0 +1,686 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TraderAcceptQuoteForm /> Validation errors should show validation errors if invalid entries are provided 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -17,40 +17,64 @@
+      class=\\"ui form\\"
+      data-test-id=\\"trader-accept-quote-form\\"
+      id=\\"trader-accept-quote-form\\"
+    >
+      <div
++       class=\\"ui negative message\\"
++     >
++       <div
++         class=\\"header\\"
++       >
++         Validation Errors
++       </div>
++       <p
++         class=\\"sc-iwsKbI eYUzfA\\"
++       >
++         'Advance rate' should not be empty
++       </p>
++       <p
++         class=\\"sc-iwsKbI eYUzfA\\"
++       >
++         'Pricing flat fee amount' should be strictly greater than 0
++       </p>
++       <p
++         class=\\"sc-iwsKbI eYUzfA\\"
++       >
++         'Days of discounting' should not be empty
++       </p>
++     </div>
++     <div
+        class=\\"sc-elJkPf hLVRnS\\"
+      >
+        <label>
+          Advance rate
+        </label>
+        <div
+          class=\\"field\\"
+          style=\\"margin-bottom: 20px;\\"
+        >
+          <div
+-           class=\\"ui right labeled input\\"
++           class=\\"ui right labeled input field error\\"
+            data-test-id=\\"advanceRate\\"
+            style=\\"width: 50%;\\"
+          >
+            <input
+              name=\\"advanceRate\\"
+              step=\\"0.01\\"
+              type=\\"number\\"
+-             value=\\"10\\"
++             value=\\"\\"
+            />
+            <div
+              class=\\"ui basic label label\\"
+              style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+            >
+              %
+            </div>
+          </div>
+        </div>
+        <div
+-         class=\\"sc-gzOgki kTDtWn\\"
++         class=\\"show sc-gzOgki kTDtWn\\"
+        >
+          <p
+            data-test-id=\\"advanceRate-proposal-label\\"
+          >
+            A-BANK-NAME proposed: 10%
+@@ -138,17 +162,17 @@
+            style=\\"display: block; font-weight: bold;\\"
+          >
+            Flat fee
+          </label>
+          <div
+-           class=\\"ui input\\"
++           class=\\"ui input field error\\"
+            data-test-id=\\"pricingFlatFeeAmount.amount\\"
+          >
+            <input
+              name=\\"pricingFlatFeeAmount.amount\\"
+              type=\\"text\\"
+-             value=\\"20.00\\"
++             value=\\"0.00\\"
+            />
+          </div>
+          <div
+            aria-expanded=\\"false\\"
+            class=\\"ui compact search selection dropdown\\"
+@@ -261,11 +285,11 @@
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+-         class=\\"sc-gzOgki kTDtWn\\"
++         class=\\"show sc-gzOgki kTDtWn\\"
+        >
+          <p
+            data-test-id=\\"pricingFlatFeeAmount-proposal-label\\"
+          >
+            A-BANK-NAME proposed: CHF 20.00
+@@ -280,25 +304,25 @@
+        >
+          <span
+            style=\\"width: 50%; display: inline-block;\\"
+          >
+            <div
+-             class=\\"ui input\\"
++             class=\\"ui input field error\\"
+              data-test-id=\\"numberOfDaysDiscounting\\"
+              style=\\"width: 100%;\\"
+            >
+              <input
+                name=\\"numberOfDaysDiscounting\\"
+                step=\\"1\\"
+                type=\\"number\\"
+-               value=\\"80\\"
++               value=\\"\\"
+              />
+            </div>
+          </span>
+        </div>
+        <div
+-         class=\\"sc-gzOgki kTDtWn\\"
++         class=\\"show sc-gzOgki kTDtWn\\"
+        >
+          <p
+            data-test-id=\\"numberOfDaysDiscounting-proposal-label\\"
+          >
+            A-BANK-NAME proposed: 80 days"
+`;
+
+exports[`<TraderAcceptQuoteForm /> Validation errors should show validation errors if invalid entries are provided 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -17,10 +17,29 @@
+      class=\\"ui form\\"
+      data-test-id=\\"trader-accept-quote-form\\"
+      id=\\"trader-accept-quote-form\\"
+    >
+      <div
++       class=\\"ui negative message\\"
++     >
++       <div
++         class=\\"header\\"
++       >
++         Validation Errors
++       </div>
++       <p
++         class=\\"sc-iwsKbI eYUzfA\\"
++       >
++         'Risk fee' should not be empty
++       </p>
++       <p
++         class=\\"sc-iwsKbI eYUzfA\\"
++       >
++         'Margin' should not be empty
++       </p>
++     </div>
++     <div
+        class=\\"sc-elJkPf hLVRnS\\"
+      >
+        <label>
+          Advance rate
+        </label>
+@@ -137,30 +156,30 @@
+        <div
+          class=\\"field\\"
+          style=\\"margin-bottom: 20px;\\"
+        >
+          <div
+-           class=\\"ui right labeled input\\"
++           class=\\"ui right labeled input field error\\"
+            data-test-id=\\"riskFee\\"
+            style=\\"width: 50%;\\"
+          >
+            <input
+              name=\\"pricingRiskFee\\"
+              step=\\"0.01\\"
+              type=\\"number\\"
+-             value=\\"20\\"
++             value=\\"\\"
+            />
+            <div
+              class=\\"ui basic label label\\"
+              style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+            >
+              %
+            </div>
+          </div>
+        </div>
+        <div
+-         class=\\"sc-gzOgki kTDtWn\\"
++         class=\\"show sc-gzOgki kTDtWn\\"
+        >
+          <p
+            data-test-id=\\"pricingRiskFee-proposal-label\\"
+          >
+            A-BANK-NAME proposed: 20%
+@@ -172,30 +191,30 @@
+        <div
+          class=\\"field\\"
+          style=\\"margin-bottom: 20px;\\"
+        >
+          <div
+-           class=\\"ui right labeled input\\"
++           class=\\"ui right labeled input field error\\"
+            data-test-id=\\"margin\\"
+            style=\\"width: 50%;\\"
+          >
+            <input
+              name=\\"pricingMargin\\"
+              step=\\"0.01\\"
+              type=\\"number\\"
+-             value=\\"30\\"
++             value=\\"\\"
+            />
+            <div
+              class=\\"ui basic label label\\"
+              style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+            >
+              %
+            </div>
+          </div>
+        </div>
+        <div
+-         class=\\"sc-gzOgki kTDtWn\\"
++         class=\\"show sc-gzOgki kTDtWn\\"
+        >
+          <p
+            data-test-id=\\"pricingMargin-proposal-label\\"
+          >
+            A-BANK-NAME proposed: 30%"
+`;
+
+exports[`<TraderAcceptQuoteForm /> Validation errors should show validation errors if invalid entries are provided 3`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -17,10 +17,24 @@
+      class=\\"ui form\\"
+      data-test-id=\\"trader-accept-quote-form\\"
+      id=\\"trader-accept-quote-form\\"
+    >
+      <div
++       class=\\"ui negative message\\"
++     >
++       <div
++         class=\\"header\\"
++       >
++         Validation Errors
++       </div>
++       <p
++         class=\\"sc-iwsKbI eYUzfA\\"
++       >
++         'All in' should not be empty
++       </p>
++     </div>
++     <div
+        class=\\"sc-elJkPf hLVRnS\\"
+      >
+        <label>
+          Advance rate
+        </label>
+@@ -137,30 +151,30 @@
+        <div
+          class=\\"field\\"
+          style=\\"margin-bottom: 20px;\\"
+        >
+          <div
+-           class=\\"ui right labeled input\\"
++           class=\\"ui right labeled input field error\\"
+            data-test-id=\\"pricingAllIn\\"
+            style=\\"width: 50%;\\"
+          >
+            <input
+              name=\\"pricingAllIn\\"
+              step=\\"0.01\\"
+              type=\\"number\\"
+-             value=\\"30\\"
++             value=\\"\\"
+            />
+            <div
+              class=\\"ui basic label label\\"
+              style=\\"border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;\\"
+            >
+              %
+            </div>
+          </div>
+        </div>
+        <div
+-         class=\\"sc-gzOgki kTDtWn\\"
++         class=\\"show sc-gzOgki kTDtWn\\"
+        >
+          <p
+            data-test-id=\\"pricingAllIn-proposal-label\\"
+          >
+            A-BANK-NAME proposed: 30%"
+`;
+
+exports[`<TraderAcceptQuoteForm /> should render as expected 1`] = `
+<DocumentFragment>
+  .c0.c0.c0 {
+  margin: 1.5em 0 1.75em;
+}
+
+<p
+    class="c0"
+    data-test-id="request-header-text"
+  >
+    Enter agreed terms to accept receivable discounting quote from 
+    <strong>
+      A-BANK-NAME 
+    </strong>
+    for 
+    <strong>
+      trade ID TRADE-ID
+    </strong>
+    .
+  </p>
+  .c2 > .field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c2 > .field > label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.c2 > .field .field {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.c2 > .field .field .ui.radio.checkbox label {
+  line-height: calc(18px * 1.15);
+}
+
+.c0.c0.c0 {
+  margin: 15px 0 35px 0;
+}
+
+.c0.c0.c0 > label {
+  font-weight: bold;
+}
+
+.c7.c7.c7 {
+  color: #5d768f;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 21px;
+  width: auto;
+  text-align: left;
+  margin: 24px 0 0 0;
+}
+
+.c1.c1.c1 {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0px 0px 0px 0px;
+  height: 0px;
+}
+
+.c1.c1.c1.show {
+  margin: -15px 0px 0px 0px;
+  opacity: 1;
+  visibility: visible;
+  height: 2rem;
+}
+
+.c1.c1.c1 p {
+  color: #5d768f;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.c3 {
+  margin: 0px 0px 5px 0px;
+  font-weight: bold;
+}
+
+.c6 {
+  text-transform: uppercase;
+  color: #5d768f;
+  font-size: 11px;
+  margin: 0px 0px 8px 0px;
+}
+
+.c4 {
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
+  margin: 0px;
+  padding: 0px 20px 0px 0px;
+}
+
+<form
+    class="ui form"
+    data-test-id="trader-accept-quote-form"
+    id="trader-accept-quote-form"
+  >
+    <div
+      class="c0"
+    >
+      <label>
+        Advance rate
+      </label>
+      <div
+        class="field"
+        style="margin-bottom: 20px;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="advanceRate"
+          style="width: 50%;"
+        >
+          <input
+            name="advanceRate"
+            step="0.01"
+            type="number"
+            value="10"
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+      <div
+        class="c1"
+      >
+        <p
+          data-test-id="advanceRate-proposal-label"
+        >
+          A-BANK-NAME proposed: 10%
+        </p>
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="field"
+        >
+          <label
+            id="field_pricingType"
+          >
+            Pricing type
+          </label>
+          <div
+            class="field"
+          >
+            <div
+              class="ui checked radio checkbox"
+              data-test-id="pricingType_ALL_IN"
+            >
+              <input
+                checked=""
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label>
+                All in pricing
+              </label>
+            </div>
+          </div>
+          <div
+            class="field"
+          >
+            <div
+              class="ui radio checkbox"
+              data-test-id="pricingType_SPLIT"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label>
+                Split
+              </label>
+            </div>
+          </div>
+          <div
+            class="field"
+          >
+            <div
+              class="ui radio checkbox"
+              data-test-id="pricingType_FLAT_FEE"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label>
+                Flat fee
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <label>
+        All in
+      </label>
+      <div
+        class="field"
+        style="margin-bottom: 20px;"
+      >
+        <div
+          class="ui right labeled input"
+          data-test-id="pricingAllIn"
+          style="width: 50%;"
+        >
+          <input
+            name="pricingAllIn"
+            step="0.01"
+            type="number"
+            value="0.5"
+          />
+          <div
+            class="ui basic label label"
+            style="border-top-right-radius: .21428571rem; border-bottom-right-radius: .21428571rem; height: 32px; padding-top: 8px;"
+          >
+            %
+          </div>
+        </div>
+      </div>
+      <div
+        class="c1"
+      >
+        <p
+          data-test-id="pricingAllIn-proposal-label"
+        >
+          A-BANK-NAME proposed: 0.5%
+        </p>
+      </div>
+      <label>
+        Days of discounting
+      </label>
+      <div
+        class="inline field"
+        style="margin-bottom: 20px;"
+      >
+        <span
+          style="width: 50%; display: inline-block;"
+        >
+          <div
+            class="ui input"
+            data-test-id="numberOfDaysDiscounting"
+            style="width: 100%;"
+          >
+            <input
+              name="numberOfDaysDiscounting"
+              step="1"
+              type="number"
+              value="80"
+            />
+          </div>
+        </span>
+      </div>
+      <div
+        class="c1"
+      >
+        <p
+          data-test-id="numberOfDaysDiscounting-proposal-label"
+        >
+          A-BANK-NAME proposed: 80 days
+        </p>
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c3"
+      >
+        Interest
+      </div>
+      <ul
+        class="c4"
+        data-test-id="interest-data"
+      >
+        <li
+          class="c5"
+        >
+          <p
+            class="c6"
+          >
+            Interest type
+          </p>
+          <p>
+            COF
+          </p>
+        </li>
+        <li
+          class="c5"
+        >
+          <p
+            class="c6"
+          >
+            Indicative COF as of 2019/01/31
+          </p>
+          <p>
+            5.50%
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c3"
+      >
+        Fee calculation based on
+      </div>
+      <p
+        data-test-id="feeCalculationType-data"
+      >
+        Straight discount
+      </p>
+    </div>
+    <label
+      style="font-weight: bold; display: block;"
+    >
+      Comment (optional)
+    </label>
+    <textarea
+      data-test-id="comment"
+      name="comment"
+      rows="3"
+      style="width: 50%;"
+    />
+    <p
+      class="c7"
+      data-test-id="accept-quote-section-status-text"
+      font-size="1rem"
+    >
+      The agreed terms are not legally binding
+    </p>
+  </form>
+</DocumentFragment>
+`;

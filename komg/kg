@@ -1,0 +1,821 @@
+#!/bin/bash
+
+DOCKER_REGISTRY='hbr.solutions.consensys-uk.net'
+
+realpath() {
+  # polyfill for OS X
+  [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
+# make sure we're in a correct directory
+if [ -z "$KOMGO_MEMBER_DIR" ]; then
+  FILE_DIR=$(realpath $(dirname $0))
+  cd "$FILE_DIR"
+else
+  cd "$KOMGO_MEMBER_DIR"
+fi
+
+source ./kg-tools/modules/utils.sh
+
+# OS-specific env vars
+unameOut="$(uname -s)"
+case "${unameOut}" in
+  Linux*) export DOCKER_HOST_MACHINE=172.17.0.1 ;;
+  Darwin*) export DOCKER_HOST_MACHINE=host.docker.internal ;;
+  CYGWIN*) export DOCKER_HOST_MACHINE=host.docker.internal ;;
+  MINGW*) export DOCKER_HOST_MACHINE=host.docker.internal ;;
+  *) echo "${red}Cannot determine OS type${normal}" ;;
+esac
+
+# read env vars from .env so we can manipulate them depending on kg arguments
+export $(grep -v '^#' .env | xargs)
+
+if [[ $@ = *--dev* ]]; then
+  export IMAGE_NAME=komgo-nodejs-10
+  export BUILD_DIR=kg-tools
+  # just keep the container running
+  export COMMAND="tail -F /none"
+else
+  # mount anything, but not /opt/app
+  export MOUNT_VOLUME=./README.md:/tmp/README.md
+fi
+
+if [[ $@ = *--rebuild* ]]; then
+  export REBUILD=true
+fi
+
+if [[ $@ = *--member* ]]; then
+  for i in $@; do
+    if [[ $i == --member* ]]
+    then
+     export MEMBER_ID="${i#*=}"
+    fi
+  done
+fi
+
+# Use Common MQ and Blockchain nodes via the host machine
+export COMMON_MQ_HOST=$DOCKER_HOST_MACHINE
+export COMMON_MQ_BASE_URL=http://$DOCKER_HOST_MACHINE:15673
+
+if [[ "$MEMBER_ID" == "2" ]]; then
+  export IS_KOMGO_NODE=true
+else
+  export IS_KOMGO_NODE=false
+fi
+
+if [[ $@ = *--kaleido* ]]; then
+  # override blockchain env vars to point to Kaleido node
+  export BLOCKCHAIN_SCHEMA=$BLOCKCHAIN_KALEIDO_SCHEMA
+  export BLOCKCHAIN_HOST=$BLOCKCHAIN_KALEIDO_HOST
+  export BLOCKCHAIN_PORT=$BLOCKCHAIN_KALEIDO_PORT
+  export BLOCKCHAIN_USER=$BLOCKCHAIN_KALEIDO_USER
+  export BLOCKCHAIN_PASSWORD=$BLOCKCHAIN_KALEIDO_PASSWORD
+
+  # the following env vars is for compatibility with api-docs
+  export KALEIDO_HOST=$BLOCKCHAIN_KALEIDO_HOST
+  export KALEIDO_USER=$BLOCKCHAIN_KALEIDO_USER
+  export KALEIDO_PASSWORD=$BLOCKCHAIN_KALEIDO_PASSWORD
+else
+  export BLOCKCHAIN_HOST=$DOCKER_HOST_MACHINE
+  # BLOCKCHAIN_PORT is a member-specific and will be overridden below in the code
+fi
+
+source ./kg-tools/modules/help.sh
+source ./kg-tools/modules/lms.sh
+source ./kg-tools/modules/output-helpers.sh
+source ./kg-tools/modules/check-readiness.sh
+source ./kg-tools/modules/update-app-state.sh
+source ./kg-tools/modules/cloud-api-connect/cloud-api-connect.sh
+
+open-jira () {
+  if [ -z $1 ]; then
+    echo "Please supply a jira task number eg ./kg jira 123"
+    exit 1
+  fi
+
+  open https://consensys-komgo.atlassian.net/browse/KOMGO-$1
+}
+
+open-gitlab () {
+  if [ -z $1 ]; then
+    echo "Please supply a repo e.g. ./kg gitlab member-api-registry or ./kg gitlab packages/microservice-config"
+    exit 1
+  fi
+
+  open https://gitlab.com/ConsenSys/client/uk/KomGo/komgo-$1
+}
+
+show-build-id-info () {
+  if [ -z $1 ]; then
+    echo "Please supply a BUILD ID eg ./kg build dev+1234"
+    exit 1
+  fi
+
+  curl -X GET https://rls.gmk.solutions.consensys-uk.net/builds/$1 -H 'Content-Type: application/json' -H 'KD-Authorize: DUM3JxERjVLG' -H 'cache-control: no-cache' | jq
+}
+
+install () {
+  if [ ! -z "$KOMGO_MEMBER_DIR" ]; then
+    echo "${red}[!] Already installed${normal}"
+    exit 1
+  fi
+
+  sudo bash -c 'cat << EOF > /usr/bin/kg
+#!/bin/bash
+
+export KOMGO_MEMBER_DIR='$FILE_DIR'
+exec \$KOMGO_MEMBER_DIR/kg \$@
+EOF'
+  sudo chmod +x /usr/bin/kg
+  echo OK
+}
+
+stop-and-cleanup () {
+  echo "${red}[!] This will:
+* stop and remove ALL Docker containers
+* remove Keycloak, Mongo, RabbitMQ and blockchain database files${normal}"
+  read -p "Continue? (y/N): " choice
+  if [[ $choice =~ ^[Yy]$ ]]
+  then
+    set -e
+    if [[ $(docker ps -aq) ]]; then
+      echo "${cyan}[ Stopping containers... ]${normal}"
+      docker stop $(docker ps -aq)
+      echo "${cyan}[ Removing containers... ]${normal}"
+      docker rm $(docker ps -aq)
+    else
+      echo "${cyan}[ No containers to remove ]${normal}"
+    fi
+    echo "${cyan}[ Removing database files... ]${normal}"
+    sudo chown -R $USER .
+    rm -rf .db
+
+    echo "${cyan}[ Removing Quorum files... ]${normal}"
+    set -x
+    ./komgo-member-blockchain/quorum/cleanup.sh
+    rm docker-compose.quorum-common.yml
+    rm komgo-member-blockchain/address.txt
+    set +x
+
+    echo
+    echo "${cyan}All done!${normal}"
+  fi
+}
+
+# If $1 is passed, it will pull only one image by a provided name (i.e. komgo-member-api-users)
+pull-images-from-registry () {
+  MODULE_NAME="$1"
+  REGISTRY=`grep $DOCKER_REGISTRY $HOME/.docker/config.json 2>/dev/null | wc -l`
+  if [ $REGISTRY != '0' ]; then
+    if [ -z "$MODULE_NAME" ]; then
+      MODULES=`git submodule | awk -F' ' '{print $2}'`
+    else
+      MODULES=( "$MODULE_NAME" )
+    fi
+    for m in $MODULES; do
+      log-h1 $m
+      HASH=`git submodule | grep -E "$m\s" | cut -c 2-9`
+      cd $m
+      BRANCH=`git branch | grep '*' | awk -F' ' '{print $2}'`
+      N_CHANGES=`git status -s | wc -l | xargs`
+      if [ $BRANCH = 'develop' ] && [ $N_CHANGES = '0' ]; then
+        if [ $m != 'komgo-onboard' ]; then
+          log-info "Going to get image $m:$HASH and tag as $m:latest"
+          docker pull $DOCKER_REGISTRY/komgo/$m:$HASH
+          docker tag $DOCKER_REGISTRY/komgo/$m:$HASH $m:latest
+        fi
+      else
+        log-warn "Module $m cannot be pulled from docker registry as on branch $BRANCH with $N_CHANGES file(s) changed outside of a commit."
+        log-warn "Please run locally in dev mode instead."
+      fi
+      cd ..
+    done
+    log-success "Complete! Use './kg up all' to use the newly pulled images."
+  else
+    log-warn 'You are not logged in to harbor...'
+    echo "Use 'docker login $DOCKER_REGISTRY' to login"
+  fi
+}
+
+checkout-develop-everywhere () {
+  checkout-branch-everywhere develop
+}
+
+checkout-branch-everywhere () {
+  if [ -z $1 ]; then
+    echo "Please supply a branch name eg ./kg checkout-branch-everywhere develop"
+    exit 1
+  fi
+
+  set -e
+  echo "${red}[!] This will:
+* delete all uncommitted changes
+* checkout $1 branch and do 'git pull' in each submodule${normal}"
+  read -p "Continue? (y/N): " choice
+  if [[ $choice =~ ^[Yy]$ ]]
+  then
+    reset-submodules pull $1
+    echo
+    echo "${cyan}All done!${normal}"
+  fi
+}
+
+reset-submodules () {
+  # if first argument is "pull" it will also checkout develop branch and do 'git pull'
+  submodules=$(ls -ad komgo-*/ | gawk '{print $1}')
+  for submodule in $submodules
+  do
+    echo "${cyan}[ $submodule ]${normal}"
+    cd $submodule
+    if [ -f .git ]; then
+      sudo chown -R $USER .
+      git reset --hard HEAD
+      git clean -fd
+      if [[ $1 = pull || -z $2 ]]; then
+        git fetch origin $2
+        git checkout -f $2
+        git reset --hard origin/$2
+      fi
+    fi
+    cd ..
+  done
+}
+
+read_local_npm_token () {
+  gawk 'match($0,/NpmToken.[-a-z0-9]+/) { print substr($0,RSTART,RLENGTH); exit }' ~/.npmrc
+}
+
+port_variable_export () {
+  docker_compose_file=$1
+  port_vars=$(cat docker-compose.$docker_compose_file.yml | gawk "BEGIN {member=$MEMBER_ID;}"'{if(match($0, /.*(PORT_[0-9]):-([0-9]+).*/, m)) { print (m[1] "=" m[2] + (member -1)*1000);  }}')
+  for i in $port_vars; do
+    export "$i"
+  done
+}
+
+port_variable_unset () {
+  docker_compose_file=$1
+  port_vars=$(cat docker-compose.$docker_compose_file.yml | gawk "BEGIN {member=$MEMBER_ID;}"'{if(match($0, /.*(PORT_[0-9]):-([0-9]+).*/, m)) { print (m[1]);  }}')
+  for i in $port_vars; do
+    unset $i
+  done
+}
+
+gen_common_blockchain_compose () {
+  echo "Building quorum image for common blockchain"
+  if ! docker image inspect quorum > /dev/null 2>&1
+  then
+    docker build -t quorum ./komgo-member-blockchain/quorum
+  fi
+  echo "Generating docker compose"
+  sed -i.bak 's/"172\.13\.0\.\([0-9]\)"/"172.13.0.3\1"/g' ./komgo-member-blockchain/quorum/setup.sh
+  bash ./komgo-member-blockchain/quorum/setup.sh
+  mv ./komgo-member-blockchain/quorum/setup.sh.bak ./komgo-member-blockchain/quorum/setup.sh
+  mv docker-compose.yml docker-compose.quorum-common.yml
+}
+
+onboard_configured () {
+  export NPM_TOKEN=$(read_local_npm_token)
+  onboard_path="$(npm root)/.bin/onboard"
+  if [[ ! -f "$onboard_path" ]]; then
+    log-info "Installing @komgo/onboard"
+    npm i @komgo/onboard@latest
+  else
+    log-info "Checking for new versions of @komgo/onboard"
+    latest_onboard_version=$(npm show @komgo/onboard version)
+    current_onboard_version=$($onboard_path --version)
+    if [[ "$latest_onboard_version" != "$current_onboard_version" ]]; then
+      log-info "New version $latest_onboard_version is available. Updating @komgo/onboard..."
+      npm i @komgo/onboard@latest
+    else
+      log-info "You are using the latest version: $latest_onboard_version"
+    fi
+  fi
+
+  set -e
+
+  # 22002 means we will use the same node as for member 2
+  # which means that member 2 will be in control of the smart contracts
+  export BLOCKCHAIN_PORT=22002
+  export BLOCKCHAIN_HOST=localhost
+  if [[ -f .db/qdata_2/genesis.json ]]; then
+    export ENS_OWNER_ADDRESS=0x`gawk "NR==6" .db/qdata_2/genesis.json | tr -d ':" {'`
+  fi
+
+  if [[ -f komgo-member-blockchain/address.txt ]]; then
+    export "ENS_REGISTRY_CONTRACT_ADDRESS=`cat komgo-member-blockchain/address.txt`"
+  fi
+
+  KEYCLOAK_URL=http://localhost:`expr 8070 + \( $MEMBER_ID - 1 \) \* 1000`
+  lms-env-vars
+  override_env_vars
+
+  if [[ $ENS_REGISTRY_CONTRACT_ADDRESS != 0x* ]]; then
+    echo
+    log-error "Could not read ENS address or it's invalid: $ENS_REGISTRY_CONTRACT_ADDRESS"
+    log-error "Copy address to komgo-member-blockchain/address.txt from the blockchain container logs"
+    exit 1
+  fi
+
+  KEYCLOAK_USER= KEYCLOAK_PASSWORD= $(npm root)/.bin/onboard $@ \
+  -c keycloak.user=kapsuleadmin \
+  -c "keycloak.password=$(cat ./komgo-member-keycloak/scripts/users.csv | grep kapsuleadmin | gawk -F',' '{print $NF}')" \
+  -c 'keycloak.url='"$KEYCLOAK_URL" \
+  -c 'keycloak.realm='"$KEYCLOAK_REALM_NAME" \
+  -c 'keys.signer.url='"http://localhost:`expr 3107 + \( $MEMBER_ID - 1 \) \* 1000`" \
+  -c 'keys.blockchainsigner.url='"http://localhost:`expr 3112 + \( $MEMBER_ID - 1 \) \* 1000`" \
+  -c 'api.registry.url='"http://localhost:`expr 3333 + \( $MEMBER_ID - 1 \) \* 1000`/api/registry" \
+  -c 'ens.address='"$ENS_REGISTRY_CONTRACT_ADDRESS" \
+  -c 'ens.from='"$ENS_OWNER_ADDRESS" \
+  -c 'common.hostname='"${COMMON_MQ_HOSTNAME:-localhost}" \
+  -c 'keys.enabled=true'
+}
+
+onboard_client () {
+  set -e
+  local signer_url="http://localhost:`expr 3107 + \( $MEMBER_ID - 1 \) \* 1000`"
+  local blk_signer_url="http://localhost:`expr 3112 + \( $MEMBER_ID - 1 \) \* 1000`"
+  local ob_files=onboarding-files/member-$MEMBER_ID
+
+  if [[ "$1" == "vakt" ]]; then
+    onboard_configured platform add onboarding-files/platform.json
+    log-success "VAKT configuration completed"
+    return
+  fi
+
+  if [[ "$1" == "monitoring" ]]; then
+    onboard_configured platform configure-monitoring onboarding-files/platform-monitoring.json
+    log-success "monitoring configuration completed"
+    return
+  fi
+
+  if [[ "$1" == "email-notification" ]]; then
+    onboard_configured platform configure-email-notification
+    log-success "email notification configuration completed"
+    return
+  fi
+
+  echo
+  echo "${cyan}> Overwriting existing RSA key${normal}"
+  curl -vf $signer_url/v0/key-manage/rsa \
+    -H 'Content-Type: application/json' \
+    -d @$ob_files/rsa-private-key-request.json
+
+  echo
+  echo "${cyan}> Overwriting existing ETH key${normal}"
+  curl -vf $blk_signer_url/v0/key-manage/eth \
+    -H 'Content-Type: application/json' \
+    -d @$ob_files/eth-private-key-request.json
+
+  echo
+  echo "${cyan}> Generating final member package${normal}"
+  onboard_configured member get-keys $ob_files/member-package.json
+  mv member-package-with-keys.json $ob_files
+
+  echo
+  echo "${cyan}> Setting up users, queues, exchanges in Common MQ${normal}"
+  onboard_configured member add $(cat $ob_files/member-package-with-keys.json | jq -r '.[0].komgoMnid')
+
+  echo
+  echo "${cyan}> Updating ENS records${normal}"
+  onboard_configured member add-ens $ob_files/member-package-with-keys.json
+
+  echo
+  echo "${cyan}> Onboarded${normal}"
+}
+
+docker_compose_proxy () {
+
+  if [ -z "$2" ]; then
+    echo "${red}[!] Container name(s) were not specified${normal}"
+    echo
+    kg-help
+    exit 1
+  fi
+
+  if [[ -f komgo-member-blockchain/address.txt ]]; then
+    export "ENS_REGISTRY_CONTRACT_ADDRESS=`cat komgo-member-blockchain/address.txt`"
+  fi
+
+  if [ "$CLOUD_API_CONNECT" != "true" ]; then
+    export INTERNAL_MQ_HOST="komgo-member-$MEMBER_ID-internal-mq-node-1"
+    export API_GATEWAY_PORT=`expr $API_GATEWAY_PORT + \( $MEMBER_ID - 1 \) \* 1000`
+    export KEYCLOAK_AUTH_URL="http://localhost:`expr 8070 + \( $MEMBER_ID - 1 \) \* 1000`/auth"
+    export ACCESS_CONTROL_ALLOW_ORIGIN="http://localhost:`expr 3010 + \( $MEMBER_ID - 1 \) \* 1000`"
+  fi
+  export NPM_TOKEN=""
+  if [[ $1 = up ]] || [[ $1 = build ]]; then
+    export NPM_TOKEN=$(read_local_npm_token)
+    if [[ -z "$NPM_TOKEN" ]]; then
+      echo "${red}[!] Log in to Nexus localy first${normal}
+
+Run these commands in order to log in to nexus:
+
+  npm config set registry https://nexus.solutions.consensys-uk.net/repository/komgo-npm-group/
+  npm login
+
+(See https://consensys-komgo.atlassian.net/wiki/spaces/KO/pages/50561076/Nexus)"
+      exit 1
+    fi
+  fi
+
+  if [[ $1 = up ]] && [[ ! -d .db/rabbitmqdata ]]; then
+    # create rabbitmq directories with permissions 777
+    # otherwise rabbitmq won't work because it's running from user 999
+    echo "Creating rabbitmq directories with correct permissions"
+    mkdir -p .db/rabbitmqdata/common-node \
+      .db/rabbitmqdata/internal-member-1-node1 \
+      .db/rabbitmqdata/internal-member-1-node2 \
+      .db/rabbitmqdata/internal-member-2-node1 \
+      .db/rabbitmqdata/internal-member-2-node2 \
+      .db/rabbitmqdata/vakt-node1 \
+      .db/rabbitmqdata/vakt-node2
+    chmod -R 777 .db/rabbitmqdata
+  fi
+
+  if ! [[ $LOGSTASH_ENABLE = "true" ]]; then
+    export LOGSTASH_HOST=
+    export LOGSTASH_PORT=
+  fi
+
+  # export variables needed to build vault-plugin-keymgmt
+  if [ -d "./komgo-member-vault/" ]; then
+      VAULT_GIT_COMMIT="$(git -C ./komgo-member-vault rev-parse HEAD)"
+      VAULT_GIT_DIRTY="$(test -n "`git -C ./komgo-member-vault status --porcelain`" && echo "+CHANGES" || true)"
+      export VAULT_GIT_COMMIT
+      export VAULT_GIT_DIRTY
+  fi
+  # export VAULT environment variables for each MS (if available)
+  # these variables (role_id and secret_id) are generated dynamically
+  if ls .db/vaultdata/member-$MEMBER_ID/provision/env/*.source 1> /dev/null 2>&1; then
+      for source_file in .db/vaultdata/member-$MEMBER_ID/provision/env/*.source; do
+          source $source_file
+          export $(cut -d= -f1 $source_file)
+      done
+  fi
+
+  # create docker network in which all our services will be running
+  if [[ $1 = up ]] && ! (docker network ls | grep -q " komgo "); then
+    echo -n "Creating new docker network 'komgo' ... "
+    docker network create komgo && echo OK
+  fi
+  if [[ $1 = up ]] && ! (docker network ls | grep -q " komgo-$MEMBER_ID "); then
+    echo -n "Creating new docker network 'komgo-$MEMBER_ID' ... "
+    docker network create komgo-$MEMBER_ID && echo OK
+  fi
+
+  names="$2"
+  if [[ $names = all ]]; then
+    names="keycloak,mongo,rabbitmq-internal,api-auth,api-coverage,api-documents,api-notif,api-registry,api-roles,api-signer,api-blockchain-signer,api-trade-cargo,api-trade-finance,api-users,client,event-management,api-gateway,blockchain-event-management,ws-server,api-receivable-finance,api-timer,api-rfp,api-credit-lines,api-template"
+  fi
+  if [[ $names = pre-onboard ]]; then
+    names="keycloak,mongo,vault,rabbitmq-internal,api-auth,api-roles,api-signer,api-blockchain-signer,api-users,client,api-gateway"
+  fi
+  if [[ $names = multinode-min ]]; then
+    names="keycloak,mongo,rabbitmq-internal,api-auth,api-coverage,api-notif,api-registry,api-roles,api-signer,api-blockchain-signer,api-users,client,event-management,api-gateway,blockchain-event-management,ws-server"
+  fi
+  if [[ $names = lc ]]; then
+    names="keycloak,api-auth,api-gateway,api-registry,api-trade-cargo,api-trade-finance,event-management,api-signer,api-blockchain-signer,mongo,blockchain,rabbitmq-internal"
+  fi
+  if [[ $names = common ]]; then
+    names="rabbitmq-vakt,rabbitmq-common,mq-router,quorum-common,blockchain"
+  fi
+  if [[ $names = common-min ]]; then
+    names="rabbitmq-common,quorum-common,blockchain"
+  fi
+
+  local common_containers="rabbitmq-vakt rabbitmq-common mq-router quorum-common blockchain common"
+  if [[ $1 = up ]] && lms-mode-on; then
+    export BLOCKCHAIN_PORT="22001"
+  elif [[ $1 = up ]] && ! (contains $common_containers "$2"); then
+    export BLOCKCHAIN_PORT="2200$MEMBER_ID"
+    export COMPANY_STATIC_ID=$(cat onboarding-files/member-$MEMBER_ID/member-package.json | jq -r '.[0].staticId')
+  else
+    export BLOCKCHAIN_PORT="22002"
+  fi
+
+  name_array=$(echo "$names" | tr "," "\n")
+  for group_name in $name_array
+  do
+    local cmd=$1
+    echo "[ ${cyan}$group_name${normal} ]"
+    #create docker compose for common-blockchain
+    if [[ $1 = up ]] && [[ $group_name = quorum-common ]] && [[ ! -f docker-compose.quorum-common.yml ]]; then
+      gen_common_blockchain_compose
+    fi
+
+    if [[ $1 = up ]]; then
+      cmd="up -d"
+      if [[ $REBUILD = true ]]; then cmd="$cmd --build"; fi
+    elif [[ $1 = down ]]; then
+      cmd="down -t 1"
+    elif [[ $1 = logs ]]; then
+      cmd="logs --tail 200 -f"
+    fi
+
+    lms-env-vars
+    override_env_vars
+
+    port_variable_export $group_name
+    docker-compose -p member-$MEMBER_ID -f docker-compose.$group_name.yml $cmd
+    port_variable_unset $group_name
+    echo
+  done
+}
+
+enter_shell_mongo () {
+  if [[ $@ = *--ssl* ]]; then
+    exec docker exec -it komgo-member-$MEMBER_ID-mongo mongo --host mongo --port 27017 --ssl --sslCAFile /etc/ssl/rootCA.pem --sslPEMKeyFile /etc/ssl/client.pem
+  else
+    exec docker exec -it komgo-member-$MEMBER_ID-mongo mongo --host mongo --port 27017
+  fi
+}
+
+
+enter_shell () {
+  if [ -z $2 ]; then
+    echo "${red}[!] Container name(s) were not specified${normal}"
+    echo
+    kg-help
+    exit 1
+  fi
+
+  case "$2" in
+    api-gateway) exec docker exec -it komgo-member-$MEMBER_ID-api-gateway sh ;;
+    mongo) enter_shell_mongo $@ ;;
+    *) exec docker exec -it komgo-member-$MEMBER_ID-$2 bash ;;
+  esac
+}
+
+generate_cert() {
+
+  # Create new directoy and wipe old certificates:
+  mkdir -p mongossl
+  rm -rf mongossl/*
+  cd mongossl
+
+  # Generate new ROOT CA:
+  openssl genrsa -out rootCA.key 2048
+  openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem -subj "/C=UA/ST=KIEV/L=KIEV/O=KOMGO/CN=mongo"
+
+  # Generate certificate for MongoDB itself:
+  openssl genrsa -out mongodb.key 2048
+  openssl req -new -key mongodb.key -out mongodb.csr -subj "/C=UA/ST=KIEV/L=KIEV/O=MONGO/CN=mongo"
+  openssl x509 -req -in mongodb.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out mongodb.crt -days 500 -sha256
+  cat mongodb.key mongodb.crt > mongodb.pem
+
+  # Generate certificate for client:
+  openssl genrsa -out client.key 2048
+  openssl req -new -key client.key -out client.csr -subj "/C=UA/ST=KIEV/L=KIEV/O=CLIENT/CN=mongo"
+  openssl x509 -req -in client.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out client.crt -days 500 -sha256
+  cat client.key client.crt > client.pem
+  cd ..
+
+}
+
+load_cert() {
+
+  if [ ! -f ./mongossl/client.pem ] || [ ! -f ./mongossl/rootCA.pem ]; then
+    return
+  fi
+
+  export MONGO_CLIENT_PEM_BASE64=$(base64 ./mongossl/client.pem)
+  export MONGO_CA_CERT_BASE64=$(base64 ./mongossl/rootCA.pem)
+
+}
+
+wait_for_blockchain() {
+    # if blockchain is running, wait for it to complete
+    echo -n "Waiting for contracts to be deployed "
+    while [[ $(docker ps -q --filter 'name=komgo-blockchain' --filter 'status=running') ]]; do
+          echo -n "."
+          sleep 10
+    done
+    echo
+
+    # ensure blockchain container ran and exit successfully
+    if docker ps --format "table {{.Status}}" \
+         --filter 'name=komgo-blockchain' --filter 'status=exited' | \
+            grep 'Exited (0)' > /dev/null 2>&1; then
+        echo "Blockchain container execution succeeded..."
+    else
+        echo "Blockchain container execution failed"
+        exit 1
+    fi
+
+
+    # determine if contracts were migrated by checking blockchain logs
+    if docker-compose -p member-1 -f docker-compose.blockchain.yml logs --tail 10 | \
+            grep -q 'truffle migrate finished'; then
+        echo "Contracts migrated, blockchain is ready"
+
+        # update ENS registry address if needed
+        # 1) get current ENS registry from the blockchain logs
+        # 2) if there's no komgo-member-blockchain/address.txt, use found ENS Registry
+        # 3) if komgo-member-blockchain/address.txt is different from ENS Registry in logs, update
+        ENS_ADDRESS_FILE="komgo-member-blockchain/address.txt"
+        ENS_ADDRESS_TMP_FILE=$(mktemp)
+        docker-compose -p member-1 -f docker-compose.blockchain.yml logs | grep 'ENSRegistry:' | tail -n1 | awk -F'ENSRegistry: ' '{ print $2 }' > $ENS_ADDRESS_TMP_FILE
+
+        if [ ! -f $ENS_ADDRESS_FILE ]; then
+            echo "ENS address file is missing, creating it with $(cat $ENS_ADDRESS_TMP_FILE)"
+            mv $ENS_ADDRESS_TMP_FILE $ENS_ADDRESS_FILE
+        elif ! diff -q $ENS_ADDRESS_FILE $ENS_ADDRESS_TMP_FILE; then
+            echo "Updating ENS registry address:"
+            echo " - old ENS registry address: $(cat $ENS_ADDRESS_FILE)"
+            echo " - new ENS registry address: $(cat $ENS_ADDRESS_TMP_FILE)"
+            mv $ENS_ADDRESS_TMP_FILE $ENS_ADDRESS_FILE
+        else
+            echo "ENS registry address is updated with blockchain logs: $(cat $ENS_ADDRESS_FILE)"
+            rm -f $ENS_ADDRESS_TMP_FILE
+        fi
+    else
+        echo "Unexpected log results, contracts may not have been migrated:"
+        docker-compose -p member-1 -f docker-compose.blockchain.yml logs --tail 10
+        exit 1
+    fi
+}
+
+wait_for_vault() {
+    # if vault configuration is running, wait for it to complete
+    echo -n "Waiting for vault to be up "
+    while ! [[ $(docker ps -q --filter "name=komgo-member-${MEMBER_ID}-vault" --filter 'status=running') ]]; do
+        echo -n "."
+        sleep 1
+    done
+    echo
+
+    echo -n "Waiting for vault configuration to be ready "
+    while [[ $(docker ps -q --filter "name=komgo-member-${MEMBER_ID}-vault-config" --filter 'status=running') ]]; do
+          echo -n "."
+          sleep 1
+    done
+    echo
+
+    # ensure vault configuration container ran and exit successfully
+    if docker ps --format "table {{.Status}}" \
+              --filter "name=komgo-member-${MEMBER_ID}-vault-config" --filter 'status=exited' | \
+            grep 'Exited (0)' > /dev/null 2>&1; then
+        echo "Vault container execution succeeded..."
+    else
+        echo "Vault container execution failed"
+        exit 1
+    fi
+
+    # ensure data folder exists
+    if [ ! -d ".db/vaultdata/member-$MEMBER_ID" ]; then
+        echo "Missing data for vault: .db/vaultdata/member-$MEMBER_ID"
+        echo "Vault may not be provisioned"
+        exit 1
+    fi
+
+    echo "Vault is ready"
+}
+
+add_counterparty() {
+    ./kg onboard-configured member add-ens komgo-onboard/files/QA_data.json
+    ./kg restart api-registry
+
+    case $MEMBER_ID in
+        1) URL='http://localhost:3110/v0/counterparties/add/auto'
+           PAYLOAD='{ "companyIds":[ "ff838f28-5bf8-41b6-a07b-staticid0002", "ecc3b179-00bc-499c-a2f9-f8d1cc58e9db", "a28b8dc3-8de9-4559-8ca1-272ccef52b47", "08e9f8e3-94e5-459e-8458-ab512bee6e2c", "cf63c1f8-1165-4c94-a8f8-9252eb4f0016", "1bc05a66-1eba-44f7-8f85-38204e4d3516", "a3d82ae6-908c-49da-95b3-ba1ebe7e5f85", "0b5ad248-6159-47ca-9ac7-610c22877186" ] }'
+           ;;
+        2) URL='http://localhost:4110/v0/counterparties/add/auto'
+           PAYLOAD='{ "companyIds":[ "37704b26-2566-48b9-bb99-staticid0001", "ecc3b179-00bc-499c-a2f9-f8d1cc58e9db", "a28b8dc3-8de9-4559-8ca1-272ccef52b47", "08e9f8e3-94e5-459e-8458-ab512bee6e2c", "cf63c1f8-1165-4c94-a8f8-9252eb4f0016", "1bc05a66-1eba-44f7-8f85-38204e4d3516", "a3d82ae6-908c-49da-95b3-ba1ebe7e5f85", "0b5ad248-6159-47ca-9ac7-610c22877186" ] }'
+           ;;
+        *) echo "Unexpected MEMBER_ID value: $MEMBER_ID" && exit 1
+    esac
+    status=$(curl -w "%{http_code}" \
+                  -d "$PAYLOAD" \
+                  -H 'Content-Type: application/json' \
+                  -X POST $URL)
+    if [ "$status" = "204" ]; then
+        echo "${cyan}Counterparty added successfully${normal}"
+    else
+        echo "${red}Failed to add counterparty to ${URL}${normal}"
+        exit 1
+    fi
+}
+
+get_coffee() {
+    # argument parsing
+    local number_of_members=$1
+    local rebuild=''
+    if [[ $@ = *--rebuild* ]]; then
+        rebuild="--rebuild"
+    fi
+
+    # stop and cleanup environment
+    echo "Cleaning up the existing environment"
+    ./kg stop-and-cleanup
+
+    # start the beast
+    echo "Starting a new the environment" &&
+        ./kg up common $rebuild &&
+        ./kg wait-for-blockchain &&
+        docker restart komgo-common-mq-config &&
+        ./kg configure-vakt &&
+        ./kg configure-monitoring &&
+        ./kg configure-email-notification &&
+        (! [ 1 -le $number_of_members ] && true || ./kg up vault --member=1) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg up vault --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg wait-for-vault --member=1) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg wait-for-vault --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg up pre-onboard --member=1) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg up pre-onboard --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg update-app-state --member=1) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg update-app-state --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg onboard --member=1) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg onboard --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg up all $rebuild --member=1) &&
+        (! [ 2 -le $number_of_members ] && true || ./kg up all --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg update-app-state --member=1) &&
+        (! [ 2 -le $number_of_members ] && true || ./kg update-app-state --member=2) &&
+        (! [ 1 -le $number_of_members ] && true || ./kg add-counterparty --member=1) &&
+        (! [ 2 -le $number_of_members ] && true || ./kg add-counterparty --member=2) &&
+        (! [ 1 -eq $number_of_members ] && true || ./kg down pre-onboard --member=2) &&
+        (! [ 1 -eq $number_of_members ] && true || ./kg down vault       --member=2)
+}
+
+main () {
+  if ! command_exists jq; then
+    echo "${red}[!] Please install jq${normal}"
+    echo
+    echo "Ubuntu: apt-get install jq"
+    echo "MacOS: brew install jq"
+    exit 1
+  fi
+  if ! command_exists gawk; then
+    echo "${red}[!] Please install gawk${normal}"
+    echo
+    echo "Ubuntu: apt-get install gawk"
+    echo "MacOS: brew install gawk"
+    exit 1
+  fi
+
+  if lms-mode-on; then
+    log-warn "LMS mode is turned on. Run 'export LMS_MODE=off' to turn it off"
+    echo
+  fi
+
+  case "$1" in
+    install) install ;;
+    stop-and-cleanup) stop-and-cleanup ;;
+    checkout-develop-everywhere | cde) checkout-develop-everywhere ;;
+    checkout-branch-everywhere | cbe) checkout-branch-everywhere $2 ;;
+    update-app-state) update-app-state ;;
+    pull-develop-images) pull-images-from-registry $2 ;;
+    jira) open-jira $2 ;;
+    gitlab) open-gitlab $2 ;;
+    build) show-build-id-info $2 ;;
+    onboard) onboard_client ;;
+    onboard-configured) onboard_configured $2 $3 $4 ;;
+    configure-vakt) onboard_client vakt ;;
+    configure-monitoring) onboard_client monitoring ;;
+    configure-email-notification) onboard_client email-notification ;;
+    configure-common-mq)
+      onboard_client vakt
+      onboard_client monitoring
+      onboard_client email-notification
+      ;;
+    up | down | pause  | unpause | restart | build | pull | config | logs | ps) docker_compose_proxy $@ ;;
+    sh) enter_shell $@ ;;
+    generate-cert) generate_cert ;;
+    check-readiness) check-readiness ;;
+    cloud-api-connect) cloud-api-connect $2 $3 ;;
+    wait-for-blockchain) wait_for_blockchain ;;
+    add-counterparty) add_counterparty ;;
+    get-single-coffee) get_coffee 1 $@;;
+    get-double-coffee) get_coffee 2 $@;;
+    wait-for-vault) wait_for_vault;;
+    lms-up) lms-up ;;
+    lms-down) lms-down ;;
+    lms-update-app-state) lms-update-app-state ;;
+    *)
+      echo "${red}[!] Unrecognized command '${1}'${normal}"
+      echo
+      kg-help
+      exit 1
+      ;;
+  esac
+}
+
+if [[ $@ = *--ssl* ]]; then
+  if [ ! -f ./mongossl/mongodb.pem ] || [ ! -f ./mongossl/rootCA.pem ] || [ ! -f ./mongossl/client.pem ]; then
+    generate_cert
+  fi
+  load_cert
+  export MONGO_SERVER_OPTIONS='--sslAllowInvalidCertificates --sslMode requireSSL --sslPEMKeyFile /etc/ssl/mongodb.pem --sslCAFile /etc/ssl/rootCA.pem'
+  export MONGO_CLIENT_OPTIONS=''
+  export MONGO_USE_SSL='true'
+else
+  export MONGO_SERVER_OPTIONS=''
+  export MONGO_CLIENT_OPTIONS=''
+  export MONGO_USE_SSL=''
+fi
+
+if [ $# -eq 0 ]; then
+  kg-help
+else
+  main $@
+fi

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmSubmitContent should match default snaptshout edit=false, sharedWith exists 1`] = `
+<p>
+  Are you sure you want to add this currency and tenor and share the selected information with the counterparties that have been added in "visibility to counterparties" ?
+</p>
+`;
+
+exports[`ConfirmSubmitContent should match default snaptshout edit=false, sharedWith not exists 1`] = `
+<p>
+  Are you sure you want to add this currency and tenor to your list of currency and tenors?
+</p>
+`;
+
+exports[`ConfirmSubmitContent should match default snaptshout edit=true, sharedWith exists 1`] = `
+<p>
+  Are you sure you want to edit this currency and tenor? All counterparties for whom you have modified information to which they have visibility will be notified. 
+</p>
+`;
+
+exports[`ConfirmSubmitContent should match default snaptshout edit=true, sharedWith not exists 1`] = `
+<p>
+  Are you sure you want to edit this currency and tenor?
+</p>
+`;

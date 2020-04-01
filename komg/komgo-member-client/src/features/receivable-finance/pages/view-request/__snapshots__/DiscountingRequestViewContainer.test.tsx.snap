@@ -1,0 +1,2413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiscountingRequestViewContainer renders correctly 1`] = `
+.c7.c7.c7 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7.c7.c7 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c7.c7.c7 .accordion-title {
+  margin-top: 1px;
+}
+
+.c7.c7.c7 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c7.c7.c7 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c7.c7.c7 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c7.c7.c7 .disabled {
+  pointer-events: none;
+}
+
+.c7.c7.c7 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c7.c7.c7 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c7.c7.c7 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c7.c7.c7 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c7.c7.c7 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c9 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c12.c12.c12.c12.c12 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c12.c12.c12.c12.c12 .field.error {
+  margin-bottom: 0;
+}
+
+.c12.c12.c12.c12.c12 label.inputLabel {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c11 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c8.c8.c8 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+.c0 {
+  background-color: #f2f5f8;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: LotaGrotesque;
+  background-color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0;
+}
+
+.c3 {
+  border-top: 1px solid rgba(192,207,222,0.5);
+  border-bottom: 1px solid rgba(192,207,222,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  padding: 16px 16px 16px 0;
+}
+
+.c4 > p {
+  color: #1c2936;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0 0.35rem 0 0;
+  text-transform: uppercase;
+}
+
+.c4 > span {
+  padding-top: 4px !important;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
+  padding: 24px;
+}
+
+.c14.c14.c14 {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 68px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: calc((68px - 32px) / 2);
+  padding-bottom: calc((68px - 32px) / 2);
+  width: calc(100% - 220px);
+  padding-right: 38px;
+  border-top: 1px solid #dbe5ec;
+  background: white;
+  margin-left: 220px;
+}
+
+.c13 {
+  width: calc(100% - 220px);
+  margin-left: 220px;
+  margin-top: 68px;
+}
+
+.c5.c5.c5 {
+  color: white;
+}
+
+@media (min-width:68.75em) {
+  .c9 {
+    padding-left: 40px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    data-test-id="topbar-container"
+  >
+    <div
+      className="c2"
+    >
+      <h1
+        className="ui header"
+        data-test-id="topbar-header-container"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        Receivable discounting request
+      </h1>
+    </div>
+    <div
+      className="row c3"
+      data-test-id="topbar-infos-container"
+    >
+      <div
+        className="c4"
+      >
+        <p>
+          STATUS: 
+        </p>
+        <span
+          className="ui label c5"
+          data-test-id="rd-status-span"
+          onClick={[Function]}
+        >
+          Requested
+        </span>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          trade Id
+          : 
+        </p>
+        <p
+          data-test-id="topbar-trade-id-value"
+        >
+          E111
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          type
+          : 
+        </p>
+        <p
+          data-test-id="topbar-type-value"
+        >
+          Discount without recourse
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          buyer
+          : 
+        </p>
+        <p
+          data-test-id="topbar-buyer-value"
+        />
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          seller
+          : 
+        </p>
+        <p
+          data-test-id="topbar-seller-value"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      bordercolor="#c0cfde"
+      className="accordion ui fluid c7"
+    >
+      <div
+        className="active title"
+        data-test-id="trade-summary-accordion-title"
+        onClick={[Function]}
+      >
+        <div
+          className="ui block header komgo-accordion-header"
+        >
+          <div
+            className="accordion-title-wrapper"
+          >
+            <i
+              aria-hidden="true"
+              className="chevron right icon accordion-icon"
+            />
+            <div
+              className="accordion-title"
+              style={
+                Object {
+                  "marginLeft": "0px",
+                }
+              }
+            >
+              Trade summary
+            </div>
+          </div>
+          <div
+            className="accordion-status-wrapper"
+          />
+          <div
+            className="accordion-button-wrapper"
+          />
+        </div>
+      </div>
+      <div
+        className="content active"
+        data-test-id="trade-summary-accordion-content"
+      >
+        <div
+          className="lively-divider"
+        />
+        <div
+          className="ui segment komgo-accordion-content"
+        >
+          <div
+            className="accordion ui fluid"
+          >
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "paddingTop": 0,
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Trade data
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                  data-test-id="header-text"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Trade source
+                  </span>
+                  Komgo
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Buyer
+                  </span>
+                  node.123 not found
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Buyer's reference
+                  </span>
+                  buyerEtrmId
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Seller
+                  </span>
+                  node.321 not found
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Credit requirement
+                  </span>
+                  Documentary letter of credit
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Reference date
+                  </span>
+                  2017/12/31
+                </li>
+              </ul>
+            </div>
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Commodity and price
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Commodity type
+                  </span>
+                  Crude oil
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Invoice quantity
+                  </span>
+                  Load
+                </li>
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Quantity
+                    </span>
+                    600,000 BBL
+                  </li>
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Min tolerance
+                  </span>
+                  1.25%
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Max tolerance
+                  </span>
+                  1.25%
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Price
+                     per
+                     
+                    unit
+                  </span>
+                  70.02 EUR/BBL
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Payment option
+                  </span>
+                  Deferred
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Payment terms
+                  </span>
+                  30 calendar days after BL
+                </li>
+              </ul>
+            </div>
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Delivery terms
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Delivery from
+                    </span>
+                    2019/04/03
+                  </li>
+                </li>
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Delivery to
+                    </span>
+                    2019/04/10
+                  </li>
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Delivery term (incoterm)
+                  </span>
+                  FOB
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Delivery location
+                  </span>
+                  Weymouth
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c13"
+    />
+    <div
+      className="c14"
+    >
+      <button
+        className="ui primary right floated button"
+        data-test-id="button-provide-quote"
+        onClick={[Function]}
+        role="button"
+        type="submit"
+      >
+        Submit quote
+      </button>
+      <button
+        className="ui right floated button"
+        data-test-id="button-decline-quote"
+        onClick={[Function]}
+        role="button"
+        type="submit"
+      >
+        Decline request
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiscountingRequestViewContainer renders no action buttons if is not a Financial Institution 1`] = `
+.c7.c7.c7 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7.c7.c7 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c7.c7.c7 .accordion-title {
+  margin-top: 1px;
+}
+
+.c7.c7.c7 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c7.c7.c7 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c7.c7.c7 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c7.c7.c7 .disabled {
+  pointer-events: none;
+}
+
+.c7.c7.c7 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c7.c7.c7 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c7.c7.c7 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c7.c7.c7 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c7.c7.c7 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c9 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c12.c12.c12.c12.c12 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c12.c12.c12.c12.c12 .field.error {
+  margin-bottom: 0;
+}
+
+.c12.c12.c12.c12.c12 label.inputLabel {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c11 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c8.c8.c8 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+.c0 {
+  background-color: #f2f5f8;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: LotaGrotesque;
+  background-color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0;
+}
+
+.c3 {
+  border-top: 1px solid rgba(192,207,222,0.5);
+  border-bottom: 1px solid rgba(192,207,222,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  padding: 16px 16px 16px 0;
+}
+
+.c4 > p {
+  color: #1c2936;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0 0.35rem 0 0;
+  text-transform: uppercase;
+}
+
+.c4 > span {
+  padding-top: 4px !important;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
+  padding: 24px;
+}
+
+.c5.c5.c5 {
+  color: white;
+}
+
+@media (min-width:68.75em) {
+  .c9 {
+    padding-left: 40px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    data-test-id="topbar-container"
+  >
+    <div
+      className="c2"
+    >
+      <h1
+        className="ui header"
+        data-test-id="topbar-header-container"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        Receivable discounting request
+      </h1>
+    </div>
+    <div
+      className="row c3"
+      data-test-id="topbar-infos-container"
+    >
+      <div
+        className="c4"
+      >
+        <p>
+          STATUS: 
+        </p>
+        <span
+          className="ui label c5"
+          data-test-id="rd-status-span"
+          onClick={[Function]}
+        >
+          Requested
+        </span>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          trade Id
+          : 
+        </p>
+        <p
+          data-test-id="topbar-trade-id-value"
+        >
+          E111
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          type
+          : 
+        </p>
+        <p
+          data-test-id="topbar-type-value"
+        >
+          Discount without recourse
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          buyer
+          : 
+        </p>
+        <p
+          data-test-id="topbar-buyer-value"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      bordercolor="#c0cfde"
+      className="accordion ui fluid c7"
+    >
+      <div
+        className="active title"
+        data-test-id="trade-summary-accordion-title"
+        onClick={[Function]}
+      >
+        <div
+          className="ui block header komgo-accordion-header"
+        >
+          <div
+            className="accordion-title-wrapper"
+          >
+            <i
+              aria-hidden="true"
+              className="chevron right icon accordion-icon"
+            />
+            <div
+              className="accordion-title"
+              style={
+                Object {
+                  "marginLeft": "0px",
+                }
+              }
+            >
+              Trade summary
+            </div>
+          </div>
+          <div
+            className="accordion-status-wrapper"
+          />
+          <div
+            className="accordion-button-wrapper"
+          >
+            <button
+              className="ui button"
+              data-test-id="edit-trade-request"
+              onClick={[Function]}
+              role="button"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content active"
+        data-test-id="trade-summary-accordion-content"
+      >
+        <div
+          className="lively-divider"
+        />
+        <div
+          className="ui segment komgo-accordion-content"
+        >
+          <div
+            className="accordion ui fluid"
+          >
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "paddingTop": 0,
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Trade data
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                  data-test-id="header-text"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Trade source
+                  </span>
+                  Komgo
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Buyer
+                  </span>
+                  node.123 not found
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Buyer's reference
+                  </span>
+                  buyerEtrmId
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Seller
+                  </span>
+                  node.321 not found
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Credit requirement
+                  </span>
+                  Documentary letter of credit
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Reference date
+                  </span>
+                  2017/12/31
+                </li>
+              </ul>
+            </div>
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Commodity and price
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Commodity type
+                  </span>
+                  Crude oil
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Invoice quantity
+                  </span>
+                  Load
+                </li>
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Quantity
+                    </span>
+                    600,000 BBL
+                  </li>
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Min tolerance
+                  </span>
+                  1.25%
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Max tolerance
+                  </span>
+                  1.25%
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Price
+                     per
+                     
+                    unit
+                  </span>
+                  70.02 EUR/BBL
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Payment option
+                  </span>
+                  Deferred
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Payment terms
+                  </span>
+                  30 calendar days after BL
+                </li>
+              </ul>
+            </div>
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Delivery terms
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Delivery from
+                    </span>
+                    2019/04/03
+                  </li>
+                </li>
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Delivery to
+                    </span>
+                    2019/04/10
+                  </li>
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Delivery term (incoterm)
+                  </span>
+                  FOB
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Delivery location
+                  </span>
+                  Weymouth
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiscountingRequestViewContainer renders no action buttons if status not \`Requested\` correctly 1`] = `
+.c13.c13.c13 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: auto;
+  text-align: left;
+  margin: 0 0 0 28px;
+}
+
+.c7.c7.c7 .komgo-accordion-header {
+  height: 53px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c0cfde;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  color: #1c2936;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7.c7.c7 .accordion-title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40%;
+}
+
+.c7.c7.c7 .accordion-title {
+  margin-top: 1px;
+}
+
+.c7.c7.c7 .accordion-icon {
+  color: #62768d;
+  margin: -8px 5px 0px 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c7.c7.c7 .accordion-status-wrapper {
+  margin-top: 1px;
+}
+
+.c7.c7.c7 .accordion-button-wrapper {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.c7.c7.c7 .disabled {
+  pointer-events: none;
+}
+
+.c7.c7.c7 .lively-divider {
+  display: none;
+  position: relative;
+  top: 14px;
+  border-bottom: 1px solid #dbe5ec;
+  text-align: center;
+  left: 50%;
+  width: 0%;
+  -webkit-animation: open-line 0.4s forwards;
+  animation: open-line 0.4s forwards;
+}
+
+.c7.c7.c7 .active .komgo-accordion-header {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 0;
+}
+
+.c7.c7.c7 .active .accordion-title {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .accordion-status-wrapper {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .accordion-button-wrapper {
+  margin-top: 0px;
+}
+
+.c7.c7.c7 .active .komgo-accordion-content {
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-color: #c0cfde;
+  margin: -15px 0px 8px 0px;
+}
+
+.c7.c7.c7 .active .accordion-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.c7.c7.c7 .active .lively-divider {
+  display: block;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  top: -15px;
+}
+
+.c9 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c15 {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c12.c12.c12.c12.c12 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c12.c12.c12.c12.c12 .field.error {
+  margin-bottom: 0;
+}
+
+.c12.c12.c12.c12.c12 label.inputLabel {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c18 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c16 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c16 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c17 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c14.c14.c14 {
+  text-transform: uppercase;
+}
+
+.c11 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c8.c8.c8 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+.c0 {
+  background-color: #f2f5f8;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: LotaGrotesque;
+  background-color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0;
+}
+
+.c3 {
+  border-top: 1px solid rgba(192,207,222,0.5);
+  border-bottom: 1px solid rgba(192,207,222,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  padding: 16px 16px 16px 0;
+}
+
+.c4 > p {
+  color: #1c2936;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0 0.35rem 0 0;
+  text-transform: uppercase;
+}
+
+.c4 > span {
+  padding-top: 4px !important;
+}
+
+.c4:last-child {
+  margin-right: 0;
+}
+
+.c6 {
+  padding: 24px;
+}
+
+.c5.c5.c5 {
+  color: white;
+}
+
+@media (min-width:68.75em) {
+  .c9 {
+    padding-left: 40px;
+  }
+}
+
+@media (min-width:68.75em) {
+  .c15 {
+    padding-left: 40px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    data-test-id="topbar-container"
+  >
+    <div
+      className="c2"
+    >
+      <h1
+        className="ui header"
+        data-test-id="topbar-header-container"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        Receivable discounting request
+      </h1>
+    </div>
+    <div
+      className="row c3"
+      data-test-id="topbar-infos-container"
+    >
+      <div
+        className="c4"
+      >
+        <p>
+          STATUS: 
+        </p>
+        <span
+          className="ui label c5"
+          data-test-id="rd-status-span"
+          onClick={[Function]}
+        >
+          Pending request
+        </span>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          trade Id
+          : 
+        </p>
+        <p
+          data-test-id="topbar-trade-id-value"
+        >
+          E111
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          type
+          : 
+        </p>
+        <p
+          data-test-id="topbar-type-value"
+        >
+          Discount without recourse
+        </p>
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          buyer
+          : 
+        </p>
+        <p
+          data-test-id="topbar-buyer-value"
+        />
+      </div>
+      <div
+        className="c4"
+      >
+        <p>
+          seller
+          : 
+        </p>
+        <p
+          data-test-id="topbar-seller-value"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      bordercolor="#c0cfde"
+      className="accordion ui fluid c7"
+    >
+      <div
+        className="title"
+        data-test-id="trade-summary-accordion-title"
+        onClick={[Function]}
+      >
+        <div
+          className="ui block header komgo-accordion-header"
+        >
+          <div
+            className="accordion-title-wrapper"
+          >
+            <i
+              aria-hidden="true"
+              className="chevron right icon accordion-icon"
+            />
+            <div
+              className="accordion-title"
+              style={
+                Object {
+                  "marginLeft": "0px",
+                }
+              }
+            >
+              Trade summary
+            </div>
+          </div>
+          <div
+            className="accordion-status-wrapper"
+          />
+          <div
+            className="accordion-button-wrapper"
+          />
+        </div>
+      </div>
+      <div
+        className="content"
+        data-test-id="trade-summary-accordion-content"
+      >
+        <div
+          className="lively-divider"
+        />
+        <div
+          className="ui segment komgo-accordion-content"
+        >
+          <div
+            className="accordion ui fluid"
+          >
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "paddingTop": 0,
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Trade data
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                  data-test-id="header-text"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Trade source
+                  </span>
+                  Komgo
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Buyer
+                  </span>
+                  node.123 not found
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Buyer's reference
+                  </span>
+                  buyerEtrmId
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Seller
+                  </span>
+                  node.321 not found
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Credit requirement
+                  </span>
+                  Documentary letter of credit
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Reference date
+                  </span>
+                  2017/12/31
+                </li>
+              </ul>
+            </div>
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Commodity and price
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Commodity type
+                  </span>
+                  Crude oil
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Invoice quantity
+                  </span>
+                  Load
+                </li>
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Quantity
+                    </span>
+                    600,000 BBL
+                  </li>
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Min tolerance
+                  </span>
+                  1.25%
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Max tolerance
+                  </span>
+                  1.25%
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Price
+                     per
+                     
+                    unit
+                  </span>
+                  70.02 EUR/BBL
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Payment option
+                  </span>
+                  Deferred
+                </li>
+                <li
+                  className="c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Payment terms
+                  </span>
+                  30 calendar days after BL
+                </li>
+              </ul>
+            </div>
+            <div
+              className="active title"
+              onClick={[Function]}
+              style={
+                Object {
+                  "pointerEvents": "none",
+                }
+              }
+            >
+              <div
+                className="ui block header c8"
+              >
+                Delivery terms
+              </div>
+            </div>
+            <div
+              className="content active"
+            >
+              <ul
+                className="c9"
+              >
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Delivery from
+                    </span>
+                    2019/04/03
+                  </li>
+                </li>
+                <li
+                  className="c10"
+                >
+                  <li
+                    className="c12 c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Delivery to
+                    </span>
+                    2019/04/10
+                  </li>
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Delivery term (incoterm)
+                  </span>
+                  FOB
+                </li>
+                <li
+                  className="c12 c10"
+                >
+                  <span
+                    className="c11"
+                  >
+                    Delivery location
+                  </span>
+                  Weymouth
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      bordercolor="#c0cfde"
+      className="accordion ui fluid c7"
+    >
+      <div
+        className="title"
+        data-test-id="submitted-quote-accordion-title"
+        onClick={[Function]}
+      >
+        <div
+          className="ui block header komgo-accordion-header"
+        >
+          <div
+            className="accordion-title-wrapper"
+          >
+            <i
+              aria-hidden="true"
+              className="chevron right icon accordion-icon"
+            />
+            <div
+              className="accordion-title"
+              style={
+                Object {
+                  "marginLeft": "0px",
+                }
+              }
+            >
+              Submitted quote
+            </div>
+          </div>
+          <div
+            className="accordion-status-wrapper"
+          />
+          <div
+            className="accordion-button-wrapper"
+          />
+        </div>
+      </div>
+      <div
+        className="content"
+        data-test-id="submitted-quote-accordion-content"
+      >
+        <div
+          className="lively-divider"
+        />
+        <div
+          className="ui segment komgo-accordion-content"
+        >
+          <p
+            className="c13"
+            data-test-id="submitted-quote-section-status-text"
+          >
+            <span
+              className="c14"
+            >
+              Quote submitted - 
+              Invalid date
+            </span>
+          </p>
+          <ul
+            className="c15"
+          >
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-advanceRate"
+            >
+              <p
+                className="c17"
+              >
+                Advance rate
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-advanceRate"
+              >
+                2.00%
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-pricingType"
+            >
+              <p
+                className="c17"
+              >
+                Pricing type
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-pricingType"
+              >
+                All in
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-pricingAllIn"
+            >
+              <p
+                className="c17"
+              >
+                All in
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-pricingAllIn"
+              >
+                1.00%
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-numberOfDaysDiscounting"
+            >
+              <p
+                className="c17"
+              >
+                Days of discounting
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-numberOfDaysDiscounting"
+              >
+                1 day
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-interestType"
+            >
+              <p
+                className="c17"
+              >
+                Interest type
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-interestType"
+              >
+                Libor - 
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-indicativeCof"
+            >
+              <p
+                className="c17"
+              >
+                Indicative Cost of Funds
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-indicativeCof"
+              >
+                1.00%
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-feeCalculationType"
+            >
+              <p
+                className="c17"
+              >
+                Fee calculation based on
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-feeCalculationType"
+              >
+                
+              </p>
+            </li>
+            <li
+              className="c16 c10"
+              data-test-id="submittedQuote-field-component-comment"
+            >
+              <p
+                className="c17"
+              >
+                Comment
+              </p>
+              <p
+                className="c18"
+                data-test-id="submittedQuote-value-comment"
+              >
+                string
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

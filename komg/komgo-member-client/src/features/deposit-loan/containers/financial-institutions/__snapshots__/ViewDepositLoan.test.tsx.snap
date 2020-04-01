@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewDepositLoan should match snapshot for deposit 1`] = `
+Array [
+  <h1
+    data-test-id="currency-tenor-name"
+  >
+    USD 3 months
+  </h1>,
+  .c0.c0.c0 {
+  margin-bottom: 25px;
+}
+
+<a
+    className="ui button c0"
+    data-test-id="edit-information-btn"
+    href="/deposits/123/edit"
+    onClick={[Function]}
+  >
+    Edit information
+  </a>,
+  .c0 {
+  padding: 30px;
+  display: block;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  border: 1px solid #c0cfde;
+}
+
+.c2 h3 {
+  margin-bottom: 0px;
+}
+
+.c2 p {
+  font-style: italic;
+  width: 80%;
+}
+
+.c5 {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.c3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:last-child {
+  margin-bottom: 0px;
+}
+
+.c4 {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c7 {
+  font-size: 12px;
+}
+
+.c8 .c1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+<article
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <h3>
+        Currency and tenor information
+      </h3>
+      <i>
+        The information provided in this section will only be accessible by your organisation depending on their permissions. However, you may choose to disclose some of these data to your counterparties using "Visibility to counterparties" section below.
+      </i>
+    </div>
+    <div
+      className="c3"
+      label="Appetite"
+    >
+      <div
+        className="c4"
+        data-test-id="appetite-label"
+      >
+        <span
+          className="c5"
+        >
+          Appetite
+           
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="appetite-value"
+      >
+        <span
+          data-test-id="appetite"
+        >
+          Yes
+        </span>
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Pricing per annum"
+    >
+      <div
+        className="c4"
+        data-test-id="pricing-per-annum-label"
+      >
+        <span
+          className="c5"
+        >
+          Pricing per annum
+           
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="pricing-per-annum-value"
+      >
+        <span
+          data-test-id="pricing"
+        >
+          0.90 %
+        </span>
+        <span
+          className="grey c7"
+          data-test-id="last-updated-pricing"
+        >
+           
+          Last updated
+           
+          2019/01/01
+           at 
+          12:00 AM
+           
+          UTC
+        </span>
+      </div>
+    </div>
+  </article>,
+  .c2 h3 {
+  margin-bottom: 0px;
+}
+
+.c2 p {
+  font-style: italic;
+  width: 80%;
+}
+
+.c0 {
+  margin-top: 40px;
+}
+
+.c0 .c1 {
+  margin-bottom: 20px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <h3>
+        Visibility to counterparties
+      </h3>
+      <p>
+        Information shared with your counterparties on a bilateral basis. This information is displayed to counterparties as non-binding and does not represent or warrant any commitment on your part.
+      </p>
+    </div>
+  </div>,
+]
+`;
+
+exports[`ViewDepositLoan should match snapshot for loan 1`] = `
+Array [
+  <h1
+    data-test-id="currency-tenor-name"
+  >
+    USD 3 months
+  </h1>,
+  .c0.c0.c0 {
+  margin-bottom: 25px;
+}
+
+<a
+    className="ui button c0"
+    data-test-id="edit-information-btn"
+    href="/deposits/f0a5d813-dafe-45ca-ab83-c264246eef3f/edit"
+    onClick={[Function]}
+  >
+    Edit information
+  </a>,
+  .c0 {
+  padding: 30px;
+  display: block;
+  box-shadow: 0 1px 4px 0 rgba(192,207,222,0.5);
+  border: 1px solid #c0cfde;
+}
+
+.c2 h3 {
+  margin-bottom: 0px;
+}
+
+.c2 p {
+  font-style: italic;
+  width: 80%;
+}
+
+.c5 {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.c3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:last-child {
+  margin-bottom: 0px;
+}
+
+.c4 {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c7 {
+  font-size: 12px;
+}
+
+.c8 .c1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+<article
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <h3>
+        Currency and tenor information
+      </h3>
+      <i>
+        The information provided in this section will only be accessible by your organisation depending on their permissions. However, you may choose to disclose some of these data to your counterparties using "Visibility to counterparties" section below.
+      </i>
+    </div>
+    <div
+      className="c3"
+      label="Appetite"
+    >
+      <div
+        className="c4"
+        data-test-id="appetite-label"
+      >
+        <span
+          className="c5"
+        >
+          Appetite
+           
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="appetite-value"
+      >
+        <span
+          data-test-id="appetite"
+        >
+          Yes
+        </span>
+      </div>
+    </div>
+    <div
+      className="c3"
+      label="Pricing per annum"
+    >
+      <div
+        className="c4"
+        data-test-id="pricing-per-annum-label"
+      >
+        <span
+          className="c5"
+        >
+          Pricing per annum
+           
+        </span>
+      </div>
+      <div
+        className="c6"
+        data-test-id="pricing-per-annum-value"
+      >
+        <span
+          data-test-id="pricing"
+        >
+          0.90 %
+        </span>
+        <span
+          className="grey c7"
+          data-test-id="last-updated-pricing"
+        >
+           
+          Last updated
+           
+          2019/01/01
+           at 
+          12:00 AM
+           
+          UTC
+        </span>
+      </div>
+    </div>
+  </article>,
+  .c2 h3 {
+  margin-bottom: 0px;
+}
+
+.c2 p {
+  font-style: italic;
+  width: 80%;
+}
+
+.c0 {
+  margin-top: 40px;
+}
+
+.c0 .c1 {
+  margin-bottom: 20px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+    >
+      <h3>
+        Visibility to counterparties
+      </h3>
+      <p>
+        Information shared with your counterparties on a bilateral basis. This information is displayed to counterparties as non-binding and does not represent or warrant any commitment on your part.
+      </p>
+    </div>
+  </div>,
+]
+`;

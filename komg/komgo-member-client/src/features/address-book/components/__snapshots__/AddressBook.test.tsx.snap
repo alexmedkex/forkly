@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressBook should match snapshot 1`] = `
+Array [
+  .c0.c0.c0 {
+  margin-bottom: 15px;
+}
+
+<div
+    className="ui grid c0"
+  >
+    <div
+      className="eight wide column"
+    >
+      <h1
+        className="ui header"
+      >
+        Address Book
+      </h1>
+    </div>
+    <div
+      className="eight wide column"
+      style={
+        Object {
+          "textAlign": "right",
+        }
+      }
+    >
+      <button
+        className="ui primary button"
+        onClick={[Function]}
+        role="button"
+      >
+        Add New
+      </button>
+    </div>
+  </div>,
+  .c0.c0.c0 {
+  margin-bottom: 40px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="ReactTable"
+      style={Object {}}
+    >
+      <div
+        className="rt-table"
+        role="grid"
+      >
+        <div
+          className="rt-thead -header"
+          style={
+            Object {
+              "minWidth": "500px",
+            }
+          }
+        >
+          <div
+            className="rt-tr"
+            role="row"
+          >
+            <div
+              className="rt-th rt-resizable-header -sort-asc -cursor-pointer"
+              data-test-id="companyName"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                      "textAlign": "left",
+                    }
+                  }
+                >
+                  Company name
+                </span>
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+            <div
+              className="rt-th rt-resizable-header -cursor-pointer"
+              data-test-id="isMember"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                      "textAlign": "left",
+                    }
+                  }
+                >
+                  Is member
+                </span>
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+            <div
+              className="rt-th rt-resizable-header -cursor-pointer"
+              data-test-id="memberType"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                      "textAlign": "left",
+                    }
+                  }
+                >
+                  Member Type
+                </span>
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+            <div
+              className="rt-th rt-resizable-header -cursor-pointer"
+              data-test-id="status"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                      "textAlign": "left",
+                    }
+                  }
+                >
+                  Status
+                </span>
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+            <div
+              className="rt-th actions-menu rt-resizable-header"
+              data-test-id="actionsMenu"
+              onClick={[Function]}
+              onContextMenu={[Function]}
+              role="columnheader"
+              style={
+                Object {
+                  "flex": "100 0 auto",
+                  "maxWidth": null,
+                  "width": "100px",
+                }
+              }
+              tabIndex="-1"
+            >
+              <div
+                className="rt-resizable-header-content"
+              >
+                
+              </div>
+              <div
+                className="rt-resizer"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="rt-tbody"
+          style={
+            Object {
+              "minWidth": "500px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="rt-noData"
+      >
+        No rows found
+      </div>
+      <div
+        className="-loading"
+      >
+        <div
+          className="-loading-inner"
+        >
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,53 @@
+version: '3.4'
+
+services:
+
+  api-onboarding:
+    image: ${IMAGE_NAME:-komgo-api-onboarding}
+    container_name: komgo-member-${MEMBER_ID}-api-onboarding
+    build:
+      context: ${BUILD_DIR:-./komgo-api-onboarding}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    restart: always
+    environment:
+      - NPM_TOKEN
+      - CONTAINER_HOSTNAME=api-onboarding
+      - DB_MONGO_URL=mongodb://mongo:27017/api-onboarding${MONGO_CLIENT_OPTIONS}
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - MONGO_CLIENT_PEM_BASE64
+      - MONGO_CA_CERT_BASE64
+      - MONGO_CLIENT_KEY_PASSWORD
+      - MONGO_USE_SSL
+      - API_USERS_BASE_URL
+      - API_NOTIF_BASE_URL
+      - API_REGISTRY_BASE_URL
+      - HARBOR_URL
+      - HARBOR_ADMIN_USERNAME
+      - HARBOR_ADMIN_PASSWORD
+      - HARBOR_PROJECT_ID
+      - ENS_REGISTRY_CONTRACT_ADDRESS
+      - BLOCKCHAIN_HOST
+      - BLOCKCHAIN_PORT
+      - KALEIDO_USER
+      - KALEIDO_PASSWORD
+      - COMMON_MQ_BASE_URL
+      - COMMON_MQ_USERNAME
+      - COMMON_MQ_PASSWORD
+      - INTERNAL_MQ_HOST
+      - INTERNAL_MQ_USERNAME
+      - INTERNAL_MQ_PASSWORD
+    command: ${COMMAND:-komgo}
+    ports:
+      - ${PORT_1:-3116}:8080
+      - ${PORT_2:-9146}:9229
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-api-onboarding:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}

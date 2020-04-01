@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewMultipleDocuments should match snapshot for right section of the page 1`] = `
+Array [
+  .c1 {
+  font-size: 16px;
+  margin-right: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c2.c2.c2 {
+  margin-right: 3px;
+}
+
+.c2.c2.c2:not(.disabled) .icon {
+  color: white;
+}
+
+<div
+    className="ui grid"
+  >
+    <div
+      className="two column row"
+    >
+      <div
+        className="left floated column"
+      >
+        <h2>
+          AML Letter - test
+        </h2>
+      </div>
+      <div
+        className="right floated column"
+      >
+        <div
+          className="c0"
+        >
+          <span
+            className="c1"
+          >
+            1
+             / 
+            2
+          </span>
+          <button
+            className="ui icon primary disabled button c2"
+            disabled={true}
+            onClick={[Function]}
+            role="button"
+            tabIndex={-1}
+          >
+            <i
+              aria-hidden="true"
+              className="angle left icon"
+            />
+          </button>
+          <button
+            className="ui icon primary button c2"
+            onClick={[Function]}
+            role="button"
+          >
+            <i
+              aria-hidden="true"
+              className="angle right icon"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="ui divider"
+  />,
+  .c0 {
+  margin-top: 2em;
+}
+
+.c0 .ui.table tr td {
+  border-top: 0px !important;
+}
+
+.c0 .ui.table {
+  border: 0px !important;
+}
+
+.c0 table > *:first-child:not(thead) td:first-child {
+  font-weight: bold;
+}
+
+<div
+    className="ui container c0"
+  >
+    <table
+      className="ui table"
+    >
+      <tbody
+        className=""
+      >
+        <tr
+          className=""
+        >
+          <td
+            className=""
+          >
+            Type
+          </td>
+          <td
+            className=""
+          >
+            Certificate of Incorporation
+          </td>
+        </tr>
+        <tr
+          className=""
+        >
+          <td
+            className=""
+          >
+            Title
+          </td>
+          <td
+            className=""
+          >
+            AML Letter - test
+          </td>
+        </tr>
+        <tr
+          className=""
+        >
+          <td
+            className=""
+          >
+            Registered On
+          </td>
+          <td
+            className=""
+          >
+            2019-08-26
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  <button
+    className="ui button"
+    data-test-id="delete-document-button"
+    onClick={[Function]}
+    role="button"
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    Delete
+  </button>,
+]
+`;

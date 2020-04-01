@@ -1,0 +1,824 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiffList renders a default value 1`] = `
+<div>
+  <strong
+    className="ui checkbox"
+    onChange={[Function]}
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "margin": 0,
+      }
+    }
+  >
+    <input
+      checked={false}
+      className="hidden"
+      name="maxTolerance"
+      onClick={[Function]}
+      readOnly={true}
+      tabIndex={0}
+      type="checkbox"
+    />
+    <label>
+      Max Tolerance
+    </label>
+  </strong>
+  <div
+    className="ui list"
+    role="list"
+    style={
+      Object {
+        "margin": "0px 0px 10px 30px",
+        "padding": 0,
+      }
+    }
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+      role="listitem"
+      style={
+        Object {
+          "padding": "5px 0 0 0",
+        }
+      }
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="description"
+          data-test-id="ITrade/maxTolerance-current"
+          style={
+            Object {
+              "fontSize": "0.9em",
+              "padding": 0,
+            }
+          }
+        >
+          Current Value:
+          <span
+            style={
+              Object {
+                "color": "#46484a",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+             
+            1.00%
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="item"
+      onClick={[Function]}
+      role="listitem"
+      style={
+        Object {
+          "padding": "5px 0 0 0",
+        }
+      }
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="description"
+          data-test-id="ITrade/maxTolerance-new"
+          style={
+            Object {
+              "fontSize": "0.9em",
+              "padding": 0,
+            }
+          }
+        >
+          New Value:
+          <span
+            style={
+              Object {
+                "color": "#009ea8",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+             
+            3.00%
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiffList renders a few props 1`] = `
+Array [
+  <div>
+    <strong
+      className="ui checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="hidden"
+        name="maxTolerance"
+        onClick={[Function]}
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+        Max Tolerance
+      </label>
+    </strong>
+    <div
+      className="ui list"
+      role="list"
+      style={
+        Object {
+          "margin": "0px 0px 10px 30px",
+          "padding": 0,
+        }
+      }
+    >
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ITrade/maxTolerance-current"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            Current Value:
+            <span
+              style={
+                Object {
+                  "color": "#46484a",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              1.00%
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ITrade/maxTolerance-new"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            New Value:
+            <span
+              style={
+                Object {
+                  "color": "#009ea8",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              3.00%
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <strong
+      className="ui checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="hidden"
+        name="minTolerance"
+        onClick={[Function]}
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+        Min Tolerance
+      </label>
+    </strong>
+    <div
+      className="ui list"
+      role="list"
+      style={
+        Object {
+          "margin": "0px 0px 10px 30px",
+          "padding": 0,
+        }
+      }
+    >
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ITrade/minTolerance-current"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            Current Value:
+            <span
+              style={
+                Object {
+                  "color": "#46484a",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              1.00%
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ITrade/minTolerance-new"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            New Value:
+            <span
+              style={
+                Object {
+                  "color": "#009ea8",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              1.50%
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`DiffList renders a nested prop 1`] = `
+<div>
+  <strong
+    className="ui checkbox"
+    onChange={[Function]}
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "margin": 0,
+      }
+    }
+  >
+    <input
+      checked={false}
+      className="hidden"
+      name="deliveryPeriod.endDate"
+      onClick={[Function]}
+      readOnly={true}
+      tabIndex={0}
+      type="checkbox"
+    />
+    <label>
+      Delivery Period End Date
+    </label>
+  </strong>
+  <div
+    className="ui list"
+    role="list"
+    style={
+      Object {
+        "margin": "0px 0px 10px 30px",
+        "padding": 0,
+      }
+    }
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+      role="listitem"
+      style={
+        Object {
+          "padding": "5px 0 0 0",
+        }
+      }
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="description"
+          data-test-id="ITrade/deliveryPeriod/endDate-current"
+          style={
+            Object {
+              "fontSize": "0.9em",
+              "padding": 0,
+            }
+          }
+        >
+          Current Value:
+          <span
+            style={
+              Object {
+                "color": "#46484a",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+             
+            2020/12/31
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="item"
+      onClick={[Function]}
+      role="listitem"
+      style={
+        Object {
+          "padding": "5px 0 0 0",
+        }
+      }
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="description"
+          data-test-id="ITrade/deliveryPeriod/endDate-new"
+          style={
+            Object {
+              "fontSize": "0.9em",
+              "padding": 0,
+            }
+          }
+        >
+          New Value:
+          <span
+            style={
+              Object {
+                "color": "#009ea8",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+             
+            2021/01/31
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiffList renders an object prop 1`] = `
+<div>
+  <strong
+    className="ui checkbox"
+    onChange={[Function]}
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "margin": 0,
+      }
+    }
+  >
+    <input
+      checked={false}
+      className="hidden"
+      name="parcels.0"
+      onClick={[Function]}
+      readOnly={true}
+      tabIndex={0}
+      type="checkbox"
+    />
+    <label>
+      Parcels 0
+    </label>
+  </strong>
+  <div
+    className="ui list"
+    role="list"
+    style={
+      Object {
+        "margin": "0px 0px 10px 30px",
+        "padding": 0,
+      }
+    }
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+      role="listitem"
+      style={
+        Object {
+          "padding": "5px 0 0 0",
+        }
+      }
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="description"
+          data-test-id="ITrade/parcels/0-current"
+          style={
+            Object {
+              "fontSize": "0.9em",
+              "padding": 0,
+            }
+          }
+        >
+          Current Value:
+          <span
+            style={
+              Object {
+                "color": "#46484a",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+             
+            -
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="item"
+      onClick={[Function]}
+      role="listitem"
+      style={
+        Object {
+          "padding": "5px 0 0 0",
+        }
+      }
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="description"
+          data-test-id="ITrade/parcels/0-new"
+          style={
+            Object {
+              "fontSize": "0.9em",
+              "padding": 0,
+            }
+          }
+        >
+          New Value:
+          <span
+            style={
+              Object {
+                "color": "#009ea8",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+             
+            
+  id: 1234
+  laycanPeriod: 
+    startDate: 2019/01/03
+    endDate: 2019/01/03
+  modeOfTransport: VESSEL
+  vesselIMO: 1
+  vesselName: Test
+  loadingPort: Test
+  dischargeArea: Test
+  inspector: Test
+  deemedBLDate: 2019/01/03
+  quantity: 1
+
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DiffList renders an object with two entities overlapping 1`] = `
+Array [
+  <div>
+    <strong
+      className="ui checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="hidden"
+        name="sourceId"
+        onClick={[Function]}
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+        Source Id
+      </label>
+    </strong>
+    <div
+      className="ui list"
+      role="list"
+      style={
+        Object {
+          "margin": "0px 0px 10px 30px",
+          "padding": 0,
+        }
+      }
+    >
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ITrade/sourceId-current"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            Current Value:
+            <span
+              style={
+                Object {
+                  "color": "#46484a",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ITrade/sourceId-new"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            New Value:
+            <span
+              style={
+                Object {
+                  "color": "#009ea8",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <strong
+      className="ui checkbox"
+      onChange={[Function]}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="hidden"
+        name="sourceId"
+        onClick={[Function]}
+        readOnly={true}
+        tabIndex={0}
+        type="checkbox"
+      />
+      <label>
+        Source Id
+      </label>
+    </strong>
+    <div
+      className="ui list"
+      role="list"
+      style={
+        Object {
+          "margin": "0px 0px 10px 30px",
+          "padding": 0,
+        }
+      }
+    >
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ICargo/sourceId-current"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            Current Value:
+            <span
+              style={
+                Object {
+                  "color": "#46484a",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="item"
+        onClick={[Function]}
+        role="listitem"
+        style={
+          Object {
+            "padding": "5px 0 0 0",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="description"
+            data-test-id="ICargo/sourceId-new"
+            style={
+              Object {
+                "fontSize": "0.9em",
+                "padding": 0,
+              }
+            }
+          >
+            New Value:
+            <span
+              style={
+                Object {
+                  "color": "#009ea8",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+               
+              1.5
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoleInfo renders 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: inline-block;
+  font-weight: bold;
+  width: 120px;
+}
+
+.c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+}
+
+<div
+    class="ui popup transition visible"
+  >
+    <div
+      class="ui list"
+      role="list"
+      style="width: 300px;"
+    >
+      <div
+        class="item"
+        role="listitem"
+      >
+        <span
+          class="c0"
+        >
+          Applicant:
+        </span>
+        <span
+          class="c1"
+        >
+          Applicant Name
+        </span>
+      </div>
+      <div
+        class="item"
+        role="listitem"
+      >
+        <span
+          class="c0"
+        >
+          Beneficiary:
+        </span>
+        <span
+          class="c1"
+        >
+          Beneficiary Name
+        </span>
+      </div>
+      <div
+        class="item"
+        role="listitem"
+      >
+        <span
+          class="c0"
+        >
+          Issuing Bank:
+        </span>
+        <span
+          class="c1"
+        >
+          Issuing Name
+        </span>
+      </div>
+      <div
+        class="item"
+        role="listitem"
+      >
+        <span
+          class="c0"
+        >
+          Advising Bank:
+        </span>
+        Beneficiary Name
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

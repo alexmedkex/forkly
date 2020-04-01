@@ -1,0 +1,18 @@
+{
+  "backend": {
+    "file": {
+      "path": "/vault/storage/file"
+    }
+  },
+  "listener": {
+    "tcp": {
+      "address": "0.0.0.0:8200",
+      "tls_disable": 1
+    }
+  },
+  "default_lease_ttl": "0h",
+  "max_lease_ttl": "0h",
+  "api_addr": "http://0.0.0.0:8200",
+  "ui": true,
+  "plugin_directory": "/vault/plugins"
+}

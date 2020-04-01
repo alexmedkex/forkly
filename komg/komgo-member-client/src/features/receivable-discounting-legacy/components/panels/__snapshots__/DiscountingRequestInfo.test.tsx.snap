@@ -1,0 +1,2440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiscountingRequestInfo renders correctly 1`] = `
+Array [
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-general-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      General information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-requestType"
+  >
+    <p
+      className="c2"
+    >
+      Request type
+    </p>
+    <p
+      className="c3"
+    >
+      Discount without recourse
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c4.c4.c4 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-invoiceAmount"
+  >
+    <p
+      className="c2"
+    >
+      Invoice amount
+    </p>
+    <p
+      className="c3"
+    >
+      1,000 USD
+      <span
+        className="c4"
+      >
+        Final
+      </span>
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-advancedRate"
+  >
+    <p
+      className="c2"
+    >
+      Expected advance rate
+    </p>
+    <p
+      className="c3"
+    >
+      2 %
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-dateOfPerformance"
+  >
+    <p
+      className="c2"
+    >
+      Title transfer date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-discounting-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Discounting information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-discountingDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected discounting date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of discounting
+    </p>
+    <p
+      className="c3"
+    >
+      10
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-supporting-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Supporting information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-supportingInstruments"
+  >
+    <p
+      className="c2"
+    >
+      Supporting instrument(s)
+    </p>
+    <p
+      className="c3"
+    >
+      Financial instrument, Credit insurance and Payment undertaking
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-financialInstrumentInfo.financialInstrument"
+  >
+    <p
+      className="c2"
+    >
+      Financial instrument
+    </p>
+    <p
+      className="c3"
+    >
+      Other guy
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-financialInstrumentInfo.financialInstrumentIssuerName"
+  >
+    <p
+      className="c2"
+    >
+      Financial instrument issuers name
+    </p>
+    <p
+      className="c3"
+    >
+      FI Issuer name
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-guarantor"
+  >
+    <p
+      className="c2"
+    >
+      Guarantor's name
+    </p>
+    <p
+      className="c3"
+    >
+      FI Guarantor
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-comment"
+  >
+    <p
+      className="c2"
+    >
+      Other information
+    </p>
+    <p
+      className="c3"
+    >
+      A comment for the RD
+    </p>
+  </li>,
+]
+`;
+
+exports[`DiscountingRequestInfo renders correctly Discounting blended 1`] = `
+Array [
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-general-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      General information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-requestType"
+  >
+    <p
+      className="c2"
+    >
+      Request type
+    </p>
+    <p
+      className="c3"
+    >
+      Discount blended
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c4.c4.c4 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-invoiceAmount"
+  >
+    <p
+      className="c2"
+    >
+      Invoice amount
+    </p>
+    <p
+      className="c3"
+    >
+      1,000 USD
+      <span
+        className="c4"
+      >
+        Final
+      </span>
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-advancedRate"
+  >
+    <p
+      className="c2"
+    >
+      Expected advance rate
+    </p>
+    <p
+      className="c3"
+    >
+      2 %
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-dateOfPerformance"
+  >
+    <p
+      className="c2"
+    >
+      Title transfer date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-risk-cover-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Risk cover information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-riskCoverDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected risk cover date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/09/09
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysRiskCover"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of risk cover
+    </p>
+    <p
+      className="c3"
+    >
+      20
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-discounting-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Discounting information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-discountingDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected discounting date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/09/06
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of discounting
+    </p>
+    <p
+      className="c3"
+    >
+      21
+    </p>
+  </li>,
+]
+`;
+
+exports[`DiscountingRequestInfo renders correctly Discounting with recourse 1`] = `
+Array [
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-general-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      General information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-requestType"
+  >
+    <p
+      className="c2"
+    >
+      Request type
+    </p>
+    <p
+      className="c3"
+    >
+      Discount with recourse
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c4.c4.c4 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-invoiceAmount"
+  >
+    <p
+      className="c2"
+    >
+      Invoice amount
+    </p>
+    <p
+      className="c3"
+    >
+      1,000 USD
+      <span
+        className="c4"
+      >
+        Final
+      </span>
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-advancedRate"
+  >
+    <p
+      className="c2"
+    >
+      Expected advance rate
+    </p>
+    <p
+      className="c3"
+    >
+      2 %
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-dateOfPerformance"
+  >
+    <p
+      className="c2"
+    >
+      Title transfer date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-discounting-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Discounting information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-discountingDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected discounting date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/09/05
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of discounting
+    </p>
+    <p
+      className="c3"
+    >
+      21
+    </p>
+  </li>,
+]
+`;
+
+exports[`DiscountingRequestInfo renders correctly Risk Cover only 1`] = `
+Array [
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-general-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      General information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-requestType"
+  >
+    <p
+      className="c2"
+    >
+      Request type
+    </p>
+    <p
+      className="c3"
+    >
+      Risk cover only
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c4.c4.c4 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-invoiceAmount"
+  >
+    <p
+      className="c2"
+    >
+      Invoice amount
+    </p>
+    <p
+      className="c3"
+    >
+      1,000 USD
+      <span
+        className="c4"
+      >
+        Final
+      </span>
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-advancedRate"
+  >
+    <p
+      className="c2"
+    >
+      Expected advance rate
+    </p>
+    <p
+      className="c3"
+    >
+      2 %
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-dateOfPerformance"
+  >
+    <p
+      className="c2"
+    >
+      Title transfer date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-risk-cover-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Risk cover information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-riskCoverDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected risk cover date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/09/02
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysRiskCover"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of risk cover
+    </p>
+    <p
+      className="c3"
+    >
+      20
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-discounting-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Discounting information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-discountingDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected discounting date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of discounting
+    </p>
+    <p
+      className="c3"
+    >
+      10
+    </p>
+  </li>,
+]
+`;
+
+exports[`DiscountingRequestInfo renders correctly Risk Cover with discounting option 1`] = `
+Array [
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-general-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      General information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-requestType"
+  >
+    <p
+      className="c2"
+    >
+      Request type
+    </p>
+    <p
+      className="c3"
+    >
+      Risk cover with discount option
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+.c4.c4.c4 {
+  border-bottom: 1px dashed #c0cfde;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-invoiceAmount"
+  >
+    <p
+      className="c2"
+    >
+      Invoice amount
+    </p>
+    <p
+      className="c3"
+    >
+      1,000 USD
+      <span
+        className="c4"
+      >
+        Final
+      </span>
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-advancedRate"
+  >
+    <p
+      className="c2"
+    >
+      Expected advance rate
+    </p>
+    <p
+      className="c3"
+    >
+      2 %
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-dateOfPerformance"
+  >
+    <p
+      className="c2"
+    >
+      Title transfer date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/01/31
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-risk-cover-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Risk cover information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-riskCoverDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected risk cover date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/09/04
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysRiskCover"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of risk cover
+    </p>
+    <p
+      className="c3"
+    >
+      20
+    </p>
+  </li>,
+  .c0.c0.c0 {
+  color: #5d768f;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  width: 220px;
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.c1.c1.c1 {
+  text-transform: uppercase;
+}
+
+<p
+    className="c0"
+    data-test-id="view-request-info-rd-data-discounting-information"
+    width="220px"
+  >
+    <span
+      className="c1"
+    >
+      Discounting information
+    </span>
+  </p>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-discountingDate"
+  >
+    <p
+      className="c2"
+    >
+      Expected discounting date
+    </p>
+    <p
+      className="c3"
+    >
+      2019/09/03
+    </p>
+  </li>,
+  .c1 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  white-space: normal;
+  margin-left: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c0 p {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.c2 {
+  font-weight: bold;
+  width: 220px;
+  text-align: right;
+}
+
+<li
+    className="c0 c1"
+    data-test-id="rdInfo-field-component-numberOfDaysDiscounting"
+  >
+    <p
+      className="c2"
+    >
+      Expected days of discounting
+    </p>
+    <p
+      className="c3"
+    >
+      21
+    </p>
+  </li>,
+]
+`;

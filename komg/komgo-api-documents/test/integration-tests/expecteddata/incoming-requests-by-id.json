@@ -1,0 +1,69 @@
+{
+  "companyId": "cf63c1f8-1165-4c94-a8f8-9252eb4f0016",
+  "dismissedTypes": [],
+  "documents": [],
+  "id": "944a11ca-0f1c-45e5-8a95-a1000a3e21d0",
+  "notes": [],
+  "product": {
+    "id": "kyc",
+    "name": "KYC"
+  },
+  "sentDocumentTypes": [],
+  "sentDocuments": [],
+  "types": [
+    {
+      "category": {
+        "id": "management-and-directors",
+        "name": "Management and directors",
+        "product": {
+          "id": "kyc",
+          "name": "KYC"
+        }
+      },
+      "fields": [
+        {
+          "isArray": false,
+          "name": "Issuance date",
+          "type": "date"
+        },
+        {
+          "isArray": false,
+          "name": "Registration date on Komgo",
+          "type": "date"
+        },
+        {
+          "isArray": false,
+          "name": "Expiry date",
+          "type": "date"
+        },
+        {
+          "isArray": false,
+          "name": "Full name",
+          "type": "string"
+        },
+        {
+          "isArray": false,
+          "name": "Issued by",
+          "type": "string"
+        },
+        {
+          "isArray": false,
+          "name": "Passport number",
+          "type": "string"
+        },
+        {
+          "isArray": false,
+          "name": "Nationality",
+          "type": "string"
+        }
+      ],
+      "id": "passport-of-directors",
+      "name": "Passport of the directors",
+      "predefined": true,
+      "product": {
+        "id": "kyc",
+        "name": "KYC"
+      }
+    }
+  ]
+}

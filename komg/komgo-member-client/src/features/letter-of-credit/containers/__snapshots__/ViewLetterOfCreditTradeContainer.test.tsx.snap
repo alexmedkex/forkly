@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewLetterOfCreditTradeContainer matches snapshot 1`] = `
+<DocumentFragment>
+  .c4 {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  margin: 0;
+  line-height: 2;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  max-width: 720px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7.c7.c7.c7.c7 .field .selection.dropdown {
+  width: 50% !important;
+}
+
+.c7.c7.c7.c7.c7 .field.error {
+  margin-bottom: 0;
+}
+
+.c7.c7.c7.c7.c7 label.inputLabel {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c6 {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.c8 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: -25px;
+  padding: 0 0 0 25px;
+  display: inline-block;
+  width: 100%;
+  line-height: 2;
+}
+
+.c3.c3.c3 {
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f5f8;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  height: 50px;
+}
+
+.c2 {
+  font-style: italic;
+}
+
+.c1 {
+  display: inline-block;
+}
+
+@media (min-width:68.75em) {
+  .c4 {
+    padding-left: 40px;
+  }
+}
+
+<div
+    style="padding: 24px;"
+  >
+    <header
+      class="c0"
+    >
+      <h1
+        class="c1"
+      >
+        LC-ING-1234 trade details
+      </h1>
+    </header>
+    <p
+      class="c2"
+    >
+      Requested
+    </p>
+    <div
+      class="ui basic segment"
+    >
+      <div
+        class="accordion ui fluid"
+      >
+        <div
+          class="active title"
+          style="padding-top: 0px; pointer-events: initial;"
+        >
+          <div
+            class="ui block header c3"
+          >
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            Trade data
+          </div>
+        </div>
+        <div
+          class="content active"
+        >
+          <ul
+            class="c4"
+          >
+            <li
+              class="c5"
+              data-test-id="header-text"
+            >
+              <span
+                class="c6"
+              >
+                Trade source
+              </span>
+              Komgo
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Buyer
+              </span>
+              node.123 not found
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Buyer's reference
+              </span>
+              buyerEtrmId
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Seller
+              </span>
+              node.321 not found
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Credit requirement
+              </span>
+              Documentary letter of credit
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Reference date
+              </span>
+              2017/12/31
+            </li>
+          </ul>
+        </div>
+        <div
+          class="active title"
+          style="pointer-events: initial;"
+        >
+          <div
+            class="ui block header c3"
+          >
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            Commodity and price
+          </div>
+        </div>
+        <div
+          class="content active"
+        >
+          <ul
+            class="c4"
+          >
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Commodity type
+              </span>
+              Crude oil
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Product/Grade
+              </span>
+              BRENT
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Quality (additional specs)
+              </span>
+              top
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Origin of goods
+              </span>
+              China
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Invoice quantity
+              </span>
+              Load
+            </li>
+            <li
+              class="c5"
+            />
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Quantity
+              </span>
+              600,000 BBL
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Min tolerance
+              </span>
+              1.25%
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Max tolerance
+              </span>
+              1.25%
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Price per unit
+              </span>
+              70.02 EUR/BBL
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Payment option
+              </span>
+              Deferred
+            </li>
+            <li
+              class="c5"
+            >
+              <span
+                class="c6"
+              >
+                Payment terms
+              </span>
+              30 calendar days after BL
+            </li>
+          </ul>
+        </div>
+        <div
+          class="active title"
+          style="pointer-events: initial;"
+        >
+          <div
+            class="ui block header c3"
+          >
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            Delivery terms
+          </div>
+        </div>
+        <div
+          class="content active"
+        >
+          <ul
+            class="c4"
+          >
+            <li
+              class="c5"
+            />
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Delivery from
+              </span>
+              2019/04/03
+            </li>
+            <li
+              class="c5"
+            />
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Delivery to
+              </span>
+              2019/04/10
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Delivery term (incoterm)
+              </span>
+              FOB
+            </li>
+            <li
+              class="c7 c5"
+            >
+              <span
+                class="c6"
+              >
+                Delivery location
+              </span>
+              Weymouth
+            </li>
+            <div>
+              <div
+                class="accordion ui fluid"
+              >
+                <div
+                  style="padding: 20px; margin-bottom: 5px;"
+                >
+                  <div
+                    class="active title"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="dropdown icon"
+                    />
+                    <span
+                      class="c8"
+                    >
+                       Parcel #1 
+                    </span>
+                  </div>
+                  <div
+                    class="content active"
+                  >
+                    <ul
+                      class="c4"
+                    >
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          Parcel Id
+                        </span>
+                        123
+                      </li>
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          Start date
+                        </span>
+                        2017/12/31
+                      </li>
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          End date
+                        </span>
+                        2017/12/31
+                      </li>
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          Mode of transport
+                        </span>
+                        Vessel
+                      </li>
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          Loading place
+                        </span>
+                        Porto
+                      </li>
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          Destination place
+                        </span>
+                        Weymouth
+                      </li>
+                      <li
+                        class="c7 c5"
+                      >
+                        <span
+                          class="c6"
+                        >
+                          Quantity
+                        </span>
+                        600000
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

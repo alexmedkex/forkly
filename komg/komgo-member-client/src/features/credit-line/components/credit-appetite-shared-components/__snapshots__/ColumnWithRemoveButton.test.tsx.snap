@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColumnWithRemoveButton should match default snapshot 1`] = `
+@media (max-width:1200px) {
+  .c0.c0.c0.c0.c0.column {
+    position: absolute;
+    width: 65px !important;
+    right: 8px;
+  }
+}
+
+<div
+  className="column c0"
+/>
+`;

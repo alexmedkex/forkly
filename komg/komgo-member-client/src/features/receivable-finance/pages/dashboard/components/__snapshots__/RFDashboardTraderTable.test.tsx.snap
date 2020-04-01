@@ -1,0 +1,1136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RFDashboardTraderTable renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:after {
+  content: '';
+  border-bottom: dotted 2px #c0cfde;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+}
+
+.c1 {
+  margin: 4px 0;
+  display: inline-block;
+}
+
+<div
+  className="ReactTable"
+  style={Object {}}
+>
+  <div
+    className="rt-table"
+    role="grid"
+  >
+    <div
+      className="rt-thead -header"
+      style={
+        Object {
+          "minWidth": "800px",
+        }
+      }
+    >
+      <div
+        className="rt-tr"
+        role="row"
+      >
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="tradeId"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Trade ID
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="tradeDate"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Trade Date
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="counterparty"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Counterparty
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="bank"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Bank
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="commodity"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Commodity
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="invoiceAmount"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Invoice amount
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th rt-resizable-header -cursor-pointer"
+          data-test-id="status"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Status
+            </span>
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+        <div
+          className="rt-th actions-menu rt-resizable-header"
+          data-test-id="actionsMenu"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="columnheader"
+          style={
+            Object {
+              "flex": "100 0 auto",
+              "maxWidth": null,
+              "width": "100px",
+            }
+          }
+          tabIndex="-1"
+        >
+          <div
+            className="rt-resizable-header-content"
+          >
+            
+          </div>
+          <div
+            className="rt-resizer"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="rt-tbody"
+      style={
+        Object {
+          "minWidth": "800px",
+        }
+      }
+    >
+      <div
+        className="rt-tr-group"
+        role="rowgroup"
+      >
+        <div
+          className="rt-tr -odd"
+          data-test-id="TRADE-ID-1"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="row"
+          style={
+            Object {
+              "background": undefined,
+              "color": undefined,
+              "cursor": "pointer",
+            }
+          }
+        >
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-tradeId"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              <span
+                className="c0"
+              >
+                TRADE-ID-1
+              </span>
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-tradeDate"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              2019/01/02
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-counterparty"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              BP
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-bank"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-commodity"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              BFOET
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-invoiceAmount"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              <span
+                className="c1 c2"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                EUR
+                 
+                1,230.00
+              </span>
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-1-status"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              To be discounted
+            </span>
+          </div>
+          <div
+            className="rt-td actions-menu"
+            data-test-id="TRADE-ID-1-actionsMenu"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "visible",
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              aria-expanded={false}
+              className="ui dropdown"
+              data-test-id="TRADE-ID-1-dropdown"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-live="polite"
+                className="text"
+                role="alert"
+              />
+              <i
+                aria-hidden="true"
+                className="ellipsis horizontal icon"
+                onClick={[Function]}
+              />
+              <div
+                className="left menu transition"
+              >
+                ExtraOptionsMenu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="rt-tr-group"
+        role="rowgroup"
+      >
+        <div
+          className="rt-tr -even"
+          data-test-id="TRADE-ID-2"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="row"
+          style={
+            Object {
+              "background": undefined,
+              "color": undefined,
+              "cursor": "pointer",
+            }
+          }
+        >
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-tradeId"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              <span
+                className="c0"
+              >
+                TRADE-ID-2
+              </span>
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-tradeDate"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              2019/01/02
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-counterparty"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              BP
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-bank"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-commodity"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              BFOET
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-invoiceAmount"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              <span
+                className="c1 c2"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                EUR
+                 
+                1,230.00
+              </span>
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-2-status"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              Requested
+            </span>
+          </div>
+          <div
+            className="rt-td actions-menu"
+            data-test-id="TRADE-ID-2-actionsMenu"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "visible",
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              aria-expanded={false}
+              className="ui dropdown"
+              data-test-id="TRADE-ID-2-dropdown"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-live="polite"
+                className="text"
+                role="alert"
+              />
+              <i
+                aria-hidden="true"
+                className="ellipsis horizontal icon"
+                onClick={[Function]}
+              />
+              <div
+                className="left menu transition"
+              >
+                ExtraOptionsMenu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="rt-tr-group"
+        role="rowgroup"
+      >
+        <div
+          className="rt-tr -odd"
+          data-test-id="TRADE-ID-3"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          role="row"
+          style={
+            Object {
+              "background": undefined,
+              "color": undefined,
+              "cursor": "pointer",
+            }
+          }
+        >
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-tradeId"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              <span
+                className="c0"
+              >
+                TRADE-ID-3
+              </span>
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-tradeDate"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              2019/01/02
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-counterparty"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              BP
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-bank"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-commodity"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              BFOET
+            </span>
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-invoiceAmount"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            />
+          </div>
+          <div
+            className="rt-td"
+            data-test-id="TRADE-ID-3-status"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "hidden",
+                "width": "100px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "overflow": "hidden",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                }
+              }
+            >
+              Requested
+            </span>
+          </div>
+          <div
+            className="rt-td actions-menu"
+            data-test-id="TRADE-ID-3-actionsMenu"
+            onClick={[Function]}
+            role="gridcell"
+            style={
+              Object {
+                "flex": "100 0 auto",
+                "maxWidth": null,
+                "overflow": "visible",
+                "width": "100px",
+              }
+            }
+          >
+            <div
+              aria-expanded={false}
+              className="ui dropdown"
+              data-test-id="TRADE-ID-3-dropdown"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-live="polite"
+                className="text"
+                role="alert"
+              />
+              <i
+                aria-hidden="true"
+                className="ellipsis horizontal icon"
+                onClick={[Function]}
+              />
+              <div
+                className="left menu transition"
+              >
+                ExtraOptionsMenu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="-loading"
+  >
+    <div
+      className="-loading-inner"
+    >
+      Loading...
+    </div>
+  </div>
+</div>
+`;

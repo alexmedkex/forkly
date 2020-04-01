@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+
+  keycloak:
+    build: ./komgo-member-keycloak
+    image: ${IMAGE_NAME:-komgo-member-keycloak}
+    container_name: komgo-member-${MEMBER_ID}-keycloak
+    restart: always
+    environment:
+      - KEYCLOAK_USER
+      - KEYCLOAK_PASSWORD
+      - KEYCLOAK_REALM_NAME
+      - KEYCLOAK_CLIENT_ID
+      - KEYCLOAK_ALLOWED_CORS_ORIGIN=$ACCESS_CONTROL_ALLOW_ORIGIN
+      - POSTGRES_DB=$KEYCLOAK_DB_NAME
+      - DB_VENDOR=postgres
+      - DB_ADDR=keycloak_db
+      - DB_USER=$KEYCLOAK_DB_USER
+      - DB_PASSWORD=$KEYCLOAK_DB_PASSWORD
+      - SET_TEMP_PASSWORDS=false
+      - SMTP_HOST
+      - SMTP_PORT
+      - MAIL_FROM
+    ports:
+      - ${PORT_1:-8070}:8080
+    volumes:
+      - ./komgo-member-keycloak/scripts:/opt/jboss/keycloak/bin/scripts
+    depends_on:
+      - keycloak_db
+
+  keycloak_db:
+    image: postgres:${POSTGRES_VERSION}
+    container_name: komgo-member-${MEMBER_ID}-keycloak-db
+    restart: always
+    environment:
+      - POSTGRES_DB=$KEYCLOAK_DB_NAME
+      - POSTGRES_USER=$KEYCLOAK_DB_USER
+      - POSTGRES_PASSWORD=$KEYCLOAK_DB_PASSWORD
+    volumes:
+      - ./.db/pgdata_${MEMBER_ID}:/var/lib/postgresql/data:delegated
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}

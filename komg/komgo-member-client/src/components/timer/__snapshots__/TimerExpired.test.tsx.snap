@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimerExpired should match snapshot 1`] = `
+.c1 {
+  color: #d45c64;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="c0"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <i
+    aria-hidden="true"
+    className="red clock outline icon"
+  />
+  <span
+    className="c1"
+    data-test-id="timer-expired"
+  >
+    Timer expired
+  </span>
+</div>
+`;

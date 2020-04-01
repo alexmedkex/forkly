@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Risk Cover Reducer should match snapshot when FETCH_CREDIT_LINES_SUCCESS is dispatched and state is initial 1`] = `
+Immutable.Map {
+  "riskCover": Immutable.Map {
+    "creditLinesById": Immutable.Map {
+      "123": Immutable.Map {
+        "creditLimit": 10000000,
+        "staticId": "123",
+        "appetite": true,
+        "data": Immutable.Map {
+          "fee": 0.9,
+          "maximumTenor": 90,
+          "availabilityReserved": 6000000,
+        },
+        "updatedAt": "2019-01-01T00:00:00.000Z",
+        "context": Immutable.Map {
+          "productId": "tradeFinance",
+          "subProductId": "rd",
+        },
+        "currency": "USD",
+        "counterpartyStaticId": "123",
+        "availabilityAmount": 8000000,
+        "createdAt": "2019-01-01T00:00:00.000Z",
+        "availability": true,
+      },
+      "1234": Immutable.Map {
+        "creditLimit": 10000000,
+        "staticId": "1234",
+        "appetite": true,
+        "data": Immutable.Map {
+          "fee": 0.9,
+          "maximumTenor": 90,
+          "availabilityReserved": 6000000,
+        },
+        "updatedAt": "2019-01-01T00:00:00.000Z",
+        "context": Immutable.Map {
+          "productId": "tradeFinance",
+          "subProductId": "rd",
+        },
+        "currency": "USD",
+        "counterpartyStaticId": "1234",
+        "availabilityAmount": 8000000,
+        "createdAt": "2019-01-01T00:00:00.000Z",
+        "availability": true,
+      },
+    },
+    "disclosedCreditLineSummariesById": Immutable.Map {},
+    "disclosedCreditLinesById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+  "bankLine": Immutable.Map {
+    "creditLinesById": Immutable.Map {},
+    "disclosedCreditLineSummariesById": Immutable.Map {},
+    "disclosedCreditLinesById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+}
+`;
+
+exports[`Risk Cover Reducer should set state when FETCH_CREDIT_LINES_SUCCESS is dispatched and add shared info to current object 1`] = `
+Object {
+  "123": Object {
+    "appetite": true,
+    "availability": true,
+    "availabilityAmount": 8000000,
+    "context": Object {
+      "productId": "tradeFinance",
+      "subProductId": "rd",
+    },
+    "counterpartyStaticId": "123",
+    "createdAt": "2019-01-01T00:00:00.000Z",
+    "creditLimit": 10000000,
+    "currency": "USD",
+    "data": Object {
+      "availabilityReserved": 6000000,
+      "fee": 0.9,
+      "maximumTenor": 90,
+    },
+    "sharedCreditLines": Array [
+      Object {
+        "counterpartyStaticId": "1d0d6806-6fe7-47b2-aef2-efd458d66f26",
+        "creditLineStaticId": "fa4c145f-ab73-4180-8d33-56a35310bbf5",
+        "data": Object {
+          "appetite": Object {
+            "shared": true,
+          },
+          "availability": Object {
+            "shared": true,
+          },
+          "availabilityAmount": Object {
+            "shared": true,
+          },
+          "fee": Object {
+            "fee": 1,
+            "shared": true,
+          },
+          "margin": Object {
+            "margin": 100,
+            "shared": true,
+          },
+          "maximumTenor": Object {
+            "maximumTenor": 100,
+            "shared": true,
+          },
+        },
+        "sharedWithStaticId": "cc24a24b-ada5-4332-9ee7-394da255df67",
+        "staticId": "2c1f123f-8904-4755-aab9-18c4590f9671",
+      },
+    ],
+    "staticId": "123",
+    "updatedAt": "2019-01-01T00:00:00.000Z",
+  },
+}
+`;
+
+exports[`Risk Cover Reducer should set state when GET_RISK_COVER_SUCCESS is dispatched and add shared info to current object 1`] = `
+Object {
+  "123": Object {
+    "appetite": true,
+    "availability": true,
+    "availabilityAmount": 8000000,
+    "context": Object {
+      "productId": "tradeFinance",
+      "subProductId": "rd",
+    },
+    "counterpartyStaticId": "123",
+    "createdAt": "2019-01-01T00:00:00.000Z",
+    "creditLimit": 10000000,
+    "currency": "USD",
+    "data": Object {
+      "availabilityReserved": 6000000,
+      "fee": 0.9,
+      "maximumTenor": 90,
+    },
+    "sharedCreditLines": Array [
+      Object {
+        "counterpartyStaticId": "1d0d6806-6fe7-47b2-aef2-efd458d66f26",
+        "creditLineStaticId": "fa4c145f-ab73-4180-8d33-56a35310bbf5",
+        "data": Object {
+          "appetite": Object {
+            "shared": true,
+          },
+          "availability": Object {
+            "shared": true,
+          },
+          "availabilityAmount": Object {
+            "shared": true,
+          },
+          "fee": Object {
+            "fee": 1,
+            "shared": true,
+          },
+          "margin": Object {
+            "margin": 100,
+            "shared": true,
+          },
+          "maximumTenor": Object {
+            "maximumTenor": 100,
+            "shared": true,
+          },
+        },
+        "sharedWithStaticId": "cc24a24b-ada5-4332-9ee7-394da255df67",
+        "staticId": "2c1f123f-8904-4755-aab9-18c4590f9671",
+      },
+    ],
+    "staticId": "123",
+    "updatedAt": "2019-01-01T00:00:00.000Z",
+  },
+}
+`;
+
+exports[`Risk Cover Reducer should set state when GET_RISK_COVER_SUCCESS is dispatched and add shared info to current object after two actions 1`] = `
+Object {
+  "123": Object {
+    "appetite": true,
+    "availability": true,
+    "availabilityAmount": 8000000,
+    "context": Object {
+      "productId": "tradeFinance",
+      "subProductId": "rd",
+    },
+    "counterpartyStaticId": "123",
+    "createdAt": "2019-01-01T00:00:00.000Z",
+    "creditLimit": 10000000,
+    "currency": "USD",
+    "data": Object {
+      "availabilityReserved": 6000000,
+      "fee": 0.9,
+      "maximumTenor": 90,
+    },
+    "sharedCreditLines": Array [],
+    "staticId": "123",
+    "updatedAt": "2019-01-01T00:00:00.000Z",
+  },
+}
+`;
+
+exports[`Risk Cover Reducer should to match snapshot when FETCH_DISCLOSED_CREDIT_LINE_SUMMARIES_SUCCESS is dispatched and state is initial 1`] = `
+Immutable.Map {
+  "riskCover": Immutable.Map {
+    "creditLinesById": Immutable.Map {},
+    "disclosedCreditLineSummariesById": Immutable.Map {
+      "11": Immutable.Map {
+        "counterpartyStaticId": "123",
+        "lowestFee": 2,
+        "availabilityCount": 3,
+        "appetiteCount": 4,
+        "_id": "11",
+      },
+    },
+    "disclosedCreditLinesById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+  "bankLine": Immutable.Map {
+    "creditLinesById": Immutable.Map {},
+    "disclosedCreditLineSummariesById": Immutable.Map {},
+    "disclosedCreditLinesById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+}
+`;
+
+exports[`Risk Cover Reducer should to match snapshot when GET_RISK_COVER_SUCCESS is dispatched and state is initial 1`] = `
+Immutable.Map {
+  "riskCover": Immutable.Map {
+    "creditLinesById": Immutable.Map {
+      "123": Immutable.Map {
+        "creditLimit": 10000000,
+        "staticId": "123",
+        "appetite": true,
+        "data": Immutable.Map {
+          "fee": 0.9,
+          "maximumTenor": 90,
+          "availabilityReserved": 6000000,
+        },
+        "updatedAt": "2019-01-01T00:00:00.000Z",
+        "context": Immutable.Map {
+          "productId": "tradeFinance",
+          "subProductId": "rd",
+        },
+        "currency": "USD",
+        "counterpartyStaticId": "123",
+        "availabilityAmount": 8000000,
+        "createdAt": "2019-01-01T00:00:00.000Z",
+        "availability": true,
+      },
+    },
+    "disclosedCreditLineSummariesById": Immutable.Map {},
+    "disclosedCreditLinesById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+  "bankLine": Immutable.Map {
+    "creditLinesById": Immutable.Map {},
+    "disclosedCreditLineSummariesById": Immutable.Map {},
+    "disclosedCreditLinesById": Immutable.Map {},
+    "requestsById": Immutable.Map {},
+  },
+}
+`;

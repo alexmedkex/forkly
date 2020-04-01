@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Verification should match snapshot 1`] = `
+Array [
+  .c0 {
+  padding-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+<img
+    className="ui image c0"
+    src="/images/logoMenu.svg"
+  />,
+  .c1 {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  text-align: center;
+}
+
+.c0 {
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 90px;
+  margin-bottom: 200px;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.c3 {
+  text-align: center;
+  max-width: 600px;
+}
+
+.c5 {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #c0cfde;
+}
+
+.c4.c4.c4 {
+  margin: 30px;
+}
+
+<div
+    className="c0"
+  >
+    <h1
+      className="c1"
+    >
+      Document verification
+    </h1>
+    <div
+      className="c2"
+      id="drop_zone"
+    >
+      <div
+        className="c3"
+      >
+        <i
+          aria-hidden="true"
+          className="green check circle outline huge icon"
+        />
+        <h2>
+          <strong>
+            
+          </strong>
+           has been registered on the komgo network on
+           
+          <strong>
+            1970/01/01
+          </strong>
+           by 
+          <strong>
+            company name
+          </strong>
+        </h2>
+      </div>
+    </div>
+    <input
+      hidden={true}
+      id="upload"
+      onChange={[Function]}
+      type="file"
+    />
+    <div>
+      <button
+        className="ui button c4"
+        onClick={[Function]}
+        role="button"
+      >
+        More information
+      </button>
+      <div
+        className="disabled c5"
+      >
+        As per the komgo Terms & Conditions, komgo's role is to maintain and operate the platform, and this role is purely administrative in nature. While komgo have made its best efforts to ensure the authenticity of the platform users during the on-boarding process, in no event komgo, its related partnerships or corporations, managers or employees thereof be liable to you or anyone else, makes representation of warranty of any kind (whether express or implied by law) (including, but not limited to warranties of performance, merchantability and fitness for a particular purpose) in respect of the attached document or for any decision made or action taken in reliance of the information in the attached document.
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,43 @@
+version: "3.4"
+
+services:
+  api-users:
+    image: ${IMAGE_NAME:-komgo-member-api-users}
+    build:
+      context: ${BUILD_DIR:-./komgo-member-api-users}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    container_name: komgo-member-${MEMBER_ID}-api-users
+    restart: always
+    environment:
+      - NPM_TOKEN
+      - API_ROLES_BASE_URL
+      - CONTAINER_HOSTNAME=api-users
+      - KEYCLOAK_USER
+      - KEYCLOAK_PASSWORD
+      - KEYCLOAK_REALM_NAME
+      - KEYCLOAK_CLIENT_ID
+      - KEYCLOAK_AUTH_URL
+      - KEYCLOAK_SERVER_AUTH_URL
+      - KEYCLOAK_AUTH_OVERRIDE_URL
+      - COMPANY_STATIC_ID
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - DB_MONGO_URL=mongodb://mongo:27017/api-users${MONGO_CLIENT_OPTIONS}
+      - MONGO_CLIENT_PEM_BASE64
+      - MONGO_CA_CERT_BASE64
+      - MONGO_CLIENT_KEY_PASSWORD
+      - MONGO_USE_SSL
+    command: ${COMMAND:-komgo}
+    ports:
+      - ${PORT_1:-3101}:8080
+      - ${PORT_2:-9131}:9229
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-member-api-users:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}

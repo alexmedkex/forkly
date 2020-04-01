@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttachDocumentsDropdown component renders 1`] = `
+.c0.c0.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 348px;
+}
+
+.c1.c1.c1 {
+  color: #7f95aa;
+  font-size: 14px;
+}
+
+.c2.c2.c2 {
+  color: #5d768f;
+  font-size: 13px;
+}
+
+<div
+  aria-disabled={false}
+  aria-expanded={false}
+  className="ui button fluid dropdown"
+  data-test-id="attach-documents-button-Passports of UBOs"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="listbox"
+  style={
+    Object {
+      "width": "238px",
+    }
+  }
+  tabIndex={0}
+>
+  <div
+    aria-live="polite"
+    className="text"
+    role="alert"
+  >
+    Attach document
+  </div>
+  <i
+    aria-hidden="true"
+    className="dropdown icon"
+    onClick={[Function]}
+  />
+  <div
+    className="menu transition"
+  >
+    <div
+      aria-disabled={true}
+      className="disabled item"
+      data-test-id="automatch-button-Passports of UBOs"
+      onClick={[Function]}
+      role="option"
+    >
+      <div
+        className="text c0"
+      >
+        <span
+          className="c1"
+        >
+          Select from library
+        </span>
+        <span
+          className="c2"
+        >
+          [ 0 automatch ]
+        </span>
+      </div>
+    </div>
+    <div
+      className="item"
+      data-test-id="add-document-button=Passports of UBOs"
+      onClick={[Function]}
+      role="option"
+    >
+      <span
+        className="text"
+      >
+        Upload new
+      </span>
+    </div>
+  </div>
+</div>
+`;

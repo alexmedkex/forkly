@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RemoveConfirmContent should match snapshot when shared info exists 1`] = `
+<div>
+  Are you sure you want to remove 
+  <b>
+    Name
+  </b>
+   from your list?
+   This will remove the buyer information from sellers who have access to this information.
+</div>
+`;
+
+exports[`RemoveConfirmContent should match snapshot when shared info is empty array 1`] = `
+<div>
+  Are you sure you want to remove 
+  <b>
+    Name
+  </b>
+   from your list?
+</div>
+`;

@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirm render shows an error 1`] = `
+<div
+  className="ui page modals dimmer transition visible active"
+>
+  <div
+    className="ui small modal transition visible active"
+    style={
+      Object {
+        "marginTop": undefined,
+      }
+    }
+  >
+    <div
+      className="header"
+    >
+      Submit SBLC Application
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="ui negative message"
+        data-test-id="errorMessage"
+      >
+        <div
+          className="header"
+        >
+          Submit SBLC Application
+        </div>
+        <p>
+          Error
+        </p>
+      </div>
+    </div>
+    <div
+      className="actions"
+    >
+      <button
+        className="ui button"
+        data-test-id="submit-cancel-button"
+        onClick={[Function]}
+        role="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="ui primary button"
+        data-test-id="submit-confirm-button"
+        onClick={[Function]}
+        role="button"
+        type="submit"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Confirm render shows is submitting 1`] = `
+.c1 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #142435;
+  margin: 0;
+}
+
+.c0 {
+  margin-top: 0;
+  position: relative;
+  background-color: rgba(255,255,255,0.85);
+}
+
+<div
+  className="ui page modals dimmer transition visible active"
+>
+  <div
+    className="ui small modal transition visible active"
+    style={
+      Object {
+        "marginTop": undefined,
+      }
+    }
+  >
+    <div
+      className="header"
+    >
+      Submit SBLC Application
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="c0"
+        data-test-id="loadingTransition"
+      >
+        <img
+          className="ui mini centered image"
+          src="/images/bars.svg"
+        />
+        <div
+          className="ui header centered"
+        >
+          <span
+            className="c1"
+            color="#142435"
+          >
+            Submitting...
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="actions"
+    >
+      <button
+        className="ui disabled button"
+        data-test-id="submit-cancel-button"
+        disabled={true}
+        onClick={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        Cancel
+      </button>
+      <button
+        className="ui primary disabled button"
+        data-test-id="submit-confirm-button"
+        disabled={true}
+        onClick={[Function]}
+        role="button"
+        tabIndex={-1}
+        type="submit"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Confirm render shows the UI 1`] = `
+<div
+  className="ui page modals dimmer transition visible active"
+>
+  <div
+    className="ui small modal transition visible active"
+    style={
+      Object {
+        "marginTop": undefined,
+      }
+    }
+  >
+    <div
+      className="header"
+    >
+      Submit SBLC Application
+    </div>
+    <div
+      className="content"
+    >
+      <p>
+        You are about to submit an SBLC application for the financing of trade 
+        E222
+         to
+         
+        Applicant Name
+      </p>
+    </div>
+    <div
+      className="actions"
+    >
+      <button
+        className="ui button"
+        data-test-id="submit-cancel-button"
+        onClick={[Function]}
+        role="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="ui primary button"
+        data-test-id="submit-confirm-button"
+        onClick={[Function]}
+        role="button"
+        type="submit"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Confirm render submit button has the form set to formId if formId provided 1`] = `
+<div
+  className="ui page modals dimmer transition visible active"
+>
+  <div
+    className="ui small modal transition visible active"
+    style={
+      Object {
+        "marginTop": undefined,
+      }
+    }
+  >
+    <div
+      className="header"
+    >
+      Submit SBLC Application
+    </div>
+    <div
+      className="content"
+    >
+      <p>
+        You are about to submit an SBLC application for the financing of trade 
+        E222
+         to
+         
+        Applicant Name
+      </p>
+    </div>
+    <div
+      className="actions"
+    >
+      <button
+        className="ui button"
+        data-test-id="submit-cancel-button"
+        onClick={[Function]}
+        role="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="ui primary button"
+        data-test-id="submit-confirm-button"
+        form="myForm"
+        onClick={[Function]}
+        role="button"
+        type="submit"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;

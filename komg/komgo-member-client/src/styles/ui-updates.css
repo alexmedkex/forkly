@@ -1,0 +1,202 @@
+.doc-filter div div.inline.dropdown .text{
+  padding-right: 12px;
+  vertical-align: middle;
+}
+
+.doc-filter div .ui.active.visible.inline.dropdown div.visible.menu.transition {
+  max-height: 11rem;
+  overflow-y: scroll;
+}
+
+.ui.button.dropdown.primary i.dropdown.icon {
+  color: white;
+}
+
+.ui.dropdown>.left.menu {
+  margin-top: 3px;
+}
+
+.ui.very.basic.compact.table.borderless {
+  border: none;
+  border-color: transparent;
+}
+
+.ui.very.basic.compact.table.borderless tr td {
+  border: none;
+  border-color: transparent;
+  padding: 0.5em;
+}
+
+.approved-pill {
+ background-color: #009ea8 !important;
+ border-color: #009ea8 !important;
+ color: white !important;
+}
+
+.task-completed {
+  border-color: #009ea8 !important;
+  color: #009ea8 !important;
+ }
+
+.add-new-document.ui.form >.field {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.add-new-document.ui.form >.field:first-child {
+  margin-top: 0px;
+}
+
+.add-new-document.ui.form .error {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.formik-error {
+  margin-top: 3px !important;
+  padding: 0px !important;
+  color: #d45c64;
+}
+ 
+ .header h3+h4 {
+   margin-top: 12px;
+ }
+
+ #incoming-request-modal .ui.styled.accordion {
+   border-color: transparent;
+ }
+
+ #incoming-request-modal .ui.styled.accordion .title,
+ #incoming-request-modal .ui.styled.accordion .content {
+  border-color: transparent;
+  border-bottom: none;
+ }
+
+ td.select-cp-cbox {
+   width: 20px;
+ }
+
+ td.select-cp-label {
+  vertical-align: middle;
+ }
+
+ .segment.very-compact {
+   padding-bottom: 7px;
+   margin-bottom: 0;
+   margin-top: 0;
+   width: 100%;
+ }
+
+ .share-document-row {
+   display: flex
+}
+
+.share-doc-name {
+  padding-left: 7px;
+  flex-grow:1;
+}
+
+div.evaluation-fullscreen-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 30px;
+}
+
+.ui.progress.review-progress .bar {
+  background-color: #009ea8
+}
+
+.fluid.button.ui.dropdown.visible .menu{
+  margin-top: 4px;
+}
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.link-as-text {
+  color: #1c2936 !important;
+}
+
+.link-as-text:hover{
+  text-decoration: none !important;
+}
+
+/* rotation for custom icons */
+@keyframes spinning {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.spin {
+  animation: spinning 1.5s ease-out 0s infinite forwards normal;
+}
+
+/* custom toast animation */
+@keyframes fadeIn {
+  from {bottom: -10px; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+
+@keyframes fadeOut {
+  from {bottom: 0px; opacity: 1;}
+  to {bottom: -10px; opacity: 0;}
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.file-uploader:hover{
+  text-decoration: underline;
+}
+
+.ui.sortable.table thead th.sorted:after{
+  position:absolute;
+}
+
+.ui.labeled.input>.label:not(.corner){
+  padding-top:9px;
+  padding-bottom:9px;
+}
+
+.ui.radio.checkbox.error label {
+  color: #d45c64;
+}
+
+.ui.radio.checkbox.error label:before {
+  border-color: #d45c64;
+}
+
+.style-scroll::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    background-color: #C0CFDE;
+}
+
+.style-scroll::-webkit-scrollbar
+{
+    width: 2px;
+    background-color: #C0CFDE;
+}
+
+.style-scroll::-webkit-scrollbar-thumb
+{
+    background-color: #5D768F;
+    border: 2px solid #5D768F;
+}
+
+.highlighted-text{
+  background-color: #C0CFDE;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HideableButton returns a normal semantic button if not hidden 1`] = `
+<button
+  className="ui button"
+  onClick={[Function]}
+  role="button"
+/>
+`;
+
+exports[`HideableButton returns null if hidden 1`] = `null`;

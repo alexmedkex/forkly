@@ -1,0 +1,259 @@
+stages:
+  - setup
+  - audit
+  - test
+  - slack_notification
+  - analysis
+  - update_and_test
+
+install deps:
+  cache:
+    key: node_modules_cache
+    paths:
+    - node_modules/
+  stage: setup
+  script:
+    - npm install
+  only:
+    - /^release-.*$/
+    - /^cherry-pick-.*$/
+    - develop
+    - /^KOMGO-.*$/
+    - /^KDH-.*$/
+  artifacts:
+    paths:
+      - node_modules/
+  tags:
+    - node10
+
+run audit:
+  stage: audit
+  script:
+    - |
+      if [[ $(npm audit --registry=https://registry.npmjs.org --parseable | grep -v "https://nodesecurity.io/advisories/786" | wc -c) -ne 1 ]]; then
+        npm audit --registry=https://registry.npmjs.org
+      fi
+  only:
+  - /^KOMGO-.*$/
+  - /^KDH-.*$/
+  - /^release-.*$/
+  - /^cherry-pick-.*$/
+  - develop
+  dependencies:
+  - install deps
+  allow_failure: false
+  tags:
+  - node10
+
+docker build and push:
+  stage: test
+#  image: docker:stable-git # Uncomment this line if Gitlab shared runners
+  services:
+    - docker:18.09-dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://localhost:2375 # Comment this line if Gitlab shared runners
+    REPOSITORY_URI: hbr.solutions.consensys-uk.net/komgo
+  script:
+    - echo $HARBOR_INFRABOT_PASSWORD | docker login $REPOSITORY_URI -u=infrabot --password-stdin
+    - PROJECT_NAME=$(basename `git rev-parse --show-toplevel`)
+    - SHORT_SHA=${CI_COMMIT_SHA:0:8}
+    - echo "$SHORT_SHA"
+    - IMAGE_ID=$(docker build --build-arg NPM_TOKEN=$NPM_TOKEN --build-arg NODE_ENV=development --pull --quiet --tag $PROJECT_NAME:$SHORT_SHA .)
+    - |
+      if [[ $CI_COMMIT_REF_NAME = "develop" || $CI_COMMIT_REF_NAME = "release"* || $PUBLISH = "true" ]]; then
+        docker tag $PROJECT_NAME:$SHORT_SHA $REPOSITORY_URI/$PROJECT_NAME:$SHORT_SHA
+        echo "Pushing to remote repository"
+        docker --debug push $REPOSITORY_URI/$PROJECT_NAME:$SHORT_SHA
+      fi
+    - docker images
+    - docker rmi -f $IMAGE_ID
+  only:
+    refs:
+      - /^release-.*$/
+      - /^cherry-pick-.*$/
+      - develop
+      - /^KOMGO-.*$/
+      - /^KDH-.*$/
+  except:
+    - schedules
+  tags: # Comment this line if Gitlab shared runner
+    - docker-node10 # Comment this line if Gitlab shared runner
+
+run lint and formatting checks:
+  stage: test
+  script:
+    - npm run lint
+    - npm run check-formatting
+  artifacts:
+    paths:
+      - report-lint.json
+  only:
+    - /^release-.*$/
+    - /^cherry-pick-.*$/
+    - develop
+    - /^KOMGO-.*$/
+    - /^KDH-.*$/
+  except:
+    - schedules
+  tags:
+    - node10
+
+run tests:
+  stage: test
+  script:
+    - npm run copy-configs
+    - npm run test:coverage
+  artifacts:
+    paths:
+      - test-report.xml
+      - coverage
+  only:
+    - /^release-.*$/
+    - /^cherry-pick-.*$/
+    - develop
+    - /^KOMGO-.*$/
+    - /^KDH-.*$/
+  except:
+    - schedules
+  tags:
+    - node10
+
+run integration tests:
+  stage: test
+  services:
+    - docker:18.09-dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://localhost:2375 # Comment this line if Gitlab shared runners
+    REPOSITORY_URI: hbr.solutions.consensys-uk.net/komgo
+  before_script:
+    - apk add --update nodejs nodejs-npm
+  script:
+    - npm run copy-configs
+    - npm run test:integration:ci
+  only:
+    refs:
+      - /^release-.*$/
+      - /^cherry-pick-.*$/
+      - develop
+      - /^KOMGO-.*$/
+      - /^KDH-.*$/
+  except:
+    - schedules
+  tags:
+    - docker-node10
+
+sonarqube:
+  stage: analysis
+  dependencies:
+    - run tests
+    - install deps
+    - run lint and formatting checks
+  script:
+    - |
+      if [[ $CI_COMMIT_REF_NAME = "develop" || $CI_COMMIT_REF_NAME = "release" ]]; then
+        sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dproject.settings=sonar/sonar.properties \
+            -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA \
+            -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME \
+            -Dsonar.gitlab.project_id=$CI_PROJECT_ID \
+            -Dsonar.gitlab.user_token=$GITLAB_TOKEN
+      else
+        sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dproject.settings=sonar/sonar-preview.properties \
+            -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA \
+            -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME \
+            -Dsonar.gitlab.project_id=$CI_PROJECT_ID \
+            -Dsonar.gitlab.user_token=$GITLAB_TOKEN
+      fi
+  only:
+    - /^release-.*$/
+    - /^cherry-pick-.*$/
+    - develop
+    - /^KOMGO-.*$/
+    - /^KDH-.*$/
+  except:
+    - schedules
+  tags:
+    - sonar
+
+trigger update and e2e test develop branch:
+  stage: update_and_test
+  variables:
+    NUMBER_OF_MEMBERS: 4
+    QA_ENV: ci
+    BRANCH: develop
+    COUNTERPARTY: ing-ams
+    COMPANY: bp-london
+  script:
+    - export COMMIT_AUTHOR=$(git show -s --format='%ae' $CI_COMMIT_SHA)
+    - branch=$(echo $CI_COMMIT_TITLE | awk '{print $3}' | sed "s/'/ /g" | sed 's/ //g')
+    - |
+      response=$(curl https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests?state=merged -H "PRIVATE-TOKEN: $GITLAB_API_TOKEN" | jq '.[] | "\(.title) \(.source_branch)"' | (grep "$branch" || true) | head -n 1 | (grep BUILD_FIX || true) | wc -c | sed "s/[^0-9]//g")
+      echo $response
+      if [ "$response" -ne 0 ]; then
+        export BUILD_FIX="true"
+      else
+        export BUILD_FIX="false"
+      fi
+    - curl -X POST -F token=$E2E_DEVELOP_TRIGGER_TOKEN -F ref=master -F "variables[DEPLOY_LATEST]=true" -F "variables[NUMBER_OF_MEMBERS]=${NUMBER_OF_MEMBERS}" -F "variables[UPDATE]=true" -F "variables[QA_ENV]=${QA_ENV}" -F "variables[BRANCH]=${BRANCH}" -F "variables[COMMIT_AUTHOR]=${COMMIT_AUTHOR}" -F "variables[COUNTERPARTY]=${COUNTERPARTY}" -F "variables[COMPANY]=${COMPANY}" -F "variables[BUILD_FIX]=${BUILD_FIX}" -F "variables[SOURCE_PIPELINE_URL]=${CI_PIPELINE_URL}" https://gitlab.com/api/v4/projects/9675386/trigger/pipeline
+  only:
+    refs:
+      - develop
+  except:
+    - schedules
+  tags:
+    - deploy
+
+trigger update and e2e test release branch:
+  stage: update_and_test
+  variables:
+    NUMBER_OF_MEMBERS: 4
+    QA_ENV: ci-re
+    BRANCH: $CI_COMMIT_REF_NAME
+    COUNTERPARTY: ing-ams
+    COMPANY: bp-london
+  script:
+    - export COMMIT_AUTHOR=$(git show -s --format='%ae' $CI_COMMIT_SHA)
+    - branch=$(echo $CI_COMMIT_TITLE | awk '{print $3}' | sed "s/'/ /g" | sed 's/ //g')
+    - |
+      response=$(curl https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests?state=merged -H "PRIVATE-TOKEN: $GITLAB_API_TOKEN" | jq '.[] | "\(.title) \(.source_branch)"' | (grep "$branch" || true) | head -n 1 | (grep BUILD_FIX || true) | wc -c | sed "s/[^0-9]//g")
+      echo $response
+      if [ "$response" -ne 0 ]; then
+        export BUILD_FIX="true"
+      else
+        export BUILD_FIX="false"
+      fi
+    - curl -X POST -F token=$E2E_RELEASE_TRIGGER_TOKEN -F ref=master -F "variables[DEPLOY_LATEST]=true" -F "variables[NUMBER_OF_MEMBERS]=${NUMBER_OF_MEMBERS}" -F "variables[UPDATE]=true" -F "variables[QA_ENV]=${QA_ENV}" -F "variables[BRANCH]=${BRANCH}" -F "variables[COMMIT_AUTHOR]=${COMMIT_AUTHOR}" -F "variables[COUNTERPARTY]=${COUNTERPARTY}" -F "variables[COMPANY]=${COMPANY}" -F "variables[BUILD_FIX]=${BUILD_FIX}" -F "variables[SOURCE_PIPELINE_URL]=${CI_PIPELINE_URL}" https://gitlab.com/api/v4/projects/9555029/trigger/pipeline
+  only:
+    refs:
+      - /^release-.*$/
+  except:
+    - /^release-test$/
+    - schedules
+  tags:
+    - deploy
+
+notify slack on failure:
+  stage: slack_notification
+  script:
+    - echo "CI_PIPELINE_URL $CI_PIPELINE_URL"
+    - "curl -X POST \
+      https://hooks.slack.com/services/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 \
+      -H 'Content-Type: application/json' \
+      -d '{
+      \"text\": \":warning: CI AUDIT PIPELINE FAILED\",
+      \"attachments\": [
+        {
+        \"author_name\": \"PIPELINE URL: '\"$CI_PIPELINE_URL\"'\",
+        \"title\": \"Click here to check pipeline\",
+        \"title_link\": \"'\"$CI_PIPELINE_URL\"'\",
+        \"color\": \"danger\",
+        \"image_url\": \"https://raw.githubusercontent.com/standard/standard/master/docs/logos/npm.png\"
+        }
+      ]
+      }'"
+  when: on_failure
+  only:
+    - schedules
+  tags:
+    - deploy

@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentTypeSelector component renders 1`] = `
+.c3 {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: rgba(187,134,252);
+  border-radius: 2px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 {
+  margin: 0 8px;
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.c5.c5.c5.c5.c5.c5 {
+  font-weight: 600;
+  color: #5700b5;
+  font-size: 11px;
+}
+
+.c2.c2.c2.c2.c2.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  min-width: 300px;
+}
+
+.c7.c7.c7.c7.c7.c7.c7 {
+  padding: 0px;
+  margin-top: 0px;
+  width: -webkit-fill-available;
+  margin-left: 30px;
+  height: 220px;
+  overflow-y: auto;
+}
+
+.c1.c1.c1.c1.c1.c1.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px;
+  padding-right: 10px;
+  background-color: #f2f5f8;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  background-color: grey;
+}
+
+.c0.c0.c0.c0.c0.c0.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 8px;
+}
+
+.c6.c6.c6.c6.c6 {
+  width: 2px;
+  background: #dbe5ec;
+  margin-left: 0px;
+  padding-right: 0px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="ui list"
+    data-test-id="request-documents-list-categories"
+    role="list"
+    style={
+      Object {
+        "minWidth": "410px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "paddingRight": "0px",
+      }
+    }
+  >
+    <div
+      className="item c1"
+      data-test-id="request-documents-category-banking-documents"
+      highlighted={true}
+      onClick={[Function]}
+      role="listitem"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        />
+        <div
+          className="c4"
+        >
+          banking-documents
+        </div>
+        <div
+          className="c5"
+          data-test-id="request-documents-category-counter-banking-documents"
+        >
+          
+        </div>
+      </div>
+      <i
+        aria-hidden="true"
+        className="play small icon"
+      />
+    </div>
+  </div>
+  <div
+    className="c6"
+  />
+  <div
+    className="ui list style-scroll c7"
+    data-test-id="request-documents-list-doctypes"
+    role="list"
+  />
+</div>
+`;

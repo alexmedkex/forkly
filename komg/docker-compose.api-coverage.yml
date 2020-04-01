@@ -1,0 +1,43 @@
+version: "3.4"
+
+services:
+  api-coverage:
+    image: ${IMAGE_NAME:-komgo-member-api-coverage}
+    build:
+      context: ${BUILD_DIR:-./komgo-member-api-coverage}
+      args:
+        NPM_TOKEN: $NPM_TOKEN
+    container_name: komgo-member-${MEMBER_ID}-api-coverage
+    restart: always
+    environment:
+      - NPM_TOKEN
+      - CONTAINER_HOSTNAME=api-coverage
+      - DB_MONGO_URL=mongodb://mongo:27017/api-coverage${MONGO_CLIENT_OPTIONS}
+      - API_REGISTRY_BASE_URL
+      - API_NOTIF_BASE_URL
+      - COMPANY_STATIC_ID
+      - INTERNAL_MQ_HOST
+      - INTERNAL_MQ_USERNAME
+      - INTERNAL_MQ_PASSWORD
+      - INTERNAL_MQ_CONSUMER_ID=api-coverage
+      - INTERNAL_MQ_FROM_PUBLISHER_ID
+      - INTERNAL_MQ_TO_PUBLISHER_ID
+      - LOGSTASH_HOST
+      - LOGSTASH_PORT
+      - MONGO_CLIENT_PEM_BASE64
+      - MONGO_CA_CERT_BASE64
+      - MONGO_CLIENT_KEY_PASSWORD
+      - MONGO_USE_SSL
+    command: ${COMMAND:-komgo}
+    ports:
+      - ${PORT_1:-3110}:8080
+      - ${PORT_2:-9140}:9229
+    volumes:
+      - ${MOUNT_VOLUME:-./komgo-member-api-coverage:/opt/app:delegated}
+      - ~/.bash_history:/root/.bash_history
+      - ./kg-tools/.bashrc:/root/.bashrc
+
+networks:
+  default:
+    external:
+      name: komgo-${MEMBER_ID}
