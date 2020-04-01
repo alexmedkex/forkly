@@ -1,0 +1,15 @@
+@import "./theme";
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-style: none;
+  outline: 0px;
+  font-family: 'Marck Script', cursive;
+}

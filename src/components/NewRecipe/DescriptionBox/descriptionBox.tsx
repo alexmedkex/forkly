@@ -1,99 +1,40 @@
-import React, { Dispatch, SetStateAction } from 'react'
-import { Grid, InputBase } from '@material-ui/core'
-import { getStyle } from './descriptionBox.style'
-import { List } from 'immutable'
+import React, { Dispatch } from 'react'
+import { Grid } from '@material-ui/core'
+import getStyle from './descriptionBox.style'
+import Editor from 'draft-js-plugins-editor'
+import { EditorState } from 'draft-js'
+import 'draft-js/dist/Draft.css'
+import createImagePlugin from 'draft-js-image-plugin'
+import 'draft-js-image-plugin/lib/plugin.css'
 import { UploadImage } from './UploadImage/uploadImage'
-import { Image } from './Image/image'
-import { Fragment, FragmentType } from '../types'
 
 interface DescriptionBoxProps {
-    setFragments: Dispatch<SetStateAction<List<Fragment>>>,
-    fragments: List<Fragment>
+    editorState: EditorState,
+    setEditorState: Dispatch<React.SetStateAction<EditorState>>
 }
+
+
 
 export function DescriptionBox(props: DescriptionBoxProps) {
     const classes = getStyle()
-    console.log(props.fragments)
-    const fragmentElements = getFragmentElements(props.fragments)
 
-    function updateInputField(e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) {
-        const id = e.target.id
-        const value = e.target.value
-
-        props.setFragments(fragments => {
-            return fragments.map(fragment => {
-                if (fragment.element.key == id) {
-                    const newFragment = {
-                        ...fragment
-                    }
-                    newFragment.fragmentInfo.data.content = value
-                    return newFragment
-                }
-                return fragment
-            })
-        })
-    }
-
-    function addImageFragment(url: string, fileName: string, data: string) {
-        const inputKey = url + 'input'
-        const image = <Image key={url} url={url} removeImage={removeImageFragment} />
-        const input = <InputBase onChange={updateInputField} key={inputKey} id={inputKey} style={{ fontSize: '20px' }} multiline fullWidth />
-
-        const imageFragment: Fragment = {
-            element: image,
-            fragmentInfo: {
-                type: FragmentType.IMAGE,
-                data: {
-                    name: fileName,
-                    content: data
-                }
-            }
+    const imagePlugin = createImagePlugin({
+        theme: {
+            image: 'editorImage'
         }
-        const inputFragment: Fragment = {
-            element: input,
-            fragmentInfo: {
-                type: FragmentType.TEXT,
-                data: {
-                    content: ''
-                }
-            }
-        }
-
-        props.setFragments(fragments => fragments.push(imageFragment).push(inputFragment))
-    }
-
-    function removeImageFragment(url: string) {
-        props.setFragments(fragments => fragments.filter(fragment => {
-            if (
-                fragment.fragmentInfo.type === 'image' &&
-                fragment.element.props.url === url
-            ) {
-                return false
-            }
-            return true
-        }))
-    }
+    })
 
     return (
         <React.Fragment>
-            <UploadImage onUpload={addImageFragment}></UploadImage>
             <Grid item xs={12}>
-                <InputBase
-                    className={classes.textBox}
-                    multiline
-                    fullWidth
-                    placeholder="Describe your recipe..."
+                <UploadImage editorState={props.editorState} setEditorState={props.setEditorState} modifier={imagePlugin.addImage} />
+                <Editor
+                    editorState={props.editorState}
+                    onChange={props.setEditorState}
+                    plugins={[imagePlugin]}
+                    placeholder='Write your recipe...'
                 />
             </Grid>
-            {fragmentElements}
         </React.Fragment>
     )
-}
-
-function getFragmentElements(fragments: List<Fragment>): List<JSX.Element> {
-    let elements = List<JSX.Element>()
-    fragments.forEach(fragment => {
-        elements = elements.push(fragment.element)
-    })
-    return elements
 }

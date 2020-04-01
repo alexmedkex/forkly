@@ -9,12 +9,12 @@ export function getStyle() {
         buttons: {
             //transform: 'translate(-530px, 90px)',
             //margin: '-30px',
-            opacity: fadeValue,
-            animation: `$fadeOut 700ms ${theme.transitions.easing.easeInOut}`,
-            "&:hover": {
-                opacity: 1,
-                animation: `$fadeIn 700ms ${theme.transitions.easing.easeInOut}`,
-            },
+            //opacity: fadeValue,
+            //animation: `$fadeOut 700ms ${theme.transitions.easing.easeInOut}`,
+            //"&:hover": {
+            //    opacity: 1,
+            //    animation: `$fadeIn 700ms ${theme.transitions.easing.easeInOut}`,
+            //},
         },
         "@keyframes fadeIn": {
             "0%": {

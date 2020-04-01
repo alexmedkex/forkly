@@ -30,3 +30,12 @@ export interface RecipeMetaInfo {
     cookingTime: string,
     cuisine: string
 }
+
+export interface IngredientType {
+    element: JSX.Element,
+    data: {
+        name: string,
+        quantity: string,
+        measurement: string
+    }
+}

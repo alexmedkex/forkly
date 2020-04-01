@@ -1,55 +1,78 @@
 import React, { useState } from 'react'
 import { Grid, Button } from '@material-ui/core'
-import RecipeItem from './RecipeItem/recipeItem'
+import Ingredient from './Ingredient/ingredient'
 import getStyle from './addRecipe.style'
-import { Map, List } from 'immutable'
+import { Map } from 'immutable'
 import { MetaInfo } from './MetaInfo/metaInfo'
 import { DescriptionBox } from './DescriptionBox/descriptionBox'
 import axios from 'axios'
 import pako from 'pako'
-import { Fragment, FragmentInfo, RecipeMetaInfo } from './types'
+import { RecipeMetaInfo, IngredientType } from './types'
+import { EditorState, convertToRaw } from 'draft-js'
 
 export default function AddRecipe() {
     const classes = getStyle()
     const eventHandlers = {
-        addItemEvent: addItem,
-        removeItemEvent: removeItem
+        addItemEvent: addIngredient,
+        removeItemEvent: removeIngredient
     }
     let id = 0
-    let initialState: Map<Number, JSX.Element> = Map()
+    let initIngredientState: Map<Number, IngredientType> = Map()
+    initIngredientState = initIngredientState.set(id, {
+        element: <Ingredient enabled setValue={setIngredientValue} key={id} id={id}></Ingredient>,
+        data: {
+            name: '',
+            quantity: '',
+            measurement: 'gram'
+        }
+    })
     id++
-    initialState = initialState.set(id, <RecipeItem enabled key={id} id={id} setValues={setValues}></RecipeItem>)
-    id++
-    initialState = initialState.set(id, <RecipeItem enabled={false} key={id} id={id} setValues={setValues} eventHandlers={eventHandlers}></RecipeItem>)
-    const [items, setItems] = useState(initialState)
-    const [itemValues, setItemValues] = useState(Map<number, string[]>())
-    const [fragments, setFragments] = useState(List<Fragment>())
+    initIngredientState = initIngredientState.set(id, {
+        element: <Ingredient enabled={false} key={id} id={id} setValue={setIngredientValue} eventHandlers={eventHandlers}></Ingredient>,
+        data: {
+            name: '',
+            quantity: '',
+            measurement: 'gram'
+        }
+    })
+    const [ingredients, setIngredients] = useState(initIngredientState)
+    const [editorState, setEditorState] = useState(EditorState.createEmpty())
+
     const [metaInfo, setMetaInfo] = useState<RecipeMetaInfo>({
         title: '',
         cookingTime: '',
         cuisine: ''
     })
 
-    function addItem() {
-        setItems(items => {
+    function addIngredient() {
+        setIngredients(ingredients => {
             id++
-            return items.set(id, <RecipeItem enabled={false} key={id} id={id} setValues={setValues} eventHandlers={eventHandlers}></RecipeItem>)
+            return ingredients.set(id,
+                {
+                    element: <Ingredient enabled={false} key={id} id={id} setValue={setIngredientValue} eventHandlers={eventHandlers}></Ingredient>,
+                    data: {
+                        name: '',
+                        quantity: '',
+                        measurement: 'gram'
+                    }
+                }
+            )
         })
     }
 
-    function removeItem(id: number) {
-        setItems(items => {
-            let newItems = items.delete(id)
-            let ordered = newItems.sort((item1, item2) => {
-                return item1.props.id > item2.props.id ? 1 : -1
+    function removeIngredient(id: number) {
+        setIngredients(ingredients => {
+            let newIngredients = ingredients.delete(id)
+            let ordered = newIngredients.sort((ingredient1, ingredient2) => {
+                return ingredient1.element.props.id > ingredient2.element.props.id ? 1 : -1
             })
-            return ordered
+            return ordered.toMap()
         })
     }
 
-    function setValues(id: number, values: string[]) {
-        setItemValues(itemValues => {
-            return itemValues.set(id, values)
+    function setIngredientValue(id: number, dataType: string, value: string) {
+        setIngredients(ingredients => {
+            return ingredients.setIn([id, 'data', dataType], value)
         })
     }
 
@@ -63,8 +86,8 @@ export default function AddRecipe() {
             'recipes',
             pako.deflate(JSON.stringify({
                 ...metaInfo,
-                ingredients: getIngredients(itemValues),
-                description: getFragmentInfo(fragments)
+                ingredients: getIngredientData(ingredients),
+                description: convertToRaw(editorState.getCurrentContent())
             }), { level: 9 })
         ).then(result => {
             console.log(result)
@@ -81,32 +104,26 @@ export default function AddRecipe() {
                 <Grid item xs={12}>
                     <h3 className={classes.header}>Ingredients</h3>
                 </Grid>
-                {items.toList().toArray()}
+                {ingredients.map(ingredient => ingredient.element).toList().toArray()}
                 <Grid item xs={12}>
                     <h3 className={classes.header}>Instructions</h3>
                 </Grid>
-                <DescriptionBox setFragments={setFragments} fragments={fragments}></DescriptionBox>
+                <DescriptionBox setEditorState={setEditorState} editorState={editorState}></DescriptionBox>
             </Grid>
         </React.Fragment>
     )
 }
 
-function getFragmentInfo(fragments: List<Fragment>): FragmentInfo[] {
-    let info: FragmentInfo[] = []
-    fragments.forEach(fragment => {
-        info.push(fragment.fragmentInfo)
+function getIngredientData(ingredients: Map<Number, IngredientType>): {}[] {
+    let data: {}[] = []
+    ingredients.forEach(ingredient => {
+        if (ingredient.data.name && ingredient.data.quantity && ingredient.data.measurement) {
+            data.push({
+                name: ingredient.data.name,
+                quantity: ingredient.data.quantity,
+                measurement: ingredient.data.measurement
+            })
+        }
     })
-    return info
-}
-
-function getIngredients(itemValues: Map<number, string[]>): {}[] {
-    let ingredients: {}[] = []
-    itemValues.forEach(ingredient => {
-        ingredients.push({
-            name: ingredient[0],
-            quantity: ingredient[1],
-            measurement: ingredient[2]
-        })
-    })
-    return ingredients
+    return data
 }
