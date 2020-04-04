@@ -1,3 +1,0 @@
-interface IHasStaticId {
-  staticId: string
-}

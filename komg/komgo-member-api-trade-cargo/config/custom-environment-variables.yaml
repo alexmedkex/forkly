@@ -1,6 +1,0 @@
-mongo:
-  url: 'DB_MONGO_URL'
-registry:
-  url: API_REGISTRY_BASE_URL  
-coverage:
-  url: API_COVERAGE_BASE_URL

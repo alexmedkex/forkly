@@ -1,1 +1,0 @@
-export { ICategoryResponse } from './ICategoryResponse'

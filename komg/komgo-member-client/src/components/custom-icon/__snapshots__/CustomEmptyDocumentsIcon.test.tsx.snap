@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`CustomEmptyDocumentsIcon should render an empty documents icon. 1`] = `
-<svg>
-  empty-docs-icon.svg
-</svg>
-`;

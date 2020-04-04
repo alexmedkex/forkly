@@ -1,7 +1,0 @@
-export * from './CreditLineController'
-export * from './DisclosedCreditLineController'
-export * from './RequestController'
-export * from './DepositLoanController'
-export * from './HealthController'
-export * from './DisclosedDepositLoanController'
-export * from './DepositLoanRequestController'

@@ -1,5 +1,0 @@
-export * from './HealthController'
-export * from './IsPermittedController'
-export * from './PermissionsByRolesController'
-export * from './RolesController'
-export * from './RoleTemplatesController'

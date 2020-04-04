@@ -1,4 +1,0 @@
-mongo:
-    url: 'mongodb://localhost:27017/api-credit-lines-test'
-
-loglevel: info

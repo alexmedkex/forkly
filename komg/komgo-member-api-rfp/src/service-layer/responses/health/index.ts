@@ -1,1 +1,0 @@
-export { IHealthResponse } from './IHealthResponse'

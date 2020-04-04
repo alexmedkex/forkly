@@ -1,1 +1,0 @@
-export { IApiDocumentsHealthResponse } from './IApiDocumentsHealthResponse'

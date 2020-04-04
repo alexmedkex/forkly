@@ -1,2 +1,0 @@
-# komgo-api-onboarding
-

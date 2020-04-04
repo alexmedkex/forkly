@@ -1,2 +1,0 @@
-# KomGo api-frp microservce
-

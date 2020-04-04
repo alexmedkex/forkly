@@ -1,1 +1,0 @@
-export { IProductResponse } from './IProductResponse'

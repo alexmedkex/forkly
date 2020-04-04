@@ -1,9 +1,0 @@
-node_modules
-dist
-npm-debug.log
-.idea
-.DS_Store
-coverage
-config/default.yaml
-test-report.xml
-report-lint.json

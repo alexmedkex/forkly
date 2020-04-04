@@ -1,1 +1,0 @@
-export { ITemplateResponse } from './ITemplateResponse'

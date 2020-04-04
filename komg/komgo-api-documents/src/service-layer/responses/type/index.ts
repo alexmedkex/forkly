@@ -1,1 +1,0 @@
-export { ITypeResponse } from './ITypeResponse'

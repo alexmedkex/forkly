@@ -1,6 +1,0 @@
-export * from './MessageProcessorService'
-export * from './UpdateMessageProcessor'
-export * from './RFPMessageProcessor'
-export * from './TradeCargoMessageProcessor'
-export * from './DocumentMessageProcessor'
-export * from './AddDiscountingMessageProcessor'

@@ -1,5 +1,0 @@
-export * from './command-platform-add'
-export * from './command-platform-rm'
-export * from './command-platform'
-export * from './command-platform-monitoring'
-export * from './command-platform-email-notification'

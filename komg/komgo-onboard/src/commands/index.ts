@@ -1,5 +1,0 @@
-export * from './command-config'
-export * from './command-platform'
-export * from './command-member'
-export * from './command-funding'
-export * from './command-gen-addr-book'

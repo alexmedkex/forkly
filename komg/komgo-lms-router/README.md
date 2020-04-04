@@ -1,2 +1,0 @@
-# komgo-lms-gateway
-

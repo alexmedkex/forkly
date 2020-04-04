@@ -1,5 +1,0 @@
-export { IFullDocumentReviewResponse } from './IFullDocumentReviewResponse'
-export { IFullReceivedDocumentsResponse } from './IFullReceivedDocumentsResponse'
-export { IReceivedDocumentsResponse } from './IReceivedDocumentsResponse'
-export { IReceivedDocumentsAggregationResponse } from './IReceivedDocumentsAggregationResponse'
-export { IDocumentReviewResponse } from './IDocumentReviewResponse'
